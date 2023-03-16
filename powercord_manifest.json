@@ -1,0 +1,8 @@
+{
+    "name": "Template",
+    "description": "A something something Discord theme.",
+    "version": "1.0.0",
+    "author": "Saltssaumure",
+    "theme": "Template.theme.css",
+    "license": "GPL-3.0"
+}

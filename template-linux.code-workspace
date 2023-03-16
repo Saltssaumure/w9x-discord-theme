@@ -1,0 +1,29 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "/home/salt/.config/BetterDiscord/themes"
+        }
+    ],
+    "settings": {
+        "liveSassCompile.settings.formats": [
+            {
+                "format": "compressed",
+                "extensionName": ".min.css",
+                "savePath": "/"
+            },
+            {
+                "format": "expanded",
+                "extensionName": ".theme.css",
+                "savePath": "../../../.config/BetterDiscord/themes/" // on linux laptop
+            }
+        ],
+        "liveSassCompile.settings.generateMap": false,
+        "liveSassCompile.settings.showOutputWindowOn": "Information",
+        "liveSassCompile.settings.watchOnLaunch": true,
+        "editor.formatOnSaveMode": "modificationsIfAvailable",
+        "editor.formatOnSave": true,
+    }
+}

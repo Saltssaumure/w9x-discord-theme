@@ -1,0 +1,18 @@
+{
+    "id": "net.saltssaumure.dev.Template",
+    "name": "Template",
+    "description": "A something something Discord theme.",
+    "author": {
+        "name": "Saltssaumure",
+        "discordID": "134142022092062720",
+        "github": "Saltssaumure"
+    },
+    "version": "1.0.0",
+    "updater": {
+        "type": "github",
+        "id": "Saltssaumure/template-discord-theme"
+    },
+    "license": "GPL-3.0",
+    "type": "replugged-theme",
+    "main": "Template.theme.css"
+}

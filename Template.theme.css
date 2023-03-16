@@ -1,0 +1,39 @@
+/**
+ * @name Template
+ * @author Saltssaumure
+ * @authorLink https://github.com/Saltssaumure
+ * @description A something something Discord theme.
+ * @version 1.0.0
+ * @invite uy8nKQVatp
+ * @source https://github.com/Saltssaumure/template-discord-theme
+ * @donate https://ko-fi.com/saltssaumure
+*/
+
+/*
+                                                Made by:
+ _______  _______  _    _________ _______  _______  _______           __   __           _______  _______
+(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
+| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
+(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)
+/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
+\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
+                                         Licensed under GPL-3.0
+
+Discord: Saltssaumure#7557
+GitHub: https://github.com/Saltssaumure/template-discord-theme
+Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
+*/
+
+@import url("https://saltssaumure.github.io/template-discord-theme/temp.min.css");
+
+:root {
+    /* Variables */
+}
+
+.theme-dark {
+    /* Variables */
+}
+
+.theme-light {
+    /* Variables */
+}

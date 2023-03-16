@@ -1,0 +1,24 @@
+{
+    "name": "template-discord-theme",
+    "version": "1.0.0",
+    "description": "A something something Discord theme.",
+    "repository": "https://github.com/Saltssaumure/template-discord-theme.git",
+    "author": "Saltssaumure <saltssaumure@gmail.com>",
+    "license": "GPL-3.0",
+    "private": true,
+    "scripts": {
+        "dev": "bd-scss dev",
+        "bd": "bd-scss build",
+        "plug": "replugged build theme",
+        "bundle": "replugged bundle theme"
+    },
+    "type": "module",
+    "dependencies": {
+        "bd-scss": "file:../bd-scss",
+        "@parcel/config-default": "^2.8.3",
+        "@parcel/core": "^2.8.3",
+        "@types/node": "^18.11.15",
+        "prettier": "^2.8.1",
+        "replugged": "^4.1.0"
+    }
+}
