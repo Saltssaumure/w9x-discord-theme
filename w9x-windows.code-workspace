@@ -4,6 +4,9 @@
             "path": "."
         },
         {
+            "path": "../xp-discord-theme"
+        },
+        {
             "path": "C:/Users/Salt/AppData/Roaming/BetterDiscord/themes"
         }
     ],

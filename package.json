@@ -1,8 +1,8 @@
 {
-    "name": "template-discord-theme",
+    "name": "ninex-discord-theme",
     "version": "1.0.0",
-    "description": "A something something Discord theme.",
-    "repository": "https://github.com/Saltssaumure/template-discord-theme.git",
+    "description": "A Windows 9x style Discord theme.",
+    "repository": "https://github.com/Saltssaumure/w9x-discord-theme.git",
     "author": "Saltssaumure <saltssaumure@gmail.com>",
     "license": "GPL-3.0",
     "private": true,
@@ -14,11 +14,11 @@
     },
     "type": "module",
     "dependencies": {
-        "bd-scss": "file:../bd-scss",
         "@parcel/config-default": "^2.8.3",
         "@parcel/core": "^2.8.3",
-        "@types/node": "^18.11.15",
-        "prettier": "^2.8.1",
-        "replugged": "^4.1.0"
+        "@types/node": "^18.15.3",
+        "bd-scss": "file:../bd-scss",
+        "prettier": "^2.8.4",
+        "replugged": "^4.2.1"
     }
 }

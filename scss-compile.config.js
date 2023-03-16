@@ -2,11 +2,11 @@
 export default {
     meta: {
         /** The official name of your theme. */
-        name: "Template",
+        name: "NineX",
         /** The name of your base scss file. */
-        scss: "temp",
+        scss: "w9x",
         /** The name of your theme repository. */
-        repo: "template-discord-theme",
+        repo: "w9x-discord-theme",
         /** The version of your theme. */
         version: "1.0.0"
     }

@@ -1,11 +1,11 @@
 /**
- * @name Template
+ * @name NineX
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description A something something Discord theme.
+ * @description A Windows 9x style Discord theme.
  * @version 1.0.0
  * @invite uy8nKQVatp
- * @source https://github.com/Saltssaumure/template-discord-theme
+ * @source https: //github.com/Saltssaumure/w9x-discord-theme
  * @donate https://ko-fi.com/saltssaumure
 */
 
@@ -20,11 +20,11 @@
                                          Licensed under GPL-3.0
 
 Discord: Saltssaumure#7557
-GitHub: https://github.com/Saltssaumure/template-discord-theme
+GitHub: https: //github.com/Saltssaumure/w9x-discord-theme
 Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
 */
 
-@import url("https://saltssaumure.github.io/template-discord-theme/temp.min.css");
+@import url("https://saltssaumure.github.io/w9x-discord-theme/w9x.min.css");
 
 :root {
     /* Variables */

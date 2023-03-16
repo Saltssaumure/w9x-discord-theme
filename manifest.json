@@ -1,7 +1,7 @@
 {
-    "id": "net.saltssaumure.dev.Template",
-    "name": "Template",
-    "description": "A something something Discord theme.",
+    "id": "net.saltssaumure.dev.NineX",
+    "name": "NineX",
+    "description": "A Windows 9x style Discord theme.",
     "author": {
         "name": "Saltssaumure",
         "discordID": "134142022092062720",
@@ -10,9 +10,9 @@
     "version": "1.0.0",
     "updater": {
         "type": "github",
-        "id": "Saltssaumure/template-discord-theme"
+        "id": "Saltssaumure/w9x-discord-theme"
     },
     "license": "GPL-3.0",
     "type": "replugged-theme",
-    "main": "Template.theme.css"
+    "main": "NineX.theme.css"
 }

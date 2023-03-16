@@ -4,6 +4,9 @@
             "path": "."
         },
         {
+            "path": "../xp-discord-theme"
+        },
+        {
             "path": "/home/salt/.config/BetterDiscord/themes"
         }
     ],
