@@ -1,4 +1,13 @@
 @use "top/vars-scss" as *;
+@use "top/vars-css";
+
+@use "taskbar";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
+@import url("https://saltssaumure.github.io/misc-discord-themes/BorderRadiant/br.min.css");
+
+@font-face {
+    font-family: w95;
+    src: url("https://saltssaumure.github.io/w9x-discord-theme/font/w95fa.woff2");
+}

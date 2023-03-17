@@ -1,0 +1,58 @@
+@use "top/vars-scss" as *;
+@use "top/buttons" as b;
+
+:root {
+    --HSL-server-icon-size: 36px;
+    --HSL-server-spacing: 6px;
+    --HSL-server-direction: column;
+}
+
+// Taskbar
+.wrapper-1_HaEi .scroller-3X7KbA {
+    background: $grey;
+}
+
+// Folder/server icon
+.listItem-3SmSlK:not(.tutorialContainer-1pL9QS+.listItem-3SmSlK) {
+    @include b.button;
+}
+
+// Closed folder icon (override HorizontalServerList)
+// #app-mount .guilds-2JjMmN .wrapper-38slSD,
+// #app-mount .guilds-2JjMmN .expandedFolderBackground-1kSAf6 {
+//     height: 316px;
+// }
+// #app-mount .guilds-2JjMmN .listItem-3SmSlK:not([class*=listItemWrapper]) {
+//     width: 316px;
+//     position: absolute;
+//     left: -140px;
+//     top: 158px;
+// }
+
+// Closed folder icon
+.expandedFolderBackground-1kSAf6.collapsed-uGXEbi+.listItem-3SmSlK {
+    // Folder icon with aria label
+    .folder-241Joy::after {
+        content: attr(aria-label);
+        display: block;
+        position: absolute;
+        top: 0;
+        width: fit-content;
+        font-size: 12px;
+        line-height: 12px;
+        color: red;
+        text-shadow: 1px 1px 2px black, 1px 1px 1px black;
+        text-align: center;
+    }
+}
+
+// Opened folder icon
+.expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi)+.listItem-3SmSlK {
+    @include b.button($isInset: true);
+}
+
+
+// added to borderradiant, delete this later
+#app-mount .guilds-2JjMmN [class*=expandedFolderBackground] {
+    border-radius: 0;
+}

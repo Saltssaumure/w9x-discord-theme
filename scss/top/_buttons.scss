@@ -1,0 +1,27 @@
+@use "vars-scss" as *;
+
+@mixin button($isInset: false) {
+    position: relative;
+    border: 2px solid;
+    @if $isInset {
+        border-color: $black $white $white $black;
+    } @else {
+        border-color: $white $black $black $white;
+    }
+
+    &::before {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid;
+        @if $isInset {
+            border-color: $darkgrey $lightgrey $lightgrey $darkgrey;
+        } @else {
+            border-color: $lightgrey $darkgrey $darkgrey $lightgrey;
+        }
+    }
+}

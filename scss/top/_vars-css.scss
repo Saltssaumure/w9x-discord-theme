@@ -1,0 +1,16 @@
+@use "vars-scss" as *;
+
+:root {
+    --font-primary: "w95", "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "w95", "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-headline: "w95", "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:root,
+:root:lang(bg),
+:root:lang(el),
+:root:lang(ru),
+:root:lang(uk) {
+    --font-code: FixedSys, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+        "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
