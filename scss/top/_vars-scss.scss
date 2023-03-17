@@ -1,6 +1,23 @@
-// Colours
-$white:     white;
+// ---- Colours -----
+
+$white:     #FFFFFF;
 $lightgrey: #DFDFDF;
 $grey:      #C0C0C0;
 $darkgrey:  #808080;
-$black:     black;
+$black:     #000000;
+
+$blue:      #0000FF;
+$darkblue:  #000080;
+
+$turquoise: #008080;
+
+// ---- Sizes ----
+
+// Chat window
+$window-top:     50px;
+$window-right:  120px;
+$window-bottom:  50px;
+$window-left:   270px;
+
+// Member list
+$panel-width:   240px;

@@ -1,0 +1,22 @@
+@use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
+
+// Channels sidebar
+.sidebar-1tnWFu {
+    @include boxes.box;
+    position: absolute;
+    bottom: 0;
+    max-height: 60vh;
+
+    .container-1NXEtd {
+        // Server title bar
+        .header-3OsQeK {
+            background: $grey;
+        }
+
+        // Channels list
+        .scrollerBase-1Pkza4 {
+            background: $grey;
+        }
+    }
+}

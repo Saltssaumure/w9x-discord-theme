@@ -1,12 +1,16 @@
 @use "vars-scss" as *;
 
-@mixin button($isInset: false) {
+@mixin box($isInset: false, $isRotate: false) {
     position: relative;
     border: 2px solid;
     @if $isInset {
         border-color: $black $white $white $black;
     } @else {
-        border-color: $white $black $black $white;
+        @if $isRotate {
+            border-color: $white $white $black $black;
+        } @else {
+            border-color: $white $black $black $white;
+        }
     }
 
     &::before {
@@ -24,4 +28,10 @@
             border-color: $lightgrey $darkgrey $darkgrey $lightgrey;
         }
     }
+}
+
+@mixin mainWindow() {
+    margin: $window-top $window-right $window-bottom $window-left;
+    overflow: hidden;
+    @include box;
 }

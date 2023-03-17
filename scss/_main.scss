@@ -1,0 +1,28 @@
+@use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
+
+// Overall background
+.bg-1QIAus {
+    background: $turquoise;
+}
+
+// Main DM and friend list view
+.container-2cd8Mz,
+// Explore servers view
+.pageWrapper-2PwDoS,
+// University hub
+.scroller-RfJjkV,
+// Buy Nitro page
+.applicationStore-2nk7Lo {
+    @include boxes.mainWindow();
+}
+
+// University hub
+.scroller-RfJjkV {
+    height: auto;
+}
+
+// Main chat and top bar
+.chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
+    @include boxes.mainWindow();
+}

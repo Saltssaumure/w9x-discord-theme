@@ -2,6 +2,9 @@
 @use "top/vars-css";
 
 @use "taskbar";
+@use "channels";
+@use "main";
+@use "members";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
