@@ -17,7 +17,7 @@
         "@parcel/config-default": "^2.8.3",
         "@parcel/core": "^2.8.3",
         "@types/node": "^18.15.3",
-        "bd-scss": "file:../bd-scss",
+        "salt-bd-scss": "^1.0.0",
         "prettier": "^2.8.4",
         "replugged": "^4.2.1"
     }
