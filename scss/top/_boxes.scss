@@ -30,6 +30,26 @@
     }
 }
 
+@mixin winBar($isPseudo: false, $bgColor: $darkgrey) {
+    @if $isPseudo {
+        &::before {
+            content: "Test window";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: auto;
+            height: 36px;
+            background: $bgColor;
+            background-clip: padding-box;
+            border: 2px solid transparent;
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: bold;
+            color: $grey;
+        }
+    }
+}
+
 @mixin mainWindow() {
     margin: $window-top $window-right $window-bottom $window-left;
     overflow: hidden;
