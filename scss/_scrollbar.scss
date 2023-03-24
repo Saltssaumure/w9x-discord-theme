@@ -1,0 +1,61 @@
+@use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
+
+// Scrollbars always visible
+.fade-27X6bG::-webkit-scrollbar-thumb,
+.fade-27X6bG::-webkit-scrollbar-track {
+    visibility: visible;
+}
+
+// Main scrollbars
+.scrollerBase-1Pkza4 {
+
+    &:not(.none-1rXy4P)::-webkit-scrollbar {
+        width: 18px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @include boxes.box;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $lightgrey;
+        margin-bottom: 0;
+    }
+}
+
+// Textbox scrollbar
+.webkit-QgSAqd {
+
+    &::-webkit-scrollbar {
+        width: 18px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @include boxes.box;
+        background: $grey;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $lightgrey;
+    }
+}
+
+// Scrollbar up and down buttons
+::-webkit-scrollbar-button {
+
+    &:start:decrement,
+    &:end:increment {
+        @include boxes.box;
+        width: 18px;
+        height: 18px;
+    }
+
+    &:start:decrement {
+        background: $grey url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 4 H 8 L 4 0 Z' fill='%23000000'/%3E%3C/svg%3E");
+    }
+
+    &:end:increment {
+        background: $grey url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 0 H 8 L 4 4 Z' fill='%23000000'/%3E%3C/svg%3E");
+    }
+}

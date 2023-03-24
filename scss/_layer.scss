@@ -1,0 +1,45 @@
+@use "top/vars-scss" as *;
+
+.baseLayer-W6S8cY.stop-animations {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+
+    .container-1eFtFS {
+        filter: grayscale(90%) brightness(0.5);
+    }
+}
+
+.layer-86YKbF {
+    background: transparent;
+}
+
+.pictureInPictureWindow-3ms5Zy {
+    overflow: visible;
+    border-radius: 0;
+
+    &::before {
+        left: -2px;
+    }
+}
+
+// User settings menu
+.standardSidebarView-E9Pc3j {
+    padding-top: $title-height;
+    margin-bottom: $window-bottom + 46px;
+
+    .sidebarRegion-1VBisG {
+        flex-grow: 0;
+
+        .sidebar-nqHbhN {
+            padding: 0;
+        }
+    }
+
+    .contentRegionShownSidebar-fHXkEg {
+        justify-content: center;
+
+        .contentColumnDefault-3eyv5o {
+            padding: 10px;
+        }
+    }
+}
