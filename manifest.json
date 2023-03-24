@@ -14,5 +14,5 @@
     },
     "license": "GPL-3.0",
     "type": "replugged-theme",
-    "main": "scss/top/w9x.scss"
+    "main": "scss/w9x.scss"
 }
