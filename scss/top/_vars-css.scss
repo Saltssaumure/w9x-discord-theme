@@ -15,29 +15,7 @@
         "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
-.theme-light {
-    --background-primary: #{$grey};
-    --background-secondary: #{$grey};
-    --background-secondary-alt: #{$grey};
-    --background-modifier-hover: #{$darkblue};
-    --background-modifier-selected: #{$darkblue};
-    --background-modifier-active: #{$darkblue};
-
-    --text-normal: #{$black};
-
-    --header-primary: #{$black};
-
-    --interactive-normal: #{$black};
-    --interactive-hover: #{$white};
-    --interactive-active: #{$white};
-    --interactive-muted: #{$black};
-
-    --channels-default: #{$black};
-    --channel-icon: #{$black};
-
-    --home-background: #{$grey};
-}
-
+.theme-light,
 .theme-dark {
     --background-primary: #{$grey};
     --background-secondary: #{$grey};
@@ -45,11 +23,14 @@
     --background-modifier-hover: #{$darkblue};
     --background-modifier-selected: #{$darkblue};
     --background-modifier-active: #{$darkblue};
+    --background-accent: #{$darkgrey};
 
     --text-normal: #{$black};
     --text-link: #{$blue};
+    --text-muted: #{$darkgrey};
 
     --header-primary: #{$black};
+    --header-secondary: #{$darkgrey};
 
     --interactive-normal: #{$black};
     --interactive-hover: #{$white};
@@ -62,4 +43,7 @@
     --channeltextarea-background: #{$white};
 
     --home-background: #{$grey};
+
+    --mention-foreground: #{$white};
+    --mention-background: #{$darkblue};
 }

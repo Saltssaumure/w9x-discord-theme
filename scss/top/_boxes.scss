@@ -47,6 +47,13 @@
     }
 }
 
+@mixin clickable($isRotate: false) {
+    @include box($isRotate: $isRotate);
+    &:active {
+        @include box($isInset: true);
+    }
+}
+
 @mixin winBar($isPseudo: false, $bgColor: $darkgrey, $text: "") {
     $selector: "&";
 

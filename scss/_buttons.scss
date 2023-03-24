@@ -1,0 +1,6 @@
+@use "top/boxes" as boxes;
+
+.button-2b4VEQ,
+.welcomeCTAButtonOuter-3pJkMq {
+    @include boxes.clickable;
+}

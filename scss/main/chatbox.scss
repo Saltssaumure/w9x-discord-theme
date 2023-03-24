@@ -9,12 +9,8 @@
     // Buttons
     .buttonContainer-2lnNiN,
     .attachButton-_ACFSu {
-        @include boxes.box;
+        @include boxes.clickable;
         background: $grey;
-
-        &:active {
-            @include boxes.box($isInset: true);
-        }
     }
     .webkit-QgSAqd .buttons-uaqb-5 {
         margin-right: 0;
@@ -62,7 +58,7 @@
             }
 
             .button-3bklZh {
-                @include boxes.box;
+                @include boxes.clickable;
                 height: 16px;
                 width: 16px;
                 padding: 0;
@@ -72,10 +68,6 @@
                 &:active {
                     background: unset;
                     color: $black;
-                }
-
-                &:active {
-                    @include boxes.box($isInset: true);
                 }
             }
         }

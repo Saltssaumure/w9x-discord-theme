@@ -42,6 +42,27 @@
     }
 }
 
+// Spooky scary scrollbars
+.scrollbarGhostHairline-2LpzZ9 {
+    &::-webkit-scrollbar {
+        width: 18px;
+        height: 18px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @include boxes.box($isScrollbar: true);
+        background: $grey;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $lightgrey;
+    }
+}
+
+.codeView-12LUIl::-webkit-scrollbar-track {
+    margin: 0;
+}
+
 // Scrollbar up and down buttons
 ::-webkit-scrollbar-button {
 
@@ -52,11 +73,19 @@
         height: 18px;
     }
 
-    &:start:decrement {
+    &:start:decrement:vertical {
         background: $grey url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 4 H 8 L 4 0 Z' fill='%23000000'/%3E%3C/svg%3E");
     }
 
-    &:end:increment {
+    &:end:increment:vertical {
         background: $grey url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 0 H 8 L 4 4 Z' fill='%23000000'/%3E%3C/svg%3E");
+    }
+
+    &:start:decrement:horizontal {
+        background: $grey url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -2 12 12'%3E%3Cpath d='M 0 4 Z L 4 0 V 8 Z' fill='%23000000'/%3E%3C/svg%3E");
+    }
+
+    &:end:increment:horizontal {
+        background: $grey url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -2 12 12'%3E%3Cpath d='M 4 4 Z L 0 0 V 8 Z' fill='%23000000'/%3E%3C/svg%3E");
     }
 }

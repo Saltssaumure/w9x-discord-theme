@@ -23,11 +23,7 @@
 
 // Folder/server icon
 .listItem-3SmSlK:not(.tutorialContainer-1pL9QS + .listItem-3SmSlK):not([style] + .listItem-3SmSlK) {
-    @include boxes.box;
-
-    &:active {
-        @include boxes.box($isInset: true);
-    }
+    @include boxes.clickable;
 }
 
 // Override HSL
@@ -111,10 +107,7 @@ body #app-mount .guilds-2JjMmN {
 
 // Controls
 .button-12Fmur {
-    @include boxes.box;
-    &:active {
-        @include boxes.box($isInset: true);
-    }
+    @include boxes.clickable;
     &.enabled-9OeuTA:hover,
     &:active {
         background: $grey;

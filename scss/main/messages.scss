@@ -1,0 +1,248 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Chat message display area
+.messagesWrapper-RpOMA3 {
+    margin-bottom: 24px;
+    @include boxes.box($isInset: true);
+    background: $white;
+}
+
+// Placeholder messages
+.wrapper-3HVHpV,
+.wrapper-15CKyy {
+    background: $white;
+}
+
+// Jump to present bar and other bottom bars
+.barBase-3xxDXu {
+    right: 18px;
+    left: 0;
+    padding-bottom: 0;
+}
+
+// Message buttons
+.wrapper-2vIMkT {
+    height: auto;
+
+    .button-3bklZh {
+        @include boxes.clickable;
+        padding: 0;
+
+        &:hover,
+        &:active {
+            background: unset;
+            color: $black;
+        }
+    }
+}
+
+// Attachments
+.imageWrapper-oMkQl4,
+.spoilerInnerContainer-1P_w0A,
+.messageAttachment-CZp8Iv .wrapperAudio-1Bzv_Z,
+.emoji.jumboable,
+.embedWrapper-1MtIDg.container-rr3Ruk,
+.attachment-1PZZB2,
+.embed-hKpSrO,
+.wrapper-1HIH0j {
+    @include boxes.box;
+}
+
+// Text attachments
+.newMosaicStyle-2jdUaP .codeView-12LUIl {
+    margin: 0;
+}
+
+.textContainer-36wgKK {
+    @include boxes.box($isInset: true);
+    background: $white;
+
+    code {
+        background: $white;
+    }
+}
+
+.downloadSection-20OayS:hover {
+    color: $black;
+}
+
+.downloadButton-2PkwZg {
+    @include boxes.clickable;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 6px;
+
+    .downloadSection-20OayS:hover & {
+        color: $black;
+    }
+}
+
+.codeIcon-Ni8XUA {
+    @include boxes.clickable;
+    padding: 0;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+// Play pause video button
+.iconWrapper-XpfprW {
+    @include boxes.box;
+    opacity: 1;
+    background: $grey;
+    color: $black;
+}
+
+// Download / delete / alt txt button
+.hoverButton-36QWJk,
+.mediaMosaicAltText-1FnVZd {
+    @include boxes.clickable;
+
+    &:active,
+    &:hover,
+    .keyboard-mode &:focus {
+        background: $grey;
+        color: $black;
+    }
+}
+
+// Alt txt button
+.mediaMosaicAltText-1FnVZd {
+    position: absolute;
+    background: $grey;
+    color: $black;
+    &:active {
+        position: absolute;
+    }
+}
+
+// Music and video controls
+.audioControls-3fmemK,
+.videoControls-2NzHnF {
+    background: $grey;
+}
+
+.audioControls-3fmemK {
+    @include boxes.box;
+}
+
+.videoButton-3NM9Tc {
+    @include boxes.clickable;
+}
+
+.wrapper-1FP9YQ {
+    color: $black;
+}
+
+// Progress bar
+.mediaBarWrapper-33h1oY,
+.mediaBarWrapper-33h1oY::after,
+.mediaBarWrapper-33h1oY::before {
+    background: $grey;
+}
+
+.mediaBarWrapper-33h1oY {
+    @include boxes.box($isInset: true);
+}
+
+.mediaBarGrabber-FvJKJg,
+.mediaBarProgress-38I317,
+.mediaBarProgress-38I317::after,
+.mediaBarProgress-38I317::before {
+    background: $darkblue;
+}
+
+.bubble-3XikHF {
+    z-index: 1;
+}
+
+// Volume control
+.mediaBarInteractionVolume-zGrOSh {
+    background: $grey;
+    @include boxes.box;
+}
+
+// Reactions
+.reaction-3vwAF2 {
+    margin-right: 0;
+    border: 0;
+}
+
+.reactionInner-YJjOtT {
+    @include boxes.box;
+}
+
+// Self reactions
+.reaction-3vwAF2.reactionMe-1PwQAc {
+    background: $grey;
+}
+
+// Clicked reactions
+.reactionMe-1PwQAc .reactionInner-YJjOtT,
+.reactionInner-YJjOtT:active {
+    @include boxes.box($isInset: true);
+
+    .reactionCount-26U4As {
+        color: $black;
+    }
+}
+
+// Hovered reactions
+.reaction-3vwAF2:hover {
+    .reactionCount-26U4As {
+        color: $black;
+    }
+}
+
+// Add more reactions button
+.reactionBtn-3I19bq:hover,
+.reactionBtn-3I19bq:active {
+    .icon-1q31jb {
+        color: $black;
+    }
+}
+
+
+// Open thread button
+.container-3i3IzO {
+    @include boxes.clickable;
+}
+
+
+// Links??
+.content-vSHmMD a {
+    color: var(--text-link);
+}
+
+
+// Channel/user mentions
+.wrapper-1ZcZW- {
+    @include boxes.clickable;
+}
+
+.interactive:hover {
+    color: var(--mention-foreground);
+    background: var(--mention-background);
+}
+
+
+// Spoiler text
+.messageContent-2t3eCI {
+    .spoilerText-2G40u0.hidden-2lQZ5q {
+        @include boxes.box;
+        background: $darkgrey;
+    }
+
+    .spoilerText-2G40u0 {
+        @include boxes.box($isInset: true);
+    }
+}
+
+
+// Code blocks
+.markup-eYLPri code {
+    @include boxes.box;
+    background: $white;
+}
