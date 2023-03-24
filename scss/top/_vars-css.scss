@@ -39,4 +39,20 @@
 .theme-dark {
     --background-primary: #{$grey};
     --background-secondary: #{$grey};
+    --background-secondary-alt: #{$grey};
+    --background-modifier-hover: #{$darkblue};
+    --background-modifier-selected: #{$darkblue};
+    --background-modifier-active: #{$darkblue};
+
+    --text-normal: #{$black};
+
+    --interactive-normal: #{$black};
+    --interactive-hover: #{$white};
+    --interactive-active: #{$white};
+    --interactive-muted: #{$black};
+
+    --channels-default: #{$black};
+    --channel-icon: #{$black};
+
+    --home-background: #{$grey};
 }

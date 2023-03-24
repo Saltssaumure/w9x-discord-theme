@@ -3,7 +3,7 @@
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
  * @description A Windows 9x style Discord theme.
- * @version 1.0.0
+ * @version 1.0
  * @invite uy8nKQVatp
  * @source https: //github.com/Saltssaumure/w9x-discord-theme
  * @donate https://ko-fi.com/saltssaumure
@@ -25,15 +25,3 @@ Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
 */
 
 @import url("https://saltssaumure.github.io/w9x-discord-theme/w9x.min.css");
-
-:root {
-    /* Variables */
-}
-
-.theme-dark {
-    /* Variables */
-}
-
-.theme-light {
-    /* Variables */
-}
