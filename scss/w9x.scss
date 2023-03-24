@@ -1,14 +1,17 @@
 @use "top/vars-css";
 
+@use "icons";
+@use "scrollbar";
+@use "buttons";
+
 @use "taskbar";
 @use "channels";
 @use "main";
 @use "members";
-@use "icons";
-@use "scrollbar";
+
 @use "threads";
 @use "layer";
-@use "buttons";
+@use "overlay";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");

@@ -15,15 +15,26 @@
         "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 
+// Colour sync stuff
+:root {
+    .container-2IKOsH,
+    .header-3xB4vB,
+    .container-1um7CU {
+        background: var(--background-primary);
+    }
+}
+
 .theme-light,
 .theme-dark {
     --background-primary: #{$grey};
     --background-secondary: #{$grey};
     --background-secondary-alt: #{$grey};
+    --background-tertiary: #{$grey};
     --background-modifier-hover: #{$darkblue};
     --background-modifier-selected: #{$darkblue};
     --background-modifier-active: #{$darkblue};
     --background-accent: #{$darkgrey};
+    --background-floating: #{$beige};
 
     --text-normal: #{$black};
     --text-link: #{$blue};

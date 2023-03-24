@@ -81,17 +81,59 @@
     z-index: 0;
 }
 
+// Description bar
+.toolbar-3_r2xA {
+
+    .search-39IXmY {
+        @include boxes.box($isInset: true);
+        margin: 0;
+
+        .searchBar-jGtisZ {
+            height: 30px;
+            align-items: center;
+
+            .DraftEditor-root {
+                padding-top: 6px;
+            }
+
+            .icon-tZMHgY {
+                @include boxes.clickable;
+
+                &:hover .icon-18rqoe {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .iconWrapper-2awDjA.clickable-ZD7xvu:not(.anchor-1X4H4q .iconWrapper-2awDjA:only-of-type):not(:is(#{sc.makeSelectors()})) {
+        @include boxes.clickable;
+        margin: 0;
+        height: 32px;
+        min-width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover .icon-2xnN2Y {
+            color: $black;
+        }
+
+        &.selected-29KTGM {
+            @include boxes.box($isInset: true);
+
+            .icon-2xnN2Y {
+                color: $black;
+            }
+        }
+
+        .count-vTKEhF {
+            margin: 4px;
+        }
+    }
+}
+
 // University hub
 .scroller-RfJjkV {
     height: auto;
-}
-
-// Colour sync stuff
-:root {
-
-    .container-2IKOsH,
-    .header-3xB4vB,
-    .container-1um7CU {
-        background: var(--background-primary);
-    }
 }

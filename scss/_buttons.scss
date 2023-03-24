@@ -1,6 +1,9 @@
 @use "top/boxes" as boxes;
 
 .button-2b4VEQ,
-.welcomeCTAButtonOuter-3pJkMq {
+.welcomeCTAButtonOuter-3pJkMq,
+.button-ejjZWC,
+.friendRequestsButton-77veU7,
+.button-1_oXub {
     @include boxes.clickable;
 }
