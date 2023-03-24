@@ -2,6 +2,8 @@
 @use "top/boxes" as boxes;
 @use "top/shortcutIcon" as sc;
 
+@use "main/chatbox.scss";
+
 // Overall background
 .bg-1QIAus {
     background: $turquoise;
@@ -29,6 +31,7 @@
             font-size: 1rem;
             color: $grey;
         }
+
         svg {
             display: none;
         }
@@ -71,6 +74,7 @@
 .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
     @include boxes.mainWindow();
 }
+
 // Make space for top bar
 .container-2cd8Mz .container-ZMc96U,
 .pageWrapper-2PwDoS .scroller-3j5xK2,
@@ -88,9 +92,16 @@
 
 // Colour sync stuff
 :root {
+
     .container-2IKOsH,
     .header-3xB4vB,
     .container-1um7CU {
         background: var(--background-primary);
     }
+}
+
+// Chat message display area
+.messagesWrapper-RpOMA3 {
+    margin-bottom: 24px;
+    @include boxes.box($isInset: true);
 }

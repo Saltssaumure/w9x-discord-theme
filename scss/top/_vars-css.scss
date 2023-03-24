@@ -25,6 +25,8 @@
 
     --text-normal: #{$black};
 
+    --header-primary: #{$black};
+
     --interactive-normal: #{$black};
     --interactive-hover: #{$white};
     --interactive-active: #{$white};
@@ -45,6 +47,9 @@
     --background-modifier-active: #{$darkblue};
 
     --text-normal: #{$black};
+    --text-link: #{$blue};
+
+    --header-primary: #{$black};
 
     --interactive-normal: #{$black};
     --interactive-hover: #{$white};
@@ -53,6 +58,8 @@
 
     --channels-default: #{$black};
     --channel-icon: #{$black};
+
+    --channeltextarea-background: #{$white};
 
     --home-background: #{$grey};
 }

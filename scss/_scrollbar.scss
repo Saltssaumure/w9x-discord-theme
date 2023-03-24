@@ -16,6 +16,7 @@
 
     &::-webkit-scrollbar-thumb {
         @include boxes.box($isScrollbar: true);
+        background: $grey;
     }
 
     &::-webkit-scrollbar-track {

@@ -1,0 +1,108 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Chat box
+.channelTextArea-1FufC0 {
+    @include boxes.box($isInset: true);
+    margin-bottom: 16px;
+
+    // Buttons
+    .buttonContainer-2lnNiN,
+    .attachButton-_ACFSu {
+        @include boxes.box;
+        background: $grey;
+
+        &:active {
+            @include boxes.box($isInset: true);
+        }
+    }
+    .webkit-QgSAqd .buttons-uaqb-5 {
+        margin-right: 0;
+    }
+
+    // Button icons
+    .active-z80xEj .buttonWrapper-3YFQGJ,
+    .buttonWrapper-3YFQGJ:hover,
+    .button-2fCJ0o:hover {
+        color: $black;
+    }
+    .attachButton-_ACFSu:hover .attachButtonPlus-3IYelE {
+        fill: $black;
+    }
+
+    // Attachment area divider
+    .divider-2rZFJK {
+        display: none;
+    }
+
+    // Attachments
+    .channelAttachmentArea-HwpkuQ {
+        padding: 4px;
+        margin: 0;
+        gap: 4px;
+
+        .upload-vLbqu- {
+            padding: 0;
+        }
+
+        // Attachment preview
+        .uploadContainer-TCg-Ji {
+            @include boxes.box;
+            flex-direction: column-reverse;
+        }
+
+        // Attachment controls
+        .actionBar-1ozugS {
+            transform: none;
+            right: 4px;
+            top: 4px;
+
+            .wrapper-2vIMkT {
+                height: 17px;
+            }
+
+            .button-3bklZh {
+                @include boxes.box;
+                height: 16px;
+                width: 16px;
+                padding: 0;
+                min-width: unset;
+
+                &:hover,
+                &:active {
+                    background: unset;
+                    color: $black;
+                }
+
+                &:active {
+                    @include boxes.box($isInset: true);
+                }
+            }
+        }
+
+        // Filename
+        .filenameContainer-2qwz8w {
+            @include boxes.winBar($text: "");
+            margin-top: 0;
+
+            .filename-jyRDv_ {
+                margin-top: 0;
+                color: $grey;
+            }
+        }
+
+        // Attachment image
+        .imageContainer-ZRSemj {
+            margin: auto 0;
+        }
+
+        .icon-2bPCaV.code-1hTP09 {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAx0lEQVRYR+1XWxaEIAiVnbkzdWe6MicK54xHezDxkYk/ESGP6yUPYNqVSQXLU1JGf82qlN777JwzIYTVUFpe/KPbKub3pQQHAJPzVriUjAVh8BijsdZWSTwvgd453dWllNbKLyFwN1hv/3gJIPl6q5Cz205E3t+9xX4OBI64Mx4C0p0wHgL/dIFyQBSBvSPgkvN9PyJFQBGYBwFupWf27MtI7wJF4IxU3O+XSIhOcT6k2Y0b49B+bypqJlXyUkZy0STIWTNwfABE/48wR04ubgAAAABJRU5ErkJggg==") center no-repeat;
+        }
+    }
+
+    // Typing area
+    .slateTextArea-27tjG0 {
+        padding-left: 10px;
+    }
+}
