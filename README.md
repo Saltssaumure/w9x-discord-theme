@@ -1,4 +1,4 @@
-[screenshot]: https://i.imgur.com
+[screenshot]: https://user-images.githubusercontent.com/29710355/227399665-9b0e8dd7-ba17-4d42-ba66-cc314c1ed418.png
 
 # NineX Discord Theme
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/w9x-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/w9x-discord-theme/releases/latest "Latest release")
@@ -6,7 +6,7 @@
 
 ***A Windows 95 style Discord theme.***
 
-![Screenshot of NineX Discord theme applied to Discord desktop client]([screenshot])
+![Screenshot of NineX Discord theme applied to Discord desktop client][screenshot]
 
 ## Installation
 
@@ -34,11 +34,11 @@
 
 | Description       | Variable name     | Valid values               | Default value |
 |-------------------|-------------------|----------------------------|---------------|
-| Background colour | `--temp-bg-color` | Any CSS-recognised colour. | #000          |
+| Placeholder       | `--placeholder`   | Placeholder                | placeholder   |
 
 ## License
 [GNU General Public License v3.0](https://github.com/Saltssaumure/w9x-discord-theme/blob/main/LICENSE)
-<span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ## Questions or suggestions?
 - Post [an issue](https://github.com/Saltssaumure/w9x-discord-theme/issues) on GitHub.
