@@ -1,6 +1,6 @@
 @use "vars-scss" as *;
 
-@mixin box($isInset: false, $isRotate: false) {
+@mixin box($isInset: false, $isRotate: false, $isScrollbar: false) {
     position: relative;
     border: 1px solid;
 
@@ -18,28 +18,30 @@
         }
     }
 
-    &::before {
-        content: " ";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border: 1px solid;
-        pointer-events: none;
-        z-index: 1;
+    @if not $isScrollbar {
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid;
+            pointer-events: none;
+            z-index: 1;
 
-        @if $isInset {
-            border-color: $darkgrey $lightgrey $lightgrey $darkgrey;
-        }
-
-        @else {
-            @if $isRotate {
-                border-color: $lightgrey $lightgrey $darkgrey $darkgrey;
+            @if $isInset {
+                border-color: $darkgrey $lightgrey $lightgrey $darkgrey;
             }
 
             @else {
-                border-color: $lightgrey $darkgrey $darkgrey $lightgrey;
+                @if $isRotate {
+                    border-color: $lightgrey $lightgrey $darkgrey $darkgrey;
+                }
+
+                @else {
+                    border-color: $lightgrey $darkgrey $darkgrey $lightgrey;
+                }
             }
         }
     }
