@@ -1,9 +1,27 @@
+@use "top/vars-scss" as *;
 @use "top/boxes" as boxes;
 
 .button-2b4VEQ,
 .welcomeCTAButtonOuter-3pJkMq,
-.button-ejjZWC,
 .friendRequestsButton-77veU7,
 .button-1_oXub {
     @include boxes.clickable;
+}
+
+:is(.theme-dark, .theme-light) {
+    .lookLink-13iF2K.colorPrimary-2-Lusz {
+        color: $black;
+        &:hover .contents-3NembX {
+            --button--underline-color: #{$black};
+        }
+    }
+}
+
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+    color: $white;
+    background: $darkgrey;
+    &:hover,
+    &:active {
+        background: $darkgrey;
+    }
 }

@@ -34,9 +34,74 @@
     }
 }
 
+// Header
+.header-3OsQeK {
+    @include boxes.clickable;
+    box-shadow: none;
+}
+
+.clickable-vvKY2q .header-3OsQeK:hover,
+.selected-1GtAC5 .header-3OsQeK {
+    background: unset;
+}
+
+// Boost goal
+.container-2giAcK {
+    margin: 2px;
+
+    .goalText-mbRUAP {
+        color: $black !important;
+    }
+
+    .progressBarContainer-1efroK {
+        @include boxes.box($isInset: true);
+    }
+
+    .divider-3qUeLQ {
+        display: none;
+    }
+}
+
+.sectionDivider-189lqb {
+    display: none;
+}
+
+// Channel group
+.wrapper-1S43wv:is(.muted-19J0ih:hover, :hover) :is(.icon-3zI3d2, .name-3BUDLf) {
+    color: $black;
+}
+
+// Add channel button
+.addButton-2mlqCW {
+    width: 20px;
+    height: 20px;
+
+    .addButtonIcon-3rJeaD:hover {
+        color: $black;
+    }
+}
+
 // Channel
 .content-1gYQeQ {
     margin-left: 0;
+}
+
+// Channel actions
+.iconItem-1EjiK0 {
+    margin-left: 0;
+
+    .actionIcon-2sw4Sl {
+        @include boxes.clickable;
+        background: $grey;
+    }
+
+    &:hover .actionIcon-2sw4Sl {
+        color: $black;
+    }
+
+    &.openChatIconItem-2kj5qO {
+        padding-right: 0;
+    }
 }
 
 // Unread bubble
@@ -64,6 +129,7 @@
     .icon-2W8DHg {
         color: $white;
     }
+
     .unreadRelevant-2f-VSK {
         background: $white;
     }

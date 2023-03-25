@@ -1,0 +1,38 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+.root-1CAIjD {
+    @include boxes.box;
+}
+
+.artContainer-1yaXct {
+    display: none;
+}
+
+.content-1OG56Q {
+    @include boxes.box($isInset: true);
+    padding-top: 18px;
+    margin-bottom: 0;
+}
+
+:is(.theme-dark, .theme-light) {
+    .content-FDHp32 :is(ol, p, ul li) {
+        color: $black;
+    }
+
+    .improved-2SJXHz {
+        color: $darkblue;
+
+        &::after {
+            background: $darkblue;
+        }
+    }
+
+    .fixed-cTX7Hp {
+        color: $red;
+
+        &::after {
+            background: $red;
+        }
+    }
+}

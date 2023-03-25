@@ -1,0 +1,209 @@
+@use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
+
+.bd-sidebar-header {
+    h2 {
+        color: $black;
+    }
+
+    .bd-changelog-button {
+        @include boxes.clickable;
+        height: 18px;
+    }
+
+    .bd-icon:hover {
+        fill: $black;
+    }
+}
+
+// Tabs
+.bd-tab-item {
+    @include boxes.clickable;
+
+    &.selected,
+    &:hover {
+        background: $grey;
+        color: $black;
+    }
+}
+
+// Addon error
+:is(.theme-dark, .theme-light) .bd-addon-error {
+    &.collapsed {
+        @include boxes.clickable;
+    }
+
+    &.expanded {
+        @include boxes.box;
+    }
+}
+
+.bd-addon-error-details .detailsIcon-2NtTO9 {
+    color: var(--header-secondary);
+}
+
+.bd-divider {
+    display: none;
+}
+
+.bd-addon-error-stack .scrollbarGhostHairline-2LpzZ9 {
+    @include boxes.box($isInset: true);
+    background: $white;
+    max-height: 200px;
+}
+
+// Settings
+.bd-settings-title {
+    color: $black;
+}
+
+// Searchbar
+.bd-search-wrapper {
+    @include boxes.box($isInset: true);
+    background: $white;
+}
+
+// Dropdown selector
+.bd-select-wrapper {
+    color: $black;
+
+    .bd-select {
+        @include boxes.box($isInset: true);
+        padding: 0;
+
+        &.bd-select-transparent {
+            @include boxes.box($isInset: true);
+            background: $white;
+            align-items: center;
+        }
+
+        .bd-select-arrow {
+            @include boxes.clickable;
+            background: $grey;
+            height: 24px !important;
+            width: 24px !important;
+
+        }
+
+        .bd-select-options {
+            @include boxes.box($isInset: true);
+            position: absolute;
+            background: $white;
+
+            .bd-select-option {
+                padding: 4px 8px;
+
+                &.selected {
+                    background: $darkblue;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// Toggle switch
+.bd-switch {
+    @include boxes.box;
+}
+
+.bd-switch-body {
+    --switch-color: #{$grey};
+}
+
+.bd-switch input:checked+.bd-switch-body {
+    --switch-color: #{$green};
+}
+
+.bd-filled-checkmark {
+    background: $green;
+}
+
+.bd-empty-updates svg {
+    fill: $green;
+}
+
+// Regular butons
+.bd-button {
+    @include boxes.clickable;
+    background: $grey;
+    color: $black;
+
+    &:hover,
+    &:active {
+        background: $grey;
+    }
+
+    &.bd-button-danger {
+        background: $grey;
+
+        &:hover,
+        &:active {
+            background: $grey;
+        }
+
+        svg {
+            color: $red;
+        }
+    }
+}
+
+// Addon card layout buttons
+.bd-addon-views .bd-view-button {
+
+    &:hover,
+    &:active {
+        background: $grey;
+    }
+
+    &.selected {
+        @include boxes.box($isInset: true);
+        background: $grey;
+
+        svg {
+            fill: $black;
+        }
+    }
+
+    +.bd-view-button {
+        margin-left: 0;
+    }
+}
+
+// Addon cards
+.bd-addon-card {
+    @include boxes.box;
+    padding: 6px;
+
+    :is(.bd-addon-header, .bd-description-wrap, .bd-footer) {
+        padding: 0;
+    }
+
+    .bd-addon-header .bd-icon {
+        margin-right: 4px;
+    }
+
+    .bd-links .bd-addon-button {
+        @include boxes.clickable;
+        width: 24px;
+        align-items: center;
+        justify-content: center;
+
+        +.bd-addon-button {
+            margin-left: 0;
+        }
+
+        .bd-link:hover,
+        .bd-link:active {
+            color: $black;
+        }
+    }
+
+    .bd-addon-button svg {
+        fill: $black;
+    }
+
+    .bd-button-danger svg {
+        fill: $red;
+    }
+}
