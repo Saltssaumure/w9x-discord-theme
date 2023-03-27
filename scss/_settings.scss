@@ -1,0 +1,79 @@
+@use "settings/myaccount";
+@use "settings/profiles";
+@use "settings/privacyandsafety";
+@use "settings/authorisedapps";
+@use "settings/devices";
+@use "settings/connections";
+
+@use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
+
+// User settings menu
+.standardSidebarView-E9Pc3j {
+    padding-top: $title-height;
+    margin-bottom: $window-bottom + 46px;
+
+    .sidebarRegion-1VBisG {
+        flex-grow: 0;
+
+        .sidebar-nqHbhN {
+            padding: 0;
+        }
+
+        .separator-2N511j {
+            display: none;
+        }
+
+        .header-2F5_LB {
+            margin-top: 12px;
+        }
+    }
+
+    .contentRegionShownSidebar-fHXkEg {
+        justify-content: center;
+
+        .contentColumnDefault-3eyv5o,
+        .contentColumnWide-2CgNjO {
+            padding: 10px;
+            @include boxes.box;
+        }
+    }
+}
+
+// Settings menu specific stuff
+
+.divider-3nqZNm {
+    display: none;
+}
+
+.h5-2feg8J,
+.label-7akf7-,
+.legend-3BgtI3 {
+    color: #{$black};
+}
+
+// Toggles
+.control-10qYax {
+    @include boxes.box;
+
+    .container-1QtPKm {
+        background: $grey !important;
+
+        .slider-HJFN2i svg path {
+            fill: $grey;
+        }
+
+        &.checked-16gMAN {
+            background: $green !important;
+
+            .slider-HJFN2i svg path {
+                fill: $green;
+            }
+        }
+    }
+}
+
+// Notices
+.formNotice-1JW4h2 {
+    @include boxes.box;
+}

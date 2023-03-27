@@ -1,0 +1,84 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// # Connections
+.connectContainer-1hylYM {
+    @include boxes.box;
+    padding: 8px;
+
+    .connectHeader-2VkFiv {
+        color: $black !important;
+    }
+
+    .connectionsContainer-3wRUc6 {
+        margin-top: 4px;
+        gap: 0;
+
+        .inner-1lPVFp,
+        .accountAddInner-2y9WLL {
+            @include boxes.clickable;
+
+            &:hover {
+                background-color: unset;
+            }
+        }
+    }
+}
+
+.connectionList-11Q_X- {
+    grid-gap: 0;
+
+    .connection-YOVI9j {
+        @include boxes.box;
+        padding: 0;
+        margin-bottom: 0;
+
+        .connectionHeader-Ixbb1s {
+            padding: 8px;
+
+            .connectionDelete-3YgMVq {
+                margin: 0;
+                align-self: flex-start;
+
+                &:hover {
+                    color: $black;
+                }
+
+                svg {
+                    height: 24px;
+                    width: 24px;
+                    @include boxes.clickable;
+                }
+            }
+        }
+
+        .upsellWrapper-2jvKpl {
+            padding: 8px;
+
+            .container-QlmnKJ {
+                @include boxes.box;
+                padding: 8px;
+            }
+        }
+
+        .metadataContainer-35U-On {
+            padding: 0 8px;
+            margin: 0;
+
+            .text-xs-normal-3O7EaX {
+                color: $black !important;
+            }
+        }
+
+        .connectionOptionsWrapper-3aVWcp {
+            padding: 8px;
+
+            .connectionOptions-JJ1YEi {
+                .connectionOptionSwitch-y1S-cR {
+                    margin-bottom: 0px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -274,3 +274,18 @@
         }
     }
 }
+
+// Dropdown
+.searchableSelect-S6iCGx {
+    @include boxes.box;
+    left: 1px;
+    top: -2px;
+    background: $white;
+    .option-Uc12mm {
+        height: 16px!important;
+        padding: 10px 4px;
+        .selectedIcon-122rMx {
+            color: $green;
+        }
+    }
+}

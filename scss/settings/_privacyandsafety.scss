@@ -1,0 +1,26 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// # Privacy and safety
+.item-1TA5qI {
+    @include boxes.clickable;
+    margin: 0;
+
+    &[aria-checked="true"],
+    &:hover:not([aria-checked=true]):not(.disabled-WBmOu_) {
+        background: unset;
+        color: unset;
+    }
+
+    &[aria-checked="true"] {
+        @include boxes.box($isInset: true);
+    }
+
+    .radioBar-1XgZqD {
+        padding: 4px !important;
+    }
+}
+
+.marginBottom40-fvAlAV {
+    margin-bottom: 20px;
+}

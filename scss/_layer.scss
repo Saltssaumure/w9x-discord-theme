@@ -1,4 +1,5 @@
 @use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
 
 .baseLayer-W6S8cY.stop-animations {
     opacity: 1 !important;
@@ -19,35 +20,5 @@
 
     &::before {
         left: -2px;
-    }
-}
-
-// User settings menu
-.standardSidebarView-E9Pc3j {
-    padding-top: $title-height;
-    margin-bottom: $window-bottom + 46px;
-
-    .sidebarRegion-1VBisG {
-        flex-grow: 0;
-
-        .sidebar-nqHbhN {
-            padding: 0;
-        }
-
-        .separator-2N511j {
-            display: none;
-        }
-
-        .header-2F5_LB {
-            margin-top: 12px;
-        }
-    }
-
-    .contentRegionShownSidebar-fHXkEg {
-        justify-content: center;
-
-        .contentColumnDefault-3eyv5o {
-            padding: 10px;
-        }
     }
 }

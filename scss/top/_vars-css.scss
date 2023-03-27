@@ -36,12 +36,14 @@
     --background-accent: #{$darkgrey};
     --background-floating: #{$beige};
 
+    --deprecated-card-bg: #{$grey};
     --deprecated-card-editable-bg: #{$grey};
     --deprecated-text-input-bg: #{$white};
 
     --text-normal: #{$black};
     --text-link: #{$blue};
     --text-muted: #{$darkgrey};
+    --text-positive: #{$green};
 
     --header-primary: #{$black};
     --header-secondary: #{$darkgrey};
@@ -50,6 +52,8 @@
     --interactive-hover: #{$white};
     --interactive-active: #{$white};
     --interactive-muted: #{$black};
+
+    --input-background: #{$white};
 
     --channels-default: #{$black};
     --channel-icon: #{$black};
@@ -62,4 +66,62 @@
 
     --mention-foreground: #{$white};
     --mention-background: #{$darkblue};
+
+    --status-danger: #{$red};
+
+    --button-danger-background: #{$red};
+    --button-danger-background-active: #{$red};
+    --button-danger-background-disabled: #{$red};
+    --button-danger-background-hover: #{$red};
+
+
+    --button-outline-brand-background: hsl(var(--white-500-hsl)/0);
+    --button-outline-brand-background-active: var(--brand-560);
+    --button-outline-brand-background-hover: var(--brand-500);
+    --button-outline-brand-border: var(--brand-500);
+    --button-outline-brand-border-active: var(--brand-560);
+    --button-outline-brand-border-hover: var(--brand-500);
+    --button-outline-brand-text: var(--white-500);
+    --button-outline-brand-text-active: var(--white-500);
+    --button-outline-brand-text-hover: var(--white-500);
+
+    --button-outline-danger-background: transparent;
+    --button-outline-danger-background-active: #{$red};
+    --button-outline-danger-background-hover: #{$red};
+    --button-outline-danger-border: #{$red};
+    --button-outline-danger-border-active: #{$red};
+    --button-outline-danger-border-hover: #{$red};
+    --button-outline-danger-text: #{$black};
+    --button-outline-danger-text-active: #{$black};
+    --button-outline-danger-text-hover: #{$black};
+
+    --button-outline-positive-background: transparent;
+    --button-outline-positive-background-active: #{$green};
+    --button-outline-positive-background-hover: #{$green};
+    --button-outline-positive-border: #{$green};
+    --button-outline-positive-border-active: #{$green};
+    --button-outline-positive-border-hover: #{$green};
+    --button-outline-positive-text: #{$black};
+    --button-outline-positive-text-active: #{$black};
+    --button-outline-positive-text-hover: #{$black};
+
+    --button-outline-primary-background: hsl(var(--white-500-hsl)/0);
+    --button-outline-primary-background-active: var(--primary-430);
+    --button-outline-primary-background-hover: var(--primary-500);
+    --button-outline-primary-border: var(--primary-500);
+    --button-outline-primary-border-active: var(--primary-430);
+    --button-outline-primary-border-hover: var(--primary-500);
+    --button-outline-primary-text: var(--white-500);
+    --button-outline-primary-text-active: var(--white-500);
+    --button-outline-primary-text-hover: var(--white-500);
+
+    --button-positive-background: #{$green};
+    --button-positive-background-active: #{$green};
+    --button-positive-background-disabled: #{$green};
+    --button-positive-background-hover: #{$green};
+
+    --button-secondary-background: var(--primary-500);
+    --button-secondary-background-active: var(--primary-400);
+    --button-secondary-background-disabled: var(--primary-500);
+    --button-secondary-background-hover: var(--primary-430);
 }

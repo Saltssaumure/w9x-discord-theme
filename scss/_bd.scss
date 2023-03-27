@@ -64,39 +64,35 @@
 }
 
 // Dropdown selector
-.bd-select-wrapper {
-    color: $black;
+.bd-select {
+    @include boxes.box($isInset: true);
+    padding: 0;
 
-    .bd-select {
+    &.bd-select-transparent {
         @include boxes.box($isInset: true);
-        padding: 0;
+        background: $white;
+        align-items: center;
+    }
 
-        &.bd-select-transparent {
-            @include boxes.box($isInset: true);
-            background: $white;
-            align-items: center;
-        }
+    .bd-select-arrow {
+        @include boxes.clickable;
+        background: $grey;
+        height: 24px !important;
+        width: 24px !important;
 
-        .bd-select-arrow {
-            @include boxes.clickable;
-            background: $grey;
-            height: 24px !important;
-            width: 24px !important;
+    }
 
-        }
+    .bd-select-options {
+        @include boxes.box($isInset: true);
+        position: absolute;
+        background: $white;
 
-        .bd-select-options {
-            @include boxes.box($isInset: true);
-            position: absolute;
-            background: $white;
+        .bd-select-option {
+            padding: 4px 8px;
 
-            .bd-select-option {
-                padding: 4px 8px;
-
-                &.selected {
-                    background: $darkblue;
-                    color: $white;
-                }
+            &.selected {
+                background: $darkblue;
+                color: $white;
             }
         }
     }
@@ -206,4 +202,10 @@
     .bd-button-danger svg {
         fill: $red;
     }
+}
+
+// Maybe not BD, but goes here for now.
+// Update modal text
+:is(.theme-dark, .theme-light) .markdown-19oyJN {
+    color: $black;
 }
