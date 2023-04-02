@@ -1,30 +1,10 @@
 @use "top/vars-css";
 
-@use "icons";
-@use "scrollbar";
-@use "buttons";
-
-@use "taskbar";
-@use "channels";
 @use "main";
-@use "members";
-@use "settings";
-
-@use "threads";
-@use "layer";
 @use "overlay";
-@use "bd";
+@use "part";
+@use "plugin";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");
 @import url("https://saltssaumure.github.io/misc-discord-themes/BorderRadiant/br.min.css");
-
-@font-face {
-    font-family: w95;
-    src: url("https://saltssaumure.github.io/w9x-discord-theme/font/w95fa.woff2");
-}
-
-@font-face {
-    font-family: FixedSys;
-    src: url("https://saltssaumure.github.io/w9x-discord-theme/font/FSEX300.ttf");
-}

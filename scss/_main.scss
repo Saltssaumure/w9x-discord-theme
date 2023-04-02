@@ -2,8 +2,13 @@
 @use "top/boxes" as boxes;
 @use "top/shortcutIcon" as sc;
 
-@use "main/chatbox.scss";
-@use "main/messages.scss";
+@use "main/chatbox";
+@use "main/messages";
+
+@use "main/channels";
+@use "main/members";
+@use "main/taskbar";
+@use "main/threads";
 
 // Overall background
 .bg-1QIAus {

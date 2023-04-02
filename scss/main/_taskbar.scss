@@ -1,6 +1,6 @@
-@use "top/vars-scss" as *;
-@use "top/boxes" as boxes;
-@use "top/folderIcon" as fi;
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+@use "../top/folderIcon" as fi;
 
 :root {
     --HSL-server-icon-size: 36px;
