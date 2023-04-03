@@ -1,0 +1,41 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.warning-RBGtx2 {
+    @include boxes.box;
+}
+
+.marginTop60-38vAjL {
+    margin-top: 16px;
+}
+
+.defaultKeybindGroup-36Wpyv {
+    margin: 16px 0 0;
+
+    .defaultKeybindGroupHeader-18_214,
+    .defaultKeybindGroupDescription-3c3NhW {
+        margin-bottom: 8px;
+    }
+}
+
+.defaultKeybind-1rEiTa {
+    padding: 4px;
+    height: 32px;
+    @include boxes.box($isInset: true);
+
+    &:has(.combo-3PNrpQ:nth-child(2)) {
+        height: 64px;
+    }
+    
+    .combo-3PNrpQ {
+        text-transform: capitalize;
+        font-weight: unset;
+        font-size: 14px;
+        line-height: 16px;
+
+        .key-RP8gj3 {
+            @include boxes.box;
+            box-shadow: none;
+        }
+    }
+}

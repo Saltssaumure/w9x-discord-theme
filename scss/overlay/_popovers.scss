@@ -71,33 +71,22 @@
         color: $black;
     }
 
-    // Slider bar
-    .mini-28oMa3 .bar-2H7Q9u {
-        @include boxes.box($isInset: true);
-        background: $grey;
-        height: 4px;
+    // Slider
+    .mini-28oMa3 {
 
-        .barFill-3RgCsY {
-            background: transparent;
-        }
-    }
-
-    // Handle
-    .grabber-3R-Rx9 {
-        @include boxes.box;
-        background: $grey;
-
-        &::before {
-            background: $grey;
+        .bar-2H7Q9u {
+            height: 4px;
         }
 
-        height: 16px;
-        width: 10px;
+        .grabber-3R-Rx9 {
+            height: 16px;
+            width: 10px;
+        }
     }
 }
 
 // Inner message scroller in pinned / inbox
-.layerContainer-2lfOPe [class^="header-"]+ :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
+.layerContainer-2lfOPe [class^="header-"] + :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
     @include boxes.box;
     margin: 0 6px 6px 6px;
 
@@ -123,7 +112,6 @@
 
         .friendRequestsButton-77veU7,
         .secondary-2bzKEX {
-
             &,
             &:hover {
                 color: $black;
@@ -161,7 +149,6 @@
 
     // Messages
     :is(.scroller-145h9c, .messagesPopout-eVzQcI, .container-1A0qQO) {
-
         .tertiary-1e-lAP {
             @include boxes.clickable;
 
@@ -225,7 +212,6 @@
     @include boxes.box;
 
     .header-3_zmOb {
-
         .divider-2xk5N2,
         .spacer-180E7A {
             display: none;
@@ -275,17 +261,22 @@
     }
 }
 
-// Dropdown
-.searchableSelect-S6iCGx {
-    @include boxes.box;
-    left: 1px;
-    top: -2px;
+// Dropdown options
+.popout-15UxD6 {
+    @include boxes.box($isInset: true);
     background: $white;
+
     .option-Uc12mm {
-        height: 16px!important;
-        padding: 10px 4px;
+        padding: 4px 8px;
+
+        .content-1xEk7l {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; 
+        }
+
         .selectedIcon-122rMx {
-            color: $green;
+            color: $darkblue;
         }
     }
 }

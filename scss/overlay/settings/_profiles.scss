@@ -79,20 +79,6 @@
     background: none;
 }
 
-// Server selector
-.wrapper-mJT04A {
-    @include boxes.box($isInset: true);
-
-    .select-Zz0IcO {
-        padding: 0 4px;
-    }
-
-    .iconsContainer-1qihUz {
-        height: auto;
-        margin-right: 0;
-    }
-}
-
 // Server nickname
 .inputWrapper-2K8ds1 {
     @include boxes.box($isInset: true);

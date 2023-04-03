@@ -6,8 +6,13 @@
     transform: scale(1) !important;
 
     .container-1eFtFS {
-        filter: grayscale(90%) brightness(0.5);
+        filter: grayscale(0.8) brightness(0.5);
+        backdrop-filter: brightness(1);
     }
+}
+
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV {
+    transform: none !important;
 }
 
 .layer-86YKbF {

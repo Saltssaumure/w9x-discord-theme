@@ -1,6 +1,13 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 
+// Update banners
+#bd-notices {
+    position: absolute;
+    width: 100vw;
+}
+
+// Settings sidebar
 .bd-sidebar-header {
     h2 {
         color: $black;
@@ -57,6 +64,10 @@
     color: $black;
 }
 
+.bd-setting-divider {
+    display: none;
+}
+
 // Searchbar
 .bd-search-wrapper {
     @include boxes.box($isInset: true);
@@ -104,7 +115,7 @@
 }
 
 .bd-switch-body {
-    --switch-color: #{$grey};
+    --switch-color: #{$darkgrey};
 }
 
 .bd-switch input:checked+.bd-switch-body {

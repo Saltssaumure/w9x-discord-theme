@@ -6,9 +6,10 @@
 .friendRequestsButton-77veU7,
 .button-1_oXub,
 .lookFilled-1H2Jvj,
-.lookLink-13iF2K,
+// .lookLink-13iF2K,
 .lookOutlined-3RTC7c,
-.lookBlank-FgPMy6 // maybe not this one since it seems to affect chatbox buttons too
+.lookInverted-2GrLaB
+//.lookBlank-FgPMy6 // maybe not this one since it seems to affect chatbox buttons too
 {
     @include boxes.clickable;
 }
@@ -22,11 +23,19 @@
     }
 }
 
-.lookFilled-1H2Jvj.colorBrand-2M3O3N {
-    color: $black;
-    background: $lightgrey;
-    &:hover,
-    &:active {
+.lookFilled-1H2Jvj {
+    &.colorBrand-2M3O3N,
+    &.colorBrand-2M3O3N:disabled,
+    &.colorBrand-2M3O3N[aria-disabled=true],
+    &.colorBrandNew-abZT3v {
+        color: $black;
         background: $lightgrey;
+        &:hover,
+        &:active {
+            background: $lightgrey;
+        }
+    }
+    &.colorPrimary-2-Lusz {
+        color: $black;
     }
 }

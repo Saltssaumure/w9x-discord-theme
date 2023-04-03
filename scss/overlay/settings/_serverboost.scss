@@ -1,0 +1,59 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.divider-1wnNcY {
+    display: none;
+}
+
+.featureHeaderTop-3ex4-1,
+.featureHeader-3aMbm3,
+.features-2OVNMp,
+.guildFullFeatures-2jRvaJ,
+.guildsSection-30CJxX,
+.guilds-XTTuu3 {
+    margin-top: 8px;
+}
+
+.features-2OVNMp {
+    grid-gap: 0;
+    .feature-LzXyUM {
+        @include boxes.box($isInset: true);
+        padding: 4px;
+    }
+}
+
+.guildsSection-30CJxX {
+    border-top: 0;
+    padding-top: 8px;
+    margin-bottom: 8px;
+
+    .guilds-XTTuu3 {
+        grid-gap: 4px;
+    }
+
+    .card-2xlCYc {
+        @include boxes.clickable;
+        padding: 8px;
+
+        &:hover {
+            background: $grey;
+        }
+        
+        .circle-1BhSZ2 {
+            display: none;
+        }
+
+        .gemIndicatorContainer-PqApbX {
+            @include boxes.box($isInset: true);
+            background: $grey;
+            
+            .tierLabel-3MVAnX {
+                color: $black;
+            }
+        }
+    }
+}
+
+.tier0Heading-2YgtFI {
+    margin-bottom: 8px;
+}

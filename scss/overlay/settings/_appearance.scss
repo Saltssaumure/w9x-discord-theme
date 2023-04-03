@@ -1,0 +1,31 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+#appearance-tab {
+
+    .preview-QJ3OG3 {
+        background: $white;
+        @include boxes.box($isInset: true);
+    }
+
+    .presets-2zm9Ir {
+        gap: 8px;
+
+        .themeSelection-2u4ce0 {
+            box-shadow: none;
+            @include boxes.clickable;
+
+            &.selected-2FbEJt {
+                @include boxes.box($isInset: true);
+            }
+            
+            &.darkIcon-e6uv7V {
+                background: $black;
+            }
+        }
+
+        .selectionCircle-3s5Uex {
+            display: none;
+        }
+    }
+}

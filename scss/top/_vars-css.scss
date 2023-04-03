@@ -84,7 +84,6 @@
     --button-danger-background-disabled: #{$red};
     --button-danger-background-hover: #{$red};
 
-
     --button-outline-brand-background: hsl(var(--white-500-hsl)/0);
     --button-outline-brand-background-active: var(--brand-560);
     --button-outline-brand-background-hover: var(--brand-500);
@@ -130,8 +129,8 @@
     --button-positive-background-disabled: #{$green};
     --button-positive-background-hover: #{$green};
 
-    --button-secondary-background: var(--primary-500);
-    --button-secondary-background-active: var(--primary-400);
-    --button-secondary-background-disabled: var(--primary-500);
-    --button-secondary-background-hover: var(--primary-430);
+    --button-secondary-background: #{$grey};
+    --button-secondary-background-active: #{$grey};
+    --button-secondary-background-disabled: #{$grey};
+    --button-secondary-background-hover: #{$grey};
 }
