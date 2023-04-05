@@ -6,17 +6,32 @@
     --__header-bar-background: #{$grey};
 }
 
+// Tags
+.pill-3pRQlO {
+    @include boxes.clickable;
+    background: $grey;
+    &.selected-24z1Ou {
+        @include boxes.box($isInset: true);
+        background: $grey;
+    }
+}
+
 // Main container
 .container-3wLKDe {
     @include boxes.box($isInset: true);
     background: $white;
 
-    // Tags
-    .pill-3pRQlO {
-        @include boxes.clickable;
-        &.selected-24z1Ou {
-            @include boxes.box($isInset: true);
-            background: unset;
+    // Post tags
+    .tags-2UGy2I {
+        gap: 0;
+
+        & > :is(.pinIcon-3I5-gm, .tagPill-1kSbg) {
+            @include boxes.box;
+            background: $grey;
+
+            path {
+                fill: $black;
+            }
         }
     }
 
@@ -25,9 +40,37 @@
         z-index: 2;
     }
 
-    // Not have left-right padding on everything
+    // Not have left-right padding on everything in list mode
     .list-3FIpnh .content-yjf30S {
         padding: 0;
+    }
+
+    // The same in gallery mode
+    .content-yjf30S {
+        // Everything but post cards
+        & > div:first-child {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: auto !important;
+
+            .headerRow-1MKoR- {
+                width: auto !important;
+            }
+        }
+
+        // Post card container
+        & > div:last-child {
+            position: relative !important;
+            top: 16px !important;
+            left: 0 !important;
+            width: auto !important;
+
+            // Tag area in text posts
+            .textContentFooter-2JnNv8 {
+                background: transparent;
+            }
+        }
     }
 
     // Everything but post cards
@@ -225,34 +268,84 @@ li.card-2JNtco {
     padding: 0;
     margin: 8px;
     @include boxes.clickable;
+}
 
-    .container-2qVG6q {
-        &:hover:not(.isOpen-2OXbFs),
-        &:active:not(.isOpen-2OXbFs) {
+:is(.container-2qVG6q, .container-1PloNW) {
+    &:not(.isOpen-2OXbFs, .isOpen-O7ANQc) {
+        &:hover,
+        &:active {
             background-color: var(--background-primary);
             transform: none;
         }
+    }
 
-        &.isOpen-2OXbFs {
-            --text-normal: #{$white};
-            --text-muted: #{$white};
-            --header-secondary: #{$white};
-            --background-secondary-alt: var(--background-modifier-selected);
-            @include boxes.box($isInset: true);
+    &:is(.isOpen-2OXbFs, .isOpen-O7ANQc) {
+        --text-normal: #{$white};
+        --text-muted: #{$white};
+        --header-secondary: #{$white};
+        --background-secondary-alt: var(--background-modifier-selected);
+        --interactive-normal: #{$white};
+        --interactive-muted: #{$white};
+        @include boxes.box($isInset: true);
+
+        // Text content
+        .contentPreview-3fWiuC {
+            --text-muted: #{$darkgrey};
         }
 
-        // Post tags
-        .tags-2UGy2I {
-            gap: 0;
-
-            & > div {
-                @include boxes.box;
-            }
-        }
-
-        // Post image preview
-        .thumbnailContainer-2XSRmY {
-            @include boxes.box($isInset: true);
+        // Tags
+        .pill-3pRQlO {
+            --text-normal: #{$black};
         }
     }
+
+    // Post content preview
+    .thumbnailContainer-2XSRmY,
+    .contentPreview-3fWiuC,
+    .bodyMedia-3UL0Kl {
+        @include boxes.box($isInset: true);
+    }
+
+    // Text content
+    .contentPreview-3fWiuC {
+        background: $white;
+    }
+}
+
+// Opened post
+// Post alert options bar
+.container-3YcgdM {
+    position: absolute;
+    z-index: 0;
+    border-top: 0;
+    margin-top: 0;
+    top: 28px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    padding-right: 4px;
+    background: transparent;
+    box-shadow: none;
+
+    .buttons-BK5gED {
+        gap: 0;
+
+        .buttonInner-3aRbcx {
+            @include boxes.clickable;
+            height: 20px;
+
+            &:hover {
+                color: $black;
+            }
+
+            &:has(path[d^="M8.99991 16.17"]) {
+                @include boxes.box($isInset: true);
+            }
+        }
+    }
+}
+
+// OP post and post replies divider
+.divider-AZrXIA {
+    display: none;
 }
