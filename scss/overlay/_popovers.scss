@@ -33,7 +33,7 @@
     }
 
     // Checkbox
-    .icon-3XHs8t:has(:is(.checkbox-397WsK, path[d^="M12 20C16.4183"])) {
+    .icon-3XHs8t:has(:is(.checkbox-397WsK, path[d^="M12 20C16.4183"]), path[d^="M18.625 3"]) {
         @include boxes.box($isInset: true);
         background: $white;
         width: 12px;

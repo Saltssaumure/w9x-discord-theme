@@ -21,7 +21,27 @@
     padding-bottom: 0;
 }
 
-// Message buttons
+// With members list visible
+.base-2jDfDU:has(.membersWrap-3NUR2t) {
+    
+    // VC video controls
+    .bottomControls-31YuPK {
+        width: auto;
+        padding-right: 150px;
+    }
+
+    // Message
+    .message-2CShn3 {
+        padding-right: 140px !important;
+
+        // Message actions
+        .container-2gUZhU {
+            right: 130px;
+        }
+    }
+}
+
+// Message actions
 .wrapper-2vIMkT {
     height: auto;
 

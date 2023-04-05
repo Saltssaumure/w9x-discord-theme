@@ -1,0 +1,258 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Channel header
+.forumOrHome-2VTX6r {
+    --__header-bar-background: #{$grey};
+}
+
+// Main container
+.container-3wLKDe {
+    @include boxes.box($isInset: true);
+    background: $white;
+
+    // Tags
+    .pill-3pRQlO {
+        @include boxes.clickable;
+        &.selected-24z1Ou {
+            @include boxes.box($isInset: true);
+            background: unset;
+        }
+    }
+
+    // New post bubble
+    .newPostsButton-UaBhcU {
+        z-index: 2;
+    }
+
+    // Not have left-right padding on everything
+    .list-3FIpnh .content-yjf30S {
+        padding: 0;
+    }
+
+    // Everything but post cards
+    .headerRow-1MKoR- {
+        padding: 0;
+
+        // Filter by tags bar
+        .tagsContainer-2bBw1x {
+            @include boxes.box;
+            background: $grey;
+            padding: 2px 12px;
+
+            // Sort and view dropdown
+            .sortDropdown-hY93nR {
+                margin-bottom: 0;
+                &[aria-expanded="true"] {
+                    @include boxes.box($isInset: true);
+                }
+            }
+
+            .divider-2bkesd {
+                display: none;
+            }
+
+            .tagListInner-35MqcW {
+                gap: 0;
+            }
+        }
+
+        // Matching post count bar
+        .matchingPostsRow-2IiEQ1 {
+            @include boxes.box;
+        }
+
+        // Search/create posts bar
+        .mainCard-3KBsBI {
+            margin-top: 0;
+            @include boxes.box;
+
+            // Search button and guidelines button
+            :is(.prefixElement-1U4XhR, .guidelinesButton-3Vrz0u) {
+                @include boxes.clickable;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                height: 30px;
+                width: 30px;
+
+                &:hover {
+                    color: $black;
+                }
+
+                div {
+                    height: 24px;
+                    width: 24px;
+
+                    .closeIcon-3xe5xL:hover {
+                        color: $black;
+                    }
+                }
+            }
+
+            // Search / title bar
+            .inputWrapper-2K8ds1 {
+                background: $white;
+            }
+
+            // Post message
+            .contentContainer-2xwoXK {
+                padding-left: 32px;
+
+                div {
+                    background: $white;
+
+                    .channelTextArea-1VQBuV {
+                        width: auto;
+                    }
+                }
+            }
+
+            // Post attachments
+            .container-3Om6RL {
+                align-self: flex-end;
+
+                .uploadInput-3fblkw {
+                    @include boxes.clickable;
+                    height: 76px;
+                    width: 76px;
+                    &:hover .uploadIcon-M15owY {
+                        color: $black;
+                    }
+                }
+
+                // Attachment not image type
+                .icon-2bPCaV {
+                    // background-image: none;
+                    @include boxes.box;
+                }
+
+                // Attachment is image type
+                .imageContainer-ZRSemj > div:not([aria-expanded="false"]),
+                .imageContainer-ZRSemj > div:not([aria-expanded="false"]) > div {
+                    max-height: 76px;
+                    max-width: 76px;
+
+                    .imageSmall-308hjB {
+                        height: 76px;
+                    }
+                }
+
+                // Number of attachments
+                .badge-39TqBS {
+                    z-index: 1;
+                    background: $darkblue;
+                }
+
+                // Attachments popout
+                .popoutContainer-26yHc8 {
+                    z-index: 1;
+                    @include boxes.box;
+                    position: absolute;
+                    padding: 0;
+                    top: -8px;
+                    right: -8px;
+
+                    // Scroller
+                    .popout-2vZMlk {
+                        padding-bottom: 0;
+
+                        &::-webkit-scrollbar-track,
+                        &::-webkit-scrollbar-thumb,
+                        &::-webkit-scrollbar-button {
+                            visibility: hidden;
+                        }
+
+                        // Attachment controls
+                        .actionBarContainer-2BJ5hs {
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+
+            // Create post button
+            .submitButton-3B-dZd {
+                height: 30px;
+            }
+
+            // Divider
+            .tagsDivider-3LhkLA {
+                display: none;
+            }
+
+            // Post tags
+            .tagsContainer-3rSFH5 {
+                margin-left: 8px;
+                margin-top: 0px;
+                .tagListInner-1mCauI {
+                    gap: 0;
+                }
+            }
+
+            // Post bar
+            .controlsContainer-2BcSvj {
+                justify-content: flex-start;
+                gap: 0;
+                margin-top: 0;
+
+                // Add emoji button
+                .expression-picker-chat-input-button {
+                    @include boxes.clickable;
+                    justify-content: center;
+                    height: 30px;
+                    width: 30px;
+                }
+
+                .controls-3EanmI {
+                    flex-grow: initial;
+                    gap: 0;
+
+                    // Slowmode warning
+                    .wrappedControls-1xJezP {
+                        order: 1;
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Post card
+li.card-2JNtco {
+    padding: 0;
+    margin: 8px;
+    @include boxes.clickable;
+
+    .container-2qVG6q {
+        &:hover:not(.isOpen-2OXbFs),
+        &:active:not(.isOpen-2OXbFs) {
+            background-color: var(--background-primary);
+            transform: none;
+        }
+
+        &.isOpen-2OXbFs {
+            --text-normal: #{$white};
+            --text-muted: #{$white};
+            --header-secondary: #{$white};
+            --background-secondary-alt: var(--background-modifier-selected);
+            @include boxes.box($isInset: true);
+        }
+
+        // Post tags
+        .tags-2UGy2I {
+            gap: 0;
+
+            & > div {
+                @include boxes.box;
+            }
+        }
+
+        // Post image preview
+        .thumbnailContainer-2XSRmY {
+            @include boxes.box($isInset: true);
+        }
+    }
+}
