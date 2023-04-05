@@ -220,3 +220,84 @@
 :is(.theme-dark, .theme-light) .markdown-19oyJN {
     color: $black;
 }
+
+// Floating editors
+#floating-editor-window,
+#floating-windows-layer [id^="bd-floating-window-"] {
+    @include boxes.box;
+
+    .floating-window-titlebar {
+        @include boxes.winBar($text: "", $bgColor: $darkblue);
+        width: auto;
+
+        .title {
+            font-size: 1rem;
+            padding: 0;
+            color: $grey;
+        }
+
+        .button {
+            @include boxes.clickable;
+            background: $grey;
+            height: 18px;
+            width: 22px;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    #bd-editor-controls {
+        z-index: 0;
+        padding: 2px;
+        padding-top: 0;
+
+        .btn-primary {
+            @include boxes.clickable;
+            margin-right: 0;
+
+            &:hover,
+            &:active {
+                background: $grey;
+                color: $black;
+            }
+        }
+
+        .checkbox-item {
+            @include boxes.clickable;
+            cursor: pointer;
+            height: 24px;
+
+            &:has(.checkbox:checked) {
+                @include boxes.box($isInset: true);
+            }
+
+            .checkbox-label {
+                width: 100%;
+                margin: 6px;
+            }
+
+            .checkbox-wrapper,
+            .checkbox-inner,
+            .checkbox {
+                position: absolute;
+                width: 100%;
+                margin: 0;
+                height: 100%;
+            }
+
+            .checkbox {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .editor-wrapper {
+        @include boxes.box($isInset: true);
+
+        &::before {
+            top: -2px;
+        }
+    }
+}
