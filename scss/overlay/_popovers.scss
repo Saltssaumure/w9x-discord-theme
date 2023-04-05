@@ -1,6 +1,7 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 
+// Small menus
 .menu-2TXYjN {
     background: $grey;
     box-shadow: none;
@@ -73,7 +74,6 @@
 
     // Slider
     .mini-28oMa3 {
-
         .bar-2H7Q9u {
             height: 4px;
         }
@@ -87,7 +87,7 @@
 
 // Inner message scroller in pinned / inbox
 .layerContainer-2lfOPe [class^="header-"] + :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
-    @include boxes.box;
+    @include boxes.box($isInset: true);
     margin: 0 6px 6px 6px;
 
     &::before {
@@ -102,6 +102,7 @@
 
     // Header
     .header-145e10.expanded-2H1xJ- {
+        padding: 6px;
         padding-bottom: 0;
 
         .inboxIcon-1XO7FO,
@@ -142,6 +143,10 @@
                     background: $grey;
                     color: $black;
                     z-index: 1;
+                }
+
+                &:first-child {
+                    border-left-color: $black;
                 }
             }
         }
@@ -272,11 +277,67 @@
         .content-1xEk7l {
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap; 
+            white-space: nowrap;
         }
 
         .selectedIcon-122rMx {
             color: $darkblue;
+        }
+    }
+}
+
+// User profiles
+.userProfileOuter-2tQwNf {
+    @include boxes.box;
+    .userProfileInner-1ngKnf {
+        // Avatar
+        .avatarWrapper-eenWra {
+            @include boxes.clickable;
+            position: absolute;
+            &:active {
+                position: absolute;
+            }
+        }
+
+        // Profile badges
+        .profileBadges-2pItdR {
+            gap: 0;
+            padding: 0;
+            .clickable-1knRMS {
+                @include boxes.clickable;
+                padding: 2px;
+            }
+        }
+
+        // Inner box
+        .userPopoutOverlayBackground-3A0Pcz {
+            @include boxes.box;
+
+            // Divider
+            .divider-2dDziJ {
+                display: none;
+            }
+
+            // About me
+            .scroller-15bIdk {
+                @include boxes.box($isInset: true);
+
+                // Roles
+                .role-2TIOKu {
+                    @include boxes.box;
+                    margin-right: 0;
+                }
+
+                // Note
+                .note-1NN2aP {
+                    @include boxes.box($isInset: true);
+                }
+
+                // Activity buttons
+                .vertical-qPeOMD > :not(:first-child) {
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
