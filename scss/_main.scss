@@ -13,7 +13,8 @@
 
 // Overall background
 .bg-1QIAus {
-    background: $turquoise;
+    background-image: var(--w9x-background-image, none);
+    background-color: var(--w9x-background-color, #{$turquoise});
 }
 
 // Top bar
