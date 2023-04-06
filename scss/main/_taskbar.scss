@@ -13,7 +13,7 @@
 // Taskbar
 .wrapper-1_HaEi .scroller-3X7KbA {
     @include boxes.box($isRotate: true);
-    background: $grey;
+    background: var(--background-secondary);
 
     border-bottom: 0;
     &::before {
@@ -78,7 +78,6 @@ body #app-mount .guilds-2JjMmN {
     height: calc(100vw - $panel-width) !important;
     left: calc(100vw - $panel-width);
     z-index: 0;
-    background: $grey;
 }
 
 // Control panel
@@ -89,7 +88,6 @@ body #app-mount .guilds-2JjMmN {
     height: 44px!important;
     bottom: 0;
     left: calc(100vw - $panel-width);
-    background: $grey;
 
     border-left: 0;
     &::before {
@@ -101,7 +99,6 @@ body #app-mount .guilds-2JjMmN {
 .container-YkUktl {
     height: var(--server-container);
     flex-direction: row-reverse;
-    background: transparent;
     gap: 6px;
 }
 
@@ -110,19 +107,18 @@ body #app-mount .guilds-2JjMmN {
     @include boxes.clickable;
     &.enabled-9OeuTA:hover,
     &:active {
-        background: $grey;
-        color: $black;
+        background: inherit;
+        color: inherit;
     }
 }
 
 // User
 .avatarWrapper-1B9FTW {
     @include boxes.box($isInset: true);
-    background: $grey;
     margin-right: 0;
 }
 .withTagAsButton-OsgQ9L:hover,
 .withTagless-10ooWt:hover {
-    background: $grey;
-    color: $black;
+    background: inherit;
+    color: inherit;
 }

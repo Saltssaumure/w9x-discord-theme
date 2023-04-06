@@ -5,13 +5,13 @@
 .messagesWrapper-RpOMA3 {
     margin-bottom: 24px;
     @include boxes.box($isInset: true);
-    background: $white;
+    background: var(--w9x-background);
 }
 
 // Placeholder messages
 .wrapper-3HVHpV,
 .wrapper-15CKyy {
-    background: $white;
+    background: var(--w9x-background);
 }
 
 // Jump to present bar and other bottom bars
@@ -23,7 +23,6 @@
 
 // With members list visible
 .base-2jDfDU:has(.membersWrap-3NUR2t) {
-    
     // VC video controls
     .bottomControls-31YuPK {
         width: auto;
@@ -48,13 +47,23 @@
     .button-3bklZh {
         @include boxes.clickable;
         padding: 0;
-
-        &:hover,
-        &:active {
-            background: unset;
-            color: $black;
-        }
     }
+}
+
+// Text
+.description-22d6ux,
+.markup-eYLPri,
+.container-x059i8,
+.header-1dhDWV,
+.username-h_Y3Us,
+.repliedTextPlaceholder-1Njd47,
+.subtitle-C_i4IN {
+    color: var(--w9x-text);
+}
+
+// Blockquote
+.blockquoteDivider-363utW {
+    background: $grey;
 }
 
 // Attachments
@@ -76,15 +85,12 @@
 
 .textContainer-36wgKK {
     @include boxes.box($isInset: true);
-    background: $white;
+    background: var(--w9x-background);
 
     code {
-        background: $white;
+        background: var(--w9x-background);
+        color: var(--w9x-text);
     }
-}
-
-.downloadSection-20OayS:hover {
-    color: $black;
 }
 
 .downloadButton-2PkwZg {
@@ -92,27 +98,23 @@
     padding: 0;
     margin-top: 5px;
     margin-left: 6px;
-
-    .downloadSection-20OayS:hover & {
-        color: $black;
-    }
 }
 
 .codeIcon-Ni8XUA {
     @include boxes.clickable;
     padding: 0;
-
-    &:hover {
-        color: $black;
-    }
 }
 
 // Play pause video button
 .iconWrapper-XpfprW {
-    @include boxes.box;
+    @include boxes.clickable;
     opacity: 1;
     background: $grey;
     color: $black;
+}
+
+.cover-Stx3Vt.active-1N2Uz6:active .iconWrapper-XpfprW {
+    transform: none;
 }
 
 // Download / delete / alt txt button
@@ -128,14 +130,9 @@
     }
 }
 
-// Alt txt button
-.mediaMosaicAltText-1FnVZd {
-    position: absolute;
-    background: $grey;
-    color: $black;
-    &:active {
-        position: absolute;
-    }
+// Embed source site
+.embedProvider-1GSN0c {
+    color: var(--text-normal);
 }
 
 // Music and video controls
@@ -220,33 +217,30 @@
 .reactionBtn-3I19bq:hover,
 .reactionBtn-3I19bq:active {
     .icon-1q31jb {
-        color: $black;
+        color: var(--w9x-text);
     }
 }
-
 
 // Open thread button
 .container-3i3IzO {
     @include boxes.clickable;
 }
 
-
-// Links??
+// Links
 .content-vSHmMD a {
     color: var(--text-link);
 }
 
-
 // Channel/user mentions
-.wrapper-1ZcZW- {
+.wrapper-1ZcZW-:is(.channelMention, .mention) {
     @include boxes.clickable;
 }
 
+// Hovered mentions
 .interactive:hover {
     color: var(--mention-foreground);
     background: var(--mention-background);
 }
-
 
 // Spoiler text
 .messageContent-2t3eCI {
@@ -257,12 +251,17 @@
 
     .spoilerText-2G40u0 {
         @include boxes.box($isInset: true);
+        background: var(--w9x-background);
     }
 }
-
 
 // Code blocks
 .markup-eYLPri code {
     @include boxes.box;
-    background: $white;
+    background: var(--w9x-background);
+}
+
+// Editors
+.editor-H2NA06 {
+    caret-color: var(--w9x-text);
 }

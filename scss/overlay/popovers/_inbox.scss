@@ -1,0 +1,75 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Inbox
+.recentMentionsPopout-2bI1ZN {
+    @include boxes.box;
+    max-height: calc(100vh - $window-top - 120px) !important;
+
+    // Header
+    .header-145e10.expanded-2H1xJ- {
+        padding: 6px;
+        padding-bottom: 0;
+
+        .inboxIcon-1XO7FO,
+        .base-3IDx3L {
+            color: $black;
+            background: transparent !important;
+        }
+
+        .topPill-2vcLsa {
+            position: relative;
+            top: 17px;
+
+            .tab-TRrPC8 {
+                @include boxes.box;
+                margin-right: 0;
+                border-bottom-color: transparent;
+                border-radius: 4px 4px 0 0;
+
+                &::before {
+                    border-bottom: 0;
+                }
+
+                &.selected-1sf9UK {
+                    background: $grey;
+                    z-index: 1;
+                }
+
+                &:first-child {
+                    border-left-color: $black;
+                }
+            }
+        }
+    }
+
+    // Messages
+    :is(.scroller-145h9c, .messagesPopout-eVzQcI, .container-1A0qQO) {
+        .tertiary-1e-lAP {
+            @include boxes.clickable;
+
+            &:hover {
+                background: $grey;
+            }
+        }
+
+        .markReadButton-28SmPf {
+            margin-left: 0;
+        }
+
+        :is(.messageContainer-3VTXBC, .messages-23can0) {
+            @include boxes.box($isInset: true);
+            background: var(--w9x-background);
+
+            // Jump button
+            :is(.jumpButton-1ITAeq, .jumpButton-1V_1FA) {
+                @include boxes.clickable;
+                position: absolute;
+
+                &:active {
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

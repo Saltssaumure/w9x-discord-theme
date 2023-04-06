@@ -1,0 +1,27 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Dropdowns
+.popout-15UxD6 {
+    @include boxes.box($isInset: true);
+    background: var(--w9x-background);
+
+    .option-Uc12mm {
+        padding: 4px 8px;
+        color: var(--w9x-text);
+
+        &[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+            background: $lightgrey;
+        }
+
+        .content-1xEk7l {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .selectedIcon-122rMx {
+            color: $darkblue;
+        }
+    }
+}

@@ -34,58 +34,140 @@
     }
 }
 
+// .theme-light {
+//     --deprecated-text-input-bg: #{$white};
+//     --channeltextarea-background: #{$white};
+//     --input-background: #{$white};
+//     --home-background: #{$white};
+
+//     --text-normal: #{$black};
+//     --text-muted: #{$darkgrey};
+
+//     --header-primary: #{$black};
+//     --header-secondary: #{$darkgrey};
+
+//     --interactive-normal: #{$black};
+//     --interactive-hover: #{$white};
+//     --interactive-active: #{$white};
+//     --interactive-muted: #{$black};
+
+//     --channels-default: #{$black};
+//     --channel-icon: #{$black};
+// }
+
+// .theme-dark {
+//     --deprecated-text-input-bg: #{$black};
+//     --channeltextarea-background: #{$black};
+//     --input-background: #{$black};
+//     --home-background: #{$black};
+
+//     --text-normal: #{$white};
+//     --text-muted: #{$lightgrey};
+
+//     --header-primary: #{$black};
+//     --header-secondary: #{$lightgrey};
+
+//     --interactive-normal: #{$white};
+//     --interactive-hover: #{$black};
+//     --interactive-active: #{$black};
+//     --interactive-muted: #{$white};
+
+//     --channels-default: #{$white};
+//     --channel-icon: #{$white};
+// }
+
+// .theme-light,
+// .theme-dark {
+//     --background-primary: #{$grey};
+//     --background-secondary: #{$grey};
+//     --background-secondary-alt: #{$grey};
+//     --background-tertiary: #{$grey};
+//     --background-modifier-hover: #{$darkblue};
+//     --background-modifier-selected: #{$darkblue};
+//     --background-modifier-active: #{$darkblue};
+//     --background-accent: #{$darkgrey};
+//     --background-floating: #{$beige};
+
+//     --deprecated-card-bg: #{$grey};
+//     --deprecated-card-editable-bg: #{$grey};
+
+//     --modal-background: #{$grey};
+//     --modal-footer-background: #{$grey};
+
+
+
+
+// }
+
+// Everything else
 .theme-light,
 .theme-dark {
+    // Main bg colour for main window
     --background-primary: #{$grey};
-    --background-secondary: #{$grey};
-    --background-secondary-alt: #{$grey};
-    --background-tertiary: #{$grey};
-    --background-modifier-hover: #{$darkblue};
-    --background-modifier-selected: #{$darkblue};
-    --background-modifier-active: #{$darkblue};
-    --background-accent: #{$darkgrey};
-    --background-floating: #{$beige};
 
+    // BG for attached items in chatbox?
+    --background-secondary: #{$grey};
+
+    // Clicked emotes
+    --background-secondary-alt: #{$grey};
+
+    // Main window header bar search
+    // --background-tertiary: #{$white};
+
+    // Hovered tags in forum
+    --background-tertiary: #{$grey};
+
+    // Hovered message action buttons
+    --background-modifier-hover: transparent;
+    --background-modifier-active: #{$grey};
+    --background-modifier-selected: #{$grey};
+
+    // User profile centre piece
+    --background-floating: #{$grey};
+
+    // Channel typing area
+    --channeltextarea-background: var(--w9x-background);
+    
+    // BD number input bg
+    --deprecated-text-input-bg: var(--w9x-background);
+
+    // Authorised apps bg
     --deprecated-card-bg: #{$grey};
-    --deprecated-card-editable-bg: #{$grey};
-    --deprecated-text-input-bg: #{$white};
+
+    // Input bg
+    --input-background: var(--w9x-background);
+
+    // Black text always
+    --interactive-normal: #{$black};
+    --interactive-muted: #{$black};
+    --interactive-hover: #{$black};
+    --interactive-active: #{$black};
 
     --text-normal: #{$black};
-    --text-link: #{$blue};
     --text-muted: #{$darkgrey};
-    --text-positive: #{$green};
-    --text-brand: #{$darkblue};
-
     --header-primary: #{$black};
-    --header-secondary: #{$darkgrey};
+    --header-secondary: #{$black};
 
-    --interactive-normal: #{$black};
-    --interactive-hover: #{$white};
-    --interactive-active: #{$white};
-    --interactive-muted: #{$black};
-
-    --input-background: #{$white};
-
-    --channels-default: #{$black};
-    --channel-icon: #{$black};
-
-    --channeltextarea-background: #{$white};
-
-    --home-background: #{$white};
-    --modal-background: #{$grey};
-    --modal-footer-background: #{$grey};
-
+    // Channel/user mentions
     --mention-foreground: #{$white};
     --mention-background: #{$darkblue};
 
+    // Special text
+    --text-link: #{$blue};
+    --text-positive: #{$green};
+    --text-danger: #{$red};
+    --text-brand: #{$darkblue};
+
+    // Status colours
     --status-danger: #{$red};
 
+    // Buttons
     --button-danger-background: #{$red};
     --button-danger-background-active: #{$red};
     --button-danger-background-disabled: #{$red};
     --button-danger-background-hover: #{$red};
 
-    --button-outline-brand-background: hsl(var(--white-500-hsl)/0);
+    --button-outline-brand-background: hsl(var(--white-500-hsl) / 0);
     --button-outline-brand-background-active: var(--brand-560);
     --button-outline-brand-background-hover: var(--brand-500);
     --button-outline-brand-border: var(--brand-500);
@@ -115,7 +197,7 @@
     --button-outline-positive-text-active: #{$black};
     --button-outline-positive-text-hover: #{$black};
 
-    --button-outline-primary-background: hsl(var(--white-500-hsl)/0);
+    --button-outline-primary-background: hsl(var(--white-500-hsl) / 0);
     --button-outline-primary-background-active: var(--primary-430);
     --button-outline-primary-background-hover: var(--primary-500);
     --button-outline-primary-border: var(--primary-500);
@@ -134,4 +216,15 @@
     --button-secondary-background-active: #{$grey};
     --button-secondary-background-disabled: #{$grey};
     --button-secondary-background-hover: #{$grey};
+}
+
+// Everything not grey boxes?
+.theme-light {
+    --w9x-background: #{$white};
+    --w9x-text: #{$black};
+}
+
+.theme-dark {
+    --w9x-background: #{$black};
+    --w9x-text: #{$lightgrey};
 }

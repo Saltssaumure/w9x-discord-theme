@@ -15,7 +15,6 @@
         &:hover,
         &.selected-1sf9UK {
             border-bottom-color: $darkblue;
-            color: $black;
         }
 
         &.selected-1sf9UK {
@@ -82,9 +81,11 @@
 // Server nickname
 .inputWrapper-2K8ds1 {
     @include boxes.box($isInset: true);
+    background: var(--w9x-background);
 
     .input-3O04eu {
         padding: 0 4px;
         height: 24px;
+        color: var(--w9x-text);
     }
 }

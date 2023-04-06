@@ -15,16 +15,6 @@
         margin-right: 0;
     }
 
-    // Button icons
-    .active-z80xEj .buttonWrapper-3YFQGJ,
-    .buttonWrapper-3YFQGJ:hover,
-    .button-2fCJ0o:hover {
-        color: $black;
-    }
-    .attachButton-_ACFSu:hover .attachButtonPlus-3IYelE {
-        fill: $black;
-    }
-
     // Attachment area divider
     .divider-2rZFJK {
         display: none;
@@ -62,12 +52,6 @@
                 width: 16px;
                 padding: 0;
                 min-width: unset;
-
-                &:hover,
-                &:active {
-                    background: unset;
-                    color: $black;
-                }
             }
         }
 

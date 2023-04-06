@@ -71,17 +71,29 @@
 // Searchbar
 .bd-search-wrapper {
     @include boxes.box($isInset: true);
-    background: $white;
+    background: var(--w9x-background);
+
+    .bd-search {
+        color: var(--w9x-text);
+    }
+}
+
+// Number input
+.bd-number-input {
+    @include boxes.box($isInset: true);
+    color: var(--w9x-text);
 }
 
 // Dropdown selector
 .bd-select {
     @include boxes.box($isInset: true);
     padding: 0;
+    background: var(--w9x-background);
+    color: var(--w9x-text);
 
     &.bd-select-transparent {
         @include boxes.box($isInset: true);
-        background: $white;
+        background: var(--w9x-background);
         align-items: center;
     }
 
@@ -96,7 +108,7 @@
     .bd-select-options {
         @include boxes.box($isInset: true);
         position: absolute;
-        background: $white;
+        background: var(--w9x-background);
 
         .bd-select-option {
             padding: 4px 8px;
@@ -184,6 +196,10 @@
 
     :is(.bd-addon-header, .bd-description-wrap, .bd-footer) {
         padding: 0;
+    }
+
+    .bd-meta {
+        color: $darkgrey;
     }
 
     .bd-addon-header .bd-icon {

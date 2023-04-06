@@ -1,0 +1,78 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// User profiles
+.userProfileOuter-2tQwNf {
+    @include boxes.box;
+
+    &.userProfileOuterThemed-2BgJCM {
+        &.theme-dark {
+            --interactive-active: #{$white};
+            --header-primary: #{$grey};
+            --header-secondary: #{$grey};
+            --text-normal: #{$lightgrey};
+        }
+    }
+
+    .userProfileInner-1ngKnf {
+        // Avatar
+        .avatarWrapper-eenWra {
+            @include boxes.clickable;
+            position: absolute;
+            &:active {
+                position: absolute;
+            }
+        }
+
+        // Profile badges
+        .profileBadges-2pItdR {
+            gap: 0;
+            padding: 0;
+            .clickable-1knRMS {
+                @include boxes.clickable;
+                padding: 2px;
+            }
+        }
+
+        // Inner box
+        .userPopoutOverlayBackground-3A0Pcz {
+            @include boxes.box;
+
+            // Divider
+            .divider-2dDziJ {
+                background-color: transparent;
+            }
+
+            // About me
+            .scroller-15bIdk {
+                @include boxes.box($isInset: true);
+
+                code,
+                .blockquoteDivider-363utW {
+                    background: $darkgrey;
+                }
+
+                // Roles
+                .role-2TIOKu {
+                    @include boxes.box;
+                    margin-right: 0;
+                }
+
+                // Note
+                .note-1NN2aP {
+                    @include boxes.box($isInset: true);
+                    background: var(--w9x-background);
+
+                    textarea {
+                        color: var(--w9x-text);
+                    }
+                }
+
+                // Activity buttons
+                .vertical-qPeOMD > :not(:first-child) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

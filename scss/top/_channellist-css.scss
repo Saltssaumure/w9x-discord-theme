@@ -1,0 +1,37 @@
+@use "vars-scss" as *;
+
+// For channel list style only
+@mixin vars() {
+    // Main bg colour for channellist
+    --background-secondary: #{$grey};
+
+    // Server name
+    --header-primary: #{$black};
+
+    // Channel name and icon
+    --channels-default: #{$black};
+    --channel-icon: #{$black};
+
+    // Highlighted channel
+    --background-modifier-hover: #{$darkblue};
+    --background-modifier-selected: #{$darkblue};
+    --background-modifier-active: #{$darkblue};
+
+    // Black text when not hovered
+    // White text when hovered
+    --interactive-normal: #{$black};
+    --interactive-muted: #{$black};
+    --interactive-hover: #{$white};
+    --interactive-active: #{$white};
+
+    // VC limit counter
+    --background-primary: #{$lightgrey};
+    --background-tertiary: #{$lightgrey};
+
+    // Show all VC button
+    --background-secondary-alt: #{$grey};
+    --text-normal: #{$black};
+
+    // Control panel user info
+    --header-secondary: #{$darkgrey};
+}

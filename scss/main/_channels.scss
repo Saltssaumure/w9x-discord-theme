@@ -1,8 +1,10 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
+@use "../top/channellist-css" as channels;
 
 // Channels sidebar
 .sidebar-1tnWFu {
+    @include channels.vars;
     @include boxes.box;
     position: absolute;
     bottom: 0;
@@ -15,13 +17,13 @@
         width: 28px;
         height: 100%;
         $textPad: 10px;
-        top: - $textPad;
+        top: -$textPad;
         padding-top: $textPad;
         background: $darkgrey;
         font-size: 1.6rem;
-        font-family: 'Franklin Gothic Bold', 'Arial Narrow', Arial, sans-serif;
+        font-family: "Franklin Gothic Bold", "Arial Narrow", Arial, sans-serif;
         font-weight: 900;
-        color: $grey;
+        color: var(--background-secondary);
         writing-mode: vertical-lr;
         transform: rotate(180deg);
     }
@@ -35,7 +37,7 @@
 }
 
 // Header
-.header-3OsQeK {
+:not(.bannerVisible-Vkyg1I) > .header-3OsQeK {
     @include boxes.clickable;
     box-shadow: none;
 }
@@ -45,12 +47,18 @@
     background: unset;
 }
 
+// Public server indicator
+.communityInfoPill-2Mll66 {
+    @include boxes.box;
+    z-index: 1;
+}
+
 // Boost goal
 .container-2giAcK {
     margin: 2px;
 
     .goalText-mbRUAP {
-        color: $black !important;
+        color: var(--channels-default) !important;
     }
 
     .progressBarContainer-1efroK {
@@ -68,7 +76,7 @@
 
 // Channel group
 .wrapper-1S43wv:is(.muted-19J0ih:hover, :hover) :is(.icon-3zI3d2, .name-3BUDLf) {
-    color: $black;
+    color: var(--channels-default);
 }
 
 // Add channel button
@@ -77,7 +85,7 @@
     height: 20px;
 
     .addButtonIcon-3rJeaD:hover {
-        color: $black;
+        color: var(--channels-default);
     }
 }
 
@@ -92,11 +100,11 @@
 
     .actionIcon-2sw4Sl {
         @include boxes.clickable;
-        background: $grey;
+        background: var(--background-secondary);
     }
 
     &:hover .actionIcon-2sw4Sl {
-        color: $black;
+        color: var(--channels-default);
     }
 
     &.openChatIconItem-2kj5qO {
@@ -104,9 +112,15 @@
     }
 }
 
+// Show all VC button
+.voiceChannelsButton-SRmgo8 {
+    @include boxes.clickable;
+    color: var(--channels-default);
+}
+
 // Unread bubble
 .unreadRelevant-2f-VSK {
-    background: $black;
+    background: var(--channels-default);
     z-index: 1;
 }
 
@@ -116,7 +130,7 @@
 .notInteractive-2tFrlE.modeConnected-NrO4cP,
 .notInteractive-2tFrlE.modeSelected-3DmyhH {
     .name-28HaxV {
-        color: $black;
+        color: var(--channels-default);
     }
 }
 
@@ -124,13 +138,13 @@
 .content-1gYQeQ:hover,
 .modeSelected-3DmyhH,
 .modeSelected-3DmyhH:hover,
-.modeUnread-3Cxepe:hover,
-.modeMuted-2T4MDZ:hover {
+.modeUnread-3Cxepe:hover:not(.typeThread-2Aqh6X),
+.modeMuted-2T4MDZ:hover:not(.typeThread-2Aqh6X) {
     .icon-2W8DHg {
-        color: $white;
+        color: var(--interactive-hover);
     }
 
     .unreadRelevant-2f-VSK {
-        background: $white;
+        background: var(--interactive-hover);
     }
 }

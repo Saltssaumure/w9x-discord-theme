@@ -48,6 +48,18 @@
             fill: $darkblue;
         }
     }
+
+    .removeGame-3V7nss {
+        @include boxes.clickable;
+        position: absolute;
+        right: -12px;
+        background-color: $grey;
+        z-index: 1;
+
+        &:active {
+            position: absolute;
+        }
+    }
 }
 
 // Technically a popover

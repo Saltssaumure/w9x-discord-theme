@@ -76,7 +76,7 @@
     @include boxes.mainWindow();
 }
 
-// Make space for top bar
+// Header bars
 .container-2cd8Mz .container-ZMc96U,
 .pageWrapper-2PwDoS .scroller-3j5xK2,
 .scroller-RfJjkV .viewWrapper-oqUsis,
@@ -104,10 +104,6 @@
 
             .icon-tZMHgY {
                 @include boxes.clickable;
-
-                &:hover .icon-18rqoe {
-                    color: $black;
-                }
             }
         }
     }
@@ -125,18 +121,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        &:hover .icon-2xnN2Y {
-            color: $black;
-        }
-
-        &.selected-29KTGM {
-            @include boxes.box($isInset: true);
-
-            .icon-2xnN2Y {
-                color: $black;
-            }
-        }
 
         .count-vTKEhF {
             margin: 4px;

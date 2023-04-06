@@ -1,0 +1,21 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Pinned messages
+.messagesPopoutWrap-3zryHW {
+    @include boxes.box;
+
+    .header-1w9Q93 {
+        padding: 6px;
+        box-shadow: none;
+    }
+
+    .messageGroupWrapper-1jf_7C {
+        @include boxes.box($isInset: true);
+        background: var(--w9x-background);
+
+        .jumpButton-1ZwI_j {
+            @include boxes.clickable;
+        }
+    }
+}

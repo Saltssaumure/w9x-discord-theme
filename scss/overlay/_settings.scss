@@ -21,6 +21,7 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 @use "../top/shortcutIcon" as ico;
+@use "../top/channellist-css" as channels;
 
 // User settings menu
 .standardSidebarView-E9Pc3j {
@@ -28,6 +29,7 @@
     margin-bottom: $window-bottom + 46px;
 
     .sidebarRegion-1VBisG {
+        @include channels.vars;
         flex-grow: 0;
 
         .sidebar-nqHbhN {
@@ -201,6 +203,7 @@
 
     .value-2en4z7 {
         padding-left: 8px;
+        color: var(--w9x-text);
     }
 
     .icons-2ibyma {

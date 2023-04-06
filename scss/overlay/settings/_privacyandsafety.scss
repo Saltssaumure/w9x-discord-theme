@@ -6,12 +6,6 @@
     @include boxes.clickable;
     margin: 0;
 
-    &[aria-checked="true"],
-    &:hover:not([aria-checked=true]):not(.disabled-WBmOu_) {
-        background: unset;
-        color: unset;
-    }
-
     &[aria-checked="true"] {
         @include boxes.box($isInset: true);
     }

@@ -12,14 +12,13 @@
     background: $grey;
     &.selected-24z1Ou {
         @include boxes.box($isInset: true);
-        background: $grey;
     }
 }
 
 // Main container
 .container-3wLKDe {
     @include boxes.box($isInset: true);
-    background: $white;
+    background: var(--w9x-background);
 
     // Post tags
     .tags-2UGy2I {
@@ -120,23 +119,11 @@
                 height: 30px;
                 width: 30px;
 
-                &:hover {
-                    color: $black;
-                }
-
+                // Close button
                 div {
                     height: 24px;
                     width: 24px;
-
-                    .closeIcon-3xe5xL:hover {
-                        color: $black;
-                    }
                 }
-            }
-
-            // Search / title bar
-            .inputWrapper-2K8ds1 {
-                background: $white;
             }
 
             // Post message
@@ -144,7 +131,7 @@
                 padding-left: 32px;
 
                 div {
-                    background: $white;
+                    background: var(--w9x-background);
 
                     .channelTextArea-1VQBuV {
                         width: auto;
@@ -160,14 +147,10 @@
                     @include boxes.clickable;
                     height: 76px;
                     width: 76px;
-                    &:hover .uploadIcon-M15owY {
-                        color: $black;
-                    }
                 }
 
                 // Attachment not image type
                 .icon-2bPCaV {
-                    // background-image: none;
                     @include boxes.box;
                 }
 
@@ -271,6 +254,10 @@ li.card-2JNtco {
 }
 
 :is(.container-2qVG6q, .container-1PloNW) {
+    .markup-eYLPri {
+        color: var(--text-normal);
+    }
+
     &:not(.isOpen-2OXbFs, .isOpen-O7ANQc) {
         &:hover,
         &:active {
@@ -280,23 +267,7 @@ li.card-2JNtco {
     }
 
     &:is(.isOpen-2OXbFs, .isOpen-O7ANQc) {
-        --text-normal: #{$white};
-        --text-muted: #{$white};
-        --header-secondary: #{$white};
-        --background-secondary-alt: var(--background-modifier-selected);
-        --interactive-normal: #{$white};
-        --interactive-muted: #{$white};
         @include boxes.box($isInset: true);
-
-        // Text content
-        .contentPreview-3fWiuC {
-            --text-muted: #{$darkgrey};
-        }
-
-        // Tags
-        .pill-3pRQlO {
-            --text-normal: #{$black};
-        }
     }
 
     // Post content preview
@@ -308,7 +279,11 @@ li.card-2JNtco {
 
     // Text content
     .contentPreview-3fWiuC {
-        background: $white;
+        background: var(--w9x-background);
+
+        .markup-eYLPri {
+            color: var(--w9x-text);
+        }
     }
 }
 
@@ -333,10 +308,6 @@ li.card-2JNtco {
         .buttonInner-3aRbcx {
             @include boxes.clickable;
             height: 20px;
-
-            &:hover {
-                color: $black;
-            }
 
             &:has(path[d^="M8.99991 16.17"]) {
                 @include boxes.box($isInset: true);

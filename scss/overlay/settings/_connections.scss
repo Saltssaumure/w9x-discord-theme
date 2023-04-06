@@ -6,10 +6,6 @@
     @include boxes.box;
     padding: 8px;
 
-    .connectHeader-2VkFiv {
-        color: $black !important;
-    }
-
     .connectionsContainer-3wRUc6 {
         margin-top: 4px;
         gap: 0;
@@ -17,10 +13,6 @@
         .inner-1lPVFp,
         .accountAddInner-2y9WLL {
             @include boxes.clickable;
-
-            &:hover {
-                background-color: unset;
-            }
         }
     }
 }
@@ -39,10 +31,6 @@
             .connectionDelete-3YgMVq {
                 margin: 0;
                 align-self: flex-start;
-
-                &:hover {
-                    color: $black;
-                }
 
                 svg {
                     height: 24px;
@@ -64,10 +52,6 @@
         .metadataContainer-35U-On {
             padding: 0 8px;
             margin: 0;
-
-            .text-xs-normal-3O7EaX {
-                color: $black !important;
-            }
         }
 
         .connectionOptionsWrapper-3aVWcp {

@@ -7,10 +7,6 @@
     padding: 8px;
 
     .sessionMoreButton-2cApSx {
-        &:hover {
-            color: $black;
-        }
-
         svg {
             @include boxes.clickable;
         }

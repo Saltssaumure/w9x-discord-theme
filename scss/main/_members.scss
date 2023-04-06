@@ -1,8 +1,10 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
+@use "../top/channellist-css" as channels;
 
 // Members list
 .membersWrap-3NUR2t {
+    @include channels.vars;
     @include boxes.box;
     @include boxes.winBar($isPseudo: true, $text: "Members");
     position: fixed;
@@ -17,4 +19,14 @@
 // Members list scroller
 .members-3WRCEx {
     margin-top: $title-height;
+
+    // Member
+    .member-2gU6Ar {
+        margin-left: 4px;
+
+        // Custom status or activity
+        &:hover .activityText-1rR-8O {
+            color: var(--interactive-hover);
+        }
+    }
 }
