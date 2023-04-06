@@ -1,0 +1,55 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Threads
+.browser-mnQ1T7 {
+    @include boxes.box;
+
+    .header-3_zmOb {
+        .divider-2xk5N2,
+        .spacer-180E7A {
+            display: none;
+        }
+
+        .searchBox-3IjAC1 {
+            @include boxes.box($isInset: true);
+            background: var(--w9x-background);
+
+            .input-2m5SfJ {
+                color: var(--w9x-text);
+            }
+
+            .iconLayout-3Bjizv {
+                @include boxes.clickable;
+                background: $grey;
+            }
+        }
+
+        .createButton-oruGBs {
+            height: 26px;
+        }
+
+        .closeIcon-11tHJX {
+            @include boxes.clickable;
+            height: 24px;
+        }
+
+        .searchBox-3IjAC1,
+        .createButton-oruGBs {
+            margin-right: 0;
+        }
+    }
+
+    .container-2rzKKA {
+        @include boxes.clickable;
+    }
+
+    .jump-1vIlrw {
+        @include boxes.clickable;
+        position: absolute;
+
+        &:active {
+            position: absolute;
+        }
+    }
+}

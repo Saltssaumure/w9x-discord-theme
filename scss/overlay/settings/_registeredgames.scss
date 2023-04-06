@@ -1,0 +1,73 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+#game-activity-tab {
+
+    .gameName-zbZetm {
+        color: $black;
+    }
+
+    .lastPlayed-1jum9A,
+    .overlayStatusText-In0YrK {
+        color: $darkgrey;
+    }
+
+    .activeGame-1OdxzI {
+        @include boxes.box;
+    }
+
+    .nowPlayingAdd-3I4RbE {
+        color: $black;
+    }
+
+    .card-2ART2V {
+        @include boxes.box;
+        padding: 8px;
+
+        .gameNameInput-2wbDJ9 {
+            &:focus,
+            &:hover {
+                background: $white;
+                @include boxes.box($isInset: true);
+            }
+        }
+
+        .overlayToggleIcon-1WRcQ9 {
+            @include boxes.clickable;
+
+            .overlayToggleIconOn-21NN2N .fill-297bdf {
+                fill: $darkgrey;
+            }
+
+            .overlayToggleIconOff-ps4gGp rect {
+                fill: var(--status-danger);
+            }
+        }
+
+        .flowerStar-2tNFCR path {
+            fill: $darkblue;
+        }
+    }
+
+    .removeGame-3V7nss {
+        @include boxes.clickable;
+        position: absolute;
+        right: -12px;
+        background-color: $grey;
+        z-index: 1;
+
+        &:active {
+            position: absolute;
+        }
+    }
+}
+
+// Technically a popover
+.animatorBottom-1jjd1i .addGamePopout-2SKNIV {
+    background: $grey;
+    @include boxes.box;
+
+    .actions-3c4xJH {
+        margin-top: 8px;
+    }
+}

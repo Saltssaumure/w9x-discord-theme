@@ -1,0 +1,230 @@
+@use "vars-scss" as *;
+
+@font-face {
+    font-family: w95;
+    src: url("https://saltssaumure.github.io/w9x-discord-theme/font/w95fa.woff2");
+}
+
+@font-face {
+    font-family: FixedSys;
+    src: url("https://saltssaumure.github.io/w9x-discord-theme/font/FSEX300.ttf");
+}
+
+:root {
+    --font-primary: "w95", "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "w95", "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-headline: "w95", "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:root,
+:root:lang(bg),
+:root:lang(el),
+:root:lang(ru),
+:root:lang(uk) {
+    --font-code: "FixedSys", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+        "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+// Colour sync stuff
+:root {
+    .container-2IKOsH,
+    .header-3xB4vB,
+    .container-1um7CU {
+        background: var(--background-primary);
+    }
+}
+
+// .theme-light {
+//     --deprecated-text-input-bg: #{$white};
+//     --channeltextarea-background: #{$white};
+//     --input-background: #{$white};
+//     --home-background: #{$white};
+
+//     --text-normal: #{$black};
+//     --text-muted: #{$darkgrey};
+
+//     --header-primary: #{$black};
+//     --header-secondary: #{$darkgrey};
+
+//     --interactive-normal: #{$black};
+//     --interactive-hover: #{$white};
+//     --interactive-active: #{$white};
+//     --interactive-muted: #{$black};
+
+//     --channels-default: #{$black};
+//     --channel-icon: #{$black};
+// }
+
+// .theme-dark {
+//     --deprecated-text-input-bg: #{$black};
+//     --channeltextarea-background: #{$black};
+//     --input-background: #{$black};
+//     --home-background: #{$black};
+
+//     --text-normal: #{$white};
+//     --text-muted: #{$lightgrey};
+
+//     --header-primary: #{$black};
+//     --header-secondary: #{$lightgrey};
+
+//     --interactive-normal: #{$white};
+//     --interactive-hover: #{$black};
+//     --interactive-active: #{$black};
+//     --interactive-muted: #{$white};
+
+//     --channels-default: #{$white};
+//     --channel-icon: #{$white};
+// }
+
+// .theme-light,
+// .theme-dark {
+//     --background-primary: #{$grey};
+//     --background-secondary: #{$grey};
+//     --background-secondary-alt: #{$grey};
+//     --background-tertiary: #{$grey};
+//     --background-modifier-hover: #{$darkblue};
+//     --background-modifier-selected: #{$darkblue};
+//     --background-modifier-active: #{$darkblue};
+//     --background-accent: #{$darkgrey};
+//     --background-floating: #{$beige};
+
+//     --deprecated-card-bg: #{$grey};
+//     --deprecated-card-editable-bg: #{$grey};
+
+//     --modal-background: #{$grey};
+//     --modal-footer-background: #{$grey};
+
+
+
+
+// }
+
+// Everything else
+.theme-light,
+.theme-dark {
+    // Main bg colour for main window
+    --background-primary: #{$grey};
+
+    // BG for attached items in chatbox?
+    --background-secondary: #{$grey};
+
+    // Clicked emotes
+    --background-secondary-alt: #{$grey};
+
+    // Main window header bar search
+    // --background-tertiary: #{$white};
+
+    // Hovered tags in forum
+    --background-tertiary: #{$grey};
+
+    // Hovered message action buttons
+    --background-modifier-hover: transparent;
+    --background-modifier-active: #{$grey};
+    --background-modifier-selected: #{$grey};
+
+    // User profile centre piece
+    --background-floating: #{$grey};
+
+    // Channel typing area
+    --channeltextarea-background: var(--w9x-background);
+    
+    // BD number input bg
+    --deprecated-text-input-bg: var(--w9x-background);
+
+    // Authorised apps bg
+    --deprecated-card-bg: #{$grey};
+
+    // Input bg
+    --input-background: var(--w9x-background);
+
+    // Black text always
+    --interactive-normal: #{$black};
+    --interactive-muted: #{$black};
+    --interactive-hover: #{$black};
+    --interactive-active: #{$black};
+
+    --text-normal: #{$black};
+    --text-muted: #{$darkgrey};
+    --header-primary: #{$black};
+    --header-secondary: #{$black};
+
+    // Channel/user mentions
+    --mention-foreground: #{$white};
+    --mention-background: #{$darkblue};
+
+    // Special text
+    --text-link: #{$blue};
+    --text-positive: #{$green};
+    --text-danger: #{$red};
+    --text-brand: #{$darkblue};
+
+    // Status colours
+    --status-danger: #{$red};
+
+    // Buttons
+    --button-danger-background: #{$red};
+    --button-danger-background-active: #{$red};
+    --button-danger-background-disabled: #{$red};
+    --button-danger-background-hover: #{$red};
+
+    --button-outline-brand-background: hsl(var(--white-500-hsl) / 0);
+    --button-outline-brand-background-active: var(--brand-560);
+    --button-outline-brand-background-hover: var(--brand-500);
+    --button-outline-brand-border: var(--brand-500);
+    --button-outline-brand-border-active: var(--brand-560);
+    --button-outline-brand-border-hover: var(--brand-500);
+    --button-outline-brand-text: var(--white-500);
+    --button-outline-brand-text-active: var(--white-500);
+    --button-outline-brand-text-hover: var(--white-500);
+
+    --button-outline-danger-background: transparent;
+    --button-outline-danger-background-active: #{$red};
+    --button-outline-danger-background-hover: #{$red};
+    --button-outline-danger-border: #{$red};
+    --button-outline-danger-border-active: #{$red};
+    --button-outline-danger-border-hover: #{$red};
+    --button-outline-danger-text: #{$black};
+    --button-outline-danger-text-active: #{$black};
+    --button-outline-danger-text-hover: #{$black};
+
+    --button-outline-positive-background: transparent;
+    --button-outline-positive-background-active: #{$green};
+    --button-outline-positive-background-hover: #{$green};
+    --button-outline-positive-border: #{$green};
+    --button-outline-positive-border-active: #{$green};
+    --button-outline-positive-border-hover: #{$green};
+    --button-outline-positive-text: #{$black};
+    --button-outline-positive-text-active: #{$black};
+    --button-outline-positive-text-hover: #{$black};
+
+    --button-outline-primary-background: hsl(var(--white-500-hsl) / 0);
+    --button-outline-primary-background-active: var(--primary-430);
+    --button-outline-primary-background-hover: var(--primary-500);
+    --button-outline-primary-border: var(--primary-500);
+    --button-outline-primary-border-active: var(--primary-430);
+    --button-outline-primary-border-hover: var(--primary-500);
+    --button-outline-primary-text: var(--white-500);
+    --button-outline-primary-text-active: var(--white-500);
+    --button-outline-primary-text-hover: var(--white-500);
+
+    --button-positive-background: #{$green};
+    --button-positive-background-active: #{$green};
+    --button-positive-background-disabled: #{$green};
+    --button-positive-background-hover: #{$green};
+
+    --button-secondary-background: #{$grey};
+    --button-secondary-background-active: #{$grey};
+    --button-secondary-background-disabled: #{$grey};
+    --button-secondary-background-hover: #{$grey};
+}
+
+// Everything not grey boxes?
+.theme-light {
+    --w9x-background: #{$white};
+    --w9x-text: #{$black};
+}
+
+.theme-dark {
+    --w9x-background: #{$black};
+    --w9x-text: #{$lightgrey};
+}

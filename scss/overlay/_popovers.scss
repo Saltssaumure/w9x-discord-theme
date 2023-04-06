@@ -1,0 +1,19 @@
+@use "popovers/dropdown";
+@use "popovers/inbox";
+@use "popovers/menus";
+@use "popovers/pinned";
+@use "popovers/threads";
+@use "popovers/userprofiles";
+
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Inner message scroller in pinned / inbox
+.layerContainer-2lfOPe [class^="header-"] + :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
+    @include boxes.box($isInset: true);
+    margin: 0 6px 6px 6px;
+
+    &::before {
+        display: none;
+    }
+}

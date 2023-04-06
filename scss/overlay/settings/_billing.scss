@@ -1,0 +1,15 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+#billing-tab {
+
+    .codeRedemptionRedirect-2hYMSQ {
+        background: $grey;
+        color: $black;
+        @include boxes.box;
+    }
+
+    .subText-1gefwV {
+        color: $darkgrey;
+    }
+}

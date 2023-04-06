@@ -1,0 +1,67 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Main chat with thread open
+.chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI).threadSidebarOpen-1LSXvU {
+    border-right: 0;
+
+    &::before {
+        border-right: 0;
+    }
+
+    // Message needs no indent as member list cannot be visible at once.
+    .chatContent-3KubbW .message-2CShn3 {
+        margin-right: 0 !important;
+    }
+
+    // Neither does autocompleter
+    .autocomplete-3NRXG8 {
+        width: auto !important;
+    }
+}
+
+// Threads not video chat
+.content-1SgpWY> {
+
+    // Main chat / thread separator
+    .resizeHandle-PBRzPC {
+        @include boxes.box;
+        background: $grey;
+        position: relative;
+        right: $window-right;
+        margin: $window-top 0 $window-bottom 0;
+        height: auto;
+        border-left: 0;
+        border-right: 0;
+
+        &::before {
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+
+    // Thread panel
+    .container-3XgAHv {
+        position: relative;
+        margin: $window-top 0 $window-bottom 0;
+        right: $window-right;
+        max-width: 100%;
+        border-left: 0;
+
+        &::before {
+            border-left: 0;
+        }
+    }
+
+    // Floating thread panel for narrow screens
+    .chatLayerWrapper-2mgEK- {
+        top: $title-height;
+        right: 0;
+        bottom: 0;
+        height: auto;
+
+        .chatTarget-3H6mpC {
+            display: none;
+        }
+    }
+}

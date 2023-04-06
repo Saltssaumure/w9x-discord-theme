@@ -1,0 +1,14 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// # Devices
+.session-9khLqt {
+    @include boxes.box;
+    padding: 8px;
+
+    .sessionMoreButton-2cApSx {
+        svg {
+            @include boxes.clickable;
+        }
+    }
+}

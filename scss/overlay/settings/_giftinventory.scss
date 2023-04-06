@@ -1,0 +1,22 @@
+@use "../../top/vars-scss" as *;
+
+#library-inventory-tab {
+    
+    .codeRedemptionInput-3K_ItZ {
+        margin-right: 0;
+        .input-3O04eu {
+            height: 100%;
+        }
+    }
+
+    .heading-md-semibold-2h_vsp {
+        margin-top: 8px;
+    }
+}
+
+.emptyState-2cl8KX {
+    .emptyStateHeader-Wexj4l,
+    .emptyStateSubtext-29V2rK {
+        color: $black;
+    }
+}

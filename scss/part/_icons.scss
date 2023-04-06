@@ -1,0 +1,40 @@
+@use "../top/vars-scss" as *;
+@use "../top/shortcutIcon" as sc;
+
+// Top bar (not in DMs)
+.toolbar-3_r2xA {
+
+    // Move help icon
+    .anchor-1X4H4q .iconWrapper-2awDjA:only-of-type {
+        $image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAYUExURXsAewAAAHt9e3t9AP//AL2+vf///wAAALUfaqUAAAAIdFJOU/////////8A3oO9WQAAAAlwSFlzAAALbAAAC2wBUklGNQAAALBJREFUOE/Fz8EWgzAIRFEkifn/Py4BJDNx0VVPWbQe3xWNzC/zByBy5VXOAURNEGGwug0SAtltNkEQvfXegACI3n3WVZANnv32eOyI8xTY76+XxH3/hW6VPiIB9hb7FQHu92x9ALB1l99u8XXeGag6ecDqA44p1xhJfLwrHNPAfd9FsCN4CPUEIqpFqAeY68Ei1BMQoV4ACHUARagTSEL9AE6ov4CR/M95g2N+Dub8AOK+FDIVX50FAAAAAElFTkSuQmCC");
+        @include sc.makeIcon(50px, auto, ".icon-2xnN2Y", $image);
+        top: $window-top + 90px;
+    }
+
+    // Move show/hide member list button
+    .iconWrapper-2awDjA:is(#{sc.makeSelectors()}) {
+        // Use this when :has() comes to stable
+        // .iconWrapper-2awDjA:has(path[d*="M14 8.00598"]) {
+        $image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAhUExURXt9e72+vf///wAAAAB9ewD//wAAewAA/wD/AAB9AAAAAGqqxmQAAAALdFJOU/////////////8ASk8B8gAAAAlwSFlzAAALbAAAC2wBUklGNQAAAMhJREFUOE+FkwkSxCAIBInukfj/B+9wVRSI22XlkFaRGBoOJbRbroCOQKMu/RLFvUVoEajZuJsk2MIGvwehz5TCa6IW3jp6I8hWNgK6P18gTw+Cz/EgcPZbgQN/BN9HJVgJjULgySeyEIHAR8KFAsSP7oImt4I4VhHBhkQkDRbyaVLguGB5BUpB5haCcJ4qWIIgCNelgqL/wCJU3AIe8JvEhkKg2BBwTFKQG3X+GCRxvKSGC+KY3qoS4TKrYBlFLI4lbNsJCY/xAw14DnPdYrX4AAAAAElFTkSuQmCC");
+        @include sc.makeIcon(auto, 50px, ".icon-2xnN2Y", $image);
+    }
+}
+
+// Gift nitro button
+.buttons-uaqb-5>.button-ejjZWC {
+    $image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAhUExURYCAgMDAwACAgAAA/wCAAAAAAP////8AAIAAAAAAgAAAAKu4jYQAAAALdFJOU/////////////8ASk8B8gAAAAlwSFlzAAALbAAAC2wBUklGNQAAARFJREFUOE9t0guShCAMBNDwU+H+B97uTkAGN1U6FP0IOGpjlZnxUsUUag0xm5JZTlZyzi+JQcS8as2l1jrJ/JmxE1XzRPdh1/0lyhZ47uckjeHb4b6va5FGkDt2ecEDEKSlltmBx3BghuwhAEGcGh+k9tq0TYAoB9qi9gB2OSgvKNyj194d5A/oBQURz5omAHGAtRLR4T+AvOOoDuKQG8gC3oHpB5gadADF3w6YgxBg/AWJyxxoaIw2kDjbOv8ovJwFSAgU2wsoAqBmTMCXdYIV7wBCzTWcMQA/ugnQAxnKMxVzAJ5J69QhMpWDMVoQ3ncQnwJvTlQRxgFQAhs54gUWOeINBDniHyByxAcgiUHUGH+i9ROnjFTAkgAAAABJRU5ErkJggg==");
+    @include sc.makeIcon(50px, auto, ".buttonWrapper-3YFQGJ", $image);
+    top: $window-top;
+
+    .button-3BaQ4X {
+        margin: 0;
+
+        .buttonWrapper-3YFQGJ {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

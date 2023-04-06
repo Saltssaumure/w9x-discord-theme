@@ -1,0 +1,29 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+.baseLayer-W6S8cY.stop-animations {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+
+    .container-1eFtFS {
+        filter: grayscale(0.8) brightness(0.5);
+        backdrop-filter: brightness(1);
+    }
+}
+
+.layers-OrUESM > .layer-86YKbF.animating-1rIrGV {
+    transform: none !important;
+}
+
+.layer-86YKbF {
+    background: transparent;
+}
+
+.pictureInPictureWindow-3ms5Zy {
+    overflow: visible;
+    border-radius: 0;
+
+    &::before {
+        left: -2px;
+    }
+}

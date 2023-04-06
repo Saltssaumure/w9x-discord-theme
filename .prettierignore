@@ -1,0 +1,14 @@
+.github
+.parcel-cache
+
+node_modules
+dist
+bundle
+src
+
+LICENSE
+*.md
+*.code-workspace
+
+*.min.css
+*.theme.css

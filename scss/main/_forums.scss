@@ -1,0 +1,322 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Channel header
+.forumOrHome-2VTX6r {
+    --__header-bar-background: #{$grey};
+}
+
+// Tags
+.pill-3pRQlO {
+    @include boxes.clickable;
+    background: $grey;
+    &.selected-24z1Ou {
+        @include boxes.box($isInset: true);
+    }
+}
+
+// Main container
+.container-3wLKDe {
+    @include boxes.box($isInset: true);
+    background: var(--w9x-background);
+
+    // Post tags
+    .tags-2UGy2I {
+        gap: 0;
+
+        & > :is(.pinIcon-3I5-gm, .tagPill-1kSbgP) {
+            @include boxes.box;
+            background: $grey;
+
+            path {
+                fill: $black;
+            }
+        }
+    }
+
+    // New post bubble
+    .newPostsButton-UaBhcU {
+        z-index: 2;
+    }
+
+    // Not have left-right padding on everything in list mode
+    .list-3FIpnh .content-yjf30S {
+        padding: 0;
+    }
+
+    // The same in gallery mode
+    .content-yjf30S {
+        // Everything but post cards
+        & > div:first-child {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: auto !important;
+
+            .headerRow-1MKoR- {
+                width: auto !important;
+            }
+        }
+
+        // Post card container
+        & > div:last-child {
+            position: relative !important;
+            top: 16px !important;
+            left: 0 !important;
+            width: auto !important;
+
+            // Tag area in text posts
+            .textContentFooter-2JnNv8 {
+                background: transparent;
+            }
+        }
+    }
+
+    // Everything but post cards
+    .headerRow-1MKoR- {
+        padding: 0;
+
+        // Filter by tags bar
+        .tagsContainer-2bBw1x {
+            @include boxes.box;
+            background: $grey;
+            padding: 2px 12px;
+
+            // Sort and view dropdown
+            .sortDropdown-hY93nR {
+                margin-bottom: 0;
+                &[aria-expanded="true"] {
+                    @include boxes.box($isInset: true);
+                }
+            }
+
+            .divider-2bkesd {
+                display: none;
+            }
+
+            .tagListInner-35MqcW {
+                gap: 0;
+            }
+        }
+
+        // Matching post count bar
+        .matchingPostsRow-2IiEQ1 {
+            @include boxes.box;
+        }
+
+        // Search/create posts bar
+        .mainCard-3KBsBI {
+            margin-top: 0;
+            @include boxes.box;
+
+            // Search button and guidelines button
+            :is(.prefixElement-1U4XhR, .guidelinesButton-3Vrz0u) {
+                @include boxes.clickable;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                height: 30px;
+                width: 30px;
+
+                // Close button
+                div {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+
+            // Post message
+            .contentContainer-2xwoXK {
+                padding-left: 32px;
+
+                div {
+                    background: var(--w9x-background);
+
+                    .channelTextArea-1VQBuV {
+                        width: auto;
+                    }
+                }
+            }
+
+            // Post attachments
+            .container-3Om6RL {
+                align-self: flex-end;
+
+                .uploadInput-3fblkw {
+                    @include boxes.clickable;
+                    height: 76px;
+                    width: 76px;
+                }
+
+                // Attachment not image type
+                .icon-2bPCaV {
+                    @include boxes.box;
+                }
+
+                // Attachment is image type
+                .imageContainer-ZRSemj > div:not([aria-expanded="false"]),
+                .imageContainer-ZRSemj > div:not([aria-expanded="false"]) > div {
+                    max-height: 76px;
+                    max-width: 76px;
+
+                    .imageSmall-308hjB {
+                        height: 76px;
+                    }
+                }
+
+                // Number of attachments
+                .badge-39TqBS {
+                    z-index: 1;
+                    background: $darkblue;
+                }
+
+                // Attachments popout
+                .popoutContainer-26yHc8 {
+                    z-index: 1;
+                    @include boxes.box;
+                    position: absolute;
+                    padding: 0;
+                    top: -8px;
+                    right: -8px;
+
+                    // Scroller
+                    .popout-2vZMlk {
+                        padding-bottom: 0;
+
+                        &::-webkit-scrollbar-track,
+                        &::-webkit-scrollbar-thumb,
+                        &::-webkit-scrollbar-button {
+                            visibility: hidden;
+                        }
+
+                        // Attachment controls
+                        .actionBarContainer-2BJ5hs {
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+
+            // Create post button
+            .submitButton-3B-dZd {
+                height: 30px;
+            }
+
+            // Divider
+            .tagsDivider-3LhkLA {
+                display: none;
+            }
+
+            // Post tags
+            .tagsContainer-3rSFH5 {
+                margin-left: 8px;
+                margin-top: 0px;
+                .tagListInner-1mCauI {
+                    gap: 0;
+                }
+            }
+
+            // Post bar
+            .controlsContainer-2BcSvj {
+                justify-content: flex-start;
+                gap: 0;
+                margin-top: 0;
+
+                // Add emoji button
+                .expression-picker-chat-input-button {
+                    @include boxes.clickable;
+                    justify-content: center;
+                    height: 30px;
+                    width: 30px;
+                }
+
+                .controls-3EanmI {
+                    flex-grow: initial;
+                    gap: 0;
+
+                    // Slowmode warning
+                    .wrappedControls-1xJezP {
+                        order: 1;
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Post card
+li.card-2JNtco {
+    padding: 0;
+    margin: 8px;
+    @include boxes.clickable;
+}
+
+:is(.container-2qVG6q, .container-1PloNW) {
+    .markup-eYLPri {
+        color: var(--text-normal);
+    }
+
+    &:not(.isOpen-2OXbFs, .isOpen-O7ANQc) {
+        &:hover,
+        &:active {
+            background-color: var(--background-primary);
+            transform: none;
+        }
+    }
+
+    &:is(.isOpen-2OXbFs, .isOpen-O7ANQc) {
+        @include boxes.box($isInset: true);
+    }
+
+    // Post content preview
+    .thumbnailContainer-2XSRmY,
+    .contentPreview-3fWiuC,
+    .bodyMedia-3UL0Kl {
+        @include boxes.box($isInset: true);
+    }
+
+    // Text content
+    .contentPreview-3fWiuC {
+        background: var(--w9x-background);
+
+        .markup-eYLPri {
+            color: var(--w9x-text);
+        }
+    }
+}
+
+// Opened post
+// Post alert options bar
+.container-3YcgdM {
+    position: absolute;
+    z-index: 0;
+    border-top: 0;
+    margin-top: 0;
+    top: 28px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    padding-right: 4px;
+    background: transparent;
+    box-shadow: none;
+
+    .buttons-BK5gED {
+        gap: 0;
+
+        .buttonInner-3aRbcx {
+            @include boxes.clickable;
+            height: 20px;
+
+            &:has(path[d^="M8.99991 16.17"]) {
+                @include boxes.box($isInset: true);
+            }
+        }
+    }
+}
+
+// OP post and post replies divider
+.divider-AZrXIA {
+    display: none;
+}

@@ -1,0 +1,107 @@
+@function makeSelectors() {
+    $labels: ("Vis medlemsliste",
+        "Skjul medlemsliste",
+        "Mitgliederliste ausblenden",
+        "Mitgliederliste anzeigen",
+        "Show Member List",
+        "Hide Member List",
+        "Mostrar lista de miembros",
+        "Ocultar lista de miembros",
+        "Mostrar lista de membros",
+        "Ocultar lista de membros",
+        "Masquer la liste des membres",
+        "Afficher la liste des membres",
+        "Prikaži popis članova",
+        "Sakrij popis članova",
+        "Nascondi lista dei membri",
+        "Mostra lista dei membri",
+        "Rodyti narių sąrašą",
+        "Nerodyti narių sąrašo",
+        "Taglista elrejtése",
+        "Taglista megjelenítése",
+        "Ledenlijst tonen",
+        "Ledenlijst verbergen",
+        "Skjul medlemsliste",
+        "Vis medlemsliste",
+        "Pokaż listę członków",
+        "Ukryj listę członków",
+        "Ocultar lista de membros",
+        "Mostrar lista de membros",
+        "Arată lista membrilor",
+        "Ascunde lista membrilor",
+        "Piilota jäsenluettelo",
+        "Näytä jäsenluettelo",
+        "Visa medlemslista",
+        "Dölj medlemslista",
+        "Ẩn Danh sách thành viên",
+        "Hiện Danh sách thành viên",
+        "Üye Listesini Göster",
+        "Üye Listesini Gizle",
+        "Skrýt seznam členů",
+        "Zobrazit seznam členů",
+        "Εμφάνιση λίστας μελών",
+        "Απόκρυψη λίστας μελών",
+        "Скриване на списъка с членове",
+        "Показване на списъка с членове",
+        "Показать список участников",
+        "Скрыть список участников",
+        "Сховати список учасників",
+        "Показати список учасників",
+        "मेम्बर लिस्ट को दिखाएं",
+        "मेम्बर लिस्ट को छिपाएं",
+        "ซ่อนรายชื่อสมาชิก",
+        "แสดงรายชื่อสมาชิก",
+        "显示成员名单",
+        "隐藏成员名单",
+        "メンバーリストを非表示",
+        "メンバーリストを表示",
+        "顯示成員名單",
+        "隱藏成員名單",
+        "멤버 목록 숨기기",
+        "멤버 목록 표시하기"
+    );
+
+    $selectors: ();
+
+    @each $label in $labels {
+        $selectors: append($selectors, "[aria-label='#{$label}']", comma);
+    }
+
+    @return $selectors;
+}
+
+@mixin makeIcon($left-offset, $right-offset, $inner-element, $image) {
+    position: fixed;
+    height: auto;
+    margin: 0;
+    right: $right-offset;
+    left: $left-offset;
+    display: flex;
+    justify-content: center;
+
+    :is(#{$inner-element}) {
+        background-image: $image;
+        padding: 5px;
+        margin: 5px;
+        height: 32px;
+        width: 32px;
+
+        color: white;
+    }
+
+    &::before {
+        content: attr(aria-label);
+        display: block;
+        position: absolute;
+        top: 46px;
+        width: fit-content;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+    svg path {
+        display: none;
+    }
+}

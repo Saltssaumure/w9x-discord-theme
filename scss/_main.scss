@@ -1,0 +1,134 @@
+@use "top/vars-scss" as *;
+@use "top/boxes" as boxes;
+@use "top/shortcutIcon" as sc;
+
+@use "main/chatbox";
+@use "main/messages";
+
+@use "main/channels";
+@use "main/members";
+@use "main/taskbar";
+@use "main/threads";
+@use "main/forums";
+
+// Overall background
+.bg-1QIAus {
+    background: $turquoise;
+}
+
+// Top bar
+.typeWindows-2-g3UY {
+    margin: unset;
+    @include boxes.winBar($text: "Discord", $bgColor: $darkblue);
+    position: absolute;
+    left: $window-left + 2px;
+    right: $window-right + 2px;
+    top: $window-top + 2px;
+    z-index: 102;
+
+    // Discord logo
+    .wordmarkWindows-2dq6rw {
+        padding: 0;
+        margin: 2px 0 0 2px;
+
+        &::before {
+            content: "Discord";
+            display: block;
+            position: relative;
+            font-size: 1rem;
+            color: $grey;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    // Buttons
+    .winButton-3UMjdg {
+        @include boxes.clickable;
+        background: $grey;
+        height: 16px;
+        margin-top: 4px;
+        width: 20px;
+        color: $black;
+
+        &.winButtonClose-3Q8ZH5 {
+            margin-left: 2px;
+        }
+    }
+}
+
+// Settings
+.standardSidebarView-E9Pc3j,
+// Main DM and friend list view
+.container-2cd8Mz,
+// Explore servers view
+.pageWrapper-2PwDoS,
+// University hub
+.scroller-RfJjkV,
+// Buy Nitro page
+.applicationStore-2nk7Lo,
+// Open thread
+.container-3XgAHv,
+// Main chat
+.chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
+    @include boxes.mainWindow();
+}
+
+// Header bars
+.container-2cd8Mz .container-ZMc96U,
+.pageWrapper-2PwDoS .scroller-3j5xK2,
+.scroller-RfJjkV .viewWrapper-oqUsis,
+.applicationStore-2nk7Lo .homeWrapper-L4ors0,
+.container-3XgAHv:not(.floating-3M3WeH) .container-ZMc96U,
+.chat-2ZfjoI .container-ZMc96U {
+    margin-top: $title-height;
+    z-index: 0;
+}
+
+// Description bar
+.toolbar-3_r2xA {
+
+    .search-39IXmY {
+        @include boxes.box($isInset: true);
+        margin: 0;
+
+        .searchBar-jGtisZ {
+            height: 30px;
+            align-items: center;
+
+            .DraftEditor-root {
+                padding-top: 6px;
+            }
+
+            .icon-tZMHgY {
+                @include boxes.clickable;
+            }
+        }
+    }
+
+    .divider-q3P9HC {
+        display: none;
+    }
+
+    // Buttons
+    .iconWrapper-2awDjA.clickable-ZD7xvu:not(.anchor-1X4H4q .iconWrapper-2awDjA:only-of-type):not(:is(#{sc.makeSelectors()})) {
+        @include boxes.clickable;
+        margin: 0;
+        height: 32px;
+        min-width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .count-vTKEhF {
+            margin: 4px;
+        }
+    }
+}
+
+// University hub
+.scroller-RfJjkV {
+    height: auto;
+}

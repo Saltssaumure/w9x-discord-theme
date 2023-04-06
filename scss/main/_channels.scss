@@ -1,0 +1,150 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+@use "../top/channellist-css" as channels;
+
+// Channels sidebar
+.sidebar-1tnWFu {
+    @include channels.vars;
+    @include boxes.box;
+    position: absolute;
+    bottom: 0;
+    max-height: 60vh;
+
+    &::after {
+        content: "Windows95";
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 100%;
+        $textPad: 10px;
+        top: -$textPad;
+        padding-top: $textPad;
+        background: $darkgrey;
+        font-size: 1.6rem;
+        font-family: "Franklin Gothic Bold", "Arial Narrow", Arial, sans-serif;
+        font-weight: 900;
+        color: var(--background-secondary);
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+
+    // Server channels
+    .container-1NXEtd,
+    // DMs
+    .privateChannels-oVe7HL {
+        padding-left: 28px;
+    }
+}
+
+// Header
+:not(.bannerVisible-Vkyg1I) > .header-3OsQeK {
+    @include boxes.clickable;
+    box-shadow: none;
+}
+
+.clickable-vvKY2q .header-3OsQeK:hover,
+.selected-1GtAC5 .header-3OsQeK {
+    background: unset;
+}
+
+// Public server indicator
+.communityInfoPill-2Mll66 {
+    @include boxes.box;
+    z-index: 1;
+}
+
+// Boost goal
+.container-2giAcK {
+    margin: 2px;
+
+    .goalText-mbRUAP {
+        color: var(--channels-default) !important;
+    }
+
+    .progressBarContainer-1efroK {
+        @include boxes.box($isInset: true);
+    }
+
+    .divider-3qUeLQ {
+        display: none;
+    }
+}
+
+.sectionDivider-189lqb {
+    display: none;
+}
+
+// Channel group
+.wrapper-1S43wv:is(.muted-19J0ih:hover, :hover) :is(.icon-3zI3d2, .name-3BUDLf) {
+    color: var(--channels-default);
+}
+
+// Add channel button
+.addButton-2mlqCW {
+    width: 20px;
+    height: 20px;
+
+    .addButtonIcon-3rJeaD:hover {
+        color: var(--channels-default);
+    }
+}
+
+// Channel
+.content-1gYQeQ {
+    margin-left: 0;
+}
+
+// Channel actions
+.iconItem-1EjiK0 {
+    margin-left: 0;
+
+    .actionIcon-2sw4Sl {
+        @include boxes.clickable;
+        background: var(--background-secondary);
+    }
+
+    &:hover .actionIcon-2sw4Sl {
+        color: var(--channels-default);
+    }
+
+    &.openChatIconItem-2kj5qO {
+        padding-right: 0;
+    }
+}
+
+// Show all VC button
+.voiceChannelsButton-SRmgo8 {
+    @include boxes.clickable;
+    color: var(--channels-default);
+}
+
+// Unread bubble
+.unreadRelevant-2f-VSK {
+    background: var(--channels-default);
+    z-index: 1;
+}
+
+// Channels: black on none bg
+.modeConnected-NrO4cP,
+.modeUnread-3Cxepe,
+.notInteractive-2tFrlE.modeConnected-NrO4cP,
+.notInteractive-2tFrlE.modeSelected-3DmyhH {
+    .name-28HaxV {
+        color: var(--channels-default);
+    }
+}
+
+// Hovered and selected channels: white on navy bg
+.content-1gYQeQ:hover,
+.modeSelected-3DmyhH,
+.modeSelected-3DmyhH:hover,
+.modeUnread-3Cxepe:hover:not(.typeThread-2Aqh6X),
+.modeMuted-2T4MDZ:hover:not(.typeThread-2Aqh6X) {
+    .icon-2W8DHg {
+        color: var(--interactive-hover);
+    }
+
+    .unreadRelevant-2f-VSK {
+        background: var(--interactive-hover);
+    }
+}

@@ -1,0 +1,65 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.perkCardsContainerSpacingSettings-2mxjuX,
+.premiumTierCardsContainerSettings-3_Raf8,
+.perksTitle-1U7C5-,
+.titleText-rdztw2 {
+    margin-bottom: 8px;
+}
+
+.container-1M_GA6,
+.card-3ie2dy {
+    @include boxes.box($isInset: true);
+    padding: 16px;
+}
+
+.settingsHero-2Me_mE {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.premiumCards-36uMGt {
+    gap: 0;
+}
+
+:is(.bigPerkCardContainer-100zsH, .smallPerkCardContainer-X9-c92) {
+    gap: 0;
+    margin-bottom: 0;
+
+    :is(.bigPerkCard-1uwmWV, .smallPerkCard-2sX_--) {
+        @include boxes.box($isInset: true);
+        padding: 8px;
+
+        .bigPerkCardHeading-2A9bsX {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.table-398-e9 {
+    @include boxes.box;
+    tbody :is(th, td) {
+        @include boxes.box($isInset: true);
+    }
+    th {
+        padding: 4px;
+    }
+    .row-32xD2c {
+        height: auto;
+    }
+    .buttonsCell-gSFzSA {
+        padding: 4px;
+        gap: 4px;
+    }
+}
+
+.footer-j5ehCa {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.bottomIllustration-GuKjww {
+    position: fixed;
+    bottom: 0;
+}
