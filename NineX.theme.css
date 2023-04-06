@@ -2,8 +2,8 @@
  * @name NineX
  * @author Saltssaumure
  * @authorLink https://github.com/Saltssaumure
- * @description A Windows 9x style Discord theme.
- * @version 1.0
+ * @description A Windows 9x style Discord theme. With support for dark/light mode, custom background image and colour.
+ * @version 1.1
  * @invite uy8nKQVatp
  * @source https: //github.com/Saltssaumure/w9x-discord-theme
  * @donate https://ko-fi.com/saltssaumure
@@ -25,3 +25,8 @@ Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
 */
 
 @import url("https://saltssaumure.github.io/w9x-discord-theme/w9x.min.css");
+
+:root {
+    --w9x-background-image: none;
+    --w9x-background-color: #008080;
+}
