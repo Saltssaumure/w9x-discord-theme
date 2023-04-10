@@ -1,0 +1,76 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Header bars
+:is(
+        .container-2cd8Mz .container-ZMc96U,
+        .pageWrapper-2PwDoS .scroller-3j5xK2,
+        .scroller-RfJjkV .viewWrapper-oqUsis,
+        .applicationStore-2nk7Lo .homeWrapper-L4ors0,
+        .container-3XgAHv:not(.floating-3M3WeH) .container-ZMc96U,
+        .chat-2ZfjoI .container-ZMc96U
+    ) {
+    margin-top: $title-height;
+    z-index: 0;
+
+    .divider-q3P9HC {
+        display: none;
+    }
+}
+
+// Tools
+.toolbar-3_r2xA {
+    .search-39IXmY {
+        @include boxes.box($isInset: true);
+        margin: 0;
+
+        .searchBar-jGtisZ {
+            height: 30px;
+            align-items: center;
+            background: var(--w9x-background);
+            color: var(--w9x-text);
+
+            .DraftEditor-root {
+                padding-top: 5px;
+            }
+
+            // Search button
+            .icon-tZMHgY {
+                @include boxes.clickable;
+                background: $grey;
+
+                .icon-18rqoe {
+                    color: $black;
+                }
+            }
+
+            // Filters
+            .searchFilter-2UfsDk,
+            .searchAnswer-23w-CH {
+                @include boxes.box;
+                background: $grey;
+                color: $black;
+            }
+        }
+    }
+
+    // Buttons
+    .iconWrapper-2awDjA.clickable-ZD7xvu:not(.anchor-1X4H4q .iconWrapper-2awDjA:only-of-type):not(:has([d^="M14 8.00598"])) {
+        @include boxes.clickable;
+        margin: 0;
+        height: 32px;
+        min-width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .count-vTKEhF {
+            margin: 4px;
+        }
+    }
+}
+
+// Under titlebar shadow
+.content-1jQy2l::before {
+    display: none;
+}

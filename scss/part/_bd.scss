@@ -106,8 +106,7 @@
     }
 
     .bd-select-options {
-        @include boxes.box($isInset: true);
-        position: absolute;
+        @include boxes.box($isInset: true, $position: absolute);
         background: var(--w9x-background);
 
         .bd-select-option {

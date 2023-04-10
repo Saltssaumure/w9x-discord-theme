@@ -94,9 +94,6 @@
 //     --modal-background: #{$grey};
 //     --modal-footer-background: #{$grey};
 
-
-
-
 // }
 
 // Everything else
@@ -125,9 +122,12 @@
     // User profile centre piece
     --background-floating: #{$grey};
 
+    // Channel icon
+    --channel-icon: #{$black};
+
     // Channel typing area
     --channeltextarea-background: var(--w9x-background);
-    
+
     // BD number input bg
     --deprecated-text-input-bg: var(--w9x-background);
 
@@ -160,6 +160,15 @@
 
     // Status colours
     --status-danger: #{$red};
+
+    // Search popover
+    --search-popout-option-fade: linear-gradient(90deg, transparent, #{$grey});
+    --search-popout-option-fade-hover: linear-gradient(90deg, transparent, #{$darkblue});
+    --search-popout-date-picker-border: none;
+    --search-popout-date-picker-hint-text: #{$black};
+    --search-popout-date-picker-hint-value-text: #{$white};
+    --search-popout-date-picker-hint-value-background: #{$darkblue};
+    --search-popout-date-picker-hint-value-background-hover: #{$darkblue};
 
     // Buttons
     --button-danger-background: #{$red};

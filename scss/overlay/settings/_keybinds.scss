@@ -37,5 +37,7 @@
     .key-RP8gj3 {
         @include boxes.box;
         box-shadow: none;
+        background: $darkgrey;
+        color: $white;
     }
 }

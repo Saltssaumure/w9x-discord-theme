@@ -1,0 +1,41 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Search results
+.searchResultsWrap-5RVOkx {
+    @include boxes.box($isInset: true);
+    margin: 0 2px 2px;
+
+    .searchHeader-1r_ZSh {
+        background: transparent;
+        padding: 8px 28px 0 16px;
+        height: 28px;
+
+        // Tabs
+        .searchHeaderTabList-3CZMQB {
+            gap: 0;
+
+            // Tab
+            .item-2GWPIy {
+                @include boxes.tab;
+                padding: 2px 8px;
+            }
+        }
+    }
+
+    .scroller-3iiyhZ {
+        @include boxes.box;
+        margin: 0 8px 8px;
+
+        // Result
+        .searchResult-O9NDji {
+            background: var(--w9x-background);
+            @include boxes.box($isInset: true);
+        }
+
+        // Jump button
+        .button-cfOvv- {
+            @include boxes.clickable;
+        }
+    }
+}

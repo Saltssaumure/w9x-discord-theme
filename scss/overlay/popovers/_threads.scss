@@ -45,11 +45,6 @@
     }
 
     .jump-1vIlrw {
-        @include boxes.clickable;
-        position: absolute;
-
-        &:active {
-            position: absolute;
-        }
+        @include boxes.clickable($position: absolute);
     }
 }

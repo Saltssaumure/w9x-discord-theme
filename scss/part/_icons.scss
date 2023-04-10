@@ -12,9 +12,7 @@
     }
 
     // Move show/hide member list button
-    .iconWrapper-2awDjA:is(#{sc.makeSelectors()}) {
-        // Use this when :has() comes to stable
-        // .iconWrapper-2awDjA:has(path[d*="M14 8.00598"]) {
+    .iconWrapper-2awDjA:has([d^="M14 8.00598"]) {
         $image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAhUExURXt9e72+vf///wAAAAB9ewD//wAAewAA/wD/AAB9AAAAAGqqxmQAAAALdFJOU/////////////8ASk8B8gAAAAlwSFlzAAALbAAAC2wBUklGNQAAAMhJREFUOE+FkwkSxCAIBInukfj/B+9wVRSI22XlkFaRGBoOJbRbroCOQKMu/RLFvUVoEajZuJsk2MIGvwehz5TCa6IW3jp6I8hWNgK6P18gTw+Cz/EgcPZbgQN/BN9HJVgJjULgySeyEIHAR8KFAsSP7oImt4I4VhHBhkQkDRbyaVLguGB5BUpB5haCcJ4qWIIgCNelgqL/wCJU3AIe8JvEhkKg2BBwTFKQG3X+GCRxvKSGC+KY3qoS4TKrYBlFLI4lbNsJCY/xAw14DnPdYrX4AAAAAElFTkSuQmCC");
         @include sc.makeIcon(auto, 50px, ".icon-2xnN2Y", $image);
     }
