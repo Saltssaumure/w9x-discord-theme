@@ -1,0 +1,190 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+@use "../../top/channellist-css" as channels;
+
+// Search popover
+.container-2McqkF {
+    @include boxes.box;
+    @include channels.vars;
+
+    // Search option categories
+    .resultsGroup-cfY57t {
+        // Section title
+        .header-1BR0Ro {
+            color: var(--header-primary);
+        }
+
+        // Divider
+        &::before {
+            display: none;
+        }
+
+        // Right corner icon
+        :is(.searchClearHistory-3nIKUO, .searchLearnMore-1gNL3A) {
+            @include boxes.clickable($position: absolute);
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        // Last group
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    // Search options
+    .option-ayUoaq {
+        margin: 0;
+
+        // Hovered stuff
+        &:hover
+            :is(
+                .nonText-28q_Ot,
+                .displayedNick-1atSpT,
+                .displayUsername-UTerwm,
+                strong,
+                .searchResultChannelCategory-19ujDo,
+                .searchResultChannelIcon-C-3P9x
+            ) {
+            color: var(--interactive-hover);
+        }
+
+        // Selected stuff
+        &[aria-selected="true"] {
+            strong {
+                color: var(--interactive-active);
+            }
+        }
+
+        // Search history term
+        .nonText-28q_Ot {
+            color: var(--text-muted);
+        }
+
+        // Right side fade
+        &::after {
+            z-index: 0;
+        }
+    }
+
+    // Calendar
+    .calendarPicker-sDhzdi {
+        :is(.react-datepicker, .react-datepicker__header) {
+            background: $grey;
+        }
+
+        :is(.react-datepicker__current-month, .react-datepicker__day-name) {
+            color: $black;
+        }
+
+        // Whole
+        .react-datepicker {
+            padding: 0;
+            margin: 16px 18px 8px;
+        }
+
+        // Month nav buttons
+        .react-datepicker__navigation {
+            &:is(.react-datepicker__navigation--next, .react-datepicker__navigation--previous) {
+                @include boxes.clickable($position: absolute);
+                top: 0;
+                background-size: 12px;
+            }
+
+            &.react-datepicker__navigation--next {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M 5 1 l 6 6 l -6 6 l -1 -1 l 5 -5 l -5 -5 z' fill='%23000'/%3E%3C/svg%3E");
+                right: 0;
+            }
+
+            &.react-datepicker__navigation--previous {
+                transform: none;
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M 9 13 l -6 -6 l 6 -6 l 1 1 l -5 5 l 5 5 z' fill='%23000'/%3E%3C/svg%3E");
+                left: 0;
+            }
+        }
+
+        // Header
+        .react-datepicker__header {
+            padding-bottom: 0;
+
+            .react-datepicker__current-month {
+                border: 0;
+                padding: 0;
+                text-transform: none;
+            }
+        }
+
+        // Month
+        .react-datepicker__month {
+            @include boxes.box($isInset: true);
+        }
+
+        // Day
+        .react-datepicker__day {
+            color: $black;
+            border-top-color: $darkgrey;
+            border-left-color: $darkgrey;
+
+            // Selectable days
+            &:not(.react-datepicker__day--disabled) {
+                @include boxes.clickable;
+            }
+
+            // Unselectable days
+            &.react-datepicker__day--disabled,
+            &.react-datepicker__day--disabled:hover {
+                background: unset;
+                color: $darkgrey;
+            }
+
+            // Outside month
+            &.react-datepicker__day--outside-month {
+                background: unset;
+            }
+
+            // Inside month
+            &:not(.react-datepicker__day--outside-month),
+            &:not(.react-datepicker__day--outside-month):hover {
+                background: $lightgrey;
+            }
+
+            // Selected day
+            &.react-datepicker__day--selected {
+                &::after {
+                    background: $blue;
+                }
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    // Date picker hint
+    .datePickerHint-Ir4715 {
+        @include boxes.box;
+        margin: 0;
+        padding: 8px 20px;
+
+        .hintValue-V9hd8l {
+            @include boxes.clickable;
+        }
+    }
+
+    // Search query
+    .queryContainer-ZunrLZ {
+        @include boxes.clickable;
+        background: $grey;
+
+        .queryText-j8z984 {
+            text-transform: none;
+            color: $darkgrey;
+
+            strong {
+                color: $black;
+            }
+        }
+    }
+}

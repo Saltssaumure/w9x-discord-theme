@@ -5,13 +5,12 @@
 // Channels sidebar
 .sidebar-1tnWFu {
     @include channels.vars;
-    @include boxes.box;
-    position: absolute;
+    @include boxes.box($position: absolute);
     bottom: 0;
     max-height: 60vh;
 
     &::after {
-        content: "Windows95";
+        content: var(--w9x-start-text, "Windows95");
         display: block;
         position: absolute;
         width: 28px;

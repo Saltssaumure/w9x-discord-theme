@@ -50,15 +50,10 @@
     }
 
     .removeGame-3V7nss {
-        @include boxes.clickable;
-        position: absolute;
+        @include boxes.clickable($position: absolute);
         right: -12px;
         background-color: $grey;
         z-index: 1;
-
-        &:active {
-            position: absolute;
-        }
     }
 }
 

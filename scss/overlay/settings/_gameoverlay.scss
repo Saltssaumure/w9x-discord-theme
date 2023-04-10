@@ -7,13 +7,8 @@
     background: transparent;
 
     .option-1QI4c9 {
-        @include boxes.clickable;
-        position: absolute;
+        @include boxes.clickable($position: absolute);
         background: $grey;
-
-        &:active {
-            position: absolute;
-        }
 
         &.selected-18Wszc,
         &:hover {

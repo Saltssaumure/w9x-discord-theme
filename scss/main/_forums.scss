@@ -174,8 +174,7 @@
                 // Attachments popout
                 .popoutContainer-26yHc8 {
                     z-index: 1;
-                    @include boxes.box;
-                    position: absolute;
+                    @include boxes.box($position: absolute);
                     padding: 0;
                     top: -8px;
                     right: -8px;

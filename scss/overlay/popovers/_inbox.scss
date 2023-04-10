@@ -22,19 +22,8 @@
             top: 17px;
 
             .tab-TRrPC8 {
-                @include boxes.box;
+                @include boxes.tab;
                 margin-right: 0;
-                border-bottom-color: transparent;
-                border-radius: 4px 4px 0 0;
-
-                &::before {
-                    border-bottom: 0;
-                }
-
-                &.selected-1sf9UK {
-                    background: $grey;
-                    z-index: 1;
-                }
 
                 &:first-child {
                     border-left-color: $black;
@@ -63,12 +52,7 @@
 
             // Jump button
             :is(.jumpButton-1ITAeq, .jumpButton-1V_1FA) {
-                @include boxes.clickable;
-                position: absolute;
-
-                &:active {
-                    position: absolute;
-                }
+                @include boxes.clickable($position: absolute);
             }
         }
     }

@@ -1,7 +1,8 @@
 @use "vars-scss" as *;
 
-@mixin box($isInset: false, $isRotate: false, $isScrollbar: false) {
-    position: relative;
+@mixin box($isInset: false, $isRotate: false, $isScrollbar: false, $position: relative) {
+    
+    position: $position;
     border: 1px solid;
 
     @if $isInset {
@@ -47,10 +48,26 @@
     }
 }
 
-@mixin clickable($isRotate: false) {
-    @include box($isRotate: $isRotate);
+@mixin clickable($isRotate: false, $position: relative) {
+    @include box($isRotate: $isRotate, $position: $position);
+    
     &:active {
-        @include box($isInset: true);
+        @include box($isInset: true, $position: $position);
+    }
+}
+
+@mixin tab() {
+    @include box;
+    border-bottom-color: transparent;
+    border-radius: 4px 4px 0 0;
+
+    &::before {
+        border-bottom: 0;
+    }
+
+    &.selected-1sf9UK {
+        background: $grey;
+        z-index: 1;
     }
 }
 
