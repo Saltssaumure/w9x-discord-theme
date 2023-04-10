@@ -24,8 +24,12 @@
     }
 
     .scroller-3iiyhZ {
-        @include boxes.box;
+        @include boxes.box($position: static);
         margin: 0 8px 8px;
+
+        &::before {
+            display: none;
+        }
 
         // Result
         .searchResult-O9NDji {
@@ -36,6 +40,40 @@
         // Jump button
         .button-cfOvv- {
             @include boxes.clickable;
+        }
+
+        #search-results {
+            margin-top: 40px;
+        }
+
+        // Navigation
+        .container-1-h9mY {
+            position: absolute;
+            top: 29px;
+            left: 9px;
+            right: 27px;
+            background: $grey;
+            z-index: 1;
+            border-bottom: 1px solid $black;
+
+            .pageControlContainer-1Mbe6M {
+                margin-top: 0;
+            }
+
+            .pageControl-1Kt_nb {
+                // Buttons
+                .pageButton-uta6J3 {
+                    min-height: unset;
+                    margin: 0;
+                    &:disabled {
+                        @include boxes.box;
+                    }
+                    &:not(:disabled) {
+                        @include boxes.clickable;
+                    }
+                    
+                }
+            }
         }
     }
 }
