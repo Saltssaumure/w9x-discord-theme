@@ -1,0 +1,124 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.userProfileModalOuter-2wdWjU {
+    // Tabs
+    .tabBarContainer-sCZC4w {
+        margin: 16px 24px 0 0;
+    }
+
+    .tabBar-2hXqzU {
+        gap: 0;
+        position: relative;
+        top: 2px;
+
+        .tabBarItem-30Te4- {
+            @include boxes.tab;
+            height: auto;
+            padding: 2px 8px;
+
+            &.themed-qqoYp3 {
+                color: var(--text-normal);
+
+                &:is(.selected-1sf9UK, :active) {
+                    background: unset;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    // Info
+    .scrollerBase-1Pkza4 {
+        @include boxes.box;
+
+        &::before {
+            display: none;
+        }
+
+        .userInfoSection-2u2hir + .userInfoSection-2u2hir {
+            border-top: unset;
+        }
+
+        // Connected accounts
+        .connectedAccounts-2R5M4w {
+            .connectedAccountsColumn-1zdyyx {
+                flex-direction: row;
+                width: unset;
+
+                & + .connectedAccountsColumn-1zdyyx {
+                    margin-left: 0;
+                }
+
+                .connectedAccountContainer-3aLMHJ {
+                    @include boxes.box($isInset: true);
+                    width: calc(460px / 3);
+                    margin-right: 8px;
+
+                    // Open account in browser
+                    &:has(.anchor-1X4H4q) {
+                        @include boxes.clickable;
+                    }
+
+                    .anchor-1X4H4q {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+
+                        svg {
+                            display: none;
+                        }
+                    }
+
+                    // Hide detailed info until hover
+                    &.connectedAccountContainerWithMetadata-3_IQ7D {
+                        padding: 12px 8px;
+
+                        .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX,
+                        .connectedAccountChildren-29Qmfl {
+                            display: none;
+                        }
+
+                        &:hover {
+                            .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX,
+                            .connectedAccountChildren-29Qmfl {
+                                display: block;
+                                z-index: 1;
+                                padding: 8px;
+                                background: var(--profile-avatar-border-color);
+                            }
+
+                            // Joined date
+                            .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX {
+                                position: absolute;
+                                pointer-events: none;
+                                bottom: 1px;
+                                left: 32px;
+                                right: 1px;
+                                top: 1px;
+                            }
+
+                            // Detailed info
+                            &:hover .connectedAccountChildren-29Qmfl {
+                                @include boxes.box($position: absolute);
+                                bottom: 50px;
+                                left: -33px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Mutual servers
+        .listRow-2nO1T6 {
+            margin: 0;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
