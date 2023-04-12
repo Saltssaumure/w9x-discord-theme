@@ -18,7 +18,6 @@
             // Tab
             .item-2GWPIy {
                 @include boxes.tab;
-                padding: 2px 8px;
             }
         }
     }
@@ -61,17 +60,19 @@
             }
 
             .pageControl-1Kt_nb {
+
                 // Buttons
                 .pageButton-uta6J3 {
                     min-height: unset;
                     margin: 0;
+
                     &:disabled {
                         @include boxes.box;
                     }
+                    
                     &:not(:disabled) {
                         @include boxes.clickable;
                     }
-                    
                 }
             }
         }

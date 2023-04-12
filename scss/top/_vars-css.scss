@@ -170,6 +170,14 @@
     --search-popout-date-picker-hint-value-background: #{$darkblue};
     --search-popout-date-picker-hint-value-background-hover: #{$darkblue};
 
+    // Modals
+    --modal-background: #{$grey};
+    --modal-footer-background: #{$grey};
+
+    // User profile modal
+    --profile-body-divider-color: transparent;
+    --profile-body-background-hover: #{$darkblue};
+
     // Buttons
     --button-danger-background: #{$red};
     --button-danger-background-active: #{$red};

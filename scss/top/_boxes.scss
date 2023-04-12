@@ -60,12 +60,17 @@
     @include box;
     border-bottom-color: transparent;
     border-radius: 4px 4px 0 0;
+    padding: 2px 8px;
 
     &::before {
         border-bottom: 0;
     }
 
-    &.selected-1sf9UK {
+    &:is(.selected-1sf9UK, :active, :hover) {
+        border-bottom-color: transparent;
+    }
+
+    &:is(.selected-1sf9UK, :active) {
         background: $grey;
         z-index: 1;
     }

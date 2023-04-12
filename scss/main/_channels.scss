@@ -46,6 +46,12 @@
     background: unset;
 }
 
+// Find or start a conversation
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+    @include boxes.clickable;
+    color: $black;
+}
+
 // Public server indicator
 .communityInfoPill-2Mll66 {
     @include boxes.box;
@@ -74,7 +80,8 @@
 }
 
 // Channel group
-.wrapper-1S43wv:is(.muted-19J0ih:hover, :hover) :is(.icon-3zI3d2, .name-3BUDLf) {
+.wrapper-1S43wv:is(.muted-19J0ih:hover, :hover) :is(.icon-3zI3d2, .name-3BUDLf),
+.privateChannelsHeaderContainer-1UWASm:hover :is(.headerText-1qIDDT, .privateChannelRecipientsInviteButtonIcon-1ObKXK) {
     color: var(--channels-default);
 }
 
@@ -89,7 +96,8 @@
 }
 
 // Channel
-.content-1gYQeQ {
+.content-1gYQeQ,
+.container-32HW5s {
     margin-left: 0;
 }
 

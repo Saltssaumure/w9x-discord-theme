@@ -1,8 +1,0 @@
-{
-    "name": "NineX",
-    "description": "A Windows 9x style Discord theme.",
-    "version": "1.0.0",
-    "author": "Saltssaumure",
-    "theme": "NineX.theme.css",
-    "license": "GPL-3.0"
-}

@@ -25,7 +25,7 @@
         margin-left: 4px;
 
         // Custom status or activity
-        &:hover .activityText-1rR-8O {
+        &:is(:hover, .selected-1-Z6gm) .activityText-1rR-8O {
             color: var(--interactive-hover);
         }
     }

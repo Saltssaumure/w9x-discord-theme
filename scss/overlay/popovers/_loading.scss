@@ -1,0 +1,10 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// User profile (and other?) loading
+.loadingPopout-1tyQMM {
+    @include boxes.box;
+    .path2-6i8gUh, .path-_o_4bT {
+        stroke: $blue;
+    }
+}
