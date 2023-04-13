@@ -47,6 +47,12 @@
     .button-3bklZh {
         @include boxes.clickable;
         padding: 0;
+
+        &.disabled-3SakJY,
+        &.disabled-3SakJY:hover {
+            @include boxes.box;
+            padding: 0;
+        }
     }
 }
 
