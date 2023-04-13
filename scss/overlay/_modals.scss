@@ -1,10 +1,10 @@
-@use "modals/userprofile";
-@use "modals/report";
-@use "modals/feedback";
 @use "modals/activities";
-@use "modals/videotest";
-@use "modals/sendinvite";
+@use "modals/feedback";
+@use "modals/report";
 @use "modals/screenshare";
+@use "modals/sendinvite";
+@use "modals/userprofile";
+@use "modals/videotest";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;

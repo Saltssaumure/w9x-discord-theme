@@ -1,0 +1,49 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Create (group) DM
+
+.header-1ffhsl {
+    padding: 8px;
+    .subtitle-3v29zT {
+        color: $black;
+    }
+    
+    .searchBarComponent-18D6hD {
+        @include boxes.box($isInset: true);
+        background: var(--w9x-background);
+    
+        .inner-1NoIT5 {
+            overflow: hidden !important;
+        }
+    
+        .input-2FSSDe {
+            color: var(--w9x-text);
+        }
+    
+        .tag-15zcD_ {
+            @include boxes.clickable;
+        }
+    }
+}
+
+.scroller-1Kbkqa {
+    @include boxes.box($isInset: true, $isScrollbar: true);
+
+    .friendWrapper-2x5j0A {
+        @include boxes.clickable;
+        margin: 0;
+
+        &[aria-selected="true"] {
+            @include boxes.box($isInset: true);
+        }
+
+        .friendSelected-3cwmD7 {
+            background: unset;
+        }
+    }
+}
+
+.footer-C9oLp9 {
+    padding: 8px;
+}
