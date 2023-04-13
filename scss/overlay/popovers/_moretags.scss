@@ -1,0 +1,31 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// See more tags creating forum post with narrow screen
+.container-2kTWmC {
+    @include boxes.box;
+
+    .searchWithScrollbar-2PoZTD {
+        @include boxes.box($isInset: true);
+        background: var(--w9x-background);
+
+        .input-2m5SfJ {
+            color: var(--w9x-text);
+        }
+    }
+
+    .list-1B0XtU {
+        @include boxes.box($isInset: true, $isScrollbar: true);
+        margin: 1px;
+        padding: 0;
+
+        .item-1Mjtru {
+            @include boxes.clickable;
+            margin: 0;
+
+            &.selected-3xdT87 {
+                @include boxes.box($isInset: true);
+            }
+        }
+    }
+}

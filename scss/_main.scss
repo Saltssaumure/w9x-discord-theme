@@ -9,13 +9,14 @@
 @use "main/messages";
 
 @use "main/channels";
+@use "main/forums";
+@use "main/friends";
 @use "main/members";
+@use "main/publicservers";
+@use "main/searchresults";
 @use "main/taskbar";
 @use "main/threads";
-@use "main/forums";
-@use "main/searchresults";
 @use "main/vc";
-@use "main/friends";
 
 // Overall background
 .bg-1QIAus {
