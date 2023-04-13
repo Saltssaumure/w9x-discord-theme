@@ -8,6 +8,8 @@
 @use "popovers/threads";
 @use "popovers/userprofiles";
 @use "popovers/vc";
+@use "popovers/incomingcall";
+@use "popovers/regionselect";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
