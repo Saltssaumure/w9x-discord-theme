@@ -1,0 +1,18 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.ratingsSelector-1RciCi {
+    width: auto;
+
+    .horizontal-112GEH > & {
+        margin-left: 0;
+    }
+
+    .emoji-1pQ5Lb {
+        @include boxes.clickable;
+    }
+}
+
+.horizontal-112GEH:has(.ratingsSelector-1RciCi) + .content-1OG56Q {
+    display: none;
+}

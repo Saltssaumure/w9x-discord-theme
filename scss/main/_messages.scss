@@ -63,8 +63,17 @@
 .header-1dhDWV,
 .username-h_Y3Us,
 .repliedTextPlaceholder-1Njd47,
-.subtitle-C_i4IN {
+.repliedTextPreview-1bvxun.clickable-31pE3P:hover,
+.repliedMessage-3Z6XBG,
+.subtitle-C_i4IN,
+.markup-eYLPri code {
     color: var(--w9x-text);
+}
+
+// Eyebrow
+.eyebrow-1Shfyi,
+.eyebrow-2wJAoF {
+    text-transform: none;
 }
 
 // Blockquote

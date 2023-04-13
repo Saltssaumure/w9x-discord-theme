@@ -1,12 +1,13 @@
 @use "popovers/dropdown";
+@use "popovers/emotes";
 @use "popovers/inbox";
+@use "popovers/loading";
 @use "popovers/menus";
 @use "popovers/pinned";
+@use "popovers/search";
 @use "popovers/threads";
 @use "popovers/userprofiles";
-@use "popovers/search";
-@use "popovers/loading";
-@use "popovers/emotes";
+@use "popovers/vc";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;

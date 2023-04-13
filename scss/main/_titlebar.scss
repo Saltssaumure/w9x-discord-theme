@@ -7,8 +7,8 @@
         .pageWrapper-2PwDoS .scroller-3j5xK2,
         .scroller-RfJjkV .viewWrapper-oqUsis,
         .applicationStore-2nk7Lo .homeWrapper-L4ors0,
-        .container-3XgAHv:not(.floating-3M3WeH) .container-ZMc96U,
-        .chat-2ZfjoI .container-ZMc96U
+        .container-3XgAHv:not(.floating-3M3WeH) .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U),
+        .chat-2ZfjoI .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U)
     ) {
     margin-top: $title-height;
     z-index: 0;

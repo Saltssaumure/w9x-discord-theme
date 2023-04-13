@@ -14,6 +14,7 @@
 @use "main/threads";
 @use "main/forums";
 @use "main/searchresults";
+@use "main/vc";
 
 // Overall background
 .bg-1QIAus {
@@ -31,8 +32,6 @@
 .scroller-RfJjkV,
 // Buy Nitro page
 .applicationStore-2nk7Lo,
-// Open thread
-.container-3XgAHv,
 // Main chat
 .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
     @include boxes.mainWindow();
