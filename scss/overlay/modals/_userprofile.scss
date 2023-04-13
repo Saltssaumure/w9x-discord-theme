@@ -62,10 +62,7 @@
 
                     .anchor-1X4H4q {
                         position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
+                        inset: 0;
 
                         svg {
                             display: none;
@@ -94,10 +91,7 @@
                             .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX {
                                 position: absolute;
                                 pointer-events: none;
-                                bottom: 1px;
-                                left: 32px;
-                                right: 1px;
-                                top: 1px;
+                                inset: 1px 1px 1px 32px;
                             }
 
                             // Detailed info

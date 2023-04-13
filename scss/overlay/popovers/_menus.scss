@@ -83,4 +83,11 @@
             width: 10px;
         }
     }
+
+    // Quick reacts
+    .button-1zW0-r {
+        @include boxes.clickable;
+        padding: 0;
+        margin-top: 4px;
+    }
 }

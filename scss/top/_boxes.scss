@@ -23,10 +23,7 @@
         &::before {
             content: " ";
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
             border: 1px solid;
             pointer-events: none;
             z-index: 1;
@@ -98,9 +95,7 @@
             display: block;
             position: absolute;
             z-index: 1;
-            left: 2px;
-            right: 2px;
-            top: 2px;
+            inset: 2px 2px auto;
         }
     }
 }
