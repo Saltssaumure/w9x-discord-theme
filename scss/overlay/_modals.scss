@@ -2,6 +2,9 @@
 @use "modals/report";
 @use "modals/feedback";
 @use "modals/activities";
+@use "modals/videotest";
+@use "modals/sendinvite";
+@use "modals/screenshare";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;

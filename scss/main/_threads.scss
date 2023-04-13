@@ -54,13 +54,17 @@
 
     // Floating thread panel for narrow screens
     .chatLayerWrapper-2mgEK- {
-        top: $title-height;
-        right: 0;
-        bottom: 0;
+        top: $title-height + $window-top;
+        right: $window-right;
+        bottom: $window-bottom + 2px;
         height: auto;
 
         .chatTarget-3H6mpC {
             display: none;
         }
     }
+}
+
+.layerContainer-2lfOPe:has(.chatLayerWrapper-2mgEK-) {
+    z-index: 0;
 }

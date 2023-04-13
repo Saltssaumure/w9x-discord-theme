@@ -1,0 +1,72 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Screenshare
+
+// Top art
+.art-1TvEXv {
+    z-index: 1;
+}
+
+// Tabs
+.tabItem-lbSC8a {
+    @include boxes.tab;
+    margin-right: 0;
+    color: $black;
+
+    &.tabItemSelected-Z0xl-W {
+        border-bottom: unset;
+        color: $black;
+        text-decoration: underline;
+    }
+}
+
+// Screens
+.sourceScroller-3wC9he {
+    @include boxes.box($isInset: true, $isScrollbar: true);
+}
+
+.sourceContainer-1uqUbz {
+    gap: 8px;
+}
+
+// Screen
+.tile-3POX2m {
+    @include boxes.clickable;
+    padding: 8px 0;
+    flex: 0 1 calc(50% - 4px) !important;
+}
+
+// What you're streaming
+.card-m7VgZ8 {
+    @include boxes.box($isInset: true);
+
+    .channelIcon-1BydE- {
+        color: $black;
+    }
+}
+
+// Stream quality
+.qualitySettingsContainer-2LjkfM {
+    @include boxes.box($isInset: true);
+    
+    .selectorButton-3fWZ0_ {
+        @include boxes.clickable;
+
+        &:not(.selectorButtonPremiumRequired-IZXhgV):hover {
+            background: $grey;
+
+            .selectorText-LxivBc {
+                color: $black;
+            }
+        }
+    }
+
+    .selectorButtonSelected-3cQUnj {
+        @include boxes.box($isInset: true);
+        background: $grey;
+        .selectorTextSelected-2zup8I {
+            color: $black;
+        }
+    }
+}
