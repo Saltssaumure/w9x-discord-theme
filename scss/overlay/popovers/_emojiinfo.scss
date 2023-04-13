@@ -1,0 +1,11 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Emoji info
+.popoutContainer-2wbmiM {
+    @include boxes.box;
+
+    .guildSection-2Zyzy8 {
+        @include boxes.box;
+    }
+}

@@ -82,15 +82,18 @@
 }
 
 // Attachments
-// .imageWrapper-oMkQl4, Try find something else for images because this selects non-attachments images too
 .spoilerInnerContainer-1P_w0A,
 .messageAttachment-CZp8Iv .wrapperAudio-1Bzv_Z,
-.emoji.jumboable,
 .embedWrapper-1MtIDg.container-rr3Ruk,
 .attachment-1PZZB2,
 .embed-hKpSrO,
 .wrapper-1HIH0j {
     @include boxes.box;
+}
+
+// Remove attachments
+.embedSuppressButton-1rZHq6, .embedSuppressButton-1rZHq6:hover {
+    color: var(--w9x-text);
 }
 
 // Text attachments
