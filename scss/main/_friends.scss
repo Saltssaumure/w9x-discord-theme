@@ -21,6 +21,7 @@
     }
 }
 
+// Online / All / Pending / Blocked / Add Friend
 .peopleColumn-1wMU14 {
     @include boxes.box($isInset: true);
 
@@ -95,6 +96,7 @@
     }
 }
 
+// Friend activity
 .nowPlayingColumn-1eCBCN {
     .scroller-hE2gWq {
         @include boxes.box($isInset: true, $isScrollbar: true);
@@ -124,4 +126,34 @@
             }
         }
     }
+}
+
+// Message requests
+.list-2hhlBX {
+    @include boxes.box($isInset: true, $isScrollbar: true);
+    padding: 8px !important;
+
+    .content-yjf30S > div:first-child {
+        display: none;
+    }
+
+    // Title
+    .container-q97qHp {
+        color: $black;
+        text-transform: none;
+        margin-bottom: 8px;
+    }
+
+    .messageRequestItem-1_NNAR {
+        @include boxes.clickable;
+
+        .messageContent-2t3eCI {
+            color: $black;
+        }
+    }
+}
+
+// If empty
+.content-1jQy2l:has(.emptyStateContainer-Ftfayf) {
+    @include boxes.box($isInset: true);
 }
