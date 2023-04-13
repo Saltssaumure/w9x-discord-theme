@@ -27,8 +27,17 @@
 }
 
 // Header
-:is(.emojiPickerHasTabWrapper-LoluYe .header-11eigE, .header-uVCAlo, .header-2TLOnc) {
+:is(.emojiPickerHasTabWrapper-LoluYe .header-11eigE, .header-11eigE, .header-uVCAlo, .header-2TLOnc) {
     padding: 0 8px 8px;
+
+    // VC picker
+    &.emojiPickerHeader-2mWh2T {
+        padding-top: 8px;
+
+        .tooltipContainer-3zA7TI {
+            @include boxes.clickable;
+        }
+    }
 
     // Back button
     .backButton-bSKWLe {
@@ -36,11 +45,6 @@
         margin-right: 0;
         padding: 2px 4px;
         color: $black;
-    }
-
-    // Search results
-    .searchHeader-2Ava0c {
-        text-transform: none;
     }
 
     // Search bar
@@ -62,6 +66,10 @@
         :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
             @include boxes.clickable;
             background: $grey;
+        }
+
+        &.disabled-2QaYSb :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
+            @include boxes.box;
         }
     }
 
@@ -87,7 +95,6 @@
 
     // Scroller
     .container-3eG4QA {
-        @include boxes.box($isInset: true);
         background: var(--w9x-background);
     }
 
@@ -111,12 +118,10 @@
 :is(.bodyWrapper-1eSOtW, .listWrapper-2DwCYS) {
     background: var(--w9x-background);
 
-    .scroller-2MALzE {
-        @include boxes.box($isInset: true);
-    }
-
     // Super reactions ad
-    .burstNotice-_eSKPc {
+    // Nitro ad
+    .burstNotice-_eSKPc,
+    .premiumUpsell-2K2V_c {
         margin: 0;
     }
 
@@ -184,7 +189,7 @@
 }
 
 // Servers list
-:is(.emojiPickerHasTabWrapper-LoluYe .categoryList-2qRrlj, .categoryList-2GgCrD) {
+:is(.emojiPickerHasTabWrapper-LoluYe .categoryList-2qRrlj, .categoryList-2qRrlj, .categoryList-2GgCrD) {
     @include boxes.box($position: absolute);
     top: 45px;
 

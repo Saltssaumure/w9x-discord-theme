@@ -1,0 +1,159 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Titlebar
+.children-3xh0VB {
+    overflow: visible;
+
+    .topPill-2vcLsa {
+        position: relative;
+        top: 12px;
+        left: 10px;
+
+        .item-2GWPIy {
+            @include boxes.tab;
+            margin: 0;
+
+            &.selected-1sf9UK {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Online / All / Pending / Blocked / Add Friend
+.peopleColumn-1wMU14 {
+    @include boxes.box($isInset: true);
+
+    .searchBar-2aylmZ {
+        @include boxes.box($isInset: true);
+        background: var(--w9x-background);
+        color: var(--w9x-text);
+        margin: 8px 8px 0;
+
+        .input-2m5SfJ {
+            color: var(--w9x-text);
+        }
+
+        .iconContainer-6pgShY {
+            @include boxes.clickable;
+            background: $grey;
+            padding: 2px;
+        }
+    }
+
+    .title-x4dI75 {
+        margin: 8px 12px 4px;
+    }
+
+    .peopleList-2VBrVI {
+        margin: 0 8px 8px;
+        padding-bottom: 0;
+        @include boxes.box($isInset: true);
+
+        .peopleListItem-u6dGxF {
+            margin: 0;
+            padding: 8px;
+            @include boxes.clickable;
+
+            .actionButton-3-B2x- {
+                @include boxes.clickable;
+                height: 24px;
+                width: 24px;
+                // Hide redundant message button
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header-30YxSJ {
+        border-bottom: 0;
+    }
+
+    .header-30YxSJ, .header-2N7BYf {
+        padding: 8px;
+    }
+
+    // Other places to make friends
+    .grid-1-I1AZ {
+        padding: 0 8px;
+        gap: 8px;
+
+        .container-3tKtM_ {
+            @include boxes.clickable;
+        }
+    }
+
+    // Add friend
+    .addFriendInputWrapper-kkoSV9 {
+        padding: 0;
+
+        .addFriendInput-1Ta-rO {
+            margin-right: 0;
+        }
+    }
+}
+
+// Friend activity
+.nowPlayingColumn-1eCBCN {
+    .scroller-hE2gWq {
+        @include boxes.box($isInset: true, $isScrollbar: true);
+        padding: 0 !important;
+
+        .header-Imy05m {
+            position: sticky;
+            top: 0;
+            margin: 0 0 8px;
+            padding: 12px 8px 8px;
+            background: $grey;
+            border-bottom: 1px solid $darkgrey;
+            z-index: 2;
+        }
+
+        .itemCard-3Etziu {
+            @include boxes.clickable;
+            margin: 0 8px;
+            padding: 12px;
+
+            &:hover {
+                background: $grey;
+            }
+
+            .body-16rSsp {
+                @include boxes.box($isInset: true);
+            }
+        }
+    }
+}
+
+// Message requests
+.list-2hhlBX {
+    @include boxes.box($isInset: true, $isScrollbar: true);
+    padding: 8px !important;
+
+    .content-yjf30S > div:first-child {
+        display: none;
+    }
+
+    // Title
+    .container-q97qHp {
+        color: $black;
+        text-transform: none;
+        margin-bottom: 8px;
+    }
+
+    .messageRequestItem-1_NNAR {
+        @include boxes.clickable;
+
+        .messageContent-2t3eCI {
+            color: $black;
+        }
+    }
+}
+
+// If empty
+.content-1jQy2l:has(.emptyStateContainer-Ftfayf) {
+    @include boxes.box($isInset: true);
+}

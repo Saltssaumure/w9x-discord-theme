@@ -1,10 +1,22 @@
+@use "modals/activities";
+@use "modals/feedback";
+@use "modals/report";
+@use "modals/screenshare";
+@use "modals/sendinvite";
 @use "modals/userprofile";
+@use "modals/videotest";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 
 .root-1CAIjD {
     @include boxes.box;
+
+    // Header and footer
+    .modalHeader-3X0A4K,
+    .footer-IubaaS {
+        @include boxes.box;
+    }
 }
 
 .artContainer-1yaXct {

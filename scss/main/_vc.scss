@@ -1,0 +1,172 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Voice chat
+.wrapper-1gVUIN {
+    margin-top: 28px;
+    z-index: 0;
+
+    &.minimum-fXpVNc {
+        height: 204px;
+    }
+
+    .callContainer-HtHELf {
+        background: var(--w9x-background);
+    }
+
+    &:is(.chatSidebarOpen--YCxhs, .fullScreen-KhZZcz, .noChat-2UYgeE) {
+        height: calc(100% - 28px);
+    }
+
+    .voiceCallWrapper-3UtDiC {
+        position: relative;
+        padding: 0;
+        top: 48px;
+
+        // Avatars in DM VC
+        .participant-1l6khj {
+            margin: 0 4px;
+        }
+        
+        .callAvatarMask-fiNMWy {
+            @include boxes.box($isInset: true);
+        }
+    }
+
+    .videoControls-353CsJ {
+        padding: 0;
+
+        // No tint
+        .gradientContainer-phMG8d {
+            background: none;
+        }
+
+        .controlSection-1mNixL {
+            background: $grey;
+            border: 0 solid $darkgrey;
+
+            // Top bar
+            &.topControls-23RE3h:not(.minimum-fXpVNc .topControls-23RE3h) {
+                border-bottom-width: 1px;
+            }
+
+            .headerWrapper-1ULEPv {
+                margin: 0;
+
+                // Region selector
+                & + .horizontal-112GEH {
+                    margin-right: 8px;
+                    position: absolute;
+                    right: 0;
+                    .quickSelectClick-2ycwNA {
+                        @include boxes.box($isInset: true);
+                        background: var(--w9x-background);
+                        color: var(--w9x-text);
+                        height: 16px;
+                        padding: 2px 4px 2px 0;
+                    }
+                }
+            }
+
+            .toolbar-3_r2xA button {
+                @include boxes.clickable;
+                margin: 0;
+                height: 32px;
+                width: 32px;
+                .controlIcon-10O-4h {
+                    color: $black;
+                }
+            }
+
+            // Bottom bar
+            &.bottomControls-31YuPK {
+                padding: 8px;
+                width: auto;
+
+                &:not(.minimum-fXpVNc .bottomControls-31YuPK) {
+                    border-top-width: 1px;
+                }
+
+                // Centre controls
+                .wrapper-3t3Yqv {
+                    .controlButton-2PMNom {
+                        @include boxes.clickable;
+                        margin: 0;
+
+                        // Active unmute button
+                        &:has(.white-11auuQ),
+                        &.white-11auuQ {
+                            @include boxes.box($isInset: true);
+                        }
+                    }
+
+                    // Set button colours
+                    .colorable-3rVGna {
+                        // Most buttons
+                        &.primaryDark-2UJt1G {
+                            background: unset;
+                            color: $black;
+
+                            .centerIcon-JYpTUi {
+                                color: $black;
+                            }
+                        }
+
+                        // Leave call button
+                        &:is(.red-3T8maV, .red-3T8maV:hover) {
+                            background: $red;
+                        }
+
+                        // Active buttons
+                        &.white-11auuQ {
+                            background: unset;
+                        }
+                    }
+
+                    // Dropdown menu button in button
+                    .contextMenuNub-NuTZ_U {
+                        @include boxes.clickable($position: absolute);
+                        left: 0;
+                        width: auto;
+                        height: 12px;
+                        padding: 0;
+
+                        &.active-3D763s {
+                            @include boxes.box($isInset: true, $position: absolute);
+                        }
+                    }
+                }
+
+                // Other buttons
+                button:not(.wrapper-3t3Yqv button) {
+                    @include boxes.clickable;
+                    margin: 0;
+                    height: 32px;
+                    width: 32px;
+
+                    .controlIcon-10O-4h {
+                        color: $black;
+                    }
+
+                    &.buttonColor-28DXIe {
+                        padding: 0;
+                        background: unset;
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        // Show chat button
+        & ~ div:not(.erd_scroll_detection_container) button {
+            @include boxes.clickable($position: absolute);
+            height: 32px;
+            width: 32px;
+            top: 8px;
+
+            .controlIcon-10O-4h {
+                color: $black;
+            }
+        }
+    }
+}

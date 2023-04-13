@@ -132,21 +132,20 @@
 }
 
 // Channels: black on none bg
-.modeConnected-NrO4cP,
-.modeUnread-3Cxepe,
-.notInteractive-2tFrlE.modeConnected-NrO4cP,
-.notInteractive-2tFrlE.modeSelected-3DmyhH {
+:is(.modeConnected-NrO4cP, .modeUnread-3Cxepe:not(:hover), .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
     .name-28HaxV {
         color: var(--channels-default);
     }
 }
 
 // Hovered and selected channels: white on navy bg
-.content-1gYQeQ:hover,
-.modeSelected-3DmyhH,
-.modeSelected-3DmyhH:hover,
-.modeUnread-3Cxepe:hover:not(.typeThread-2Aqh6X),
-.modeMuted-2T4MDZ:hover:not(.typeThread-2Aqh6X) {
+:is(
+        .content-1gYQeQ:hover,
+        .modeSelected-3DmyhH,
+        .modeSelected-3DmyhH:hover,
+        .modeUnread-3Cxepe:hover:not(.typeThread-2Aqh6X),
+        .modeMuted-2T4MDZ:hover:not(.typeThread-2Aqh6X)
+    ) {
     .icon-2W8DHg {
         color: var(--interactive-hover);
     }
@@ -154,4 +153,27 @@
     .unreadRelevant-2f-VSK {
         background: var(--interactive-hover);
     }
+}
+
+// Voice user
+.voiceUser-3nRK-K:is(:hover, :active) {
+    .username-vAneIW,
+    .icon-N9JZb6 {
+        color: var(--interactive-hover);
+    }
+}
+
+// Drag voice user
+.containerUserOver-SDa1HW::after {
+    background: transparentize($darkblue, 0.7);
+    border-color: $darkblue;
+    left: 0;
+}
+
+// Drag channel before
+// Drag channel after
+.containerDragBefore-1s5Qg6::before,
+.containerDragAfter-3aBiOW::after {
+    background: $darkblue;
+    left: 0;
 }

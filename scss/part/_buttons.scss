@@ -23,11 +23,8 @@
     }
 }
 
-.lookFilled-1H2Jvj {
-    &.colorBrand-2M3O3N,
-    &.colorBrand-2M3O3N:disabled,
-    &.colorBrand-2M3O3N[aria-disabled=true],
-    &.colorBrandNew-abZT3v {
+.appMount-2yBXZl .lookFilled-1H2Jvj {
+    &:is(.colorBrand-2M3O3N, .colorBrand-2M3O3N:disabled, .colorBrand-2M3O3N[aria-disabled="true"], .colorBrandNew-abZT3v) {
         color: $black;
         background: $lightgrey;
         &:hover,
@@ -35,7 +32,7 @@
             background: $lightgrey;
         }
     }
-    &.colorPrimary-2-Lusz {
+    &:is(.colorPrimary-2-Lusz, .colorTransparent-2SBJ8-) {
         color: $black;
     }
 }

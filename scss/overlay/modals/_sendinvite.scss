@@ -1,0 +1,57 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.searchBar-20o6Cf {
+    @include boxes.box($isInset: true);
+    background: var(--w9x-background);
+    color: var(--w9x-text);
+
+    .input-2m5SfJ {
+        color: var(--w9x-text);
+    }
+
+    .iconLayout-3Bjizv {
+        @include boxes.clickable;
+        background: $grey;
+    }
+}
+
+.scroller-3nFW5p {
+    @include boxes.box($isInset: true);
+    padding: 0;
+
+    .inviteRow-3vmB7i {
+        .inviteRowName-3H4s_c {
+            color: $black;
+        }
+
+        &:hover {
+            background: $darkblue;
+
+            .inviteRowName-3H4s_c,
+            .contents-3NembX {
+                color: $white;
+            }
+        }
+    }
+}
+
+.layerContainer-2lfOPe .footer-1hTRRZ {
+    background: $grey;
+
+    .input-3O04eu {
+        height: 32px;
+    }
+
+    .copyButton-2k4drX {
+        margin-right: 0;
+    }
+
+    .footerText-2QLGHU {
+        color: $black;
+    }
+
+    .inviteBannerUpsell-1t_LYM {
+        @include boxes.box($isInset: true);
+    }
+}

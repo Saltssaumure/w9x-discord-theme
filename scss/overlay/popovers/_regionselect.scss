@@ -1,0 +1,25 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Select region in DM VC
+
+.layerContainer-2lfOPe .quickSelectPopout-2F0PXw {
+    @include boxes.box($position: absolute);
+    top: -8px;
+    background: $grey;
+    color: $black;
+
+    .quickSelectPopoutOption-2E2UmS:hover {
+        background: $darkblue;
+        color: $white;
+    }
+
+    .regionSelectName-1Tj9C9 {
+        color: inherit;
+        margin: 0;
+    }
+
+    .check-K_srvn {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3' d='M1.99609375 5.7835338l3.70287382 3.7028738L14.1853752 1'/%3E%3C/svg%3E");
+    }
+}

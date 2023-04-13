@@ -1,0 +1,28 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Report message
+
+.header-2uU6y- {
+    padding: 16px;
+}
+
+.messagePreviewContainer-1oR1Oc {
+    background: var(--w9x-background);
+    @include boxes.box($isInset: true);
+}
+
+.childButton-3o_dlg {
+    @include boxes.clickable;
+    margin-bottom: 0;
+    min-height: auto;
+}
+
+.checkboxRow-3bHQJW {
+    @include boxes.clickable;
+    padding: 4px;
+    
+    &:not(:last-child) {
+        margin-bottom: 0;
+    }
+}

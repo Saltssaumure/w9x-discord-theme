@@ -1,0 +1,47 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// VC emoji picker
+.container-3a5mk- {
+    @include boxes.box;
+
+    .categoryList-2qRrlj {
+        top: 52px;
+    }
+
+    .slotsContainer-3Li39W {
+        @include boxes.box;
+        padding: 4px;
+        width: auto;
+
+        .slotsWide-31Ye9I {
+            gap: 8px;
+        }
+
+        .slot-JZjffO {
+            @include boxes.clickable;
+            padding: 4px;
+        }
+
+        // Do not popout with hover
+        .contents-3NembX > div {
+            transform: none !important;
+        }
+    }
+}
+
+// VC activity picker
+.container-1jQZ2U {
+    @include boxes.box;
+
+    // Activity
+    .activityItem_13_11-T6-eHz {
+        @include boxes.clickable;
+        transform: none !important;
+    }
+
+    // No animation
+    .wumpusRocketOuterContainer-1AXehd {
+        display: none;
+    }
+}

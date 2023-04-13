@@ -1,0 +1,19 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Preview camera
+
+.backgroundOptionsSmall-25A75j {
+    gap: 8px;
+}
+
+.backgroundOptionRing-1vvQ0C {
+    border-color: $blue;
+}
+
+.backgroundOption-2mIYjm:hover:not(.backgroundOption-2mIYjm.backgroundOptionDisabled-19G9PD):not(.backgroundOptionSelected-3J38oq) {
+    &,
+    .backgroundImageOption-1LRgQ8 {
+        transform: none !important;
+    }
+}
