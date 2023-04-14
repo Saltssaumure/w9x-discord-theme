@@ -1,23 +1,28 @@
-@use "settings/myaccount";
-@use "settings/profiles";
-@use "settings/privacyandsafety";
-@use "settings/authorisedapps";
-@use "settings/devices";
-@use "settings/connections";
+// User settings
+@use "usersettings/myaccount";
+@use "usersettings/profiles";
+@use "usersettings/privacyandsafety";
+@use "usersettings/authorisedapps";
+@use "usersettings/devices";
+@use "usersettings/connections";
 
-@use "settings/nitro";
-@use "settings/serverboost";
-@use "settings/subscriptions";
-@use "settings/giftinventory";
-@use "settings/billing";
+@use "usersettings/nitro";
+@use "usersettings/serverboost";
+@use "usersettings/subscriptions";
+@use "usersettings/giftinventory";
+@use "usersettings/billing";
 
-@use "settings/appearance";
-@use "settings/voiceandvideo";
-@use "settings/keybinds";
+@use "usersettings/appearance";
+@use "usersettings/voiceandvideo";
+@use "usersettings/keybinds";
 
-@use "settings/registeredgames";
-@use "settings/gameoverlay";
+@use "usersettings/registeredgames";
+@use "usersettings/gameoverlay";
 
+// Server settings
+@use "serversettings/members";
+
+// Settings
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 @use "../top/shortcutIcon" as ico;

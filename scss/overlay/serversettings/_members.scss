@@ -1,0 +1,12 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.member-2cj2PI {
+    @include boxes.box;
+    padding: 15px;
+
+    .role-2TIOKu {
+        @include boxes.clickable;
+        cursor: pointer;
+    }
+}

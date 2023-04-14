@@ -1,0 +1,53 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.root-1CAIjD:has(.quickswitcher-pKcM9U) {
+    height: 380px;
+}
+
+.quickswitcher-pKcM9U {
+    min-height: 380px;
+
+    // Search
+    .input-3r5zZY {
+        @include boxes.box($isInset: true);
+        color: var(--w9x-text);
+    }
+
+    // Results
+    .scroller-2qwVWY {
+        @include boxes.box($isInset: true, $isScrollbar: true);
+
+        .content-yjf30S {
+            border-right: 1px solid $darkgrey;
+        }
+
+        // Entry
+        .result-u66Ywh {
+            &:hover {
+                background: $darkblue;
+
+                .contentDefault-17ewQQ,
+                .icon-12xJtb,
+                .misc-XwBATi,
+                .contentUnread-1_MVDK {
+                    color: $white;
+                }
+            }
+
+            // Unread pill
+            .contentUnread-1_MVDK::before {
+                content: "";
+                display: block;
+                position: absolute;
+                --size: 8px;
+                height: var(--size);
+                width: calc(var(--size) / 2);
+                left: 0;
+                top: calc(50% - var(--size) / 2);
+                background: currentColor;
+                color: inherit;
+            }
+        }
+    }
+}
