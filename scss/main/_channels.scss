@@ -132,7 +132,12 @@
 }
 
 // Channels: black on none bg
-:is(.modeConnected-NrO4cP, .modeUnread-3Cxepe:not(:hover), .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
+:is(
+        .modeConnected-NrO4cP,
+        .modeUnread-3Cxepe:not(:hover),
+        .notInteractive-2tFrlE.modeConnected-NrO4cP,
+        .notInteractive-2tFrlE.modeSelected-3DmyhH
+    ) {
     .name-28HaxV {
         color: var(--channels-default);
     }
@@ -140,6 +145,7 @@
 
 // Hovered and selected channels: white on navy bg
 :is(
+        .modeConnected-NrO4cP:hover,
         .content-1gYQeQ:hover,
         .modeSelected-3DmyhH,
         .modeSelected-3DmyhH:hover,
@@ -147,6 +153,10 @@
         .modeMuted-2T4MDZ:hover:not(.typeThread-2Aqh6X)
     ) {
     .icon-2W8DHg {
+        color: var(--interactive-hover);
+    }
+
+    .name-28HaxV {
         color: var(--interactive-hover);
     }
 

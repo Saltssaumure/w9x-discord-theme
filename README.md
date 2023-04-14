@@ -8,8 +8,8 @@
 
 ***A Windows 9x style Discord theme.***
 
-| Light mode | Dark mode |
-| ---------- | --------- |
+| Light mode                                                  | Dark mode                                                 |
+| ----------------------------------------------------------- | --------------------------------------------------------- |
 | ![Screenshot of NineX light mode applied to Discord][light] | ![Screenshot of NineX dark mode applied to Discord][dark] |
 
 ## Installation
