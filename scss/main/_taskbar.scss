@@ -123,6 +123,7 @@ body #app-mount .guilds-2JjMmN {
 // Controls
 .button-12Fmur {
     @include boxes.clickable;
+    
     &.enabled-9OeuTA:hover,
     &:active {
         background: inherit;

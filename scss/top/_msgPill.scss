@@ -1,0 +1,15 @@
+// Unread message pill
+@mixin unreadPill($size) {
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        --size: #{$size};
+        height: var(--size);
+        width: calc(var(--size) / 2);
+        left: 0;
+        top: calc(50% - var(--size) / 2);
+        background: currentColor;
+        color: inherit;
+    }
+}

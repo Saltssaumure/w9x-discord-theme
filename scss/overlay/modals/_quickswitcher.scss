@@ -1,5 +1,6 @@
 @use "../../top/vars-scss" as *;
 @use "../../top/boxes" as boxes;
+@use "../../top/msgPill" as msg;
 
 .root-1CAIjD:has(.quickswitcher-pKcM9U) {
     height: 380px;
@@ -36,17 +37,8 @@
             }
 
             // Unread pill
-            .contentUnread-1_MVDK::before {
-                content: "";
-                display: block;
-                position: absolute;
-                --size: 8px;
-                height: var(--size);
-                width: calc(var(--size) / 2);
-                left: 0;
-                top: calc(50% - var(--size) / 2);
-                background: currentColor;
-                color: inherit;
+            .contentUnread-1_MVDK {
+                @include msg.unreadPill($size: 8px);
             }
         }
     }
