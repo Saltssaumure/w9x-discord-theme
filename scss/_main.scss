@@ -30,7 +30,7 @@
 .container-2cd8Mz,
 // Explore servers view
 .pageWrapper-2PwDoS,
-// University hub
+// Student hub
 .scroller-RfJjkV,
 // Buy Nitro page
 .applicationStore-2nk7Lo,
@@ -39,7 +39,10 @@
     @include boxes.mainWindow();
 }
 
-// University hub
+// Student hub
 .scroller-RfJjkV {
     height: auto;
+    &::before {
+        display: none;
+    }
 }

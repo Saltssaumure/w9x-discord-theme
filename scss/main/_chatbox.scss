@@ -91,7 +91,8 @@
         box-shadow: none;
         background: $grey;
 
-        &, &::before {
+        &,
+        &::before {
             border-bottom-color: $grey;
         }
 
@@ -118,9 +119,27 @@
         .rail-1BiMhk {
             @include boxes.box;
             margin-bottom: 0;
+            width: 48px;
 
             &::before {
                 border-bottom: 0;
+            }
+
+            .listItems-6eZzQ1 {
+                inset: 7px !important;
+            }
+
+            .section-Dep3No {
+                margin-bottom: 0;
+            }
+
+            .selectable-LZ5XDU,
+            .selectable-fgiA2c {
+                @include boxes.clickable;
+            }
+
+            .builtInSeparator-2rCueY {
+                display: none;
             }
         }
 
@@ -139,7 +158,11 @@
 
         // Command optional args
         .optionals-2w-NPQ {
-            border-left: 0;
+            @include boxes.box($isInset: true, $isScrollbar: true);
+            padding: 0 4px;
+            .optionalCount-1BzEgg {
+                padding: 0;
+            }
         }
     }
 }
