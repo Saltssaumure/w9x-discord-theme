@@ -2,23 +2,11 @@
 @use "../../top/boxes" as boxes;
 
 // Changelog
-
 .small-2xUY-3:has(.modal-3Hrb0S) {
     width: 492px;
 
     .flexChild-3PzYmX > * {
         color: $black;
-    }
-
-    .content-FDHp32 {
-        ul li::before {
-            background: $black;
-            opacity: 1;
-        }
-
-        a {
-            color: var(--text-link);
-        }
     }
 
     .socialLink-1qjJIk {

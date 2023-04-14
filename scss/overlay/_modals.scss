@@ -1,13 +1,16 @@
 @use "modals/activities";
+@use "modals/avatardecoration";
+@use "modals/changeavatar";
+@use "modals/editaccount";
 @use "modals/feedback";
+@use "modals/notifsettings";
+@use "modals/quickswitcher";
 @use "modals/report";
 @use "modals/screenshare";
 @use "modals/sendinvite";
 @use "modals/userprofile";
 @use "modals/videotest";
 @use "modals/whatsnew";
-@use "modals/quickswitcher";
-@use "modals/notifsettings";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
@@ -32,9 +35,22 @@
     margin-bottom: 0;
 }
 
-:is(.theme-dark, .theme-light) {
-    .content-FDHp32 :is(ol, p, ul li) {
-        color: $black;
+// Changelog
+.layerContainer-2lfOPe {
+
+    .content-FDHp32 {
+        :is(ol, p, ul li) {
+            color: $black;
+        }
+
+        ul li::before {
+            background: $black;
+            opacity: 1;
+        }
+
+        a {
+            color: var(--text-link);
+        }
     }
 
     .improved-2SJXHz {

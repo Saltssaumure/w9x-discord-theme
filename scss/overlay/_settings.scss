@@ -33,6 +33,17 @@
     padding-top: $title-height;
     margin-bottom: $window-bottom + 46px;
 
+    // Unsaved changes
+    .container-20TyK0 {
+        @include boxes.box;
+        background: $grey !important;
+
+        .message-3C6JQ1,
+        .contents-3NembX span {
+            color: $black!important;
+        }
+    }
+
     .sidebarRegion-1VBisG {
         @include channels.vars;
         flex-grow: 0;
@@ -68,7 +79,6 @@
             z-index: 1;
 
             .container-O54IuJ {
-
                 .closeButton-PCZcma {
                     @include boxes.clickable;
                     background: $grey;
