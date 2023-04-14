@@ -26,3 +26,8 @@
         display: none;
     }
 }
+
+// Max height for pinned / inbox
+.messagesPopoutWrap-3zryHW {
+    max-height: calc(100vh - $window-top - 120px) !important;
+}
