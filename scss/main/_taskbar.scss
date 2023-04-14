@@ -28,22 +28,21 @@
 
 // Override HSL
 body #app-mount .guilds-2JjMmN {
-
-    .wrapper-38slSD>.listItem-3SmSlK,
-    .scroller-3X7KbA>div>.listItem-3SmSlK,
-    .scroller-3X7KbA>.listItem-3SmSlK {
+    .wrapper-38slSD > .listItem-3SmSlK,
+    .scroller-3X7KbA > div > .listItem-3SmSlK,
+    .scroller-3X7KbA > .listItem-3SmSlK {
         left: -7px;
         position: relative;
     }
 
-    .scroller-3X7KbA>div>.listItem-3SmSlK>.pill-2RsI5Q {
+    .scroller-3X7KbA > div > .listItem-3SmSlK > .pill-2RsI5Q {
         bottom: -20px !important;
     }
 }
 
 // Closed folder icon
 @include fi.folderIcon;
-.expandedFolderBackground-1kSAf6.collapsed-uGXEbi+.listItem-3SmSlK {
+.expandedFolderBackground-1kSAf6.collapsed-uGXEbi + .listItem-3SmSlK {
     .guildIcon-2I5sfu {
         display: none;
     }
@@ -55,7 +54,7 @@ body #app-mount .guilds-2JjMmN {
 }
 
 // Opened folder icon
-#app-mount .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi)+.listItem-3SmSlK {
+#app-mount .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK {
     @include boxes.box($isInset: true);
     .expandedFolderIconWrapper-3RwQpD {
         display: none;
@@ -68,7 +67,7 @@ body #app-mount .guilds-2JjMmN {
     align-items: center;
 }
 
-#app-mount .guilds-2JjMmN ul>[class*="listItem"]:not([class*="listItemWrapper"]) {
+#app-mount .guilds-2JjMmN ul > [class*="listItem"]:not([class*="listItemWrapper"]) {
     --server-size: 24px;
     margin: 0;
 }
@@ -83,15 +82,30 @@ body #app-mount .guilds-2JjMmN {
 // Control panel
 .panels-3wFtMD {
     @include boxes.box;
-    width: $panel-width;
     position: fixed;
-    height: 44px!important;
     bottom: 0;
     left: calc(100vw - $panel-width);
+    width: $panel-width;
+    height: 44px;
+    z-index: 0;
 
-    border-left: 0;
-    &::before {
+    &:has(.container-1zzFcN, .activityPanel-9icbyU) {
+        height: auto;
+
+        &:hover {
+            z-index: 2;
+        }
+    }
+
+    :is(.container-1zzFcN, .activityPanel-9icbyU) {
+        border-bottom: 0;
+    }
+
+    &:not(:has(.container-1zzFcN, .activityPanel-9icbyU)) {
         border-left: 0;
+        &::before {
+            border-left: 0;
+        }
     }
 }
 
