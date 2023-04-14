@@ -123,16 +123,12 @@
     padding: 0;
 }
 
-// Play pause video button
+// Central play pause video button
 .iconWrapper-XpfprW {
     @include boxes.clickable;
     opacity: 1;
     background: $grey;
     color: $black;
-}
-
-.cover-Stx3Vt.active-1N2Uz6:active .iconWrapper-XpfprW {
-    transform: none;
 }
 
 // Download / delete / alt txt button
@@ -163,8 +159,17 @@
     @include boxes.box;
 }
 
+// Fullscreen button
+.controlIcon-10O-4h, .controlIcon-10O-4h:hover {
+    color: $black;
+}
+
 .videoButton-3NM9Tc {
     @include boxes.clickable;
+}
+
+.controlIcon-1grhw_ {
+    opacity: 1;
 }
 
 .wrapper-1FP9YQ {
