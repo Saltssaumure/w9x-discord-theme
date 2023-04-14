@@ -7,6 +7,7 @@
 @use "modals/videotest";
 @use "modals/whatsnew";
 @use "modals/quickswitcher";
+@use "modals/notifsettings";
 
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
@@ -26,7 +27,7 @@
 }
 
 .content-1OG56Q {
-    @include boxes.box($isInset: true);
+    @include boxes.box($isInset: true, $isScrollbar: true);
     padding-top: 18px;
     margin-bottom: 0;
 }

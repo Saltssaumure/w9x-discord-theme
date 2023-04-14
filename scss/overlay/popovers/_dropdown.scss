@@ -10,7 +10,15 @@
         padding: 4px 8px;
         color: var(--w9x-text);
 
-        &[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+        .defaultColor-1EVLSt {
+            color: var(--w9x-text);
+        }
+
+        .icon-poPImO {
+            opacity: 1;
+        }
+
+        &[aria-selected="true"]:not(.option-Uc12mm.multi-2vPqc4) {
             background: $lightgrey;
         }
 

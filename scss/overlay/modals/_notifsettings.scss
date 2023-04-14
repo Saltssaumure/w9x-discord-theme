@@ -1,0 +1,28 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Notification settings
+.root-1CAIjD {
+    .override-1sK4r0,
+    .overrideHighlight-3f-yyO,
+    .guildName-1kreI8,
+    .channelName-IPB6B3 {
+        color: $black;
+    }
+
+    .override-1sK4r0 {
+        padding: 8px;
+
+        .checkboxGroup-uXi80g {
+            width: 300px;
+            margin-right: -8px;
+        }
+
+        .removeOverride-26fy8R {
+            z-index: 2;
+            @include boxes.clickable($position: absolute);
+            background-color: $grey;
+            left: -10px;
+        }
+    }
+}
