@@ -3,8 +3,9 @@
 
 // Update banners
 #bd-notices {
-    position: absolute;
-    width: 100vw;
+    .bd-notice-button {
+        @include boxes.clickable;
+    }
 }
 
 // Settings sidebar

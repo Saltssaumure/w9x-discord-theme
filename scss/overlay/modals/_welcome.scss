@@ -1,0 +1,7 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Welcome to server
+.optionContainer-yOpaLq {
+    @include boxes.clickable;
+}

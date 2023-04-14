@@ -3,7 +3,7 @@
 @use "top/shortcutIcon" as sc;
 
 @use "main/windowbar";
-@use "main/titlebar";
+@use "main/headerbar";
 
 @use "main/chatbox";
 @use "main/messages";
@@ -22,6 +22,25 @@
 .bg-1QIAus {
     background-image: var(--w9x-background-image, none);
     background-color: var(--w9x-background-color, #{$turquoise});
+}
+
+// Put notice banners below main window
+.base-2jDfDU {
+    flex-direction: column-reverse;
+    
+    #bd-notices {
+        z-index: 102;
+    }
+
+    :is(.bd-notice, .notice-12Koq-) {
+        @include boxes.box;
+        margin-bottom: -4px;
+        border-radius: 4px 4px 0 0;
+
+        .back-ZdqB1k {
+            position: absolute;
+        }
+    }
 }
 
 // Settings

@@ -22,7 +22,7 @@
 }
 
 // Folder/server icon
-.listItem-3SmSlK:not(.tutorialContainer-1pL9QS + .listItem-3SmSlK):not([style] + .listItem-3SmSlK) {
+.listItem-3SmSlK:not(:has(.guildSeparator-a4uisj)) {
     @include boxes.clickable;
 }
 
