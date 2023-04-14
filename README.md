@@ -1,12 +1,16 @@
-[screenshot]: https://user-images.githubusercontent.com/29710355/227399665-9b0e8dd7-ba17-4d42-ba66-cc314c1ed418.png
+[screenshot]: https://user-images.githubusercontent.com/29710355/231909312-bf3786dc-317a-40c4-909b-b5dc58093b15.png
+[light]: https://user-images.githubusercontent.com/29710355/231909647-72871e7f-8763-4174-9c71-5f1bb7d401bc.png
+[dark]: https://user-images.githubusercontent.com/29710355/231909520-b24c4301-2d90-4c6c-9e5d-ca9ce20e3ba6.png
 
 # NineX Discord Theme
 [![GitHub downloads](https://img.shields.io/github/downloads/saltssaumure/w9x-discord-theme/total?color=purple&label=GitHub%20downloads&style=flat-square)](https://github.com/Saltssaumure/w9x-discord-theme/releases/latest "Latest release")
 ![Total size](https://img.shields.io/github/repo-size/saltssaumure/w9x-discord-theme?style=flat-square "Total size")
 
-***A Windows 95 style Discord theme.***
+***A Windows 9x style Discord theme.***
 
-![Screenshot of NineX Discord theme applied to Discord desktop client][screenshot]
+| Light mode | Dark mode |
+| ---------- | --------- |
+| ![Screenshot of NineX light mode applied to Discord][light] | ![Screenshot of NineX dark mode applied to Discord][dark] |
 
 ## Installation
 
@@ -32,9 +36,11 @@
 3. Customise the variable values. See table below for reference.
 4. Save changes and enjoy.
 
-| Description       | Variable name     | Valid values               | Default value |
-|-------------------|-------------------|----------------------------|---------------|
-| Placeholder       | `--placeholder`   | Placeholder                | placeholder   |
+| Description       | Variable name            | Valid values                               | Default value |
+|-------------------|--------------------------|--------------------------------------------|---------------|
+| Background image  | `--w9x-background-image` | Any image link wrapped encased in `url()`. | `none`        |
+| Background colour | `--w9x-background-color` | Any CSS-recognised colour.                 | `#008080`     |
+| Start menu text   | `--w9x-start-text`       | Any quoted text.                           | `"Windows95"` |
 
 ## License
 [GNU General Public License v3.0](https://github.com/Saltssaumure/w9x-discord-theme/blob/main/LICENSE)
