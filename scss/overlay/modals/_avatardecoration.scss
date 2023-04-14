@@ -1,0 +1,30 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.modalContent-20ynPO:has(.decorationGridItem-3J_11G) {
+    .list-2gEvIv {
+        @include boxes.scroller;
+        left: 0;
+
+        .content-yjf30S > div {
+            left: 0 !important;
+        }
+    }
+
+    .decorationGridItem-3J_11G {
+        @include boxes.clickable;
+
+        &.selected-IxbpGM {
+            @include boxes.inset;
+            box-shadow: none;
+        }
+    }
+
+    .wrapper-3Un6-K {
+        @include boxes.box;
+
+        .avatarDecoration-2Wb1Au {
+            z-index: 1;
+        }
+    }
+}

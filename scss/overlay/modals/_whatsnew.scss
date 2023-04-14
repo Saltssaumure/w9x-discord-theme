@@ -1,0 +1,28 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Changelog
+.small-2xUY-3:has(.modal-3Hrb0S) {
+    width: 492px;
+
+    .flexChild-3PzYmX > * {
+        color: $black;
+    }
+
+    .socialLink-1qjJIk {
+        @include boxes.clickable;
+        margin-right: 0;
+        padding: 4px;
+        color: $black;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & + .text-xs-normal-3O7EaX {
+            line-height: 30px;
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,23 +1,28 @@
-@use "settings/myaccount";
-@use "settings/profiles";
-@use "settings/privacyandsafety";
-@use "settings/authorisedapps";
-@use "settings/devices";
-@use "settings/connections";
+// User settings
+@use "usersettings/myaccount";
+@use "usersettings/profiles";
+@use "usersettings/privacyandsafety";
+@use "usersettings/authorisedapps";
+@use "usersettings/devices";
+@use "usersettings/connections";
 
-@use "settings/nitro";
-@use "settings/serverboost";
-@use "settings/subscriptions";
-@use "settings/giftinventory";
-@use "settings/billing";
+@use "usersettings/nitro";
+@use "usersettings/serverboost";
+@use "usersettings/subscriptions";
+@use "usersettings/giftinventory";
+@use "usersettings/billing";
 
-@use "settings/appearance";
-@use "settings/voiceandvideo";
-@use "settings/keybinds";
+@use "usersettings/appearance";
+@use "usersettings/voiceandvideo";
+@use "usersettings/keybinds";
 
-@use "settings/registeredgames";
-@use "settings/gameoverlay";
+@use "usersettings/registeredgames";
+@use "usersettings/gameoverlay";
 
+// Server settings
+@use "serversettings/members";
+
+// Settings
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 @use "../top/shortcutIcon" as ico;
@@ -27,6 +32,17 @@
 .standardSidebarView-E9Pc3j {
     padding-top: $title-height;
     margin-bottom: $window-bottom + 46px;
+
+    // Unsaved changes
+    .container-20TyK0 {
+        @include boxes.box;
+        background: $grey !important;
+
+        .message-3C6JQ1,
+        .contents-3NembX span {
+            color: $black!important;
+        }
+    }
 
     .sidebarRegion-1VBisG {
         @include channels.vars;
@@ -63,7 +79,6 @@
             z-index: 1;
 
             .container-O54IuJ {
-
                 .closeButton-PCZcma {
                     @include boxes.clickable;
                     background: $grey;
@@ -136,7 +151,7 @@
 .slider-1mmyV6 {
     // Slider bar
     .bar-2H7Q9u {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: $grey;
         height: 8px;
 
@@ -198,7 +213,7 @@
 
 // Dropdown selectors
 .lookFilled-GPyucw.select-Zz0IcO {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     padding: 0;
 
     .value-2en4z7 {

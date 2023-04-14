@@ -18,7 +18,7 @@
         }
 
         &.selected-1sf9UK {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
         }
     }
 }
@@ -31,12 +31,12 @@
 
 // Banner colour picker
 .colorSwatch-2UxEuG {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
 }
 
 // Bio typing area
 .channelTextArea-1VQBuV {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
 
     .slateTextArea-27tjG0 {
         // maybe risky to other textboxes, doublecheck
@@ -60,7 +60,7 @@
     @include boxes.box;
 
     .userPopoutOverlayBackground-dKOOda {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .profileBadges-31rDHI.containerWithContent-2_V0PM {
@@ -80,7 +80,7 @@
 
 // Server nickname
 .inputWrapper-2K8ds1 {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     background: var(--w9x-background);
 
     .input-3O04eu {

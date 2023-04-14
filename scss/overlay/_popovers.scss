@@ -1,5 +1,6 @@
 @use "popovers/createdm";
 @use "popovers/dropdown";
+@use "popovers/editor";
 @use "popovers/emojiinfo";
 @use "popovers/emotes";
 @use "popovers/inbox";
@@ -19,10 +20,15 @@
 
 // Inner message scroller in pinned / inbox
 .layerContainer-2lfOPe [class^="header-"] + :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     margin: 0 6px 6px 6px;
 
     &::before {
         display: none;
     }
+}
+
+// Max height for pinned / inbox
+.messagesPopoutWrap-3zryHW {
+    max-height: calc(100vh - $window-top - 120px) !important;
 }

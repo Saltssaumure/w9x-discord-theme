@@ -40,7 +40,7 @@
 
     // Checkbox
     .icon-3XHs8t:has(:is(.checkbox-397WsK, path[d^="M12 20C16.4183"]), path[d^="M18.625 3"]) {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: $white;
         width: 12px;
         height: 12px;
@@ -72,8 +72,7 @@
 
     .colorDefault-2_rLdz.focused-3LIdPu .caret-1TZU-U,
     .colorDefault-2_rLdz.focused-3LIdPu .checkbox-397WsK,
-    .colorDefault-2_rLdz.focused-3LIdPu .radioSelection-3PDNAQ,
-    .colorDefault-2_rLdz.focused-3LIdPu .subtext-1mqKVB {
+    .colorDefault-2_rLdz.focused-3LIdPu .radioSelection-3PDNAQ {
         color: $black;
     }
 

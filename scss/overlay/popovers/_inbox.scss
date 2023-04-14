@@ -47,7 +47,7 @@
         }
 
         :is(.messageContainer-3VTXBC, .messages-23can0) {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
             background: var(--w9x-background);
 
             // Jump button

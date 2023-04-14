@@ -1,25 +1,16 @@
 @use "vars-scss" as *;
 
-@mixin box($isInset: false, $isRotate: false, $isScrollbar: false, $position: relative) {
-    
+@mixin box($isInset: false, $hasBefore: true, $isClickable: false, $position: relative) {
     position: $position;
     border: 1px solid;
 
-    @if $isInset {
-        border-color: $black $white $white $black;
-    }
+    $border-outer: $white $black $black $white;
+    $border-outer-inset: $black $white $white $black;
 
-    @else {
-        @if $isRotate {
-            border-color: $white $white $black $black;
-        }
+    $border-inner: $lightgrey $darkgrey $darkgrey $lightgrey;
+    $border-inner-inset: $darkgrey $lightgrey $lightgrey $darkgrey;
 
-        @else {
-            border-color: $white $black $black $white;
-        }
-    }
-
-    @if not $isScrollbar {
+    @if $hasBefore {
         &::before {
             content: " ";
             position: absolute;
@@ -29,28 +20,43 @@
             z-index: 1;
 
             @if $isInset {
-                border-color: $darkgrey $lightgrey $lightgrey $darkgrey;
+                border-color: $border-inner-inset;
+            } @else {
+                border-color: $border-inner;
             }
+        }
+    }
 
-            @else {
-                @if $isRotate {
-                    border-color: $lightgrey $lightgrey $darkgrey $darkgrey;
-                }
+    @if $isInset {
+        border-color: $border-outer-inset;
+    } @else {
+        border-color: $border-outer;
+    }
 
-                @else {
-                    border-color: $lightgrey $darkgrey $darkgrey $lightgrey;
-                }
+    @if $isClickable {
+        &:active {
+            border-color: $border-outer-inset;
+            &::before {
+                border-color: $border-inner-inset;
             }
         }
     }
 }
 
-@mixin clickable($isRotate: false, $position: relative) {
-    @include box($isRotate: $isRotate, $position: $position);
-    
-    &:active {
-        @include box($isInset: true, $position: $position);
-    }
+@mixin inset($position: relative) {
+    @include box($isInset: true, $position: $position);
+}
+
+@mixin thin($position: relative) {
+    @include box($hasBefore: false, $position: $position);
+}
+
+@mixin scroller($position: relative) {
+    @include box($isInset: true, $hasBefore: false, $position: $position);
+}
+
+@mixin clickable($position: relative) {
+    @include box($isClickable: true, $position: $position);
 }
 
 @mixin tab() {

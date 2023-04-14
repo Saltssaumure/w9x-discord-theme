@@ -1,0 +1,22 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Highlighted text editor
+.buttons-3snlAO {
+    @include boxes.box;
+    background: $grey;
+
+    .icon-3g7qdA,
+    .active-136ioF .icon-3g7qdA,
+    .hover-3OQb9Y:hover .icon-3g7qdA {
+        color: $black;
+    }
+
+    .active-136ioF {
+        @include boxes.inset;
+    }
+
+    .divider-3NY7PF {
+        display: none;
+    }
+}

@@ -23,7 +23,7 @@
 
 // Screens
 .sourceScroller-3wC9he {
-    @include boxes.box($isInset: true, $isScrollbar: true);
+    @include boxes.scroller;
 }
 
 .sourceContainer-1uqUbz {
@@ -39,7 +39,7 @@
 
 // What you're streaming
 .card-m7VgZ8 {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
 
     .channelIcon-1BydE- {
         color: $black;
@@ -48,7 +48,7 @@
 
 // Stream quality
 .qualitySettingsContainer-2LjkfM {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     
     .selectorButton-3fWZ0_ {
         @include boxes.clickable;
@@ -63,7 +63,7 @@
     }
 
     .selectorButtonSelected-3cQUnj {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: $grey;
         .selectorTextSelected-2zup8I {
             color: $black;

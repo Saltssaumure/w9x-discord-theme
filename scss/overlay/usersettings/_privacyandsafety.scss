@@ -7,7 +7,7 @@
     margin: 0;
 
     &[aria-checked="true"] {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .radioBar-1XgZqD {

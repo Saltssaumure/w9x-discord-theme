@@ -1,0 +1,45 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+@use "../../top/msgPill" as msg;
+
+.root-1CAIjD:has(.quickswitcher-pKcM9U) {
+    height: 380px;
+}
+
+.quickswitcher-pKcM9U {
+    min-height: 380px;
+
+    // Search
+    .input-3r5zZY {
+        @include boxes.inset;
+        color: var(--w9x-text);
+    }
+
+    // Results
+    .scroller-2qwVWY {
+        @include boxes.scroller;
+
+        .content-yjf30S {
+            border-right: 1px solid $darkgrey;
+        }
+
+        // Entry
+        .result-u66Ywh {
+            &:hover {
+                background: $darkblue;
+
+                .contentDefault-17ewQQ,
+                .icon-12xJtb,
+                .misc-XwBATi,
+                .contentUnread-1_MVDK {
+                    color: $white;
+                }
+            }
+
+            // Unread pill
+            .contentUnread-1_MVDK {
+                @include msg.unreadPill($size: 8px);
+            }
+        }
+    }
+}

@@ -3,8 +3,9 @@
 
 // Update banners
 #bd-notices {
-    position: absolute;
-    width: 100vw;
+    .bd-notice-button {
+        @include boxes.clickable;
+    }
 }
 
 // Settings sidebar
@@ -54,7 +55,7 @@
 }
 
 .bd-addon-error-stack .scrollbarGhostHairline-2LpzZ9 {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     background: $white;
     max-height: 200px;
 }
@@ -70,7 +71,7 @@
 
 // Searchbar
 .bd-search-wrapper {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     background: var(--w9x-background);
 
     .bd-search {
@@ -80,19 +81,19 @@
 
 // Number input
 .bd-number-input {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     color: var(--w9x-text);
 }
 
 // Dropdown selector
 .bd-select {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     padding: 0;
     background: var(--w9x-background);
     color: var(--w9x-text);
 
     &.bd-select-transparent {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: var(--w9x-background);
         align-items: center;
     }
@@ -106,7 +107,7 @@
     }
 
     .bd-select-options {
-        @include boxes.box($isInset: true, $position: absolute);
+        @include boxes.inset($position: absolute);
         background: var(--w9x-background);
 
         .bd-select-option {
@@ -175,7 +176,7 @@
     }
 
     &.selected {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: $grey;
 
         svg {
@@ -285,7 +286,7 @@
             height: 24px;
 
             &:has(.checkbox:checked) {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
             }
 
             .checkbox-label {
@@ -309,7 +310,7 @@
     }
 
     .editor-wrapper {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
 
         &::before {
             top: -2px;

@@ -21,7 +21,7 @@
 .defaultKeybind-1rEiTa {
     padding: 4px;
     height: 32px;
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
 
     &:has(.combo-3PNrpQ:nth-child(2)) {
         height: 64px;

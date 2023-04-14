@@ -3,7 +3,7 @@
 @use "top/shortcutIcon" as sc;
 
 @use "main/windowbar";
-@use "main/titlebar";
+@use "main/headerbar";
 
 @use "main/chatbox";
 @use "main/messages";
@@ -24,13 +24,32 @@
     background-color: var(--w9x-background-color, #{$turquoise});
 }
 
+// Put notice banners below main window
+.base-2jDfDU {
+    flex-direction: column-reverse;
+    
+    #bd-notices {
+        z-index: 102;
+    }
+
+    :is(.bd-notice, .notice-12Koq-) {
+        @include boxes.box;
+        margin-bottom: -4px;
+        border-radius: 4px 4px 0 0;
+
+        .back-ZdqB1k {
+            position: absolute;
+        }
+    }
+}
+
 // Settings
 .standardSidebarView-E9Pc3j,
 // Main DM and friend list view
 .container-2cd8Mz,
 // Explore servers view
 .pageWrapper-2PwDoS,
-// University hub
+// Student hub
 .scroller-RfJjkV,
 // Buy Nitro page
 .applicationStore-2nk7Lo,
@@ -39,7 +58,10 @@
     @include boxes.mainWindow();
 }
 
-// University hub
+// Student hub
 .scroller-RfJjkV {
     height: auto;
+    &::before {
+        display: none;
+    }
 }

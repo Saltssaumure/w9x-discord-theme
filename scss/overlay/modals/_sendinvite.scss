@@ -2,7 +2,7 @@
 @use "../../top/boxes" as boxes;
 
 .searchBar-20o6Cf {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     background: var(--w9x-background);
     color: var(--w9x-text);
 
@@ -17,7 +17,7 @@
 }
 
 .scroller-3nFW5p {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     padding: 0;
 
     .inviteRow-3vmB7i {
@@ -52,6 +52,6 @@
     }
 
     .inviteBannerUpsell-1t_LYM {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 }

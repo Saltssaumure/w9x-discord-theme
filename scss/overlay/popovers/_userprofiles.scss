@@ -41,33 +41,33 @@
 
             // About me
             .scroller-15bIdk {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
+            }
 
-                code,
-                .blockquoteDivider-363utW {
-                    background: $darkgrey;
+            code,
+            .blockquoteDivider-363utW {
+                background: $darkgrey;
+            }
+
+            // Roles
+            .role-2TIOKu {
+                @include boxes.box;
+                margin-right: 0;
+            }
+
+            // Note
+            .note-1NN2aP {
+                @include boxes.inset;
+                background: var(--w9x-background);
+
+                textarea {
+                    color: var(--w9x-text);
                 }
+            }
 
-                // Roles
-                .role-2TIOKu {
-                    @include boxes.box;
-                    margin-right: 0;
-                }
-
-                // Note
-                .note-1NN2aP {
-                    @include boxes.box($isInset: true);
-                    background: var(--w9x-background);
-
-                    textarea {
-                        color: var(--w9x-text);
-                    }
-                }
-
-                // Activity buttons
-                .vertical-qPeOMD > :not(:first-child) {
-                    margin-top: 0;
-                }
+            // Activity buttons
+            .vertical-qPeOMD > :not(:first-child) {
+                margin-top: 0;
             }
         }
     }

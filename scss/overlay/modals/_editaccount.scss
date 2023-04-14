@@ -1,0 +1,52 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Edit / add phone number
+.phoneVerificationModal-3OHeBt {
+    .animationContainer-2Fe_Bk {
+        z-index: 1;
+    }
+
+    .phoneField-3NAPDv {
+        @include boxes.inset;
+
+        .plusSign-1BkjXr,
+        .countryCode-2RFA3i {
+            color: $black;
+        }
+
+        .phoneFieldExpand-1CqrEb {
+            stroke: $black;
+        }
+
+        .inputField-1iYysB {
+            color: var(--w9x-text);
+        }
+    }
+}
+
+// Edit email address
+.headerImage-2osrlm {
+    display: none;
+}
+
+// Edit username
+.multiInput-1VARjC {
+    height: 24px;
+
+    .inputPrefix-3Nqilo {
+        display: none;
+    }
+
+    .questionMark-3V9mGJ {
+        @include boxes.clickable;
+        height: 22px;
+        width: 22px;
+        margin-right: 0;
+        background: $grey;
+        
+        .icon-3JHfo7 {
+            color: $black;
+        }
+    }
+}

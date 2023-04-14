@@ -118,7 +118,7 @@
 
         // Month
         .react-datepicker__month {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
         }
 
         // Day

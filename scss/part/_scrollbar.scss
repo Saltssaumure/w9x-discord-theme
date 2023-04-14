@@ -15,7 +15,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        @include boxes.box($isScrollbar: true);
+        @include boxes.thin;
         background: $grey;
     }
 
@@ -33,7 +33,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        @include boxes.box($isScrollbar: true);
+        @include boxes.thin;
         background: $grey;
     }
 
@@ -50,7 +50,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        @include boxes.box($isScrollbar: true);
+        @include boxes.thin;
         background: $grey;
     }
 
@@ -68,7 +68,7 @@
 
     &:start:decrement,
     &:end:increment {
-        @include boxes.box($isScrollbar: true);
+        @include boxes.thin;
         width: 18px;
         height: 18px;
     }

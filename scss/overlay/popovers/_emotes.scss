@@ -49,7 +49,7 @@
 
     // Search bar
     :is(.container-1SX9VC, .container-2oNtJn) {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: var(--w9x-background);
         margin-right: 0;
 

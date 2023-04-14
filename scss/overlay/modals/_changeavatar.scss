@@ -1,0 +1,8 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.imagePickerContainer-1VjOgi {
+    .optionBox-1UOevl {
+        @include boxes.clickable;
+    }
+}

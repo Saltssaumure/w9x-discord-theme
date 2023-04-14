@@ -1,6 +1,7 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 @use "../top/channellist-css" as channels;
+@use "../top/msgPill" as msg;
 
 // Channels sidebar
 .sidebar-1tnWFu {
@@ -52,6 +53,16 @@
     color: $black;
 }
 
+// Unread DM message
+.highlighted-Q8Nll- {
+    @include msg.unreadPill($size: 8px);
+    color: $black;
+
+    :is(.interactive-26HRN_:focus-within, .interactive-26HRN_:hover) & {
+        color: $white;
+    }
+}
+
 // Public server indicator
 .communityInfoPill-2Mll66 {
     @include boxes.box;
@@ -67,7 +78,7 @@
     }
 
     .progressBarContainer-1efroK {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .divider-3qUeLQ {
@@ -132,7 +143,12 @@
 }
 
 // Channels: black on none bg
-:is(.modeConnected-NrO4cP, .modeUnread-3Cxepe:not(:hover), .notInteractive-2tFrlE.modeConnected-NrO4cP, .notInteractive-2tFrlE.modeSelected-3DmyhH) {
+:is(
+        .modeConnected-NrO4cP,
+        .modeUnread-3Cxepe:not(:hover),
+        .notInteractive-2tFrlE.modeConnected-NrO4cP,
+        .notInteractive-2tFrlE.modeSelected-3DmyhH
+    ) {
     .name-28HaxV {
         color: var(--channels-default);
     }
@@ -140,13 +156,15 @@
 
 // Hovered and selected channels: white on navy bg
 :is(
+        .modeConnected-NrO4cP:hover,
         .content-1gYQeQ:hover,
+        .content-1gYQeQ:active,
         .modeSelected-3DmyhH,
         .modeSelected-3DmyhH:hover,
         .modeUnread-3Cxepe:hover:not(.typeThread-2Aqh6X),
         .modeMuted-2T4MDZ:hover:not(.typeThread-2Aqh6X)
     ) {
-    .icon-2W8DHg {
+    :is(.icon-2W8DHg, .name-28HaxV) {
         color: var(--interactive-hover);
     }
 

@@ -9,7 +9,7 @@
 }
 
 .card-2guEcY {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     padding: 16px;
 
     .noItemsIcon-1rZlXZ,
