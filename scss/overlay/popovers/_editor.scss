@@ -13,7 +13,7 @@
     }
 
     .active-136ioF {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .divider-3NY7PF {

@@ -6,7 +6,7 @@
     @include boxes.box;
 
     .searchWithScrollbar-2PoZTD {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: var(--w9x-background);
 
         .input-2m5SfJ {
@@ -15,7 +15,7 @@
     }
 
     .list-1B0XtU {
-        @include boxes.box($isInset: true, $isScrollbar: true);
+        @include boxes.scroller;
         margin: 1px;
         padding: 0;
 
@@ -24,7 +24,7 @@
             margin: 0;
 
             &.selected-3xdT87 {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
             }
         }
     }

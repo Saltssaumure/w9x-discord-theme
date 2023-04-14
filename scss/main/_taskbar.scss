@@ -12,11 +12,15 @@
 
 // Taskbar
 .wrapper-1_HaEi .scroller-3X7KbA {
-    @include boxes.box($isRotate: true);
+    @include boxes.box;
     background: var(--background-secondary);
+    border-color: $white $white $black $black;
 
-    border-bottom: 0;
     &::before {
+        border-color: $lightgrey $lightgrey $darkgrey $darkgrey;
+    }
+
+    &, &::before {
         border-bottom: 0;
     }
 }
@@ -55,7 +59,7 @@ body #app-mount .guilds-2JjMmN {
 
 // Opened folder icon
 #app-mount .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     .expandedFolderIconWrapper-3RwQpD {
         display: none;
     }
@@ -128,7 +132,7 @@ body #app-mount .guilds-2JjMmN {
 
 // User
 .avatarWrapper-1B9FTW {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     margin-right: 0;
 }
 .withTagAsButton-OsgQ9L:hover,

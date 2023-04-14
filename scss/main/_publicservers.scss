@@ -161,14 +161,14 @@
     }
 
     .pageControl-1Kt_nb {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
 
         .roundButton-2mKRqM {
             @include boxes.clickable;
             margin: 0;
 
             &.activeButton-2K2Fwx {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
                 background: unset;
                 color: $black;
             }
@@ -185,7 +185,7 @@
     }
 
     .guildListSection-27K5In {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         width: auto;
         padding: 16px;
 

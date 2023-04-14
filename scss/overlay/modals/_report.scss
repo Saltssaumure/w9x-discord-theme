@@ -9,7 +9,7 @@
 
 .messagePreviewContainer-1oR1Oc {
     background: var(--w9x-background);
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
 }
 
 .childButton-3o_dlg {

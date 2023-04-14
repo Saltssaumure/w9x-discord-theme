@@ -5,7 +5,7 @@
 
     .preview-QJ3OG3 {
         background: var(--w9x-background);
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .presets-2zm9Ir {
@@ -16,7 +16,7 @@
             @include boxes.clickable;
 
             &.selected-2FbEJt {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
             }
             
             &.darkIcon-e6uv7V {

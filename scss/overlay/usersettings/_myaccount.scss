@@ -6,7 +6,7 @@
     @include boxes.box;
 
     .background-3d_SjE {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .overflowMenuIcon-2Bjb5_ {

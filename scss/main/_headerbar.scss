@@ -21,7 +21,7 @@
 // Tools
 .toolbar-3_r2xA {
     .search-39IXmY {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         margin: 0;
 
         .searchBar-jGtisZ {

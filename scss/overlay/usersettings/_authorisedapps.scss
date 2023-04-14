@@ -8,7 +8,7 @@
     padding: 8px;
 
     .marginTop20-2T8ZJx {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         padding: 4px;
     }
 }

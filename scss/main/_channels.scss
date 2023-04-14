@@ -67,7 +67,7 @@
     }
 
     .progressBarContainer-1efroK {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     .divider-3qUeLQ {

@@ -51,7 +51,7 @@
                 }
 
                 .connectedAccountContainer-3aLMHJ {
-                    @include boxes.box($isInset: true);
+                    @include boxes.inset;
                     width: calc(460px / 3);
                     margin-right: 8px;
 

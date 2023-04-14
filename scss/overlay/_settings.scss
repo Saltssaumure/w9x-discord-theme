@@ -151,7 +151,7 @@
 .slider-1mmyV6 {
     // Slider bar
     .bar-2H7Q9u {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: $grey;
         height: 8px;
 
@@ -213,7 +213,7 @@
 
 // Dropdown selectors
 .lookFilled-GPyucw.select-Zz0IcO {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     padding: 0;
 
     .value-2en4z7 {

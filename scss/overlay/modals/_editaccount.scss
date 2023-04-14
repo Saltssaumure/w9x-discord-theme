@@ -8,7 +8,7 @@
     }
 
     .phoneField-3NAPDv {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
 
         .plusSign-1BkjXr,
         .countryCode-2RFA3i {

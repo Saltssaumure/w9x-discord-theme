@@ -20,7 +20,7 @@
 
 // Inner message scroller in pinned / inbox
 .layerContainer-2lfOPe [class^="header-"] + :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     margin: 0 6px 6px 6px;
 
     &::before {

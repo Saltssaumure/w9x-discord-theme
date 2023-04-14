@@ -11,13 +11,13 @@
     @include boxes.clickable;
     background: $grey;
     &.selected-24z1Ou {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 }
 
 // Main container
 .container-3wLKDe {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     background: var(--w9x-background);
 
     // Post tags
@@ -86,7 +86,7 @@
             .sortDropdown-hY93nR {
                 margin-bottom: 0;
                 &[aria-expanded="true"] {
-                    @include boxes.box($isInset: true);
+                    @include boxes.inset;
                 }
             }
 
@@ -266,14 +266,14 @@ li.card-2JNtco {
     }
 
     &:is(.isOpen-2OXbFs, .isOpen-O7ANQc) {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     // Post content preview
     .thumbnailContainer-2XSRmY,
     .contentPreview-3fWiuC,
     .bodyMedia-3UL0Kl {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
 
     // Text content
@@ -307,7 +307,7 @@ li.card-2JNtco {
             height: 20px;
 
             &:has(path[d^="M8.99991 16.17"]) {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
             }
         }
     }

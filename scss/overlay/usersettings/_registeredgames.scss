@@ -28,7 +28,7 @@
             &:focus,
             &:hover {
                 background: $white;
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
             }
         }
 

@@ -3,7 +3,7 @@
 
 // Chat box
 .channelTextArea-1FufC0 {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
 
     // Buttons
     .buttonContainer-2lnNiN,
@@ -152,13 +152,13 @@
 
         // Command required args
         .option-Tt7anD {
-            @include boxes.box($isInset: true, $isScrollbar: true);
+            @include boxes.thin;
             background: $grey;
         }
 
         // Command optional args
         .optionals-2w-NPQ {
-            @include boxes.box($isInset: true, $isScrollbar: true);
+            @include boxes.thin;
             padding: 0 4px;
             .optionalCount-1BzEgg {
                 padding: 0;

@@ -3,7 +3,7 @@
 
 .modalContent-20ynPO:has(.decorationGridItem-3J_11G) {
     .list-2gEvIv {
-        @include boxes.box($isInset: true, $isScrollbar: true);
+        @include boxes.scroller;
         left: 0;
 
         .content-yjf30S > div {
@@ -15,7 +15,7 @@
         @include boxes.clickable;
 
         &.selected-IxbpGM {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
             box-shadow: none;
         }
     }

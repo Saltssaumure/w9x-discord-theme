@@ -9,7 +9,7 @@
     }
     
     .searchBarComponent-18D6hD {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: var(--w9x-background);
     
         .inner-1NoIT5 {
@@ -27,14 +27,14 @@
 }
 
 .scroller-1Kbkqa {
-    @include boxes.box($isInset: true, $isScrollbar: true);
+    @include boxes.scroller;
 
     .friendWrapper-2x5j0A {
         @include boxes.clickable;
         margin: 0;
 
         &[aria-selected="true"] {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
         }
 
         .friendSelected-3cwmD7 {

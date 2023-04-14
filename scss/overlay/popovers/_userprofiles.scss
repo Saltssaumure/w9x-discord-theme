@@ -41,7 +41,7 @@
 
             // About me
             .scroller-15bIdk {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
             }
 
             code,
@@ -57,7 +57,7 @@
 
             // Note
             .note-1NN2aP {
-                @include boxes.box($isInset: true);
+                @include boxes.inset;
                 background: var(--w9x-background);
 
                 textarea {

@@ -3,7 +3,7 @@
 
 // Search results
 .searchResultsWrap-5RVOkx {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     margin: 0 2px 2px;
 
     .searchHeader-1r_ZSh {
@@ -33,7 +33,7 @@
         // Result
         .searchResult-O9NDji {
             background: var(--w9x-background);
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
         }
 
         // Jump button

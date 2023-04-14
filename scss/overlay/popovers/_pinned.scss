@@ -11,7 +11,7 @@
     }
 
     .messageGroupWrapper-1jf_7C {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         background: var(--w9x-background);
 
         .jumpButton-1ZwI_j {

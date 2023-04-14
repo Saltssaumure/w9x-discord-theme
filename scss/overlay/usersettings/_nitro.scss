@@ -10,7 +10,7 @@
 
 .container-1M_GA6,
 .card-3ie2dy {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     padding: 16px;
 }
 
@@ -28,7 +28,7 @@
     margin-bottom: 0;
 
     :is(.bigPerkCard-1uwmWV, .smallPerkCard-2sX_--) {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         padding: 8px;
 
         .bigPerkCardHeading-2A9bsX {
@@ -40,7 +40,7 @@
 .table-398-e9 {
     @include boxes.box;
     tbody :is(th, td) {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
     }
     th {
         padding: 4px;

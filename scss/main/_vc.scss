@@ -29,7 +29,7 @@
         }
         
         .callAvatarMask-fiNMWy {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
         }
     }
 
@@ -59,7 +59,7 @@
                     position: absolute;
                     right: 0;
                     .quickSelectClick-2ycwNA {
-                        @include boxes.box($isInset: true);
+                        @include boxes.inset;
                         background: var(--w9x-background);
                         color: var(--w9x-text);
                         height: 16px;
@@ -96,7 +96,7 @@
                         // Active unmute button
                         &:has(.white-11auuQ),
                         &.white-11auuQ {
-                            @include boxes.box($isInset: true);
+                            @include boxes.inset;
                         }
                     }
 
@@ -132,7 +132,7 @@
                         padding: 0;
 
                         &.active-3D763s {
-                            @include boxes.box($isInset: true, $position: absolute);
+                            @include boxes.inset($position: absolute);
                         }
                     }
                 }

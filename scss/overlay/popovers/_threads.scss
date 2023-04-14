@@ -12,7 +12,7 @@
         }
 
         .searchBox-3IjAC1 {
-            @include boxes.box($isInset: true);
+            @include boxes.inset;
             background: var(--w9x-background);
 
             .input-2m5SfJ {

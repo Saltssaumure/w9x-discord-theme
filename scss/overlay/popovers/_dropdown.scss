@@ -3,7 +3,7 @@
 
 // Dropdowns
 .popout-15UxD6 {
-    @include boxes.box($isInset: true);
+    @include boxes.inset;
     background: var(--w9x-background);
 
     .option-Uc12mm {

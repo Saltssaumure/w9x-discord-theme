@@ -10,13 +10,13 @@
 
     // Search
     .input-3r5zZY {
-        @include boxes.box($isInset: true);
+        @include boxes.inset;
         color: var(--w9x-text);
     }
 
     // Results
     .scroller-2qwVWY {
-        @include boxes.box($isInset: true, $isScrollbar: true);
+        @include boxes.scroller;
 
         .content-yjf30S {
             border-right: 1px solid $darkgrey;
