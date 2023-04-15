@@ -65,6 +65,13 @@ body #app-mount .guilds-2JjMmN {
     }
 }
 
+.folder-241Joy {
+    .icon-1zKOXL,
+    svg {
+        display: none;
+    }
+}
+
 // Servers in opened folder
 #app-mount .guilds-2JjMmN .wrapper-38slSD ul[role="group"] {
     gap: 0px;
@@ -115,7 +122,7 @@ body #app-mount .guilds-2JjMmN {
 
 // Flip order
 .container-YkUktl {
-    height: var(--server-container);
+    height: calc(var(--server-container) - 2px);
     flex-direction: row-reverse;
     gap: 6px;
 }
