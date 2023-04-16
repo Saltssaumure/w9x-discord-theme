@@ -2,6 +2,8 @@
 @use "../top/boxes" as boxes;
 
 // Top bar
+
+// On Windows
 .typeWindows-2-g3UY {
     margin: unset;
     @include boxes.winBar($text: "Discord", $bgColor: $darkblue);
@@ -41,5 +43,15 @@
         &.winButtonClose-3Q8ZH5 {
             margin-left: 2px;
         }
+    }
+}
+
+// On Linux
+.platform-linux .appMount-2yBXZl {
+    @include boxes.winBar($isPseudo: true, $bgColor: $darkblue, $text: "Discord");
+
+    &::after {
+        inset: ($window-top + 2px) ($window-right + 2px) 0 ($window-left + 2px);
+        z-index: 101;
     }
 }
