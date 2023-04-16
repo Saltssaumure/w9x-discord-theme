@@ -1,0 +1,11 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Multi image carousel
+
+.modalCarouselWrapper-YK1MX4 {
+    .arrowContainer-2wpC4q {
+        @include boxes.clickable($position: absolute);
+        background: $grey;
+    }
+}

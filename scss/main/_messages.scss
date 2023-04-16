@@ -67,10 +67,11 @@
 .repliedMessage-3Z6XBG,
 .subtitle-C_i4IN,
 .markup-eYLPri code,
-.codeBlockText-28BOxV, .codeLine-2C-9aH,
+.codeBlockText-28BOxV,
+.codeLine-2C-9aH,
 .operations-3q3u6E {
     color: var(--w9x-text);
-} 
+}
 
 // Eyebrow
 .eyebrow-1Shfyi,
@@ -88,13 +89,16 @@
 .messageAttachment-CZp8Iv .wrapperAudio-1Bzv_Z,
 .embedWrapper-1MtIDg.container-rr3Ruk,
 .attachment-1PZZB2,
-.embed-hKpSrO,
-.wrapper-1HIH0j {
+.gridContainer-1cF_Ic,
+.tile-2mmK5T,
+.wrapper-1HIH0j,
+.imageWrapper-oMkQl4 {
     @include boxes.box;
 }
 
 // Remove attachments
-.embedSuppressButton-1rZHq6, .embedSuppressButton-1rZHq6:hover {
+.embedSuppressButton-1rZHq6,
+.embedSuppressButton-1rZHq6:hover {
     color: var(--w9x-text);
 }
 
@@ -162,7 +166,8 @@
 }
 
 // Fullscreen button
-.controlIcon-10O-4h, .controlIcon-10O-4h:hover {
+.controlIcon-10O-4h,
+.controlIcon-10O-4h:hover {
     color: $black;
 }
 

@@ -105,6 +105,10 @@
             @include boxes.clickable;
         }
 
+        .autocompleteRow-14iwvH[aria-selected="true"] .base-2v-uc0 {
+            @include boxes.inset;
+        }
+
         // Divider
         .divider-1bJsnZ {
             display: none;
