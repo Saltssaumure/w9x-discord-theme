@@ -24,8 +24,9 @@
             }
         ],
         "liveSassCompile.settings.generateMap": false,
-        "liveSassCompile.settings.showOutputWindowOn": "Information",
+        "liveSassCompile.settings.showOutputWindowOn": "Error",
         "liveSassCompile.settings.watchOnLaunch": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSaveMode": "modificationsIfAvailable",
         "editor.formatOnSave": false,
     }
