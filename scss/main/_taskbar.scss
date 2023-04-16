@@ -100,7 +100,7 @@ body #app-mount .guilds-2JjMmN {
     height: 44px;
     z-index: 0;
 
-    &:has(.container-1zzFcN, .activityPanel-9icbyU) {
+    &:has(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE) {
         height: auto;
 
         &:hover {
@@ -108,11 +108,11 @@ body #app-mount .guilds-2JjMmN {
         }
     }
 
-    :is(.container-1zzFcN, .activityPanel-9icbyU) {
+    :is(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE) {
         border-bottom: 0;
     }
 
-    &:not(:has(.container-1zzFcN, .activityPanel-9icbyU)) {
+    &:not(:has(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE)) {
         border-left: 0;
         &::before {
             border-left: 0;

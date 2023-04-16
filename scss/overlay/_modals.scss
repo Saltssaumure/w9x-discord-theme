@@ -1,5 +1,6 @@
 @use "modals/activities";
 @use "modals/avatardecoration";
+@use "modals/carousel";
 @use "modals/changeavatar";
 @use "modals/editaccount";
 @use "modals/feedback";
@@ -16,7 +17,7 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 
-.root-1CAIjD {
+.root-1CAIjD:not(.carouselModal-1eUFoq) {
     @include boxes.box;
 
     // Header and footer
