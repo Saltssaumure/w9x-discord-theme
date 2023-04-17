@@ -20,14 +20,13 @@
 
 // Overall background
 .bg-1QIAus {
-    background-image: var(--w9x-background-image, none);
-    background-color: var(--w9x-background-color, #{$turquoise});
+    background: var(--w9x-background-color, #{$turquoise}) var(--w9x-background-image, none) center/cover;
 }
 
 // Put notice banners below main window
 .base-2jDfDU {
     flex-direction: column-reverse;
-    
+
     #bd-notices {
         z-index: 102;
     }
