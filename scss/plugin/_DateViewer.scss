@@ -1,0 +1,47 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+$dv-width: 80px;
+
+.members-3WRCEx {
+    margin-bottom: unset;
+}
+
+#dv-mount {
+    @include boxes.box($position: fixed);
+    background: $grey;
+    right: 0;
+    height: 46px;
+    width: $dv-width;
+    padding: 2px 8px 1px 0;
+
+    &, &::before {
+        border-left: 0;
+    }
+
+    #dv-main {
+        @include boxes.inset;
+        --gap: 0;
+        color: $black;
+        height: auto;
+        padding: 0 4px;
+        text-transform: none;
+
+        span {
+            font-size: 14px;
+            line-height: 12px;
+        }
+    }
+}
+
+body #app-mount:has(#dv-mount) .guilds-2JjMmN {
+    height: calc(100vw - $panel-width - $dv-width) !important;
+    left: calc(100vw - $panel-width - $dv-width);
+}
+
+.appMount-2yBXZl:has(#dv-mount) .panels-3wFtMD {
+    left: calc(100vw - $panel-width - $dv-width);
+    &, &::before {
+        border-right: 0;
+    }
+}
