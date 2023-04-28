@@ -7,12 +7,32 @@
 
     // Buttons
     .buttonContainer-2lnNiN,
-    .attachButton-_ACFSu {
+    .attachButton-_ACFSu,
+    .buttonContainer-6W2Ep3 {
         @include boxes.clickable;
         background: $grey;
     }
     .webkit-QgSAqd .buttons-uaqb-5 {
         margin-right: 0;
+    }
+
+    .separator-3ng7S5 {
+        margin-left: unset;
+
+        &::before {
+            display: none;
+        }
+
+        .innerButton-1aF_E_ {
+            margin: 6px;
+        }
+
+        .button-y6hemj:focus-within .activeButtonChild-2hgLAO,
+        .button-y6hemj:focus .activeButtonChild-2hgLAO,
+        .button-y6hemj:hover .activeButtonChild-2hgLAO, 
+        .button-y6hemj .activeButtonChild-2hgLAO {
+            color: var(--text-brand);
+        }
     }
 
     // Attachment area divider
