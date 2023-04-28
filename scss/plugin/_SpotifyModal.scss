@@ -1,0 +1,20 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// https://github.com/Socketlike/SpotifyModal
+
+#spotify-modal > .dock > .controls > svg {
+    background: unset;
+    color: $black;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    @include boxes.clickable;
+
+    &.active, &:not(.active):hover, &.active:hover {
+        background: unset;
+    }
+
+    &:not(.active):hover {
+        color: $black;
+    }
+}
