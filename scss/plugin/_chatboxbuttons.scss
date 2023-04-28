@@ -1,0 +1,18 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Plugins which add buttons to the chatbox
+// Vencord: SendTimestamps, SilentTyping
+// BD: Translator, InvisibleTyping
+
+// SendTimestamps, SilentTyping
+.channelTextArea-1FufC0 div[style="display: flex;"],
+// InvisibleTyping
+.invisible-typing-button {
+    @include boxes.clickable;
+    background: $grey;
+}
+
+.invisible-typing-button {
+    margin-top: unset;
+}
