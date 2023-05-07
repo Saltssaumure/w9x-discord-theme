@@ -1,0 +1,78 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Vencord
+
+// Theme links
+.inputWrapper-2K8ds1 .vc-settings-theme-links.input-3O04eu {
+    max-height: unset;
+    height: 10rem;
+    color: var(--w9x-text-color) !important;
+
+    &:focus {
+        background: transparent;
+    }
+}
+
+// Plugin filter
+.vc-plugins-filter-controls {
+    height: auto !important;
+
+    .vc-m-bottom-20 {
+        margin-bottom: 0;
+    }
+
+    .icons-2ibyma {
+        width: 20px;
+        height: 20px;
+        color: $black;
+    }
+}
+
+// Plugins
+.vc-plugins-card {
+    @include boxes.inset;
+
+    &:hover {
+        box-shadow: none !important;
+        transform: none !important;
+    }
+
+    // Toggle
+    .vc-plugins-card-header > div:last-child {
+        @include boxes.box;
+
+        .container-1QtPKm {
+            background: $darkgrey !important;
+
+            .slider-HJFN2i {
+                rect {
+                    fill: $lightgrey;
+                }
+                svg path {
+                    fill: $darkgrey;
+                }
+            }
+
+            &.checked-16gMAN {
+                background: $green !important;
+
+                .slider-HJFN2i {
+                    svg path {
+                        fill: $green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Donate link
+.vc-settings-donate .lookLink-13iF2K.colorTransparent-2SBJ8- {
+    color: $black;
+}
+
+// Backup and restore warning
+.vc-backup-restore-card {
+    color: $black !important;
+}
