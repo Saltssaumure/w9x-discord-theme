@@ -36,10 +36,9 @@
         z-index: 102;
     }
 
-    :is(.bd-notice, .notice-12Koq-) {
+    :is(.bd-notice, .notice-12Koq-, .notice-2HEN-u) {
         @include boxes.box;
         margin-bottom: -4px;
-        border-radius: 4px 4px 0 0;
 
         .back-ZdqB1k {
             position: absolute;
