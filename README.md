@@ -10,10 +10,10 @@
 [Vencord]:          https://github.com/Vendicated/Vencord
 
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
-[ko-fi]:            https://ko-fi.com/saltssaumure "Any amount is much appreciated!"
+[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
-[shield-total-dl]:  https://img.shields.io/github/downloads/saltssaumure/w9x-discord-theme/total?color=purple&label=Total%20GitHub%20downloads&style=flat-square
-[shield-asar-dl]:   https://img.shields.io/github/downloads/saltssaumure/w9x-discord-theme/latest/net.saltssaumure.NineX.asar?color=purple&label=Replugged%20installs&style=flat-square
+[shield-total-dl]:  https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/NineX.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
+[shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/net.saltssaumure.NineX.asar?color=purple&label=Replugged%20downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/saltssaumure/w9x-discord-theme?style=flat-square "Total size"
 
 [license]:          https://github.com/Saltssaumure/w9x-discord-theme/blob/main/LICENSE
@@ -25,9 +25,9 @@
 [release-rp]:       https://replugged.dev/install?identifier=Saltssaumure/w9x-discord-theme&source=github "Replugged addon installer"
 
 # NineX Discord Theme
-[![Donate via ko-fi][shield-donate]][ko-fi]
-[![Total downloads][shield-total-dl]][release-gh]
-[![Replugged installs][shield-asar-dl]][release-gh]
+[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
+[![BetterDiscord GitHub downloads][shield-total-dl]][release-gh]
+[![Replugged downloads][shield-asar-dl]][release-rp]
 ![Total size][shield-repo-size]
 
 ***A Windows 9x style Discord theme.***
