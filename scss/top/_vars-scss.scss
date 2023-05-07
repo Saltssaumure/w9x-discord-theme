@@ -30,3 +30,14 @@ $panel-width:   240px;
 
 // Window title
 $title-height:   24px + 4px;
+
+// ---- Fonts ----
+
+$font-code: FixedSysTrue, FixedSys, monospace;
+
+$font-latin: w95, Unifont, "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-cyrillic: w95, Unifont, sans-serif;
+$font-japanese: w95, Unifont, "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka, "MS PGothic", sans-serif;
+$font-chinese-simplified: w95, Unifont, "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei", 宋体, SimSun, sans-serif;
+$font-chinese-traditional: w95, Unifont, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, sans-serif;
+$font-korean: w95, Unifont, "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, sans-serif;

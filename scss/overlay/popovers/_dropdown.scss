@@ -4,14 +4,14 @@
 // Dropdowns
 .popout-15UxD6 {
     @include boxes.inset;
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 
     .option-Uc12mm {
         padding: 4px 8px;
-        color: var(--w9x-text);
+        color: var(--w9x-text-color);
 
         .defaultColor-1EVLSt {
-            color: var(--w9x-text);
+            color: var(--w9x-text-color);
         }
 
         .icon-poPImO {
