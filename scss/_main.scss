@@ -23,6 +23,11 @@
     background: var(--w9x-background-color, #{$turquoise}) var(--w9x-background-image, none) center/cover;
 }
 
+// Transparency
+:is(.appMount-2yBXZl, body, .app-2CXKsg) {
+    background: transparent;
+}
+
 // Put notice banners below main window
 .base-2jDfDU {
     flex-direction: column-reverse;
