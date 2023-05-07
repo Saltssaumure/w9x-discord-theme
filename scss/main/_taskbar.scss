@@ -20,7 +20,8 @@
         border-color: $lightgrey $lightgrey $darkgrey $darkgrey;
     }
 
-    &, &::before {
+    &,
+    &::before {
         border-bottom: 0;
     }
 }
@@ -60,23 +61,8 @@
     height: 44px;
     z-index: 0;
 
-    &:has(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root) {
-        height: auto;
-
-        &:hover {
-            z-index: 2;
-        }
-    }
-
-    :is(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root) {
-        border-bottom: 0;
-    }
-
-    &:not(:has(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root)) {
-        border-left: 0;
-        &::before {
-            border-left: 0;
-        }
+    &:hover {
+        z-index: 2;
     }
 }
 
@@ -90,7 +76,7 @@
 // Controls
 .button-12Fmur {
     @include boxes.clickable;
-    
+
     &.enabled-9OeuTA:hover,
     &:active {
         background: inherit;
