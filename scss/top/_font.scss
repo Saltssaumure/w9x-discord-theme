@@ -1,0 +1,6 @@
+@mixin lang-font($font, $font-code) {
+    --font-display: #{$font}; // For server and channel title
+    --font-primary: #{$font}; // For almost everything else
+    --font-headline: #{$font}; // For discord ads
+    --font-code: #{$font-code}; // For code blocks
+}

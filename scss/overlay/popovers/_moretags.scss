@@ -7,10 +7,10 @@
 
     .searchWithScrollbar-2PoZTD {
         @include boxes.inset;
-        background: var(--w9x-background);
+        background: var(--w9x-bg-color);
 
         .input-2m5SfJ {
-            color: var(--w9x-text);
+            color: var(--w9x-text-color);
         }
     }
 

@@ -81,11 +81,11 @@
 // Server nickname
 .inputWrapper-2K8ds1 {
     @include boxes.inset;
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 
     .input-3O04eu {
         padding: 0 4px;
         height: 24px;
-        color: var(--w9x-text);
+        color: var(--w9x-text-color);
     }
 }

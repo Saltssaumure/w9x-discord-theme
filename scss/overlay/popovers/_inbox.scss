@@ -48,7 +48,7 @@
 
         :is(.messageContainer-3VTXBC, .messages-23can0) {
             @include boxes.inset;
-            background: var(--w9x-background);
+            background: var(--w9x-bg-color);
 
             // Jump button
             :is(.jumpButton-1ITAeq, .jumpButton-1V_1FA) {

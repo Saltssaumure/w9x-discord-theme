@@ -50,7 +50,7 @@
     // Search bar
     :is(.container-1SX9VC, .container-2oNtJn) {
         @include boxes.inset;
-        background: var(--w9x-background);
+        background: var(--w9x-bg-color);
         margin-right: 0;
 
         .inner-1NoIT5 {
@@ -59,7 +59,7 @@
         }
 
         :is(.input-2FSSDe, .input-2m5SfJ) {
-            color: var(--w9x-text);
+            color: var(--w9x-text-color);
         }
 
         // Search button
@@ -95,7 +95,7 @@
 
     // Scroller
     .container-3eG4QA {
-        background: var(--w9x-background);
+        background: var(--w9x-bg-color);
     }
 
     // Favourites
@@ -105,7 +105,7 @@
 
     // Gif / Category
     .result-pzZrwj {
-        background: var(--w9x-background) !important;
+        background: var(--w9x-bg-color) !important;
         @include boxes.clickable;
 
         &:hover::after {
@@ -116,7 +116,7 @@
 
 // Emoji / Sticker picker
 :is(.bodyWrapper-1eSOtW, .listWrapper-2DwCYS) {
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 
     // Super reactions ad
     // Nitro ad

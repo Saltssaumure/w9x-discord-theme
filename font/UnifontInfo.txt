@@ -1,0 +1,2 @@
+﻿license: GPL
+link: https://www.fontspace.com/unifont-font-f26370

@@ -5,13 +5,13 @@
 .messagesWrapper-RpOMA3 {
     margin-bottom: 24px;
     @include boxes.inset;
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 }
 
 // Placeholder messages
 .wrapper-3HVHpV,
 .wrapper-15CKyy {
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 }
 
 // Jump to present bar and other bottom bars
@@ -70,7 +70,7 @@
 .codeBlockText-28BOxV,
 .codeLine-2C-9aH,
 .operations-3q3u6E {
-    color: var(--w9x-text);
+    color: var(--w9x-text-color);
 }
 
 // Eyebrow
@@ -99,7 +99,7 @@
 // Remove attachments
 .embedSuppressButton-1rZHq6,
 .embedSuppressButton-1rZHq6:hover {
-    color: var(--w9x-text);
+    color: var(--w9x-text-color);
 }
 
 // Text attachments
@@ -109,11 +109,11 @@
 
 .textContainer-36wgKK {
     @include boxes.inset;
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 
     code {
-        background: var(--w9x-background);
-        color: var(--w9x-text);
+        background: var(--w9x-bg-color);
+        color: var(--w9x-text-color);
     }
 }
 
@@ -247,7 +247,7 @@
 .reactionBtn-3I19bq:hover,
 .reactionBtn-3I19bq:active {
     .icon-1q31jb {
-        color: var(--w9x-text);
+        color: var(--w9x-text-color);
     }
 }
 
@@ -281,17 +281,17 @@
 
     .spoilerText-2G40u0 {
         @include boxes.inset;
-        background: var(--w9x-background);
+        background: var(--w9x-bg-color);
     }
 }
 
 // Code blocks
 .markup-eYLPri code {
     @include boxes.box;
-    background: var(--w9x-background);
+    background: var(--w9x-bg-color);
 }
 
 // Editors
 .editor-H2NA06 {
-    caret-color: var(--w9x-text);
+    caret-color: var(--w9x-text-color);
 }
