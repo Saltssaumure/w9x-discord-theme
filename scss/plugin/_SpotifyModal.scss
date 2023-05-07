@@ -1,8 +1,7 @@
 @use "../top/vars-scss" as *;
 @use "../top/boxes" as boxes;
 
-// https://github.com/Socketlike/SpotifyModal
-
+// Replugged https://github.com/Socketlike/SpotifyModal
 #spotify-modal > .dock > .controls > svg {
     background: unset;
     color: $black;
@@ -15,6 +14,16 @@
     }
 
     &:not(.active):hover {
+        color: $black;
+    }
+}
+
+// Vencord
+.vc-spotify-player .vc-spotify-button {
+    background: unset;
+    @include boxes.clickable;
+
+    &:not(.vc-spotify-shuffle-on, .vc-spotify-repeat-context, .vc-spotify-repeat-track):hover {
         color: $black;
     }
 }

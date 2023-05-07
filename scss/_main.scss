@@ -23,6 +23,11 @@
     background: var(--w9x-background-color, #{$turquoise}) var(--w9x-background-image, none) center/cover;
 }
 
+// Transparency
+:is(.appMount-2yBXZl, body, .app-2CXKsg) {
+    background: transparent;
+}
+
 // Put notice banners below main window
 .base-2jDfDU {
     flex-direction: column-reverse;
@@ -31,10 +36,9 @@
         z-index: 102;
     }
 
-    :is(.bd-notice, .notice-12Koq-) {
+    :is(.bd-notice, .notice-12Koq-, .notice-2HEN-u) {
         @include boxes.box;
         margin-bottom: -4px;
-        border-radius: 4px 4px 0 0;
 
         .back-ZdqB1k {
             position: absolute;

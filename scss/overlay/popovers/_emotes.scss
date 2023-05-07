@@ -26,6 +26,33 @@
     }
 }
 
+// Search bar
+:is(.container-1SX9VC, .container-2oNtJn) {
+    @include boxes.inset;
+    background: var(--w9x-bg-color);
+    margin-right: 0;
+
+    .inner-1NoIT5 {
+        padding-right: 1px !important;
+        overflow: hidden !important;
+    }
+
+    :is(.input-2FSSDe, .input-2m5SfJ) {
+        color: var(--w9x-text-color);
+    }
+
+    // Search button
+    :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
+        @include boxes.clickable;
+        background: $grey;
+        cursor: pointer;
+    }
+
+    &.disabled-2QaYSb :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
+        @include boxes.box;
+    }
+}
+
 // Header
 :is(.emojiPickerHasTabWrapper-LoluYe .header-11eigE, .header-11eigE, .header-uVCAlo, .header-2TLOnc) {
     padding: 0 8px 8px;
@@ -45,32 +72,6 @@
         margin-right: 0;
         padding: 2px 4px;
         color: $black;
-    }
-
-    // Search bar
-    :is(.container-1SX9VC, .container-2oNtJn) {
-        @include boxes.inset;
-        background: var(--w9x-bg-color);
-        margin-right: 0;
-
-        .inner-1NoIT5 {
-            padding-right: 1px !important;
-            overflow: hidden !important;
-        }
-
-        :is(.input-2FSSDe, .input-2m5SfJ) {
-            color: var(--w9x-text-color);
-        }
-
-        // Search button
-        :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
-            @include boxes.clickable;
-            background: $grey;
-        }
-
-        &.disabled-2QaYSb :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
-            @include boxes.box;
-        }
     }
 
     // Skin tone selector

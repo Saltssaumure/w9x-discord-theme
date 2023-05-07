@@ -1,0 +1,55 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Override HSL options
+
+// Override HSL
+body #app-mount .guilds-2JjMmN {
+    // Leave gap for control panel
+    height: calc(100vw - $panel-width) !important;
+    left: calc(100vw - $panel-width);
+    z-index: 0;
+
+    .wrapper-38slSD > .listItem-3SmSlK,
+    .scroller-3X7KbA > div > .listItem-3SmSlK,
+    .scroller-3X7KbA > .listItem-3SmSlK {
+        left: -7px;
+        position: relative;
+    }
+
+    .scroller-3X7KbA > div > .listItem-3SmSlK > .pill-2RsI5Q {
+        bottom: -20px !important;
+    }
+}
+
+// Opened folder icon
+#app-mount .expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) + .listItem-3SmSlK {
+    @include boxes.inset;
+    .expandedFolderIconWrapper-3RwQpD {
+        display: none;
+    }
+}
+
+#app-mount .guilds-2JjMmN {
+    // Servers in opened folder
+    .wrapper-38slSD ul[role="group"] {
+        gap: 0px;
+        align-items: center;
+    }
+
+    ul > [class*="listItem"]:not([class*="listItemWrapper"]) {
+        --server-size: 24px;
+        margin: 0;
+    }
+}
+
+// Titlebar on macOS
+html.platform-osx #app-mount {
+    .base-2jDfDU {
+        top: 0 !important;
+    }
+
+    .typeMacOS-3V4xXE {
+        width: auto;
+    }
+}

@@ -1,0 +1,65 @@
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+.picker-20lcBA {
+    @include boxes.box;
+}
+
+// Soundboard volume
+.settingsClickArea-1vKB0J {
+    @include boxes.clickable;
+    margin-left: 0;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Category list
+.categoryList-iuh2t0 {
+    @include boxes.box($position: absolute);
+    top: 61px;
+
+    .listItems-6eZzQ1 {
+        inset: 6px!important;
+    }
+}
+
+// Category icon
+.category-2igiWS {
+    @include boxes.clickable;
+    margin-bottom: 0;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+// Sounds panel
+.wrapper-1peqyq {
+    background: var(--w9x-bg-color);
+}
+
+// Category header
+.sectionHeader-1-lTK9 {
+    background: $grey;
+    @include boxes.box;
+    inset: -8px 0 0 -8px;
+    padding: 8px;
+    width: calc(100% - 8px);
+    margin-bottom: 0;
+}
+
+// Button arrangement
+.soundRow-3Mne9M {
+    gap: 0;
+
+    &:not(:has(+ .sectionHeader-1-lTK9)) {
+        margin-bottom: 0;
+    }
+}
+
+// Sound
+.soundButton-2P2Ua2 {
+    @include boxes.clickable;
+}

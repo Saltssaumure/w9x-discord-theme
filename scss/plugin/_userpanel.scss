@@ -1,0 +1,22 @@
+// Plugins which add sections to user panel
+
+// BetterDiscord:   
+// Replugged:       SpotifyModal
+// Vencord:         SpotifyModal
+
+.panels-3wFtMD {
+    &:has(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root, #vc-spotify-player) {
+        height: auto;
+    }
+
+    :is(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root, #vc-spotify-player) {
+        border-bottom: 0;
+    }
+
+    &:not(:has(.container-1zzFcN, .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root, #vc-spotify-player)) {
+        border-left: 0;
+        &::before {
+            border-left: 0;
+        }
+    }
+}
