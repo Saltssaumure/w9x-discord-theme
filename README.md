@@ -12,7 +12,7 @@
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
 [ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
-[shield-total-dl]:  https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/NineX.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
+[shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/NineX.theme.css?color=purple&label=BD%20GitHub%20downloads&style=flat-square
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/net.saltssaumure.NineX.asar?color=purple&label=Replugged%20downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/saltssaumure/w9x-discord-theme?style=flat-square "Total size"
 
@@ -21,12 +21,12 @@
 [.theme.css]:       https://github.com/Saltssaumure/w9x-discord-theme/blob/main/NineX.theme.css
 
 [release-gh]:       https://github.com/Saltssaumure/w9x-discord-theme/releases/latest "Latest release"
-[release-bd]:       https://betterdiscord.app/theme/?id=823 "BetterDiscord store page"
+[release-bd]:       https://betterdiscord.app/theme/?id=933 "BetterDiscord store page"
 [release-rp]:       https://replugged.dev/install?identifier=Saltssaumure/w9x-discord-theme&source=github "Replugged addon installer"
 
 # NineX Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
-[![BetterDiscord GitHub downloads][shield-total-dl]][release-gh]
+[![BetterDiscord GitHub downloads][shield-bd-dl]][release-gh]
 [![Replugged downloads][shield-asar-dl]][release-rp]
 ![Total size][shield-repo-size]
 
