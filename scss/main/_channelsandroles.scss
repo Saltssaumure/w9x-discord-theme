@@ -1,0 +1,82 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+// Tabs
+.tabBar-1_P75h {
+    margin: 0 16px;
+    border-bottom: 0;
+
+    .tabBarItem-onx_ng {
+        padding-bottom: 8px;
+    }
+}
+
+// Customise
+.appMount-2yBXZl .scrollerContainer-y16Rs9 {
+    background: var(--w9x-bg-color);
+    @include boxes.inset;
+}
+
+.pageBody-29jwEZ h2 {
+    color: var(--w9x-text-color) !important;
+}
+
+.prompt-1sE27N {
+    background: var(--w9x-bg-color);
+    border-color: unset !important;
+    padding: 0;
+}
+
+.promptOptions-3jDyZ4 {
+    gap: 0;
+}
+
+.optionButtonWrapper-2lbogO {
+    background: $grey;
+    @include boxes.clickable;
+
+    &:hover {
+        border-color: $white $black $black $white;
+    }
+
+    &:active {
+        border-color: $black $white $white $black;
+    }
+
+    &.pressed-2AiKRB {
+        transform: none;
+    }
+
+    &.selected-KQBgNS {
+        @include boxes.inset;
+
+        .checkIcon-3eAeN_ {
+            top: 4px;
+            right: 4px;
+        }
+    }
+}
+
+.helpText-2SCsDl {
+    .text-xs-medium-311pdh {
+        color: var(--w9x-text-color) !important;
+    }
+}
+
+// Browse channels
+.pageBody-23bo4p {
+    padding-left: 0;
+}
+
+.browser-2ea0yq {
+    background: var(--w9x-bg-color);
+    @include boxes.scroller;
+}
+
+.selectAll-1ZP46u .checkboxWrapper-3zdYym .checkbox-1LuCGM {
+    border-color: var(--text-muted) !important;
+
+    &.checked-22NTbO path {
+        fill: var(--text-muted);
+    }
+}

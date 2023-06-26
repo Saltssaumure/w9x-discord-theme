@@ -1,0 +1,31 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+.homeContainer-1T8N7y {
+    @include boxes.scroller;
+    padding: 32px 16px;
+    background: var(--w9x-bg-color);
+}
+
+// Server name
+.headerName-z8Vr_4 {
+    color: var(--w9x-text-color);
+}
+
+// Main section headers
+.mainContent-2HlPBZ h2 {
+    color: var(--w9x-text-color) !important;
+}
+
+// Main section item
+.row--LCpto {
+    @include boxes.clickable;
+    &:hover {
+        background: $grey;
+    }
+}
+
+// Sidebar card
+.sidebarCardWrapper-34oCuK {
+    @include boxes.box;
+}

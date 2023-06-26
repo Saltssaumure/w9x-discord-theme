@@ -9,11 +9,14 @@
 @use "main/messages";
 
 @use "main/channels";
+@use "main/channelsandroles";
 @use "main/forums";
 @use "main/friends";
 @use "main/members";
 @use "main/publicservers";
 @use "main/searchresults";
+@use "main/serverguide";
+@use "main/serversubscriptions";
 @use "main/taskbar";
 @use "main/threads";
 @use "main/vc";
@@ -56,6 +59,8 @@
 .scroller-RfJjkV,
 // Buy Nitro page
 .applicationStore-2nk7Lo,
+// Server subscriptions
+.container-2_BXG-,
 // Main chat
 .chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
     @include boxes.mainWindow();
