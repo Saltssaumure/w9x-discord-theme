@@ -69,7 +69,13 @@
 .markup-eYLPri code,
 .codeBlockText-28BOxV,
 .codeLine-2C-9aH,
-.operations-3q3u6E {
+.operations-3q3u6E,
+.markup-eYLPri h1,
+.markup-eYLPri h2,
+.markup-eYLPri h3,
+.markup-eYLPri h4,
+.markup-eYLPri h5,
+.markup-eYLPri h6 {
     color: var(--w9x-text-color);
 }
 
@@ -82,6 +88,11 @@
 // Blockquote
 .blockquoteDivider-363utW {
     background: $grey;
+}
+
+// Bullet point
+.markup-eYLPri li {
+    list-style-type: square;
 }
 
 // Attachments
