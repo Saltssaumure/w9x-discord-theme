@@ -86,6 +86,9 @@
     // Input bg
     --input-background: var(--w9x-bg-color);
 
+    // Server guide bg
+    --home-background: #{$grey};
+
     // Black text always
     --interactive-normal: #{$black};
     --interactive-muted: #{$black};

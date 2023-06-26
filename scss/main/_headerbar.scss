@@ -4,6 +4,7 @@
 // Header bars
 :is(
         .container-2cd8Mz .container-ZMc96U,
+        .container-2_BXG- .container-ZMc96U,
         .pageWrapper-2PwDoS .scroller-3j5xK2,
         .scroller-RfJjkV .viewWrapper-oqUsis,
         .applicationStore-2nk7Lo .homeWrapper-L4ors0,
@@ -16,6 +17,11 @@
     .divider-q3P9HC {
         display: none;
     }
+}
+
+// End of description shadow
+.appMount-2yBXZl :is(.innerHeader-1cC3Fp, .headerBarInner-39Tej7)::after {
+    background: linear-gradient(180deg, transparent, $grey);
 }
 
 // Tools

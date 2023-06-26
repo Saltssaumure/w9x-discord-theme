@@ -1,0 +1,24 @@
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+
+.container-2_BXG- {
+    background: $grey;
+
+    .scroller-38C5lh {
+        @include boxes.scroller;
+        background: var(--w9x-bg-color);
+    }
+}
+
+.ctaTitle-3zxXyr,
+.ctaTitle-3zxXyr strong {
+    color: var(--w9x-text-color);
+}
+
+.ctaSubtitle-2NP9L_ {
+    color: var(--w9x-text-color) !important;
+}
+
+.roleMessagePreview-NUi2Ri {
+    background: var(--w9x-bg-color);
+}
