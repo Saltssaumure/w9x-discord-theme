@@ -33,5 +33,6 @@ jobs:
 
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "bundle/*"
+          artifacts: "bundle/*, *.theme.css"
           makeLatest: true
+          generateReleaseNotes: true
