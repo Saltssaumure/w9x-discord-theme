@@ -20,14 +20,15 @@
 [issues]:           https://github.com/Saltssaumure/w9x-discord-theme/issues
 [.theme.css]:       https://github.com/Saltssaumure/w9x-discord-theme/blob/main/NineX.theme.css
 
-[release-gh]:       https://github.com/Saltssaumure/w9x-discord-theme/releases/latest "Latest release"
 [release-bd]:       https://betterdiscord.app/theme/?id=933 "BetterDiscord store page"
-[release-rp]:       https://replugged.dev/install?identifier=Saltssaumure/w9x-discord-theme&source=github "Replugged addon installer"
+[release-bd-gh]:    https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/NineX.theme.css "Latest release"
+[release-rp]:       https://replugged.dev/store/net.saltssaumure.NineX "Replugged store page"
+[release-rp-gh]:    https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/net.saltssaumure.NineX.asar "Latest release"
 
 # NineX Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
-[![BetterDiscord GitHub downloads][shield-bd-dl]][release-gh]
-[![Replugged downloads][shield-asar-dl]][release-rp]
+[![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
+[![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
 ![Total size][shield-repo-size]
 
 ***A Windows 9x style Discord theme.***
@@ -41,8 +42,8 @@
 ### BetterDiscord
 1. Install [BetterDiscord][BetterDiscord].
 2. Download the theme file:
-    - [GitHub][release-gh]
-    - [BD Store][release-bd]
+    - [BetterDiscord store][release-bd]
+    - [GitHub][release-bd-gh]
 3. Place theme file in the `themes` folder:
     - Windows: `%AppData%/BetterDiscord/themes`
     - Mac: `~/Library/Application Support/betterdiscord/themes`
@@ -51,8 +52,8 @@
 ### Replugged
 1. Install [Replugged][Replugged].
 2. Install the theme:
-    - [GitHub][release-gh]
-    - [Installer][release-rp]
+    - [Replugged store][release-rp]
+    - [GitHub][release-rp-gh]
 
 ### Vencord
 1. Install [Vencord][Vencord].
@@ -61,13 +62,18 @@
 
 ## Customisation
 
-| Description             | Variable name            | Valid values                       | Default value                        |
-| ----------------------- | ------------------------ | ---------------------------------- | ------------------------------------ |
-| Background image        | `--w9x-background-image` | Any image link encased in `url()`. | `none`                               |
-| Background colour       | `--w9x-background-color` | Any [colour][css-color].           | `#008080`                            |
-| Inner background colour | `--w9x-bg-color`         | Any [colour][css-color].           | `#FFFFFF` (light) / `#000000` (dark) |
-| Inner text colour       | `--w9x-text-color`       | Any [colour][css-color].           | `#000000` (light) / `#DFDFDF` (dark) |
-| Start menu text         | `--w9x-start-text`       | Any quoted text.                   | `"Windows95"`                        |
+| Description             | Variable name                           | Valid values                       | Default value                                         |
+| ----------------------- | --------------------------------------- | ---------------------------------- | ----------------------------------------------------- |
+| Background image        | `--w9x-background-image`                | Any image link encased in `url()`. | `none`                                                |
+| Background colour       | `--w9x-background-color`                | Any [colour][css-color].           | `#008080`                                             |
+| Start menu text         | `--w9x-start-text`                      | Any quoted text.                   | `"Windows95"`                                         |
+| Titlebar colour         | `--w9x-titlebar-color`                  | Any [colour][css-color].           | `#000080`                                             |
+| Warning colour          | `--w9x-warning-color`                   | Any [colour][css-color].           | `#FF0000`                                             |
+| Positive colour         | `--w9x-positive-color`                  | Any [colour][css-color].           | `#008000`                                             |
+| Highlight ring colour   | `--w9x-highlight-color`                 | Any [colour][css-color].           | `#0000FF`                                             |
+| Box colour              | `--w9x-box-color-1`, `2`, `3`, `4`, `5` | Any [colour][css-color].           | `#FFFFFF`, `#DFDFDF`, `#C0C0C0`, `#808080`, `#000000` |
+| Inner background colour | `--w9x-bg-color`                        | Any [colour][css-color].           | `#FFFFFF` (light) / `#000000` (dark)                  |
+| Inner text colour       | `--w9x-text-color`                      | Any [colour][css-color].           | `#000000` (light) / `#DFDFDF` (dark)                  |
 
 ### BetterDiscord
 1. Open `Settings` > `BetterDiscord` > `Themes`.
@@ -76,7 +82,7 @@
 
 ### Replugged
 1. Open `Settings` > `Replugged` > `Quick CSS`.
-2. Copy and paste lines 15-30 of [`NineX.theme.css`][.theme.css].
+2. Copy and paste lines 15-41 of [`NineX.theme.css`][.theme.css].
 3. Edit the variable values and apply changes.
 
 ### Vencord
@@ -85,7 +91,7 @@
 #### Recommended method
 1. Open `Settings` > `Vencord` > `Vencord`.
 2. Toggle on `Enable Custom CSS` and click `Open QuickCSS File`.
-3. Copy and paste lines 15-30 of [`NineX.theme.css`][.theme.css].
+3. Copy and paste lines 15-41 of [`NineX.theme.css`][.theme.css].
 4. Edit the variable values.
  
 ## License
