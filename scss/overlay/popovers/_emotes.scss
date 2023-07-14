@@ -101,7 +101,8 @@
 
     // Favourites
     .categoryFadeBlurple-1l49_Q {
-        background: transparentize($darkblue, 0.2);
+        background: $darkblue;
+        opacity: 0.7;
     }
 
     // Gif / Category

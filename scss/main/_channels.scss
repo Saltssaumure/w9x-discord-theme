@@ -190,7 +190,7 @@
 
 // Drag voice user
 .containerUserOver-SDa1HW::after {
-    background: transparentize($darkblue, 0.7);
+    background: $darkblue;
     border-color: $darkblue;
     left: 0;
 }

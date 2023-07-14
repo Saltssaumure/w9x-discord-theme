@@ -1,21 +1,15 @@
 // ---- Colours -----
 
-$white:     #FFFFFF;
-$lightgrey: #DFDFDF;
-$grey:      #C0C0C0;
-$darkgrey:  #808080;
-$black:     #000000;
+$darkblue:  var(--w9x-titlebar-color);
+$red:       var(--w9x-warning-color);
+$green:     var(--w9x-positive-color);
+$blue:      var(--w9x-highlight-color);
 
-$blue:      #0000FF;
-$darkblue:  #000080;
-
-$turquoise: #008080;
-
-$red:       #FF0000;
-
-$green:     #008000;
-
-$beige:     #FFFFEE;
+$white:     var(--w9x-box-color-1);
+$lightgrey: var(--w9x-box-color-2);
+$grey:      var(--w9x-box-color-3);
+$darkgrey:  var(--w9x-box-color-4);
+$black:     var(--w9x-box-color-5);
 
 // ---- Sizes ----
 
