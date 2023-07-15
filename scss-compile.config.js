@@ -8,6 +8,6 @@ export default {
         /** The name of your theme repository. */
         repo: "w9x-discord-theme",
         /** The version of your theme. */
-        version: "1.3.0"
+        version: "1.3.1"
     }
 };

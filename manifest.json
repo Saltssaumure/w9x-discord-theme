@@ -7,7 +7,7 @@
         "discordID": "134142022092062720",
         "github": "Saltssaumure"
     },
-    "version": "1.3.0",
+    "version": "1.3.1",
     "updater": {
         "type": "store",
         "id": "net.saltssaumure.NineX"
@@ -15,5 +15,9 @@
     "license": "GPL-3.0",
     "source": "https://github.com/Saltssaumure/w9x-discord-theme",
     "type": "replugged-theme",
-    "main": "scss/w9x.scss"
+    "main": "scss/w9x.scss",
+    "image": [
+        "https://cdn.discordapp.com/attachments/946226984005025835/1129612826114269265/ninex1.png",
+        "https://cdn.discordapp.com/attachments/946226984005025835/1129612825774534868/ninex2.png"
+    ]
 }
