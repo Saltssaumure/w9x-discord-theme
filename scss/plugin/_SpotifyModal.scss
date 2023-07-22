@@ -9,7 +9,9 @@
     transition-duration: 0.1s;
     @include boxes.clickable;
 
-    &.active, &:not(.active):hover, &.active:hover {
+    &.active,
+    &:not(.active):hover,
+    &.active:hover {
         background: unset;
     }
 

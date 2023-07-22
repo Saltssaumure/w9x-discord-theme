@@ -21,7 +21,7 @@
 .checkboxRow-3bHQJW {
     @include boxes.clickable;
     padding: 4px;
-    
+
     &:not(:last-child) {
         margin-bottom: 0;
     }

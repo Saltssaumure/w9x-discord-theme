@@ -60,7 +60,6 @@
             }
 
             .pageControl-1Kt_nb {
-
                 // Buttons
                 .pageButton-uta6J3 {
                     min-height: unset;
@@ -69,7 +68,7 @@
                     &:disabled {
                         @include boxes.box;
                     }
-                    
+
                     &:not(:disabled) {
                         @include boxes.clickable;
                     }

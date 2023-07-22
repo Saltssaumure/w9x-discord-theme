@@ -61,7 +61,9 @@
     }
 
     // Buttons
-    .videoControls-353CsJ & .iconWrapper-2awDjA.clickable-ZD7xvu:is(.anchor-1X4H4q .iconWrapper-2awDjA:only-of-type, :has([d^="M14 8.00598"])),
+    .videoControls-353CsJ
+        &
+        .iconWrapper-2awDjA.clickable-ZD7xvu:is(.anchor-1X4H4q .iconWrapper-2awDjA:only-of-type, :has([d^="M14 8.00598"])),
     .iconWrapper-2awDjA.clickable-ZD7xvu:not(.anchor-1X4H4q .iconWrapper-2awDjA:only-of-type, :has([d^="M14 8.00598"])) {
         @include boxes.clickable;
         margin: 0;

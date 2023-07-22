@@ -105,7 +105,6 @@
         background: $grey;
         height: 24px !important;
         width: 24px !important;
-
     }
 
     .bd-select-options {
@@ -132,7 +131,7 @@
     --switch-color: #{$darkgrey};
 }
 
-.bd-switch input:checked+.bd-switch-body {
+.bd-switch input:checked + .bd-switch-body {
     --switch-color: #{$green};
 }
 
@@ -171,7 +170,6 @@
 
 // Addon card layout buttons
 .bd-addon-views .bd-view-button {
-
     &:hover,
     &:active {
         background: $grey;
@@ -186,7 +184,7 @@
         }
     }
 
-    +.bd-view-button {
+    + .bd-view-button {
         margin-left: 0;
     }
 }
@@ -214,7 +212,7 @@
         align-items: center;
         justify-content: center;
 
-        +.bd-addon-button {
+        + .bd-addon-button {
             margin-left: 0;
         }
 

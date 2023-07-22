@@ -7,19 +7,19 @@
     .subtitle-3v29zT {
         color: $black;
     }
-    
+
     .searchBarComponent-18D6hD {
         @include boxes.inset;
         background: var(--w9x-bg-color);
-    
+
         .inner-1NoIT5 {
             overflow: hidden !important;
         }
-    
+
         .input-2FSSDe {
             color: var(--w9x-text-color);
         }
-    
+
         .tag-15zcD_ {
             @include boxes.clickable;
         }

@@ -1,29 +1,29 @@
 // ---- Colours -----
 
-$darkblue:  var(--w9x-titlebar-color);
-$red:       var(--w9x-warning-color);
-$green:     var(--w9x-positive-color);
-$blue:      var(--w9x-highlight-color);
+$darkblue: var(--w9x-titlebar-color);
+$red: var(--w9x-warning-color);
+$green: var(--w9x-positive-color);
+$blue: var(--w9x-highlight-color);
 
-$white:     var(--w9x-box-color-1);
+$white: var(--w9x-box-color-1);
 $lightgrey: var(--w9x-box-color-2);
-$grey:      var(--w9x-box-color-3);
-$darkgrey:  var(--w9x-box-color-4);
-$black:     var(--w9x-box-color-5);
+$grey: var(--w9x-box-color-3);
+$darkgrey: var(--w9x-box-color-4);
+$black: var(--w9x-box-color-5);
 
 // ---- Sizes ----
 
 // Chat window
-$window-top:     50px;
-$window-right:  120px;
-$window-bottom:  50px;
-$window-left:   270px;
+$window-top: 50px;
+$window-right: 120px;
+$window-bottom: 50px;
+$window-left: 270px;
 
 // Member list
-$panel-width:   240px;
+$panel-width: 240px;
 
 // Window title
-$title-height:   24px + 4px;
+$title-height: 24px + 4px;
 
 // ---- Fonts ----
 
@@ -31,7 +31,9 @@ $font-code: FixedSysTrue, FixedSys, monospace;
 
 $font-latin: w95, Unifont, "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-cyrillic: w95, Unifont, sans-serif;
-$font-japanese: w95, Unifont, "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka, "MS PGothic", sans-serif;
+$font-japanese: w95, Unifont, "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka, "MS PGothic",
+    sans-serif;
 $font-chinese-simplified: w95, Unifont, "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei", "Microsoft JhengHei", 宋体, SimSun, sans-serif;
-$font-chinese-traditional: w95, Unifont, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, sans-serif;
+$font-chinese-traditional: w95, Unifont, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体,
+    SimSun, sans-serif;
 $font-korean: w95, Unifont, "Apple SD Gothic Neo", NanumBarunGothic, "맑은 고딕", "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, sans-serif;

@@ -2,7 +2,6 @@
 @use "../../top/boxes" as boxes;
 
 #appearance-tab {
-
     .preview-QJ3OG3 {
         background: var(--w9x-bg-color);
         @include boxes.inset;
@@ -18,7 +17,7 @@
             &.selected-2FbEJt {
                 @include boxes.inset;
             }
-            
+
             &.darkIcon-e6uv7V {
                 background: $black;
             }
