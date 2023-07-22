@@ -1,0 +1,21 @@
+@use "../../top/vars" as *;
+@use "../../top/boxes" as boxes;
+
+// Set a custom status
+
+.inputContainer-3envCr {
+    .emojiButtonContainer-gCE6AT,
+    .clearButton-2JoOHC {
+        z-index: 1;
+    }
+
+    .clearIcon-oT7WrW {
+        color: $text;
+    }
+
+    .inputWrapper-2K8ds1 .input-3AAlUz {
+        padding-left: 42px;
+        padding-right: 36px;
+        height: 40px;
+    }
+}
