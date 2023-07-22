@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // Search results
@@ -32,7 +32,7 @@
 
         // Result
         .searchResult-O9NDji {
-            background: var(--w9x-bg-color);
+            background: $bg;
             @include boxes.inset;
         }
 

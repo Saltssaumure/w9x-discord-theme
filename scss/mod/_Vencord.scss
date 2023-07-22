@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // Vencord
@@ -7,7 +7,7 @@
 .inputWrapper-2K8ds1 .vc-settings-theme-links.input-3O04eu {
     max-height: unset;
     height: 10rem;
-    color: var(--w9x-text-color) !important;
+    color: $text !important;
 
     &:focus {
         background: transparent;

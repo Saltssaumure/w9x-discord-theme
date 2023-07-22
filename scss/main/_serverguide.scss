@@ -1,20 +1,20 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 .homeContainer-1T8N7y {
     @include boxes.scroller;
     padding: 32px 16px;
-    background: var(--w9x-bg-color);
+    background: $bg;
 }
 
 // Server name
 .headerName-z8Vr_4 {
-    color: var(--w9x-text-color);
+    color: $text;
 }
 
 // Main section headers
 .mainContent-2HlPBZ h2 {
-    color: var(--w9x-text-color) !important;
+    color: $text !important;
 }
 
 // Main section item

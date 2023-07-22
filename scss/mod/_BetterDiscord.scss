@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // BetterDiscord
@@ -74,29 +74,29 @@
 // Searchbar
 .bd-search-wrapper {
     @include boxes.inset;
-    background: var(--w9x-bg-color);
+    background: $bg;
 
     .bd-search {
-        color: var(--w9x-text-color);
+        color: $text;
     }
 }
 
 // Number input
 .bd-number-input {
     @include boxes.inset;
-    color: var(--w9x-text-color);
+    color: $text;
 }
 
 // Dropdown selector
 .bd-select {
     @include boxes.inset;
     padding: 0;
-    background: var(--w9x-bg-color);
-    color: var(--w9x-text-color);
+    background: $bg;
+    color: $text;
 
     &.bd-select-transparent {
         @include boxes.inset;
-        background: var(--w9x-bg-color);
+        background: $bg;
         align-items: center;
     }
 
@@ -109,7 +109,7 @@
 
     .bd-select-options {
         @include boxes.inset($position: absolute);
-        background: var(--w9x-bg-color);
+        background: $bg;
 
         .bd-select-option {
             padding: 4px 8px;

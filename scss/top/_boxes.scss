@@ -1,4 +1,4 @@
-@use "vars-scss" as *;
+@use "vars" as *;
 
 @mixin box($isInset: false, $hasBefore: true, $isClickable: false, $position: relative) {
     position: $position;

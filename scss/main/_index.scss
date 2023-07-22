@@ -17,7 +17,7 @@
 @forward "./threads";
 @forward "./vc";
 
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 @use "../top/shortcutIcon" as sc;
 

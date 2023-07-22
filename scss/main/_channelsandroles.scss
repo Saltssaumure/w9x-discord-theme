@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // Tabs
@@ -13,16 +13,16 @@
 
 // Customise
 .appMount-2yBXZl .scrollerContainer-y16Rs9 {
-    background: var(--w9x-bg-color);
+    background: $bg;
     @include boxes.inset;
 }
 
 .pageBody-29jwEZ h2 {
-    color: var(--w9x-text-color) !important;
+    color: $text !important;
 }
 
 .prompt-1sE27N {
-    background: var(--w9x-bg-color);
+    background: $bg;
     border-color: unset !important;
     padding: 0;
 }
@@ -59,7 +59,7 @@
 
 .helpText-2SCsDl {
     .text-xs-medium-311pdh {
-        color: var(--w9x-text-color) !important;
+        color: $text !important;
     }
 }
 
@@ -69,7 +69,7 @@
 }
 
 .browser-2ea0yq {
-    background: var(--w9x-bg-color);
+    background: $bg;
     @include boxes.scroller;
 }
 

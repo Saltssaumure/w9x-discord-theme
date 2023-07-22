@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // Header bars
@@ -33,8 +33,8 @@
         .searchBar-jGtisZ {
             height: 30px;
             align-items: center;
-            background: var(--w9x-bg-color);
-            color: var(--w9x-text-color);
+            background: $bg;
+            color: $text;
 
             .DraftEditor-root {
                 padding-top: 5px;

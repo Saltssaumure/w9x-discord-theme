@@ -1,7 +1,7 @@
 @forward "./serversettings/";
 @forward "./usersettings/";
 
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 @use "../../top/shortcutIcon" as ico;
 @use "../../top/channellist-css" as channels;
@@ -110,7 +110,7 @@
 
     .value-2en4z7 {
         padding-left: 8px;
-        color: var(--w9x-text-color);
+        color: $text;
     }
 
     .icons-2ibyma {
