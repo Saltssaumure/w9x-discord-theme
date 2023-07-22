@@ -1,9 +1,10 @@
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
 .contentWrapper-3vHNP2,
 .contentWrapper-2f9yME {
     @include boxes.box;
+    // grid-row-gap: 0;
 }
 
 // Gifs / Stickers / Emojis tabs
@@ -29,7 +30,7 @@
 // Search bar
 :is(.container-1SX9VC, .container-2oNtJn) {
     @include boxes.inset;
-    background: var(--w9x-bg-color);
+    background: $bg;
     margin-right: 0;
 
     .inner-1NoIT5 {
@@ -38,7 +39,7 @@
     }
 
     :is(.input-2FSSDe, .input-2m5SfJ) {
-        color: var(--w9x-text-color);
+        color: $text;
     }
 
     // Search button
@@ -90,13 +91,20 @@
     }
 }
 
+// Emoji picker only panel, eg. in custom status modal
+.layer-2BGhQ8 #emoji-picker-tab-panel {
+    @include boxes.box;
+    background: $grey;
+    padding-top: 8px;
+}
+
 // Gif picker
 #gif-picker-tab-panel {
     background: $grey;
 
     // Scroller
     .container-3eG4QA {
-        background: var(--w9x-bg-color);
+        background: $bg;
     }
 
     // Favourites
@@ -107,7 +115,7 @@
 
     // Gif / Category
     .result-pzZrwj {
-        background: var(--w9x-bg-color) !important;
+        background: $bg !important;
         @include boxes.clickable;
 
         &:hover::after {
@@ -118,7 +126,7 @@
 
 // Emoji / Sticker picker
 :is(.bodyWrapper-1eSOtW, .listWrapper-2DwCYS) {
-    background: var(--w9x-bg-color);
+    background: $bg;
 
     // Super reactions ad
     // Nitro ad

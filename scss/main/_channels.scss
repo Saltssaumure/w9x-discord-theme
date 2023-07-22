@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 @use "../top/channellist-css" as channels;
 @use "../top/msgPill" as msg;
@@ -143,6 +143,7 @@
 .unreadRelevant-2f-VSK {
     background: var(--channels-default);
     z-index: 1;
+    left: 0;
 }
 
 // Channels: black on none bg
@@ -158,7 +159,8 @@
 }
 
 // Muted channels: grey on none bg
-.modeMuted-2T4MDZ .icon-2W8DHg, .modeMuted-2T4MDZ .name-28HaxV {
+.modeMuted-2T4MDZ .icon-2W8DHg,
+.modeMuted-2T4MDZ .name-28HaxV {
     color: $darkgrey;
 }
 

@@ -1,17 +1,17 @@
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
 // Dropdowns
 .popout-15UxD6 {
     @include boxes.inset;
-    background: var(--w9x-bg-color);
+    background: $bg;
 
     .option-Uc12mm {
         padding: 4px 8px;
-        color: var(--w9x-text-color);
+        color: $text;
 
         .defaultColor-1EVLSt {
-            color: var(--w9x-text-color);
+            color: $text;
         }
 
         .icon-poPImO {

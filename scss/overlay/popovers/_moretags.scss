@@ -1,4 +1,4 @@
-@use "../../top/vars-scss" as *;
+@use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
 // See more tags creating forum post with narrow screen
@@ -7,10 +7,10 @@
 
     .searchWithScrollbar-2PoZTD {
         @include boxes.inset;
-        background: var(--w9x-bg-color);
+        background: $bg;
 
         .input-2m5SfJ {
-            color: var(--w9x-text-color);
+            color: $text;
         }
     }
 

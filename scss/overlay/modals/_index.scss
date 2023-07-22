@@ -1,0 +1,73 @@
+@forward "./activities";
+@forward "./avatardecoration";
+@forward "./carousel";
+@forward "./changeavatar";
+@forward "./customstatus";
+@forward "./editaccount";
+@forward "./feedback";
+@forward "./notifsettings";
+@forward "./quickswitcher";
+@forward "./report";
+@forward "./screenshare";
+@forward "./sendinvite";
+@forward "./userprofile";
+@forward "./videotest";
+@forward "./welcome";
+@forward "./whatsnew";
+
+@use "../../top/vars" as *;
+@use "../../top/boxes" as boxes;
+
+.root-1CAIjD:not(.carouselModal-1eUFoq) {
+    @include boxes.box;
+
+    // Header and footer
+    .modalHeader-3X0A4K,
+    .footer-IubaaS {
+        @include boxes.box;
+    }
+}
+
+.artContainer-1yaXct {
+    display: none;
+}
+
+.content-1OG56Q {
+    @include boxes.scroller;
+    padding-top: 18px;
+    margin-bottom: 0;
+}
+
+// Changelog
+.layerContainer-2lfOPe {
+    .content-FDHp32 {
+        :is(ol, p, ul li) {
+            color: $black;
+        }
+
+        ul li::before {
+            background: $black;
+            opacity: 1;
+        }
+
+        a {
+            color: var(--text-link);
+        }
+    }
+
+    .improved-2SJXHz {
+        color: $darkblue;
+
+        &::after {
+            background: $darkblue;
+        }
+    }
+
+    .fixed-cTX7Hp {
+        color: $red;
+
+        &::after {
+            background: $red;
+        }
+    }
+}

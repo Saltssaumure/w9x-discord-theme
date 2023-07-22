@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // https://betterdiscord.app/plugin/DateViewer
@@ -18,7 +18,8 @@ $dv-width: 80px;
     width: $dv-width;
     padding: 2px 8px 1px 0;
 
-    &, &::before {
+    &,
+    &::before {
         border-left: 0;
     }
 
@@ -44,7 +45,8 @@ body #app-mount:has(#dv-mount) .guilds-2JjMmN {
 
 .appMount-2yBXZl:has(#dv-mount) .panels-3wFtMD {
     left: calc(100vw - $panel-width - $dv-width);
-    &, &::before {
+    &,
+    &::before {
         border-right: 0;
     }
 }

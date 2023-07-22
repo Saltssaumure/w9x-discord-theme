@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // Titlebar
@@ -27,12 +27,12 @@
 
     .searchBar-2aylmZ {
         @include boxes.inset;
-        background: var(--w9x-bg-color);
-        color: var(--w9x-text-color);
+        background: $bg;
+        color: $text;
         margin: 8px 8px 0;
 
         .input-2m5SfJ {
-            color: var(--w9x-text-color);
+            color: $text;
         }
 
         .iconContainer-6pgShY {
@@ -72,7 +72,8 @@
         border-bottom: 0;
     }
 
-    .header-30YxSJ, .header-2N7BYf {
+    .header-30YxSJ,
+    .header-2N7BYf {
         padding: 8px;
     }
 

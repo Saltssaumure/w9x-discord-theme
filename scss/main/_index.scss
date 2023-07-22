@@ -1,0 +1,75 @@
+@forward "./windowbar";
+@forward "./headerbar";
+
+@forward "./chatbox";
+@forward "./messages";
+
+@forward "./channels";
+@forward "./channelsandroles";
+@forward "./forums";
+@forward "./friends";
+@forward "./members";
+@forward "./publicservers";
+@forward "./searchresults";
+@forward "./serverguide";
+@forward "./serversubscriptions";
+@forward "./taskbar";
+@forward "./threads";
+@forward "./vc";
+
+@use "../top/vars" as *;
+@use "../top/boxes" as boxes;
+@use "../top/shortcutIcon" as sc;
+
+// Overall background
+.bg-1QIAus {
+    background: var(--w9x-background-color) var(--w9x-background-image) center/cover;
+}
+
+// Transparency
+:is(.appMount-2yBXZl, body, .app-2CXKsg) {
+    background: transparent;
+}
+
+// Put notice banners below main window
+.base-2jDfDU {
+    flex-direction: column-reverse;
+
+    #bd-notices {
+        z-index: 102;
+    }
+
+    :is(.bd-notice, .notice-12Koq-, .notice-2HEN-u) {
+        @include boxes.box;
+        margin-bottom: -4px;
+
+        .back-ZdqB1k {
+            position: absolute;
+        }
+    }
+}
+
+// Settings
+.standardSidebarView-E9Pc3j,
+// Main DM and friend list view
+.container-2cd8Mz,
+// Explore servers view
+.pageWrapper-2PwDoS,
+// Student hub
+.scroller-RfJjkV,
+// Buy Nitro page
+.applicationStore-2nk7Lo,
+// Server subscriptions
+.container-2_BXG-,
+// Main chat
+.chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
+    @include boxes.mainWindow();
+}
+
+// Student hub
+.scroller-RfJjkV {
+    height: auto;
+    &::before {
+        display: none;
+    }
+}

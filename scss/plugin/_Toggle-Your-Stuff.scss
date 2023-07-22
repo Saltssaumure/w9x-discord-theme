@@ -1,0 +1,33 @@
+@use "../top/vars" as *;
+@use "../top/boxes" as boxes;
+
+#tys_settings {
+    :not(input):not(button) {
+        color: $black !important;
+    }
+
+    & > span:first-of-type {
+        display: none;
+    }
+
+    [id] > :-webkit-any(input, label) {
+        margin-top: 0 !important;
+    }
+
+    span {
+        line-height: 1rem !important;
+    }
+
+    button {
+        @include boxes.clickable;
+        background: unset;
+    }
+}
+
+:is(#tys-plugin-hotkeys, #tys-theme-hotkeys) {
+    div {
+        display: grid;
+        grid-template-columns: 3fr 2fr repeat(3, 1fr) 1fr;
+        border-bottom: 1px solid $darkgrey;
+    }
+}

@@ -1,0 +1,14 @@
+@use "../../../top/vars" as *;
+@use "../../../top/boxes" as boxes;
+
+// # Authorised apps
+.authedApp-8q3NA9 {
+    @include boxes.box;
+    border-color: $white $black $black $white !important;
+    padding: 8px;
+
+    .marginTop20-2T8ZJx {
+        @include boxes.inset;
+        padding: 4px;
+    }
+}

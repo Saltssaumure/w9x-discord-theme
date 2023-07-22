@@ -3,26 +3,26 @@
 :root {
     --w9x-background-image: none;
     --w9x-background-color: #008080;
-    --w9x-start-text:       "Windows95";
-    
-    --w9x-titlebar-color:   #000080;
-    --w9x-warning-color:    #FF0000;
-    --w9x-positive-color:   #008000;
-    --w9x-highlight-color:  #0000FF;
+    --w9x-start-text: "Windows95";
 
-    --w9x-box-color-1:      #FFFFFF;
-    --w9x-box-color-2:      #DFDFDF;
-    --w9x-box-color-3:      #C0C0C0;
-    --w9x-box-color-4:      #808080;
-    --w9x-box-color-5:      #000000;
+    --w9x-titlebar-color: #000080;
+    --w9x-warning-color: #ff0000;
+    --w9x-positive-color: #008000;
+    --w9x-highlight-color: #0000ff;
+
+    --w9x-box-color-1: #ffffff;
+    --w9x-box-color-2: #dfdfdf;
+    --w9x-box-color-3: #c0c0c0;
+    --w9x-box-color-4: #808080;
+    --w9x-box-color-5: #000000;
 }
 
 .theme-light {
-    --w9x-bg-color:     #{$white};
-    --w9x-text-color:   #{$black};
+    --w9x-bg-color: #{$white};
+    --w9x-text-color: #{$black};
 }
 
 .theme-dark {
-    --w9x-bg-color:     #{$black};
-    --w9x-text-color:   #{$lightgrey};
+    --w9x-bg-color: #{$black};
+    --w9x-text-color: #{$lightgrey};
 }

@@ -1,0 +1,15 @@
+@use "../../../top/vars" as *;
+@use "../../../top/boxes" as boxes;
+
+// # My Account
+.accountProfileCard-lbN7n- {
+    @include boxes.box;
+
+    .background-3d_SjE {
+        @include boxes.inset;
+    }
+
+    .overflowMenuIcon-2Bjb5_ {
+        @include boxes.clickable;
+    }
+}

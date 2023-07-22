@@ -5,8 +5,6 @@ test.scss
 .parcel-cache
 
 node_modules
-package-lock.json
-pnpm-lock.yaml
 
 dist
 bundle

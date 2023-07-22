@@ -1,4 +1,4 @@
-@use "../top/vars-scss" as *;
+@use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
 // Channel header
@@ -18,7 +18,7 @@
 // Main container
 .container-3wLKDe {
     @include boxes.inset;
-    background: var(--w9x-bg-color);
+    background: $bg;
 
     // Post tags
     .tags-2UGy2I {
@@ -131,7 +131,7 @@
                 padding-left: 32px;
 
                 div {
-                    background: var(--w9x-bg-color);
+                    background: $bg;
 
                     .channelTextArea-1VQBuV {
                         width: auto;
@@ -278,10 +278,10 @@ li.card-2JNtco {
 
     // Text content
     .contentPreview-3fWiuC {
-        background: var(--w9x-bg-color);
+        background: $bg;
 
         .markup-eYLPri {
-            color: var(--w9x-text-color);
+            color: $text;
         }
     }
 }

@@ -1,0 +1,24 @@
+@use "../../../top/vars" as *;
+@use "../../../top/boxes" as boxes;
+
+.sectionAccountCredit-1IqaxB,
+.subscriptionDetails-ZcKNHC {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.card-2guEcY {
+    @include boxes.inset;
+    padding: 16px;
+
+    .noItemsIcon-1rZlXZ,
+    .noItemsIcon-2OeOld {
+        background: transparent;
+    }
+
+    .cardText-1KLO-g,
+    .cardText-3dmnX6 {
+        color: $black;
+    }
+}
