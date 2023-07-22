@@ -1,0 +1,36 @@
+@forward "./createdm";
+@forward "./dropdown";
+@forward "./editor";
+@forward "./emojiinfo";
+@forward "./emotes";
+@forward "./inbox";
+@forward "./incomingcall";
+@forward "./loading";
+@forward "./menus";
+@forward "./moretags";
+@forward "./pinned";
+@forward "./regionselect";
+@forward "./search";
+@forward "./soundboard";
+@forward "./threads";
+@forward "./toasts";
+@forward "./userprofiles";
+@forward "./vc";
+
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
+
+// Inner message scroller in pinned / inbox
+.layerContainer-2lfOPe [class^="header-"] + :is(.messagesPopout-eVzQcI, .scrollerBase-1Pkza4) {
+    @include boxes.inset;
+    margin: 0 6px 6px 6px;
+
+    &::before {
+        display: none;
+    }
+}
+
+// Max height for pinned / inbox
+.messagesPopoutWrap-3zryHW {
+    max-height: calc(100vh - $window-top - 120px) !important;
+}

@@ -1,0 +1,14 @@
+@forward "./members";
+
+@use "../../../top/vars-scss" as *;
+
+// Settings menu specific
+.divider-3nqZNm {
+    display: none;
+}
+
+.h5-2feg8J,
+.label-7akf7-,
+.legend-3BgtI3 {
+    color: #{$black};
+}

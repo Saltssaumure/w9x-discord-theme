@@ -1,21 +1,21 @@
-@use "modals/activities";
-@use "modals/avatardecoration";
-@use "modals/carousel";
-@use "modals/changeavatar";
-@use "modals/editaccount";
-@use "modals/feedback";
-@use "modals/notifsettings";
-@use "modals/quickswitcher";
-@use "modals/report";
-@use "modals/screenshare";
-@use "modals/sendinvite";
-@use "modals/userprofile";
-@use "modals/videotest";
-@use "modals/welcome";
-@use "modals/whatsnew";
+@forward "./activities";
+@forward "./avatardecoration";
+@forward "./carousel";
+@forward "./changeavatar";
+@forward "./editaccount";
+@forward "./feedback";
+@forward "./notifsettings";
+@forward "./quickswitcher";
+@forward "./report";
+@forward "./screenshare";
+@forward "./sendinvite";
+@forward "./userprofile";
+@forward "./videotest";
+@forward "./welcome";
+@forward "./whatsnew";
 
-@use "../top/vars-scss" as *;
-@use "../top/boxes" as boxes;
+@use "../../top/vars-scss" as *;
+@use "../../top/boxes" as boxes;
 
 .root-1CAIjD:not(.carouselModal-1eUFoq) {
     @include boxes.box;

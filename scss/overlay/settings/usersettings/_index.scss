@@ -1,0 +1,97 @@
+@forward "./myaccount";
+@forward "./profiles";
+@forward "./privacyandsafety";
+@forward "./authorisedapps";
+@forward "./devices";
+@forward "./connections";
+
+@forward "./nitro";
+@forward "./serverboost";
+@forward "./subscriptions";
+@forward "./giftinventory";
+@forward "./billing";
+
+@forward "./appearance";
+@forward "./voiceandvideo";
+@forward "./keybinds";
+
+@forward "./registeredgames";
+@forward "./gameoverlay";
+
+@use "../../../top/vars-scss" as *;
+@use "../../../top/boxes" as boxes;
+@use "../../../top/channellist-css" as channels;
+
+// User settings menu
+.standardSidebarView-E9Pc3j {
+    padding-top: $title-height;
+    margin-bottom: $window-bottom + 46px;
+
+    // Unsaved changes
+    .container-20TyK0 {
+        @include boxes.box;
+        background: $grey !important;
+
+        .message-3C6JQ1,
+        .contents-3NembX span {
+            color: $black !important;
+        }
+    }
+
+    .sidebarRegion-1VBisG {
+        @include channels.vars;
+        flex-grow: 0;
+
+        .sidebar-nqHbhN {
+            padding: 0;
+        }
+
+        .separator-2N511j {
+            display: none;
+        }
+
+        .header-2F5_LB {
+            margin-top: 12px;
+        }
+    }
+
+    .contentRegionShownSidebar-fHXkEg {
+        justify-content: center;
+
+        .contentColumnDefault-3eyv5o,
+        .contentColumnWide-2CgNjO {
+            padding: 10px;
+            @include boxes.box;
+        }
+
+        // Close settings button
+        .toolsContainer-25FL6V {
+            padding-top: 20px;
+            margin-right: 0;
+            position: absolute;
+            left: -300px;
+            z-index: 1;
+
+            .container-O54IuJ {
+                .closeButton-PCZcma {
+                    @include boxes.clickable;
+                    background: $grey;
+                    margin-bottom: 8px;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+
+                &::after {
+                    content: "Close";
+                    color: $white;
+                }
+
+                .keybind-13vtq8 {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
-@use "../../top/vars-scss" as *;
-@use "../../top/boxes" as boxes;
+@use "../../../top/vars-scss" as *;
+@use "../../../top/boxes" as boxes;
 
 .warning-RBGtx2 {
     @include boxes.box;

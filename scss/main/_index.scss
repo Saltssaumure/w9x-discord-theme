@@ -1,25 +1,25 @@
-@use "top/vars-scss" as *;
-@use "top/boxes" as boxes;
-@use "top/shortcutIcon" as sc;
+@forward "./windowbar";
+@forward "./headerbar";
 
-@use "main/windowbar";
-@use "main/headerbar";
+@forward "./chatbox";
+@forward "./messages";
 
-@use "main/chatbox";
-@use "main/messages";
+@forward "./channels";
+@forward "./channelsandroles";
+@forward "./forums";
+@forward "./friends";
+@forward "./members";
+@forward "./publicservers";
+@forward "./searchresults";
+@forward "./serverguide";
+@forward "./serversubscriptions";
+@forward "./taskbar";
+@forward "./threads";
+@forward "./vc";
 
-@use "main/channels";
-@use "main/channelsandroles";
-@use "main/forums";
-@use "main/friends";
-@use "main/members";
-@use "main/publicservers";
-@use "main/searchresults";
-@use "main/serverguide";
-@use "main/serversubscriptions";
-@use "main/taskbar";
-@use "main/threads";
-@use "main/vc";
+@use "../top/vars-scss" as *;
+@use "../top/boxes" as boxes;
+@use "../top/shortcutIcon" as sc;
 
 // Overall background
 .bg-1QIAus {
