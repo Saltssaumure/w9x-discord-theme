@@ -1,0 +1,32 @@
+name: Lint
+
+on:
+  push:
+    branches-ignore:
+      - deploy
+  pull_request:
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+            node-version: 18
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+        with:
+         version: latest
+
+      - name: Install Node.js dependencies
+        run: pnpm install
+
+      - name: Run linters
+        run: pnpm run lint
