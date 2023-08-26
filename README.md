@@ -1,6 +1,6 @@
-[screenshot]: https://user-images.githubusercontent.com/29710355/231909312-bf3786dc-317a-40c4-909b-b5dc58093b15.png
-[light]: https://user-images.githubusercontent.com/29710355/231909647-72871e7f-8763-4174-9c71-5f1bb7d401bc.png
-[dark]: https://user-images.githubusercontent.com/29710355/231909520-b24c4301-2d90-4c6c-9e5d-ca9ce20e3ba6.png
+[screenshot]:       https://user-images.githubusercontent.com/29710355/231909312-bf3786dc-317a-40c4-909b-b5dc58093b15.png
+[light]:            https://user-images.githubusercontent.com/29710355/231909647-72871e7f-8763-4174-9c71-5f1bb7d401bc.png
+[dark]:             https://user-images.githubusercontent.com/29710355/231909520-b24c4301-2d90-4c6c-9e5d-ca9ce20e3ba6.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 [discord]:          https://discord.gg/uy8nKQVatp
@@ -16,9 +16,22 @@
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/net.saltssaumure.NineX.asar?color=purple&label=Replugged%20GitHub%20downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/saltssaumure/w9x-discord-theme?style=flat-square "Total size"
 
-[license]:          https://github.com/Saltssaumure/w9x-discord-theme/blob/main/LICENSE
+[github]:           https://github.com/Saltssaumure/w9x-discord-theme
 [issues]:           https://github.com/Saltssaumure/w9x-discord-theme/issues
+[license]:          https://github.com/Saltssaumure/w9x-discord-theme/blob/main/LICENSE
 [.theme.css]:       https://github.com/Saltssaumure/w9x-discord-theme/blob/main/NineX.theme.css
+
+[hsl]:              https://github.com/DiscordStyles/HorizontalServerList
+[hsl-author]:       https://github.com/Gibbu
+[hsl-license]:      https://github.com/DiscordStyles/HorizontalServerList/blob/master/LICENSE.md
+
+[squared]:          https://github.com/MiniDiscordThemes/Squared
+[squared-author]:   https://github.com/Saltssaumure
+[squared-license]:  https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
+
+[winicons]:         https://archive.org/details/windows-95-all-icons
+[winicons-author]:  https://www.deviantart.com/vovan29
+[winicons-license]: https://creativecommons.org/licenses/by-nd/4.0/
 
 [release-bd]:       https://betterdiscord.app/theme/?id=933 "BetterDiscord store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/NineX.theme.css "Latest release"
@@ -109,6 +122,11 @@
 ## License
 [GNU General Public License v3.0][license]
 - <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+
+### Includes
+- [HorizontalServerList][hsl] by [Gibbu][hsl-author] - [MIT License][hsl-license]
+- [Squared][squared] by [Saltssaumure][squared-author] - [MIT License][squared-license]
+- [Windows 95 All Icons][winicons] by [Vovan29][winicons-author] - [CC BY-ND 4.0][winicons-license]
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
