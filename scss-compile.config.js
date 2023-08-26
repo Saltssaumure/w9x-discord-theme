@@ -1,13 +1,9 @@
 /** @type {import('bd-scss/lib/config').Config} */
 export default {
     meta: {
-        /** The official name of your theme. */
-        name: "NineX",
-        /** The name of your base scss file. */
-        scss: "w9x",
-        /** The name of your theme repository. */
-        repo: "w9x-discord-theme",
-        /** The version of your theme. */
-        version: "1.3.3"
+        name: "NineX" /* The official name of your theme. */,
+        scss: "w9x" /* The name of your base scss file. */,
+        repo: "w9x-discord-theme" /* The name of your theme repository. */,
+        version: "dev" /* The version of your theme. */
     }
 };

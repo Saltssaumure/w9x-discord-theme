@@ -3,5 +3,13 @@
     "singleQuote": false,
     "printWidth": 140,
     "tabWidth": 4,
-    "trailingComma": "none"
+    "trailingComma": "none",
+    "overrides": [
+        {
+            "files": "*.json",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }

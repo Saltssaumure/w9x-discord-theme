@@ -25,7 +25,8 @@
 
         // Entry
         .result-u66Ywh {
-            &:hover {
+            &:hover,
+            &[aria-selected="true"] {
                 background: $darkblue;
 
                 .contentDefault-17ewQQ,

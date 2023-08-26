@@ -1,11 +1,14 @@
-refs
-_header.scss
-test.scss
+# Packages
+/.parcel-cache
+/node_modules
 
-.parcel-cache
+# Build
+/dist
+/bundle
+/src
 
-node_modules
+# Social images
+/preview
 
-dist
-bundle
-src
+# References
+/refs
