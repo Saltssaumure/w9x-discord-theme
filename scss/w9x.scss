@@ -1,8 +1,8 @@
-@use "./main/" as *;
-@use "./mod/" as *;
-@use "./overlay/" as *;
-@use "./part/" as *;
-@use "./plugin/" as *;
+@forward "./main";
+@forward "./mod";
+@forward "./overlay";
+@forward "./part";
+@forward "./plugin";
 
 @import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
 @import url("https://discordstyles.github.io/Addons/bottomhsl.css");

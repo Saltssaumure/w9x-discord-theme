@@ -18,12 +18,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-            node-version: 18
+          node-version: 18
 
       - name: Install PNPM
         uses: pnpm/action-setup@v2
         with:
-         version: latest
+          version: latest
 
       - name: Install Node.js dependencies
         run: pnpm install

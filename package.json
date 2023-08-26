@@ -21,8 +21,8 @@
     "@parcel/config-default": "^2.9.3",
     "@parcel/core": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
-    "@types/node": "^18.17.11",
-    "prettier": "^2.8.8",
+    "@types/node": "^20.5.6",
+    "prettier": "^3.0.2",
     "replugged": "^4.6.1",
     "salt-bd-scss": "^1.1.0"
   }
