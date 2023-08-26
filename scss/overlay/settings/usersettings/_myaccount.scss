@@ -12,4 +12,11 @@
     .overflowMenuIcon-2Bjb5_ {
         @include boxes.clickable;
     }
+
+    .badgeList-b3Ajmk {
+        gap: 0;
+        .anchor-1X4H4q {
+            @include boxes.clickable;
+        }
+    }
 }

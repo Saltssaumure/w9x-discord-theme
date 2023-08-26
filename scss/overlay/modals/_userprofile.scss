@@ -2,6 +2,14 @@
 @use "../../top/boxes" as boxes;
 
 .userProfileModalOuter-2wdWjU {
+    // Badges
+    .badgeList-2aoHPw {
+        gap: 0;
+        .anchor-1X4H4q {
+            @include boxes.clickable;
+        }
+    }
+
     // Tabs
     .tabBarContainer-sCZC4w {
         margin: 16px 24px 0 0;
@@ -42,18 +50,18 @@
 
         // Connected accounts
         .connectedAccounts-2R5M4w {
-            .connectedAccountsColumn-1zdyyx {
-                flex-direction: row;
-                width: unset;
+            display: block;
+            width: 100%;
 
-                & + .connectedAccountsColumn-1zdyyx {
-                    margin-left: 0;
-                }
+            .connectedAccountsColumn-1zdyyx {
+                display: inline;
+                margin-left: 0;
 
                 .connectedAccountContainer-3aLMHJ {
                     @include boxes.inset;
+                    display: inline-block;
                     width: calc(460px / 3);
-                    margin-right: 8px;
+                    margin: 6px 6px 0 0;
 
                     // Open account in browser
                     &:has(.anchor-1X4H4q) {
