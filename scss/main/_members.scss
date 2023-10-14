@@ -3,7 +3,7 @@
 @use "../top/channellist-css" as channels;
 
 // Members list
-.membersWrap-3NUR2t {
+.container-2o3qEW {
     @include channels.vars;
     @include boxes.box;
     @include boxes.winBar($isPseudo: true, $text: "Members");
