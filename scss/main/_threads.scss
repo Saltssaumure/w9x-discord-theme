@@ -2,7 +2,10 @@
 @use "../top/boxes" as boxes;
 
 // Main chat with thread open
-:is(.chat-2ZfjoI, .chat-9g_3Xj):not(.container-2IKOsH > :is(.chat-2ZfjoI, .chat-9g_3Xj)):is(.threadSidebarOpen-1LSXvU, .threadSidebarOpen-lv7sGl) {
+:is(.chat-2ZfjoI, .chat-9g_3Xj):not(.container-2IKOsH > :is(.chat-2ZfjoI, .chat-9g_3Xj)):is(
+        .threadSidebarOpen-1LSXvU,
+        .threadSidebarOpen-lv7sGl
+    ) {
     border-right: 0;
 
     &::before {
