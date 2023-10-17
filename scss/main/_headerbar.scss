@@ -5,7 +5,7 @@
 :is(
         .container-2cd8Mz .container-ZMc96U,
         .container-2_BXG- .container-ZMc96U,
-        .pageWrapper-2PwDoS .scroller-3j5xK2,
+        :is(.pageWrapper-2PwDoS, .pageWrapper-eg3-6i) .scroller-3j5xK2,
         .scroller-RfJjkV .viewWrapper-oqUsis,
         .applicationStore-2nk7Lo .homeWrapper-L4ors0,
         :is(.container-3XgAHv, .container-3s2w-i):not(:is(.floating-3M3WeH, .floating-1T0kDs))

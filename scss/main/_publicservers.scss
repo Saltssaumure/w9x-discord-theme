@@ -31,7 +31,7 @@
 }
 
 // Main page
-.appMount-2yBXZl .pageWrapper-2PwDoS {
+.appMount-2yBXZl :is(.pageWrapper-2PwDoS, .pageWrapper-eg3-6i) {
     background: $grey;
 
     .scroller-3j5xK2 {
@@ -176,31 +176,18 @@
     }
 }
 
-// Student hubs
-.sidebar-1tnWFu + .scroller-RfJjkV {
-    padding: 32px 8px 8px !important;
+// Student hubs / custom guild directory
+.pageContainer-36uo3F {
+    @include boxes.inset;
 
-    .viewWrapper-oqUsis {
-        margin-top: 0 !important;
+    .card-3N2v9t {
+        @include boxes.box;
     }
+}
+.scroller-1ox3I2:has(.itemInner-3k3Sn6) {
+    min-height: 200px;
 
-    .guildListSection-27K5In {
-        @include boxes.inset;
-        width: auto;
-        padding: 16px;
-
-        :is(.card-2TuZPZ, .container-1wv6C6) {
-            @include boxes.clickable;
-            &:hover {
-                transform: none;
-            }
-            .addButton-Jt0onL {
-                color: $black;
-            }
-        }
-    }
-
-    .divider-3jU7zr {
-        display: none;
+    .itemInner-3k3Sn6 {
+        margin-left: 0;
     }
 }
