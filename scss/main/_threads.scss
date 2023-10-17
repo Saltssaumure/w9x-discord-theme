@@ -2,7 +2,7 @@
 @use "../top/boxes" as boxes;
 
 // Main chat with thread open
-.chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI).threadSidebarOpen-1LSXvU {
+:is(.chat-2ZfjoI, .chat-9g_3Xj):not(.container-2IKOsH > :is(.chat-2ZfjoI, .chat-9g_3Xj)):is(.threadSidebarOpen-1LSXvU, .threadSidebarOpen-lv7sGl) {
     border-right: 0;
 
     &::before {
@@ -10,7 +10,7 @@
     }
 
     // Message needs no indent as member list cannot be visible at once.
-    .chatContent-3KubbW .message-2CShn3 {
+    :is(.chatContent-3KubbW, .chatContent-2O4SXb) .message-2CShn3 {
         margin-right: 0 !important;
     }
 
@@ -23,7 +23,7 @@
 // Threads not video chat
 .content-1SgpWY > {
     // Main chat / thread separator
-    .resizeHandle-PBRzPC {
+    :is(.resizeHandle-PBRzPC, .resizeHandle-2F4Beb) {
         @include boxes.box;
         background: $grey;
         position: relative;
@@ -40,7 +40,7 @@
     }
 
     // Thread panel
-    .container-3XgAHv {
+    :is(.container-3XgAHv, .container-3s2w-i) {
         @include boxes.box;
         margin: $window-top 0 $window-bottom 0;
         right: $window-right;
@@ -53,18 +53,18 @@
     }
 
     // Floating thread panel for narrow screens
-    .chatLayerWrapper-2mgEK- {
+    :is(.chatLayerWrapper-2mgEK-, .chatLayerWrapper-1K7IFZ) {
         top: $title-height + $window-top;
         right: $window-right;
         bottom: $window-bottom + 2px;
         height: auto;
 
-        .chatTarget-3H6mpC {
+        :is(.chatTarget-3H6mpC, .chatTarget-1ROClP) {
             display: none;
         }
     }
 }
 
-.layerContainer-2lfOPe:has(.chatLayerWrapper-2mgEK-) {
+.layerContainer-2lfOPe:has(:is(.chatLayerWrapper-2mgEK-, .chatLayerWrapper-1K7IFZ)) {
     z-index: 0;
 }

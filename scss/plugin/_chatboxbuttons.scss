@@ -6,7 +6,7 @@
 // BD: Translator, InvisibleTyping
 
 // SendTimestamps, SilentTyping
-.channelTextArea-1FufC0 div[style="display: flex;"],
+:is(.channelTextArea-1FufC0, .channelTextArea-1deLlK) div[style="display: flex;"],
 // InvisibleTyping
 .invisible-typing-button {
     @include boxes.clickable;

@@ -2,7 +2,7 @@
 @use "../top/boxes" as boxes;
 
 // Chat box
-.channelTextArea-1FufC0 {
+:is(.channelTextArea-1FufC0, .channelTextArea-1deLlK) {
     @include boxes.inset;
 
     // Buttons

@@ -155,6 +155,6 @@
 }
 
 // If empty
-.content-1jQy2l:has(.emptyStateContainer-Ftfayf) {
+:is(.content-1jQy2l, .content-18rAwf):has(.emptyStateContainer-Ftfayf) {
     @include boxes.inset;
 }

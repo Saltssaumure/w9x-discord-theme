@@ -67,7 +67,7 @@
 }
 
 // Flip order
-.container-YkUktl {
+:is(.container-YkUktl, .container-1CH86i) {
     height: calc(var(--server-container) - 2px);
     flex-direction: row-reverse;
     gap: 6px;
@@ -85,12 +85,12 @@
 }
 
 // User
-.avatarWrapper-1B9FTW {
+:is(.avatarWrapper-1B9FTW, .avatarWrapper-12uuu4) {
     @include boxes.inset;
     margin-right: 0;
 }
-.withTagAsButton-OsgQ9L:hover,
-.withTagless-10ooWt:hover {
+:is(.withTagAsButton-OsgQ9L, .withTagAsButton-2_JkHX):hover,
+:is(.withTagless-10ooWt, .withTagless-Lx3LMo):hover {
     background: inherit;
     color: inherit;
 }

@@ -62,7 +62,7 @@
 // Server subscriptions
 .container-2_BXG-,
 // Main chat
-.chat-2ZfjoI:not(.container-2IKOsH > .chat-2ZfjoI) {
+:is(.chat-2ZfjoI, .chat-9g_3Xj):not(.container-2IKOsH > :is(.chat-2ZfjoI, .chat-9g_3Xj)) {
     @include boxes.mainWindow();
 }
 

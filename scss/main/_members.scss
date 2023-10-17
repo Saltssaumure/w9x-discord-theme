@@ -3,7 +3,7 @@
 @use "../top/channellist-css" as channels;
 
 // Members list
-.container-2o3qEW {
+:is(.container-2o3qEW, .container-2vWgD2) {
     @include channels.vars;
     @include boxes.box;
     @include boxes.winBar($isPseudo: true, $text: "Members");
@@ -17,7 +17,7 @@
 }
 
 // Members list scroller
-.members-3WRCEx {
+:is(.members-3WRCEx, .members-2y1nVj) {
     margin-top: $title-height;
 
     // Member
