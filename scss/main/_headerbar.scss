@@ -8,7 +8,8 @@
         .pageWrapper-2PwDoS .scroller-3j5xK2,
         .scroller-RfJjkV .viewWrapper-oqUsis,
         .applicationStore-2nk7Lo .homeWrapper-L4ors0,
-        :is(.container-3XgAHv, .container-3s2w-i):not(:is(.floating-3M3WeH, .floating-1T0kDs)) .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U),
+        :is(.container-3XgAHv, .container-3s2w-i):not(:is(.floating-3M3WeH, .floating-1T0kDs))
+            .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U),
         :is(.chat-2ZfjoI, .chat-9g_3Xj) .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U)
     ) {
     margin-top: $title-height;

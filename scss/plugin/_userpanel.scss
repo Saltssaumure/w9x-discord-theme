@@ -13,7 +13,15 @@
         border-bottom: 0;
     }
 
-    &:not(:has(:is(.container-1zzFcN, .container-2NLBJg), .activityPanel-9icbyU, .container-6sXIoE, #spotify-modal-root, #vc-spotify-player)) {
+    &:not(
+            :has(
+                    :is(.container-1zzFcN, .container-2NLBJg),
+                    .activityPanel-9icbyU,
+                    .container-6sXIoE,
+                    #spotify-modal-root,
+                    #vc-spotify-player
+                )
+        ) {
         border-left: 0;
         &::before {
             border-left: 0;
