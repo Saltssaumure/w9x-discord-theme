@@ -3,7 +3,7 @@
 
 // Top bar
 
-.titleBar-1it3bQ {
+:is(.titleBar-1it3bQ, .titleBar-3AIemB) {
     margin: unset;
     @include boxes.winBar($text: "Discord", $bgColor: $darkblue);
     position: absolute;
@@ -31,7 +31,7 @@
     }
 
     // Buttons
-    .winButton-3UMjdg {
+    :is(.winButton-3UMjdg, .winButton-3SigSb) {
         @include boxes.clickable;
         background: $grey;
         height: 16px;

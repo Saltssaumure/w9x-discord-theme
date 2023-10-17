@@ -175,7 +175,7 @@ $prefix: "https://canary.discord.com";
     .emptyWumpus-11kRB0 {
         background: url($prefix + "/assets/e0989b9d43cd9ca4417b49f4f8fbebc6.svg");
     }
-    .krispLogo-aWHaan {
+    :is(.krispLogo-aWHaan, .krispLogo-2NYhKv) {
         background-image: url($prefix + "/assets/73c1c05c8458288db873591e1f6ee5a9.svg");
     }
     .imageUploaderIcon-2OHmFu {

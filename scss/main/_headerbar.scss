@@ -8,8 +8,8 @@
         .pageWrapper-2PwDoS .scroller-3j5xK2,
         .scroller-RfJjkV .viewWrapper-oqUsis,
         .applicationStore-2nk7Lo .homeWrapper-L4ors0,
-        .container-3XgAHv:not(.floating-3M3WeH) .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U),
-        .chat-2ZfjoI .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U)
+        :is(.container-3XgAHv, .container-3s2w-i):not(:is(.floating-3M3WeH, .floating-1T0kDs)) .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U),
+        :is(.chat-2ZfjoI, .chat-9g_3Xj) .container-ZMc96U:not(.wrapper-1gVUIN .container-ZMc96U)
     ) {
     margin-top: $title-height;
     z-index: 0;
@@ -80,6 +80,6 @@
 }
 
 // Under header bar
-.content-1jQy2l::before {
+:is(.content-1jQy2l, .content-18rAwf)::before {
     display: none;
 }
