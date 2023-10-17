@@ -34,6 +34,7 @@
 // Put notice banners below main window
 .base-2jDfDU {
     flex-direction: column-reverse;
+    height: calc(100% - var(--server-container));
 
     #bd-notices {
         z-index: 102;
@@ -54,7 +55,7 @@
 // Main DM and friend list view
 .container-2cd8Mz,
 // Explore servers view
-.pageWrapper-2PwDoS,
+:is(.pageWrapper-2PwDoS, .pageWrapper-eg3-6i),
 // Student hub
 .scroller-RfJjkV,
 // Buy Nitro page
@@ -64,12 +65,4 @@
 // Main chat
 :is(.chat-2ZfjoI, .chat-9g_3Xj):not(.container-2IKOsH > :is(.chat-2ZfjoI, .chat-9g_3Xj)) {
     @include boxes.mainWindow();
-}
-
-// Student hub
-.scroller-RfJjkV {
-    height: auto;
-    &::before {
-        display: none;
-    }
 }
