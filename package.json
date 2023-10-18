@@ -1,6 +1,6 @@
 {
   "name": "ninex-discord-theme",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "A Windows 95/98 style Discord theme.",
   "repository": "github:Saltssaumure/w9x-discord-theme",
   "author": "Saltssaumure <themes@saltssaumure.net>",
@@ -21,7 +21,7 @@
     "@parcel/config-default": "^2.10.0",
     "@parcel/core": "^2.10.0",
     "@parcel/transformer-sass": "^2.10.0",
-    "@types/node": "^20.8.6",
+    "@types/node": "^20.8.7",
     "prettier": "^3.0.3",
     "replugged": "^4.6.5",
     "salt-bd-scss": "^1.1.0"
