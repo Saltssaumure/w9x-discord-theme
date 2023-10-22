@@ -8,32 +8,32 @@ on:
 
 jobs:
   build:
-    name: "Build CSS"
-    runs-on: "ubuntu-latest"
+    name: Build CSS
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Git repository
-        uses: "actions/checkout@v2"
+      - name: Checkout theme
+        uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install PNPM
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
 
-      - name: Install Node.js dependencies
+      - name: Install dependencies
         run: pnpm install
 
       - name: Build CSS
         run: pnpm run bd
 
-      - name: "Deploy"
-        uses: "peaceiris/actions-gh-pages@v3"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: "deploy"
+          publish_branch: deploy
           publish_dir: "./"

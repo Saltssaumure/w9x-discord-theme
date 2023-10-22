@@ -13,26 +13,27 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout Git repository
+      - name: Checkout theme
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install PNPM
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: latest
 
-      - name: Install Node.js dependencies
+      - name: Install dependencies
         run: pnpm install
 
-      - name: Build TypeScript and bundle into asar
+      - name: Build and bundle theme into .asar
         run: pnpm run rp
 
-      - uses: ncipollo/release-action@v1
+      - name: Release bundled asar, json, and theme.css
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "bundle/*, *.theme.css"
           makeLatest: true
