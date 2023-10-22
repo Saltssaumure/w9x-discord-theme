@@ -1,10 +1,9 @@
 # Packages
-/.parcel-cache
 /node_modules
 
 # Build
-/dist
 /bundle
+/dist
 /src
 
 # Social images
