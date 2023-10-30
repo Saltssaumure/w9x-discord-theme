@@ -1,24 +1,24 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.sectionAccountCredit-1IqaxB,
-.subscriptionDetails-ZcKNHC {
+.sectionAccountCredit__8ffc1,
+.subscriptionDetails_f73fb4 {
     padding-bottom: 16px;
     margin-bottom: 0;
     border-bottom: 0;
 }
 
-.card-2guEcY {
+.card__4dc22 {
     @include boxes.inset;
     padding: 16px;
 
-    .noItemsIcon-1rZlXZ,
-    .noItemsIcon-2OeOld {
+    .noItemsIcon_b1e42b,
+    .noItemsIcon__38ca2 {
         background: transparent;
     }
 
-    .cardText-1KLO-g,
-    .cardText-3dmnX6 {
+    .cardText_c116a3,
+    .cardText__2fe30 {
         color: $black;
     }
 }

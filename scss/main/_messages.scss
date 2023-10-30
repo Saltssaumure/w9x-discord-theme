@@ -2,54 +2,54 @@
 @use "../top/boxes" as boxes;
 
 // Chat message display area
-.messagesWrapper-RpOMA3 {
+.messagesWrapper_ea2b0b {
     margin-bottom: 24px;
     @include boxes.inset;
     background: $bg;
 }
 
 // Placeholder messages
-.wrapper-3HVHpV,
-.wrapper-15CKyy {
+.wrapper_b8c724,
+.wrapper__5c5cd {
     background: $bg;
 }
 
 // Jump to present bar and other bottom bars
-.barBase-3xxDXu {
+.barBase__4e0ba {
     right: 18px;
     left: 0;
     padding-bottom: 0;
 }
 
 // With members list visible
-.base-2jDfDU:has(:is(.membersWrap-3NUR2t, .membersWrap-3GwLFp)) {
+.base__3e6af:has(.membersWrap__90226) {
     // VC video controls
-    .bottomControls-31YuPK {
+    .bottomControls__8bd89 {
         width: auto;
         padding-right: 150px;
     }
 
     // Message
-    .message-2CShn3 {
+    .message__80c10 {
         padding-right: 140px !important;
 
         // Message actions
-        .container-2gUZhU {
+        .container__9d616 {
             right: 130px;
         }
     }
 }
 
 // Message actions
-.wrapper-2vIMkT {
+.wrapper_c727b6 {
     height: auto;
 
-    .button-3bklZh {
+    .button_d553e5 {
         @include boxes.clickable;
         padding: 0;
 
-        &.disabled-3SakJY,
-        &.disabled-3SakJY:hover {
+        &.disabled_a3e440,
+        &.disabled_a3e440:hover {
             @include boxes.box;
             padding: 0;
         }
@@ -57,68 +57,68 @@
 }
 
 // Text
-.description-22d6ux,
-.markup-eYLPri,
-.container-x059i8,
-.header-1dhDWV,
-.username-h_Y3Us,
-.repliedTextPlaceholder-1Njd47,
-.repliedTextPreview-1bvxun.clickable-31pE3P:hover,
-.repliedMessage-3Z6XBG,
-.subtitle-C_i4IN,
-.markup-eYLPri code,
-.codeBlockText-28BOxV,
-.codeLine-2C-9aH,
-.operations-3q3u6E,
-.markup-eYLPri h1,
-.markup-eYLPri h2,
-.markup-eYLPri h3,
-.markup-eYLPri h4,
-.markup-eYLPri h5,
-.markup-eYLPri h6 {
+.description__57d03,
+.markup_a7e664,
+.container_aed774,
+.header__4080b,
+.username_d30d99,
+.repliedTextPlaceholder__044d3,
+.repliedTextPreview__90311.clickable_d866f1:hover,
+.repliedMessage_e2bf4a,
+.subtitle__9cab9,
+.markup_a7e664 code,
+.codeBlockText__6172e,
+.codeLine__3797b,
+.operations__07224,
+.markup_a7e664 h1,
+.markup_a7e664 h2,
+.markup_a7e664 h3,
+.markup_a7e664 h4,
+.markup_a7e664 h5,
+.markup_a7e664 h6 {
     color: $text;
 }
 
 // Eyebrow
-.eyebrow-1Shfyi,
-.eyebrow-2wJAoF {
+.eyebrow_e5a66c,
+.eyebrow_b7df6b {
     text-transform: none;
 }
 
 // Blockquote
-.blockquoteDivider-363utW {
+.blockquoteDivider__96157 {
     background: $grey;
 }
 
 // Bullet point
-.markup-eYLPri li {
+.markup_a7e664 li {
     list-style-type: square;
 }
 
 // Attachments
-.spoilerInnerContainer-1P_w0A,
-.messageAttachment-CZp8Iv .wrapperAudio-1Bzv_Z,
-.embedWrapper-1MtIDg.container-rr3Ruk,
-.attachment-1PZZB2,
-.gridContainer-1cF_Ic,
-.tile-2mmK5T,
-.wrapper-1HIH0j,
-.imageWrapper-oMkQl4 {
+.spoilerInnerContainer__9ef22,
+.messageAttachment_b97504 .wrapperAudio__555ce,
+.embedWrapper_c143d9.container__8cab3,
+.attachment_f3cf2c,
+.gridContainer_de8cdc,
+.tile_ebc93b,
+.wrapper_efe67f,
+.imageWrapper_fd6587 {
     @include boxes.box;
 }
 
 // Remove attachments
-.embedSuppressButton-1rZHq6,
-.embedSuppressButton-1rZHq6:hover {
+.embedSuppressButton_df9a75,
+.embedSuppressButton_df9a75:hover {
     color: $text;
 }
 
 // Text attachments
-.newMosaicStyle-2jdUaP .codeView-12LUIl {
+.newMosaicStyle__8d3be .codeView__8b1ff {
     margin: 0;
 }
 
-.textContainer-36wgKK {
+.textContainer__709ff {
     @include boxes.inset;
     background: $bg;
 
@@ -128,20 +128,20 @@
     }
 }
 
-.downloadButton-2PkwZg {
+.downloadButton__620ea {
     @include boxes.clickable;
     padding: 0;
     margin-top: 5px;
     margin-left: 6px;
 }
 
-.codeIcon-Ni8XUA {
+.codeIcon__14a76 {
     @include boxes.clickable;
     padding: 0;
 }
 
 // Central play pause video button
-.iconWrapper-XpfprW {
+.iconWrapper__8560c {
     @include boxes.clickable;
     opacity: 1;
     background: $grey;
@@ -149,8 +149,8 @@
 }
 
 // Download / delete / alt txt button
-.hoverButton-36QWJk,
-.mediaMosaicAltText-1FnVZd {
+.hoverButton__13836,
+.mediaMosaicAltText__4ab63 {
     @include boxes.clickable;
 
     &:active,
@@ -162,118 +162,118 @@
 }
 
 // Embed source site
-.embedProvider-1GSN0c {
+.embedProvider_cfa718 {
     color: var(--text-normal);
 }
 
 // Music and video controls
-.audioControls-3fmemK,
-.videoControls-2NzHnF {
+.audioControls__9fbe9,
+.videoControls__96149 {
     background: $grey;
 }
 
-.audioControls-3fmemK {
+.audioControls__9fbe9 {
     @include boxes.box;
 }
 
 // Fullscreen button
-.controlIcon-10O-4h,
-.controlIcon-10O-4h:hover {
+.controlIcon__25700,
+.controlIcon__25700:hover {
     color: $black;
 }
 
-.videoButton-3NM9Tc {
+.videoButton__1a553 {
     @include boxes.clickable;
 }
 
-.controlIcon-1grhw_ {
+.controlIcon__11f8e {
     opacity: 1;
 }
 
-.wrapper-1FP9YQ {
+.wrapper__3a7a0 {
     color: $black;
 }
 
 // Progress bar
-.mediaBarWrapper-33h1oY,
-.mediaBarWrapper-33h1oY::after,
-.mediaBarWrapper-33h1oY::before {
+.mediaBarWrapper_f312bd,
+.mediaBarWrapper_f312bd::after,
+.mediaBarWrapper_f312bd::before {
     background: $grey;
 }
 
-.mediaBarWrapper-33h1oY {
+.mediaBarWrapper_f312bd {
     @include boxes.inset;
 }
 
-.mediaBarGrabber-FvJKJg,
-.mediaBarProgress-38I317,
-.mediaBarProgress-38I317::after,
-.mediaBarProgress-38I317::before {
+.mediaBarGrabber_c64ff9,
+.mediaBarProgress__29db2,
+.mediaBarProgress__29db2::after,
+.mediaBarProgress__29db2::before {
     background: $darkblue;
 }
 
-.bubble-3XikHF {
+.bubble_f48089 {
     z-index: 1;
 }
 
 // Volume control
-.mediaBarInteractionVolume-zGrOSh {
+.mediaBarInteractionVolume_f4c833 {
     background: $grey;
     @include boxes.box;
 }
 
 // Reactions
-.reaction-3vwAF2 {
+.reaction_b90ab0 {
     margin-right: 0;
     border: 0;
 }
 
-.reactionInner-YJjOtT {
+.reactionInner__00d5f {
     @include boxes.box;
 }
 
 // Self reactions
-.reaction-3vwAF2.reactionMe-1PwQAc {
+.reaction_b90ab0.reactionMe_bf6909 {
     background: $grey;
 }
 
 // Clicked reactions
-.reactionMe-1PwQAc .reactionInner-YJjOtT,
-.reactionInner-YJjOtT:active {
+.reactionMe_bf6909 .reactionInner__00d5f,
+.reactionInner__00d5f:active {
     @include boxes.inset;
 
-    .reactionCount-26U4As {
+    .reactionCount__60448 {
         color: $black;
     }
 }
 
 // Hovered reactions
-.reaction-3vwAF2:hover {
-    .reactionCount-26U4As {
+.reaction_b90ab0:hover {
+    .reactionCount__60448 {
         color: $black;
     }
 }
 
 // Add more reactions button
-.reactionBtn-3I19bq:hover,
-.reactionBtn-3I19bq:active {
-    .icon-1q31jb {
+.reactionBtn__46474:hover,
+.reactionBtn__46474:active {
+    .icon_b0b9a4 {
         color: $text;
     }
 }
 
 // Open thread button
-.container-3i3IzO {
+.container__767d1 {
     @include boxes.clickable;
 }
 
 // Links
-.content-vSHmMD a {
+.content__72fdc a {
     color: var(--text-link);
 }
 
 // Channel/user mentions
-.wrapper-1ZcZW-:is(.channelMention, .mention) {
+.wrapper__2d9b1:is(.channelMention, .mention) {
     @include boxes.clickable;
 }
 
@@ -284,8 +284,8 @@
 }
 
 // Spoiler text
-.messageContent-2t3eCI {
-    .spoilerText-2G40u0.hidden-2lQZ5q {
+.messageContent__21e69 {
+    .spoilerText-2G40u0.hidden_f44e41 {
         @include boxes.box;
         background: $darkgrey;
     }
@@ -297,12 +297,12 @@
 }
 
 // Code blocks
-.markup-eYLPri code {
+.markup_a7e664 code {
     @include boxes.box;
     background: $bg;
 }
 
 // Editors
-.editor-H2NA06 {
+.editor__66464 {
     caret-color: $text;
 }

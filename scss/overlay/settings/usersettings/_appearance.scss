@@ -2,28 +2,28 @@
 @use "../../../top/boxes" as boxes;
 
 #appearance-tab {
-    .preview-QJ3OG3 {
+    .preview_f42b5d {
         background: $bg;
         @include boxes.inset;
     }
 
-    .presets-2zm9Ir {
+    .presets__14d08 {
         gap: 8px;
 
-        .themeSelection-2u4ce0 {
+        .themeSelection__6014a {
             box-shadow: none;
             @include boxes.clickable;
 
-            &.selected-2FbEJt {
+            &.selected_e5f907 {
                 @include boxes.inset;
             }
 
-            &.darkIcon-e6uv7V {
+            &.darkIcon__1846a {
                 background: $black;
             }
         }
 
-        .selectionCircle-3s5Uex {
+        .selectionCircle_f4288e {
             display: none;
         }
     }

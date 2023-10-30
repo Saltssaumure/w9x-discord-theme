@@ -1,74 +1,74 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.contentWrapper-3vHNP2,
-.contentWrapper-2f9yME {
+.contentWrapper__321ed,
+.contentWrapper_eab878 {
     @include boxes.box;
     // grid-row-gap: 0;
 }
 
 // Gifs / Stickers / Emojis tabs
 // Reaction / Super Reaction tabs
-:is(.nav-1zWVQw, .nav-1cHpYc) {
+:is(.nav__2bf35, .nav__2aafa) {
     border-bottom: 1px solid $darkgrey;
 }
-:is(.navItem-3McpmW, .navItem-2srkuX) {
+:is(.navItem_df0bc1, .navItem_bd587d) {
     @include boxes.tab;
     margin-right: 0;
     top: -2px;
 
-    & + .navItem-3McpmW {
+    & + .navItem_df0bc1 {
         margin-left: 0;
     }
 
-    &:is(.navButtonActive-1EqC5l, .navButtonActive-fwiUKp) {
+    &:is(.navButtonActive__735cb, .navButtonActive_b003de) {
         background: $grey;
         color: var(--interactive-active);
     }
 }
 
 // Search bar
-:is(.container-1SX9VC, .container-2oNtJn) {
+:is(.container_e4c233, .container__7712a) {
     @include boxes.inset;
     background: $bg;
     margin-right: 0;
 
-    .inner-1NoIT5 {
+    .inner__178b2 {
         padding-right: 1px !important;
         overflow: hidden !important;
     }
 
-    :is(.input-2FSSDe, .input-2m5SfJ) {
+    :is(.input_f4043f, .input__74754) {
         color: $text;
     }
 
     // Search button
-    :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
+    :is(.iconLayout__9fbb1, .iconLayout__6d744) {
         @include boxes.clickable;
         background: $grey;
         cursor: pointer;
     }
 
-    &.disabled-2QaYSb :is(.iconLayout-SqV3nb, .iconLayout-3Bjizv) {
+    &.disabled__5dd14 :is(.iconLayout__9fbb1, .iconLayout__6d744) {
         @include boxes.box;
     }
 }
 
 // Header
-:is(.emojiPickerHasTabWrapper-LoluYe .header-11eigE, .header-11eigE, .header-uVCAlo, .header-2TLOnc) {
+:is(.emojiPickerHasTabWrapper__80686 .header__55964, .header__55964, .header_f71767, .header_f7f1f3) {
     padding: 0 8px 8px;
 
     // VC picker
     &.emojiPickerHeader-2mWh2T {
         padding-top: 8px;
 
-        .tooltipContainer-3zA7TI {
+        .tooltipContainer__1b45e {
             @include boxes.clickable;
         }
     }
 
     // Back button
-    .backButton-bSKWLe {
+    .backButton__6a1f0 {
         @include boxes.clickable;
         margin-right: 0;
         padding: 2px 4px;
@@ -76,23 +76,23 @@
     }
 
     // Skin tone selector
-    .diversitySelectorButton-2CGlo5 {
+    .diversitySelectorButton_a4f274 {
         @include boxes.clickable;
         padding: 4px;
     }
-    .diversitySelectorOptions-3DhNYs {
+    .diversitySelectorOptions__846c5 {
         @include boxes.box($position: absolute);
         right: 16px;
     }
 
     // Beta tag in Super Reactions
-    .betaTag-V7479T {
+    .betaTag__403f6 {
         top: 12px;
     }
 }
 
 // Emoji picker only panel, eg. in custom status modal
-.layer-2BGhQ8 #emoji-picker-tab-panel {
+.layer_ec16dd #emoji-picker-tab-panel {
     @include boxes.box;
     background: $grey;
     padding-top: 8px;
@@ -103,18 +103,18 @@
     background: $grey;
 
     // Scroller
-    .container-3eG4QA {
+    .container_bc9447 {
         background: $bg;
     }
 
     // Favourites
-    .categoryFadeBlurple-1l49_Q {
+    .categoryFadeBlurple_e73c11 {
         background: $darkblue;
         opacity: 0.7;
     }
 
     // Gif / Category
-    .result-pzZrwj {
+    .result_e1fc74 {
         background: $bg !important;
         @include boxes.clickable;
 
@@ -125,58 +125,58 @@
 }
 
 // Emoji / Sticker picker
-:is(.bodyWrapper-1eSOtW, .listWrapper-2DwCYS) {
+:is(.bodyWrapper_cc3635, .listWrapper__74641) {
     background: $bg;
 
     // Super reactions ad
     // Nitro ad
-    .burstNotice-_eSKPc,
-    .premiumUpsell-2K2V_c {
+    .burstNotice_ea6e72,
+    .premiumUpsell_e1bfd9 {
         margin: 0;
     }
 
     // No results search suggestion
-    .searchSuggestion-PfUKKS {
+    .searchSuggestion__5559d {
         @include boxes.clickable;
     }
 
     // Emojis list
-    .listItems-6eZzQ1 {
+    .listItems__699d1 {
         left: 0 !important;
 
         // Category section
-        .categorySection-3j71bm {
+        .categorySection_f44c2f {
             margin-bottom: 0;
         }
 
         // Category header
-        :is(.header-1ULbqO, .packHeader-w9jpYl) {
+        :is(.header_c3c744, .packHeader__8b804) {
             @include boxes.box;
             z-index: 2;
 
-            .header-1XpmZs {
+            .header__9f6dc {
                 width: 100%;
                 height: 100%;
             }
 
-            .headerLabel-1g790w {
+            .headerLabel_e9f74f {
                 text-transform: none;
             }
         }
 
-        .emojiItem-277VFM {
+        .emojiItem_b15dee {
             @include boxes.clickable;
 
-            &.emojiItemDisabled-3VVnwp {
+            &.emojiItemDisabled__36cbf {
                 @include boxes.box;
             }
 
-            &.emojiItemSelected-2Lg50V {
+            &.emojiItemSelected__1a09a {
                 background: transparent;
             }
         }
 
-        .row-2mBMW2 {
+        .row__959bb {
             $gap: 32px;
             column-gap: $gap !important;
             margin-left: $gap;
@@ -185,7 +185,7 @@
             & > div {
                 @include boxes.clickable;
 
-                .inspectedIndicator-27zwNZ {
+                .inspectedIndicator_f00108 {
                     background: transparent;
                 }
             }
@@ -194,22 +194,22 @@
 }
 
 // Emoji info
-.inspector-DFKXwB {
+.inspector__993e1 {
     @include boxes.box;
 }
 
 // Servers list
-:is(.emojiPickerHasTabWrapper-LoluYe .categoryList-2qRrlj, .categoryList-2qRrlj, .categoryList-2GgCrD) {
+:is(.emojiPickerHasTabWrapper__80686 .categoryList_f8c48f, .categoryList_f8c48f, .categoryList__5dbc1) {
     @include boxes.box($position: absolute);
     top: 45px;
 
-    :is(.categoryItem-1sHzUv, .stickerCategory-2f6iSo) {
+    :is(.categoryItem__39904, .stickerCategory__4891e) {
         @include boxes.clickable;
         margin-bottom: 0;
     }
 
     // Divider
-    :is(.guildCategorySeparator-3QYkij, .guildCategorySeparator-1YkjLr) {
+    :is(.guildCategorySeparator_dcbc4b, .guildCategorySeparator__67db8) {
         border: unset;
         margin: 4px;
     }

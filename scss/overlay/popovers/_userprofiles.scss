@@ -2,10 +2,10 @@
 @use "../../top/boxes" as boxes;
 
 // User profiles
-.userProfileOuter-2tQwNf {
+.userProfileOuter__46bb7 {
     @include boxes.box;
 
-    &.userProfileOuterThemed-2BgJCM {
+    &.userProfileOuterThemed__6eb84 {
         &.theme-dark {
             --interactive-active: #{$white};
             --header-primary: #{$grey};
@@ -14,49 +14,49 @@
         }
     }
 
-    .userProfileInner-1ngKnf {
+    .userProfileInner__8065b {
         // Avatar
-        .avatarWrapper-eenWra {
+        .avatarWrapper_f77579 {
             @include boxes.clickable($position: absolute);
         }
 
         // Profile badges
-        .profileBadges-2pItdR {
+        .profileBadges__7a7cb {
             gap: 0;
             padding: 0;
-            .anchor-1X4H4q {
+            .anchor_c8ddc0 {
                 @include boxes.clickable;
                 padding: 2px;
             }
         }
 
         // Inner box
-        .userPopoutOverlayBackground-3A0Pcz {
+        .userPopoutOverlayBackground_d8afa4 {
             @include boxes.box;
 
             // Divider
-            .divider-2dDziJ {
+            .divider_ed0c1d {
                 background-color: transparent;
             }
 
             // About me
-            .scroller-15bIdk {
+            .scroller__83262 {
                 @include boxes.inset;
             }
 
             code,
-            .blockquoteDivider-363utW {
+            .blockquoteDivider__96157 {
                 background: $darkgrey;
             }
 
             // Roles
-            .role-2TIOKu {
+            .role__631a3 {
                 @include boxes.box;
                 margin-right: 0;
             }
 
             // Note
-            .note-1NN2aP {
+            .note_ba0c31 {
                 @include boxes.inset;
                 background: $bg;
 
@@ -66,7 +66,7 @@
             }
 
             // Activity buttons
-            .vertical-qPeOMD > :not(:first-child) {
+            .vertical_d613c2 > :not(:first-child) {
                 margin-top: 0;
             }
         }

@@ -23,57 +23,57 @@
 @use "../../../top/channellist-css" as channels;
 
 // User settings menu
-.standardSidebarView-E9Pc3j {
+.standardSidebarView__1129a {
     padding-top: $title-height;
     margin-bottom: $window-bottom + 46px;
 
     // Unsaved changes
-    .container-20TyK0 {
+    .container__467eb {
         @include boxes.box;
         background: $grey !important;
 
-        .message-3C6JQ1,
-        .contents-3NembX span {
+        .message__13e98,
+        .contents_fb6220 span {
             color: $black !important;
         }
     }
 
-    .sidebarRegion-1VBisG {
+    .sidebarRegion__60457 {
         @include channels.vars;
         flex-grow: 0;
 
-        .sidebar-nqHbhN {
+        .sidebar__9e3e2 {
             padding: 0;
         }
 
-        .separator-2N511j {
+        .separator_fdbcfd {
             display: none;
         }
 
-        .header-2F5_LB {
+        .header_f72511 {
             margin-top: 12px;
         }
     }
 
-    .contentRegionShownSidebar-fHXkEg {
+    .contentRegionShownSidebar__610ed {
         justify-content: center;
 
-        .contentColumnDefault-3eyv5o,
-        .contentColumnWide-2CgNjO {
+        .contentColumnDefault_c66386,
+        .contentColumnWide_f71d35 {
             padding: 10px;
             @include boxes.box;
         }
 
         // Close settings button
-        .toolsContainer-25FL6V {
+        .toolsContainer_f5d55d {
             padding-top: 20px;
             margin-right: 0;
             position: absolute;
             left: -300px;
             z-index: 1;
 
-            .container-O54IuJ {
-                .closeButton-PCZcma {
+            .container_bb0c52 {
+                .closeButton__34341 {
                     @include boxes.clickable;
                     background: $grey;
                     margin-bottom: 8px;
@@ -88,7 +88,7 @@
                     color: $white;
                 }
 
-                .keybind-13vtq8 {
+                .keybind__57645 {
                     display: none;
                 }
             }

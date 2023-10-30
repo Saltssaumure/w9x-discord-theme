@@ -2,33 +2,33 @@
 @use "../../../top/boxes" as boxes;
 
 // # Connections
-.connectContainer-1hylYM {
+.connectContainer__8050b {
     @include boxes.box;
     padding: 8px;
 
-    .connectionsContainer-3wRUc6 {
+    .connectionsContainer_ec9a62 {
         margin-top: 4px;
         gap: 0;
 
-        .inner-1lPVFp,
-        .accountAddInner-2y9WLL {
+        .inner__51a43,
+        .accountAddInner_d34c25 {
             @include boxes.clickable;
         }
     }
 }
 
-.connectionList-11Q_X- {
+.connectionList__7b310 {
     grid-gap: 0;
 
-    .connection-YOVI9j {
+    .connection_fff5f6 {
         @include boxes.box;
         padding: 0;
         margin-bottom: 0;
 
-        .connectionHeader-Ixbb1s {
+        .connectionHeader__3c82d {
             padding: 8px;
 
-            .connectionDelete-3YgMVq {
+            .connectionDelete__988b5 {
                 margin: 0;
                 align-self: flex-start;
 
@@ -40,7 +40,7 @@
             }
         }
 
-        .upsellWrapper-2jvKpl {
+        .upsellWrapper__033fb {
             padding: 8px;
 
             .container-QlmnKJ {
@@ -49,16 +49,16 @@
             }
         }
 
-        .metadataContainer-35U-On {
+        .metadataContainer__7b316 {
             padding: 0 8px;
             margin: 0;
         }
 
-        .connectionOptionsWrapper-3aVWcp {
+        .connectionOptionsWrapper_abe849 {
             padding: 8px;
 
-            .connectionOptions-JJ1YEi {
-                .connectionOptionSwitch-y1S-cR {
+            .connectionOptions_d1a598 {
+                .connectionOptionSwitch_b4c979 {
                     margin-bottom: 0px;
                     padding: 0;
                 }

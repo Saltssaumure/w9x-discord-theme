@@ -2,15 +2,15 @@
 @use "../../../top/boxes" as boxes;
 
 // Overlay notification position
-.wrapper-SdcMKg {
+.wrapper__4beb8 {
     border: 2px solid $darkblue;
     background: transparent;
 
-    .option-1QI4c9 {
+    .option_a0c054 {
         @include boxes.clickable($position: absolute);
         background: $grey;
 
-        &.selected-18Wszc,
+        &.selected_ea51d6,
         &:hover {
             background-color: $darkblue;
             box-shadow: none;

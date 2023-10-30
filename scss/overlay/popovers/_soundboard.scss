@@ -1,12 +1,12 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.picker-20lcBA {
+.picker__6dca7 {
     @include boxes.box;
 }
 
 // Soundboard volume
-.settingsClickArea-1vKB0J {
+.settingsClickArea__307ff {
     @include boxes.clickable;
     margin-left: 0;
     box-sizing: border-box;
@@ -18,17 +18,17 @@
 }
 
 // Category list
-.categoryList-iuh2t0 {
+.categoryList__173de {
     @include boxes.box($position: absolute);
     top: 61px;
 
-    .listItems-6eZzQ1 {
+    .listItems__699d1 {
         inset: 6px !important;
     }
 }
 
 // Category icon
-.category-2igiWS {
+.category_f1b389 {
     @include boxes.clickable;
     margin-bottom: 0;
     height: 36px;
@@ -36,12 +36,12 @@
 }
 
 // Sounds panel
-.wrapper-1peqyq {
+.wrapper__3d460 {
     background: $bg;
 }
 
 // Category header
-.sectionHeader-1-lTK9 {
+.sectionHeader_c664ae {
     background: $grey;
     @include boxes.box;
     inset: -8px 0 0 -8px;
@@ -51,15 +51,15 @@
 }
 
 // Button arrangement
-.soundRow-3Mne9M {
+.soundRow__3fb1b {
     gap: 0;
 
-    &:not(:has(+ .sectionHeader-1-lTK9)) {
+    &:not(:has(+ .sectionHeader_c664ae)) {
         margin-bottom: 0;
     }
 }
 
 // Sound
-.soundButton-2P2Ua2 {
+.soundButton__5ad7b {
     @include boxes.clickable;
 }

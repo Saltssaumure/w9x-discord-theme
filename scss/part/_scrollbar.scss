@@ -2,14 +2,14 @@
 @use "../top/boxes" as boxes;
 
 // Scrollbars always visible
-.fade-27X6bG::-webkit-scrollbar-thumb,
-.fade-27X6bG::-webkit-scrollbar-track {
+.fade_ba0fa0::-webkit-scrollbar-thumb,
+.fade_ba0fa0::-webkit-scrollbar-track {
     visibility: visible;
 }
 
 // Main scrollbars
-.scrollerBase-1Pkza4 {
-    &:not(.none-1rXy4P)::-webkit-scrollbar {
+.scrollerBase_dc3aa9 {
+    &:not(.none__51a8f)::-webkit-scrollbar {
         width: 18px;
     }
 
@@ -25,7 +25,7 @@
 }
 
 // Textbox scrollbar
-.webkit-QgSAqd {
+.webkit__8d35a {
     &::-webkit-scrollbar {
         width: 18px;
     }
@@ -41,7 +41,7 @@
 }
 
 // Spooky scary scrollbars
-.scrollbarGhostHairline-2LpzZ9 {
+.scrollbarGhostHairline_c9a45f {
     &::-webkit-scrollbar {
         width: 18px;
         height: 18px;
@@ -57,7 +57,7 @@
     }
 }
 
-.codeView-12LUIl::-webkit-scrollbar-track {
+.codeView__8b1ff::-webkit-scrollbar-track {
     margin: 0;
 }
 

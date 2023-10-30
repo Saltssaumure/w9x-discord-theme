@@ -5,7 +5,7 @@
 .container-3a5mk- {
     @include boxes.box;
 
-    .categoryList-2qRrlj {
+    .categoryList_f8c48f {
         top: 52px;
     }
 
@@ -24,24 +24,24 @@
         }
 
         // Do not popout with hover
-        .contents-3NembX > div {
+        .contents_fb6220 > div {
             transform: none !important;
         }
     }
 }
 
 // VC activity picker
-.container-1jQZ2U {
+.container_c344de {
     @include boxes.box;
 
     // Activity
-    .activityItem_13_11-T6-eHz {
+    .activityItem_13_11__97830 {
         @include boxes.clickable;
         transform: none !important;
     }
 
     // No animation
-    .wumpusRocketOuterContainer-1AXehd {
+    .wumpusRocketOuterContainer__2f463 {
         display: none;
     }
 }

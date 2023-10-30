@@ -2,43 +2,43 @@
 @use "../../top/boxes" as boxes;
 @use "../../top/msgPill" as msg;
 
-.root-1CAIjD:has(.quickswitcher-pKcM9U) {
+.root_a28985:has(.quickswitcher_a3d29a) {
     height: 380px;
 }
 
-.quickswitcher-pKcM9U {
+.quickswitcher_a3d29a {
     min-height: 380px;
 
     // Search
-    .input-3r5zZY {
+    .input__848cd {
         @include boxes.inset;
         color: $text;
     }
 
     // Results
-    .scroller-2qwVWY {
+    .scroller__52ae7 {
         @include boxes.scroller;
 
-        .content-yjf30S {
+        .content__23cab {
             border-right: 1px solid $darkgrey;
         }
 
         // Entry
-        .result-u66Ywh {
+        .result__25f11 {
             &:hover,
             &[aria-selected="true"] {
                 background: $darkblue;
 
-                .contentDefault-17ewQQ,
-                .icon-12xJtb,
-                .misc-XwBATi,
-                .contentUnread-1_MVDK {
+                .contentDefault_f2e62d,
+                .icon_f8a8b6,
+                .misc__9152e,
+                .contentUnread__50b0f {
                     color: $white;
                 }
             }
 
             // Unread pill
-            .contentUnread-1_MVDK {
+            .contentUnread__50b0f {
                 @include msg.unreadPill($size: 8px);
             }
         }

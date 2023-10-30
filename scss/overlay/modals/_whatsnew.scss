@@ -2,14 +2,14 @@
 @use "../../top/boxes" as boxes;
 
 // Changelog
-.small-2xUY-3:has(.modal-3Hrb0S) {
+.small__05f7b:has(.modal__4f3da) {
     width: 492px;
 
-    .flexChild-3PzYmX > * {
+    .flexChild__6e093 > * {
         color: $black;
     }
 
-    .socialLink-1qjJIk {
+    .socialLink__64e09 {
         @include boxes.clickable;
         margin-right: 0;
         padding: 4px;
@@ -20,7 +20,7 @@
         align-items: center;
         justify-content: center;
 
-        & + .text-xs-normal-3O7EaX {
+        & + .text-xs-normal_ccc5fb {
             line-height: 30px;
             margin-left: 8px;
         }

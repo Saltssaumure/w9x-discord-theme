@@ -2,63 +2,63 @@
 @use "../top/boxes" as boxes;
 
 // Voice chat
-.wrapper-1gVUIN {
+.wrapper_bd2abe {
     margin-top: 28px;
     z-index: 0;
 
-    &.minimum-fXpVNc {
+    &.minimum_ebf000 {
         height: 204px;
     }
 
-    .callContainer-HtHELf {
+    .callContainer_cbde45 {
         background: $bg;
     }
 
-    &:is(.chatSidebarOpen--YCxhs, .fullScreen-KhZZcz, .noChat-2UYgeE) {
+    &:is(.chatSidebarOpen_dfaa6a, .fullScreen__5263c, .noChat_ce920d) {
         height: calc(100% - 28px);
     }
 
-    .voiceCallWrapper-3UtDiC {
+    .voiceCallWrapper_a36a80 {
         position: relative;
         padding: 0;
         top: -12px;
 
         // Avatars in DM VC
-        .participant-1l6khj {
+        .participant__43dbf {
             margin: 0 4px;
         }
 
-        .callAvatarMask-fiNMWy {
+        .callAvatarMask__29ce7 {
             @include boxes.inset;
         }
     }
 
-    .videoControls-353CsJ {
+    .videoControls__40f61 {
         padding: 0;
 
         // No tint
-        .gradientContainer-phMG8d {
+        .gradientContainer__9a5a6 {
             background: none;
         }
 
-        .controlSection-1mNixL {
+        .controlSection_daa0d5 {
             background: $grey;
             border: 0 solid $darkgrey;
 
             // Top bar
-            &.topControls-23RE3h:not(.minimum-fXpVNc .topControls-23RE3h) {
+            &.topControls_d202b0:not(.minimum_ebf000 .topControls_d202b0) {
                 border-bottom-width: 1px;
             }
 
-            .headerWrapper-1ULEPv {
+            .headerWrapper__94dd8 {
                 margin: 0;
 
                 // Region selector
-                & + .horizontal-112GEH {
+                & + .horizontal__992f6 {
                     margin-right: 8px;
                     position: absolute;
                     right: 0;
-                    .quickSelectClick-2ycwNA {
+                    .quickSelectClick_bf1d31 {
                         @include boxes.inset;
                         background: $bg;
                         color: $text;
@@ -68,87 +68,87 @@
                 }
             }
 
-            .toolbar-3_r2xA button {
+            .toolbar__88c63 button {
                 @include boxes.clickable;
                 margin: 0;
                 height: 32px;
                 width: 32px;
-                .controlIcon-10O-4h {
+                .controlIcon__25700 {
                     color: $black;
                 }
             }
 
             // Bottom bar
-            &.bottomControls-31YuPK {
+            &.bottomControls__8bd89 {
                 padding: 8px;
                 width: auto;
 
-                &:not(.minimum-fXpVNc .bottomControls-31YuPK) {
+                &:not(.minimum_ebf000 .bottomControls__8bd89) {
                     border-top-width: 1px;
                 }
 
                 // Centre controls
-                .wrapper-3t3Yqv {
-                    .controlButton-2PMNom {
+                .wrapper__3f3a7 {
+                    .controlButton_ab2899 {
                         @include boxes.clickable;
                         margin: 0;
 
                         // Active unmute button
-                        &:has(.white-11auuQ),
-                        &.white-11auuQ {
+                        &:has(.white__10e89),
+                        &.white__10e89 {
                             @include boxes.inset;
                         }
                     }
 
                     // Set button colours
-                    .colorable-3rVGna {
+                    .colorable_c84c4c {
                         // Most buttons
-                        &.primaryDark-2UJt1G {
+                        &.primaryDark__6b700 {
                             background: unset;
                             color: $black;
 
-                            .centerIcon-JYpTUi {
+                            .centerIcon__6075a {
                                 color: $black;
                             }
                         }
 
                         // Leave call button
-                        &:is(.red-3T8maV, .red-3T8maV:hover) {
+                        &:is(.red_a51ba8, .red_a51ba8:hover) {
                             background: $red;
                         }
 
                         // Active buttons
-                        &.white-11auuQ {
+                        &.white__10e89 {
                             background: unset;
                         }
                     }
 
                     // Dropdown menu button in button
-                    .contextMenuNub-NuTZ_U {
+                    .contextMenuNub__7c02f {
                         @include boxes.clickable($position: absolute);
                         left: 0;
                         width: auto;
                         height: 12px;
                         padding: 0;
 
-                        &.active-3D763s {
+                        &.active_ff29dc {
                             @include boxes.inset($position: absolute);
                         }
                     }
                 }
 
                 // Other buttons
-                button:not(.wrapper-3t3Yqv button) {
+                button:not(.wrapper__3f3a7 button) {
                     @include boxes.clickable;
                     margin: 0;
                     height: 32px;
                     width: 32px;
 
-                    .controlIcon-10O-4h {
+                    .controlIcon__25700 {
                         color: $black;
                     }
 
-                    &.buttonColor-28DXIe {
+                    &.buttonColor_fa1bb3 {
                         padding: 0;
                         background: unset;
                         color: $black;
@@ -164,7 +164,7 @@
             width: 32px;
             top: 8px;
 
-            .controlIcon-10O-4h {
+            .controlIcon__25700 {
                 color: $black;
             }
         }

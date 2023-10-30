@@ -2,49 +2,49 @@
 @use "../../top/boxes" as boxes;
 
 // Threads
-.browser-mnQ1T7 {
+.browser_fece63 {
     @include boxes.box;
 
-    .header-3_zmOb {
-        .divider-2xk5N2,
-        .spacer-180E7A {
+    .header__53b07 {
+        .divider_dec9ac,
+        .spacer_f0c2f6 {
             display: none;
         }
 
-        .searchBox-3IjAC1 {
+        .searchBox_ff53b2 {
             @include boxes.inset;
             background: $bg;
 
-            .input-2m5SfJ {
+            .input__74754 {
                 color: $text;
             }
 
-            .iconLayout-3Bjizv {
+            .iconLayout__6d744 {
                 @include boxes.clickable;
                 background: $grey;
             }
         }
 
-        .createButton-oruGBs {
+        .createButton_c8864c {
             height: 26px;
         }
 
-        .closeIcon-11tHJX {
+        .closeIcon__15ae7 {
             @include boxes.clickable;
             height: 24px;
         }
 
-        .searchBox-3IjAC1,
-        .createButton-oruGBs {
+        .searchBox_ff53b2,
+        .createButton_c8864c {
             margin-right: 0;
         }
     }
 
-    .container-2rzKKA {
+    .container__6604b {
         @include boxes.clickable;
     }
 
-    .jump-1vIlrw {
+    .jump_d5b765 {
         @include boxes.clickable($position: absolute);
     }
 }

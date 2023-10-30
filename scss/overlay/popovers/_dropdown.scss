@@ -2,33 +2,33 @@
 @use "../../top/boxes" as boxes;
 
 // Dropdowns
-.popout-15UxD6 {
+.popout_a6e77f {
     @include boxes.inset;
     background: $bg;
 
-    .option-Uc12mm {
+    .option_be8b2e {
         padding: 4px 8px;
         color: $text;
 
-        .defaultColor-1EVLSt {
+        .defaultColor__77578 {
             color: $text;
         }
 
-        .icon-poPImO {
+        .icon__6e628 {
             opacity: 1;
         }
 
-        &[aria-selected="true"]:not(.option-Uc12mm.multi-2vPqc4) {
+        &[aria-selected="true"]:not(.option_be8b2e.multi__8d15f) {
             background: $lightgrey;
         }
 
-        .content-1xEk7l {
+        .content__87c97 {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
-        .selectedIcon-122rMx {
+        .selectedIcon__4b0ba {
             color: $darkblue;
         }
     }
