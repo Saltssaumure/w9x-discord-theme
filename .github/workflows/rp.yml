@@ -30,7 +30,7 @@ jobs:
         run: pnpm install
 
       - name: Build and bundle theme into .asar
-        run: pnpm run rp
+        run: pnpm run build:rp
 
       - name: Release bundled asar, json, and theme.css
         uses: ncipollo/release-action@v1

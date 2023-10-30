@@ -8,11 +8,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bd-scss dev",
+    "dev:bd": "bd-scss dev",
     "dev:rp": "replugged build theme --watch",
     "dev:vc": "bd-scss dev:vc",
-    "bd": "bd-scss build",
-    "rp": "replugged bundle theme",
+    "build:bd": "bd-scss build",
+    "build:rp": "replugged bundle theme",
     "lint": "prettier ./scss --check",
     "lint:fix": "prettier ./scss --write --log-level warn",
     "release": "replugged release"
