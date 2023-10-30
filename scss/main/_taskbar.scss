@@ -11,7 +11,7 @@
 }
 
 // Taskbar
-.wrapper-1_HaEi .scroller-3X7KbA {
+.wrapper_a7e7a8 .scroller__3d071 {
     @include boxes.box;
     background: var(--background-secondary);
     border-color: $white $white $black $black;
@@ -27,32 +27,32 @@
 }
 
 // Folder/server icon
-.listItem-3SmSlK:not(:has(.guildSeparator-a4uisj)) {
+.listItem_fa7b36:not(:has(.guildSeparator_dcb3cc)) {
     @include boxes.clickable;
 }
 
 // Closed folder icon
 @include fi.folderIcon;
-.expandedFolderBackground-1kSAf6.collapsed-uGXEbi + .listItem-3SmSlK {
-    .guildIcon-2I5sfu {
+.expandedFolderBackground__1bec6.collapsed__0a270 + .listItem_fa7b36 {
+    .guildIcon__2e5ab {
         display: none;
     }
 }
 
 // Opened folder background strip
-.expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) {
+.expandedFolderBackground__1bec6:not(.collapsed__0a270) {
     background: transparent;
 }
 
-.folder-241Joy {
-    .icon-1zKOXL,
+.folder__17546 {
+    .icon_c48348,
     svg {
         display: none;
     }
 }
 
 // Control panel
-.panels-3wFtMD {
+.panels__58331 {
     @include boxes.box;
     position: fixed;
     bottom: 0;
@@ -67,17 +67,17 @@
 }
 
 // Flip order
-:is(.container-YkUktl, .container-1CH86i) {
+.container_ca50b9 {
     height: calc(var(--server-container) - 2px);
     flex-direction: row-reverse;
     gap: 6px;
 }
 
 // Controls
-.button-12Fmur {
+.button__4f306 {
     @include boxes.clickable;
 
-    &.enabled-9OeuTA:hover,
+    &.enabled__470f0:hover,
     &:active {
         background: inherit;
         color: inherit;
@@ -85,12 +85,12 @@
 }
 
 // User
-:is(.avatarWrapper-1B9FTW, .avatarWrapper-12uuu4) {
+.avatarWrapper_ba5175 {
     @include boxes.inset;
     margin-right: 0;
 }
-:is(.withTagAsButton-OsgQ9L, .withTagAsButton-2_JkHX):hover,
-:is(.withTagless-10ooWt, .withTagless-Lx3LMo):hover {
+.withTagAsButton_cc125f:hover,
+.withTagless__98b7d:hover {
     background: inherit;
     color: inherit;
 }

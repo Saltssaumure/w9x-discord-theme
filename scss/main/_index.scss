@@ -22,17 +22,17 @@
 @use "../top/shortcutIcon" as sc;
 
 // Overall background
-.bg-1QIAus {
+.bg__12180 {
     background: var(--w9x-background-color) var(--w9x-background-image) center/cover;
 }
 
 // Transparency
-:is(.appMount-2yBXZl, body, .app-2CXKsg) {
+:is(.appMount_fae9dd, body, .app_de4237) {
     background: transparent;
 }
 
 // Put notice banners below main window
-.base-2jDfDU {
+.base__3e6af {
     flex-direction: column-reverse;
     height: calc(100% - var(--server-container));
 
@@ -40,29 +40,29 @@
         z-index: 102;
     }
 
-    :is(.bd-notice, .notice-12Koq-, .notice-2HEN-u) {
+    :is(.bd-notice, .notice__99c03, .notice__5fd4c) {
         @include boxes.box;
         margin-bottom: -4px;
 
-        .back-ZdqB1k {
+        .back_e83edd {
             position: absolute;
         }
     }
 }
 
 // Settings
-.standardSidebarView-E9Pc3j,
+.standardSidebarView__1129a,
 // Main DM and friend list view
-.container-2cd8Mz,
+.container__5c7e7,
 // Explore servers view
-:is(.pageWrapper-2PwDoS, .pageWrapper-eg3-6i),
+.pageWrapper_fef757,
 // Student hub
-.scroller-RfJjkV,
+.scroller_e9501c,
 // Buy Nitro page
-.applicationStore-2nk7Lo,
+.applicationStore_fc7d76,
 // Server subscriptions
-.container-2_BXG-,
+.container__42489,
 // Main chat
-:is(.chat-2ZfjoI, .chat-9g_3Xj):not(.container-2IKOsH > :is(.chat-2ZfjoI, .chat-9g_3Xj)) {
+.chat__52833:not(.container__10dc7 > .chat__52833) {
     @include boxes.mainWindow();
 }

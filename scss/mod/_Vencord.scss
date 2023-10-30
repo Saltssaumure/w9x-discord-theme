@@ -4,7 +4,7 @@
 // Vencord
 
 // Theme links
-.inputWrapper-2K8ds1 .vc-settings-theme-links.input-3O04eu {
+.inputWrapper__934f5 .vc-settings-theme-links.input_d266e7 {
     max-height: unset;
     height: 10rem;
     color: $text !important;
@@ -22,7 +22,7 @@
         margin-bottom: 0;
     }
 
-    .icons-2ibyma {
+    .icons__374b3 {
         width: 20px;
         height: 20px;
         color: $black;
@@ -42,10 +42,10 @@
     .vc-addon-header > div:last-child {
         @include boxes.box;
 
-        .container-1QtPKm {
+        .container__871ba {
             background: $darkgrey !important;
 
-            .slider-HJFN2i {
+            .slider__41d94 {
                 rect {
                     fill: $lightgrey;
                 }
@@ -54,10 +54,10 @@
                 }
             }
 
-            &.checked-16gMAN {
+            &.checked__6bdb0 {
                 background: $green !important;
 
-                .slider-HJFN2i {
+                .slider__41d94 {
                     svg path {
                         fill: $green;
                     }
@@ -86,7 +86,7 @@
 }
 
 // Donate link
-.vc-settings-donate .lookLink-13iF2K.colorTransparent-2SBJ8- {
+.vc-settings-donate .lookLink__93965.colorTransparent__4c280 {
     color: $black;
 }
 

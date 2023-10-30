@@ -3,54 +3,54 @@
 
 // # Profiles
 // Tabs
-.tabBar-11FwuO {
+.tabBar__22a9a {
     margin-top: 0;
 
-    .brand-2EKq3J.item-2GWPIy {
+    .brand_ce3ecf.item__48dda {
         @include boxes.clickable;
         padding: 4px;
         margin: 0;
 
         &:active,
         &:hover,
-        &.selected-1sf9UK {
+        &.selected__5711d {
             border-bottom-color: $darkblue;
         }
 
-        &.selected-1sf9UK {
+        &.selected__5711d {
             @include boxes.inset;
         }
     }
 }
 
 // Remove section dividers
-.customizationSection-IGy2fS {
+.customizationSection__16fec {
     border-bottom: 0;
     margin-bottom: 0;
 }
 
 // Banner colour picker
-.colorSwatch-2UxEuG {
+.colorSwatch__5f5b9 {
     @include boxes.inset;
 }
 
 // Bio typing area
-.channelTextArea-1VQBuV {
+.channelTextArea__56a36 {
     @include boxes.inset;
 
-    .slateTextArea-27tjG0 {
+    .slateTextArea__0661c {
         // maybe risky to other textboxes, doublecheck
         padding: 4px !important;
     }
 }
 
 // Emoji picker button
-.webkit-QgSAqd .buttons-uaqb-5 {
+.webkit__8d35a .buttons_ce5b56 {
     margin-right: 0;
 }
 
 // Characters left
-.characterCount-8yNPfb {
+.characterCount_e55010 {
     right: 24px;
     bottom: 0;
 }
@@ -73,17 +73,17 @@
 }
 
 // Nitro upsell lol
-.premiumFeatureBorder-1i95si,
-.premiumBackground-34OIdE {
+.premiumFeatureBorder__9bbb3,
+.premiumBackground__4ce97 {
     background: none;
 }
 
 // Server nickname
-.inputWrapper-2K8ds1 {
+.inputWrapper__934f5 {
     @include boxes.inset;
     background: $bg;
 
-    .input-3O04eu {
+    .input_d266e7 {
         padding: 0 4px;
         height: 24px;
         color: $text;

@@ -2,24 +2,24 @@
 @use "../../top/boxes" as boxes;
 
 // Edit / add phone number
-.phoneVerificationModal-3OHeBt {
-    .animationContainer-2Fe_Bk {
+.phoneVerificationModal__68f4b {
+    .animationContainer_a3f705 {
         z-index: 1;
     }
 
-    .phoneField-3NAPDv {
+    .phoneField__65729 {
         @include boxes.inset;
 
-        .plusSign-1BkjXr,
-        .countryCode-2RFA3i {
+        .plusSign_e8d99e,
+        .countryCode__7befd {
             color: $black;
         }
 
-        .phoneFieldExpand-1CqrEb {
+        .phoneFieldExpand_f973c3 {
             stroke: $black;
         }
 
-        .inputField-1iYysB {
+        .inputField__3008c {
             color: $text;
         }
     }
@@ -34,7 +34,7 @@
 .multiInput-1VARjC {
     height: 24px;
 
-    .inputPrefix-3Nqilo {
+    .inputPrefix_b67818 {
         display: none;
     }
 

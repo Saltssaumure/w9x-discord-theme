@@ -2,7 +2,7 @@
 @use "../../top/boxes" as boxes;
 
 // Small menus
-.menu-2TXYjN {
+.menu_dc52c6 {
     background: $grey;
     box-shadow: none;
     @include boxes.box;
@@ -11,47 +11,47 @@
         display: none;
     }
 
-    .scroller-nxCRu_ {
+    .scroller__750f5 {
         padding: 0;
     }
 
     // Menu options
-    .colorDefault-2_rLdz.focused-3LIdPu,
-    .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
+    .colorDefault__0b482.focused__27621,
+    .colorDefault__0b482:active:not(.hideInteraction__2790e) {
         background: $darkblue;
         color: $white;
     }
 
     // Blue options
-    .colorBrand-26tvUE {
+    .colorBrand__471df {
         color: $blue;
     }
 
-    .submenuPaddingContainer-QgnL1r {
+    .submenuPaddingContainer__12a9d {
         padding: 0;
         margin: 0 -4px;
         background: $grey;
     }
 
     // Group labels
-    .groupLabel-KyZarI {
+    .groupLabel_e66554 {
         text-transform: none;
     }
 
     // Checkbox
-    .icon-3XHs8t:has(:is(.checkbox-397WsK, path[d^="M12 20C16.4183"]), path[d^="M18.625 3"]) {
+    .icon_f09dde:has(:is(.checkbox__45366, path[d^="M12 20C16.4183"]), path[d^="M18.625 3"]) {
         @include boxes.inset;
         background: $white;
         width: 12px;
         height: 12px;
 
         // Checkbox
-        .checkbox-397WsK,
+        .checkbox__45366,
         path[d^="M18.625 3"] {
             display: none;
         }
 
-        .check-3-73a4 {
+        .check__8d1bd {
             color: $black;
         }
 
@@ -65,31 +65,31 @@
         }
 
         // Inner circle
-        .radioSelection-3PDNAQ {
+        .radioSelection__5ed39 {
             color: $black;
         }
     }
 
-    .colorDefault-2_rLdz.focused-3LIdPu .caret-1TZU-U,
-    .colorDefault-2_rLdz.focused-3LIdPu .checkbox-397WsK,
-    .colorDefault-2_rLdz.focused-3LIdPu .radioSelection-3PDNAQ {
+    .colorDefault__0b482.focused__27621 .caret_ce50ce,
+    .colorDefault__0b482.focused__27621 .checkbox__45366,
+    .colorDefault__0b482.focused__27621 .radioSelection__5ed39 {
         color: $black;
     }
 
     // Slider
-    .mini-28oMa3 {
-        .bar-2H7Q9u {
+    .mini_d6d84c {
+        .bar_e58961 {
             height: 4px;
         }
 
-        .grabber-3R-Rx9 {
+        .grabber_d2868c {
             height: 16px;
             width: 10px;
         }
     }
 
     // Quick reacts
-    .button-1zW0-r {
+    .button__3ecb4 {
         @include boxes.clickable;
         padding: 0;
         margin-top: 4px;

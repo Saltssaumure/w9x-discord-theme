@@ -6,7 +6,7 @@
 
 $dv-width: 80px;
 
-:is(.members-3WRCEx, .members-2y1nVj) {
+.members__9f47b {
     margin-bottom: unset;
 }
 
@@ -38,12 +38,12 @@ $dv-width: 80px;
     }
 }
 
-body #app-mount:has(#dv-mount) .guilds-2JjMmN {
+body #app-mount:has(#dv-mount) .guilds__2b93a {
     height: calc(100vw - $panel-width - $dv-width) !important;
     left: calc(100vw - $panel-width - $dv-width);
 }
 
-.appMount-2yBXZl:has(#dv-mount) .panels-3wFtMD {
+.appMount_fae9dd:has(#dv-mount) .panels__58331 {
     left: calc(100vw - $panel-width - $dv-width);
     &,
     &::before {

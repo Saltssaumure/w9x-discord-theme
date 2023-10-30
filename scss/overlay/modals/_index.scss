@@ -18,29 +18,29 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.root-1CAIjD:not(.carouselModal-1eUFoq) {
+.root_a28985:not(.carouselModal-1eUFoq) {
     @include boxes.box;
 
     // Header and footer
     .modalHeader-3X0A4K,
-    .footer-IubaaS {
+    .footer__89240 {
         @include boxes.box;
     }
 }
 
-.artContainer-1yaXct {
+.artContainer__56b19 {
     display: none;
 }
 
-.content-1OG56Q {
+.content__764ce {
     @include boxes.scroller;
     padding-top: 18px;
     margin-bottom: 0;
 }
 
 // Changelog
-.layerContainer-2lfOPe {
-    .content-FDHp32 {
+.layerContainer_d5a653 {
+    .content_dc3a33 {
         :is(ol, p, ul li) {
             color: $black;
         }

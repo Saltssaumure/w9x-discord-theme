@@ -1,11 +1,11 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.userProfileModalOuter-2wdWjU {
+.userProfileModalOuter__3fe6b {
     // Badges
     .badgeList-2aoHPw {
         gap: 0;
-        .anchor-1X4H4q {
+        .anchor_c8ddc0 {
             @include boxes.clickable;
         }
     }
@@ -20,15 +20,15 @@
         position: relative;
         top: 2px;
 
-        .tabBarItem-30Te4- {
+        .tabBarItem_b56b35 {
             @include boxes.tab;
             height: auto;
             padding: 2px 8px;
 
-            &.themed-qqoYp3 {
+            &.themed_b957e8 {
                 color: var(--text-normal);
 
-                &:is(.selected-1sf9UK, :active) {
+                &:is(.selected__5711d, :active) {
                     background: unset;
                     font-weight: bold;
                 }
@@ -37,7 +37,7 @@
     }
 
     // Info
-    .scrollerBase-1Pkza4 {
+    .scrollerBase_dc3aa9 {
         @include boxes.box;
 
         &::before {
@@ -49,26 +49,26 @@
         }
 
         // Connected accounts
-        .connectedAccounts-2R5M4w {
+        .connectedAccounts_dc0a56 {
             display: block;
             width: 100%;
 
-            .connectedAccountsColumn-1zdyyx {
+            .connectedAccountsColumn_fd2c41 {
                 display: inline;
                 margin-left: 0;
 
-                .connectedAccountContainer-3aLMHJ {
+                .connectedAccountContainer__23f00 {
                     @include boxes.inset;
                     display: inline-block;
                     width: calc(460px / 3);
                     margin: 6px 6px 0 0;
 
                     // Open account in browser
-                    &:has(.anchor-1X4H4q) {
+                    &:has(.anchor_c8ddc0) {
                         @include boxes.clickable;
                     }
 
-                    .anchor-1X4H4q {
+                    .anchor_c8ddc0 {
                         position: absolute;
                         inset: 0;
 
@@ -78,17 +78,17 @@
                     }
 
                     // Hide detailed info until hover
-                    &.connectedAccountContainerWithMetadata-3_IQ7D {
+                    &.connectedAccountContainerWithMetadata_cf88ce {
                         padding: 12px 8px;
 
-                        .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX,
-                        .connectedAccountChildren-29Qmfl {
+                        .connectedAccountName_f0a294 + .text-xs-normal_ccc5fb,
+                        .connectedAccountChildren__21b60 {
                             display: none;
                         }
 
                         &:hover {
-                            .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX,
-                            .connectedAccountChildren-29Qmfl {
+                            .connectedAccountName_f0a294 + .text-xs-normal_ccc5fb,
+                            .connectedAccountChildren__21b60 {
                                 display: block;
                                 z-index: 1;
                                 padding: 8px;
@@ -96,14 +96,14 @@
                             }
 
                             // Joined date
-                            .connectedAccountName-2QfG-N + .text-xs-normal-3O7EaX {
+                            .connectedAccountName_f0a294 + .text-xs-normal_ccc5fb {
                                 position: absolute;
                                 pointer-events: none;
                                 inset: 1px 1px 1px 32px;
                             }
 
                             // Detailed info
-                            &:hover .connectedAccountChildren-29Qmfl {
+                            &:hover .connectedAccountChildren__21b60 {
                                 @include boxes.box($position: absolute);
                                 bottom: 50px;
                                 left: -33px;
@@ -115,7 +115,7 @@
         }
 
         // Mutual servers
-        .listRow-2nO1T6 {
+        .listRow__60937 {
             margin: 0;
 
             &:hover {

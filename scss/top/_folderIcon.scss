@@ -20,7 +20,7 @@ $backgrounds: (
 
 @mixin folderIcon() {
     @for $i from 1 through 14 {
-        .wrapper-38slSD:nth-child(#{$i}) .expandedFolderBackground-1kSAf6 + .listItem-3SmSlK {
+        .wrapper_ed1dea:nth-child(#{$i}) .expandedFolderBackground__1bec6 + .listItem_fa7b36 {
             background: url("https://saltssaumure.github.io/w9x-discord-theme/img/icon/" + nth($backgrounds, $i) + ".avif")
                 center
                 no-repeat;

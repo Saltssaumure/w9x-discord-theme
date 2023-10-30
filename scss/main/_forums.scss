@@ -2,15 +2,15 @@
 @use "../top/boxes" as boxes;
 
 // Channel header
-.forumOrHome-2VTX6r {
+.forumOrHome__75784 {
     --__header-bar-background: #{$grey};
 }
 
 // Tags
-.pill-3pRQlO {
+.pill_f055c3 {
     @include boxes.clickable;
     background: $grey;
-    &.selected-24z1Ou {
+    &.selected_dc72d1 {
         @include boxes.inset;
     }
 }
@@ -21,10 +21,10 @@
     background: $bg;
 
     // Post tags
-    .tags-2UGy2I {
+    .tags_e6c42a {
         gap: 0;
 
-        & > :is(.pinIcon-3I5-gm, .tagPill-1kSbgP) {
+        & > :is(.pinIcon__39b6e, .tagPill-1kSbgP) {
             @include boxes.box;
             background: $grey;
 
@@ -40,12 +40,12 @@
     }
 
     // Not have left-right padding on everything in list mode
-    .list-3FIpnh .content-yjf30S {
+    .list-3FIpnh .content__23cab {
         padding: 0;
     }
 
     // The same in gallery mode
-    .content-yjf30S {
+    .content__23cab {
         // Everything but post cards
         & > div:first-child {
             position: relative !important;
@@ -66,7 +66,7 @@
             width: auto !important;
 
             // Tag area in text posts
-            .textContentFooter-2JnNv8 {
+            .textContentFooter__5a630 {
                 background: transparent;
             }
         }
@@ -100,12 +100,12 @@
         }
 
         // Matching post count bar
-        .matchingPostsRow-2IiEQ1 {
+        .matchingPostsRow__510be {
             @include boxes.box;
         }
 
         // Search/create posts bar
-        .mainCard-3KBsBI {
+        .mainCard__8a660 {
             margin-top: 0;
             @include boxes.box;
 
@@ -133,7 +133,7 @@
                 div {
                     background: $bg;
 
-                    .channelTextArea-1VQBuV {
+                    .channelTextArea__56a36 {
                         width: auto;
                     }
                 }
@@ -150,7 +150,7 @@
                 }
 
                 // Attachment not image type
-                .icon-2bPCaV {
+                .icon_c2f643 {
                     @include boxes.box;
                 }
 
@@ -160,7 +160,7 @@
                     max-height: 76px;
                     max-width: 76px;
 
-                    .imageSmall-308hjB {
+                    .imageSmall__59845 {
                         height: 76px;
                     }
                 }
@@ -190,7 +190,7 @@
                         }
 
                         // Attachment controls
-                        .actionBarContainer-2BJ5hs {
+                        .actionBarContainer__7301a {
                             z-index: 2;
                         }
                     }
@@ -252,12 +252,12 @@ li.card-2JNtco {
     @include boxes.clickable;
 }
 
-:is(.container-2qVG6q, .container-1PloNW) {
-    .markup-eYLPri {
+:is(.container-2qVG6q, .container_c24cbd) {
+    .markup_a7e664 {
         color: var(--text-normal);
     }
 
-    &:not(.isOpen-2OXbFs, .isOpen-O7ANQc) {
+    &:not(.isOpen-2OXbFs, .isOpen_d88bb6) {
         &:hover,
         &:active {
             background-color: var(--background-primary);
@@ -265,7 +265,7 @@ li.card-2JNtco {
         }
     }
 
-    &:is(.isOpen-2OXbFs, .isOpen-O7ANQc) {
+    &:is(.isOpen-2OXbFs, .isOpen_d88bb6) {
         @include boxes.inset;
     }
 
@@ -280,7 +280,7 @@ li.card-2JNtco {
     .contentPreview-3fWiuC {
         background: $bg;
 
-        .markup-eYLPri {
+        .markup_a7e664 {
             color: $text;
         }
     }
@@ -288,7 +288,7 @@ li.card-2JNtco {
 
 // Opened post
 // Post alert options bar
-.container-3YcgdM {
+.container__8ee50 {
     position: absolute;
     z-index: 0;
     border-top: 0;
@@ -299,10 +299,10 @@ li.card-2JNtco {
     background: transparent;
     box-shadow: none;
 
-    .buttons-BK5gED {
+    .buttons__1995d {
         gap: 0;
 
-        .buttonInner-3aRbcx {
+        .buttonInner__2771e {
             @include boxes.clickable;
             height: 20px;
 
@@ -314,6 +314,6 @@ li.card-2JNtco {
 }
 
 // OP post and post replies divider
-.divider-AZrXIA {
+.divider_ffec75 {
     display: none;
 }

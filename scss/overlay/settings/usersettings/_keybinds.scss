@@ -1,40 +1,40 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.warning-RBGtx2 {
+.warning__9db16 {
     @include boxes.box;
 }
 
-.marginTop60-38vAjL {
+.marginTop60__2eb69 {
     margin-top: 16px;
 }
 
-.defaultKeybindGroup-36Wpyv {
+.defaultKeybindGroup__1adfb {
     margin: 16px 0 0;
 
-    .defaultKeybindGroupHeader-18_214,
-    .defaultKeybindGroupDescription-3c3NhW {
+    .defaultKeybindGroupHeader_cee6f0,
+    .defaultKeybindGroupDescription__42f90 {
         margin-bottom: 8px;
     }
 }
 
-.defaultKeybind-1rEiTa {
+.defaultKeybind__05c82 {
     padding: 4px;
     height: 32px;
     @include boxes.inset;
 
-    &:has(.combo-3PNrpQ:nth-child(2)) {
+    &:has(.combo__57290:nth-child(2)) {
         height: 64px;
     }
 }
 
-.appMount-2yBXZl .combo-3PNrpQ {
+.appMount_fae9dd .combo__57290 {
     text-transform: capitalize;
     font-weight: unset;
     font-size: 14px;
     line-height: 16px;
 
-    .key-RP8gj3 {
+    .key__06fe6 {
         @include boxes.box;
         box-shadow: none;
         background: $darkgrey;

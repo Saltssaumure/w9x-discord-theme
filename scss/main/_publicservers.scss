@@ -4,10 +4,10 @@
 // Public servers and student hubs
 
 // Sidebar
-.sidebar-1tnWFu > .thin-RnSY0a {
+.sidebar_ded4b5 > .thin_b1c063 {
     margin-left: 28px;
 
-    .discoverHeader-1vsvZ0 {
+    .discoverHeader_fae7fd {
         @include boxes.box;
         font-size: 16px;
         line-height: 20px;
@@ -15,15 +15,15 @@
         margin: 0;
     }
 
-    .categoryItem-Kc_HK_ {
+    .categoryItem_b1be5c {
         margin: 0;
         padding: 0;
         color: $black;
 
-        &:is(.selectedCategoryItem-ZjqSui, :hover, :active) {
+        &:is(.selectedCategoryItem__0bf4c, :hover, :active) {
             color: $white;
 
-            .itemInner-3e_4G4 {
+            .itemInner__9e755 {
                 background: var(--background-modifier-selected);
             }
         }
@@ -31,14 +31,14 @@
 }
 
 // Main page
-.appMount-2yBXZl :is(.pageWrapper-2PwDoS, .pageWrapper-eg3-6i) {
+.appMount_fae9dd .pageWrapper_fef757 {
     background: $grey;
 
     .scroller-3j5xK2 {
         padding: 16px;
     }
 
-    .searchBox-pyIJJj {
+    .searchBox_a63854 {
         background: unset;
         padding-right: 0;
 
@@ -46,12 +46,12 @@
             color: $text;
         }
 
-        .cta-25g9OT {
+        .cta_f18d68 {
             display: none;
         }
 
-        .searchIcon-34RNw9,
-        .clear-1JYfB5 {
+        .searchIcon_e60ea8,
+        .clear_a52805 {
             @include boxes.clickable;
             top: 1px;
             background: $grey;
@@ -67,7 +67,7 @@
         }
     }
 
-    .card-2TuZPZ {
+    .card__86773 {
         @include boxes.clickable;
 
         &:is(:focus, :hover) {
@@ -82,13 +82,13 @@
 
 // Search results
 .searchPage-1Rxeav {
-    .container-3gW0Nv {
+    .container__56ed5 {
         margin-left: 248px;
         padding: 60px 16px 0;
     }
 
     // Result title
-    .searchHeader-gz2NXf {
+    .searchHeader_d44e8b {
         position: fixed;
         left: $window-left + 2px;
         right: $window-right + 19px;
@@ -128,7 +128,7 @@
     }
 
     // Further search
-    .clearIcon-TMIIUa {
+    .clearIcon__91449 {
         height: 20px;
         width: 20px;
         padding: 2px;
@@ -138,36 +138,36 @@
     .guildList-QjZKeK {
         gap: 0;
 
-        .card-1rhKXq {
+        .card__33bd0 {
             @include boxes.clickable;
 
-            .content-3Xrx5s {
+            .content_f124d7 {
                 height: 135px - 16px;
             }
 
-            .header-3m4_6U {
+            .header__7b70d {
                 flex-direction: row;
                 gap: 8px;
             }
 
-            .content-3Xrx5s {
+            .content_f124d7 {
                 padding: 8px 8px 8px 0;
             }
         }
 
-        .separator-2t2gPa {
+        .separator_f527c9 {
             display: none;
         }
     }
 
-    .pageControl-1Kt_nb {
+    .pageControl__2dd90 {
         @include boxes.inset;
 
-        .roundButton-2mKRqM {
+        .roundButton__9e83c {
             @include boxes.clickable;
             margin: 0;
 
-            &.activeButton-2K2Fwx {
+            &.activeButton__7a550 {
                 @include boxes.inset;
                 background: unset;
                 color: $black;
@@ -177,17 +177,17 @@
 }
 
 // Student hubs / custom guild directory
-.pageContainer-36uo3F {
+.pageContainer__1e84a {
     @include boxes.inset;
 
-    .card-3N2v9t {
+    .card__73022 {
         @include boxes.box;
     }
 }
-.scroller-1ox3I2:has(.itemInner-3k3Sn6) {
+.scroller_f0f183:has(.itemInner_f3a769) {
     min-height: 200px;
 
-    .itemInner-3k3Sn6 {
+    .itemInner_f3a769 {
         margin-left: 0;
     }
 }

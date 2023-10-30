@@ -3,14 +3,14 @@
 @use "../../top/channellist-css" as channels;
 
 // Search popover
-.container-2McqkF {
+.container_d6dad3 {
     @include boxes.box;
     @include channels.vars;
 
     // Search option categories
-    .resultsGroup-cfY57t {
+    .resultsGroup_ea9b64 {
         // Section title
-        .header-1BR0Ro {
+        .header_b24bd1 {
             color: var(--header-primary);
         }
 
@@ -20,7 +20,7 @@
         }
 
         // Right corner icon
-        :is(.searchClearHistory-3nIKUO, .searchLearnMore-1gNL3A) {
+        :is(.searchClearHistory_cd1df2, .searchLearnMore_bf7b8e) {
             @include boxes.clickable($position: absolute);
 
             &:hover {
@@ -35,18 +35,18 @@
     }
 
     // Search options
-    .option-ayUoaq {
+    .option_b5597b {
         margin: 0;
 
         // Hovered stuff
         &:hover
             :is(
-                .nonText-28q_Ot,
-                .displayedNick-1atSpT,
-                .displayUsername-UTerwm,
+                .nonText_cbb69b,
+                .displayedNick_df9a16,
+                .displayUsername_aea59a,
                 strong,
-                .searchResultChannelCategory-19ujDo,
-                .searchResultChannelIcon-C-3P9x
+                .searchResultChannelCategory__7ebb5,
+                .searchResultChannelIcon__95142
             ) {
             color: var(--interactive-hover);
         }
@@ -59,7 +59,7 @@
         }
 
         // Search history term
-        .nonText-28q_Ot {
+        .nonText_cbb69b {
             color: var(--text-muted);
         }
 
@@ -70,7 +70,7 @@
     }
 
     // Calendar
-    .calendarPicker-sDhzdi {
+    .calendarPicker__5c474 {
         :is(.react-datepicker, .react-datepicker__header) {
             background: $grey;
         }
@@ -163,22 +163,22 @@
     }
 
     // Date picker hint
-    .datePickerHint-Ir4715 {
+    .datePickerHint__7cc9b {
         @include boxes.box;
         margin: 0;
         padding: 8px 20px;
 
-        .hintValue-V9hd8l {
+        .hintValue_c2ce1f {
             @include boxes.clickable;
         }
     }
 
     // Search query
-    .queryContainer-ZunrLZ {
+    .queryContainer_c359fe {
         @include boxes.clickable;
         background: $grey;
 
-        .queryText-j8z984 {
+        .queryText__5bb6b {
             text-transform: none;
             color: $darkgrey;
 

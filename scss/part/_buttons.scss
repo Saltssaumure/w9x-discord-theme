@@ -2,29 +2,29 @@
 @use "../top/boxes" as boxes;
 
 :is(
-        .button-2b4VEQ,
-        .welcomeCTAButtonOuter-3pJkMq,
-        .friendRequestsButton-77veU7,
-        .button-1_oXub,
-        .lookFilled-1H2Jvj,
-        .lookOutlined-3RTC7c,
-        .lookInverted-2GrLaB
+        .button__8ec71,
+        .welcomeCTAButtonOuter_a7da64,
+        .friendRequestsButton_f19806,
+        .button_ddf91e,
+        .lookFilled__19298,
+        .lookOutlined__46d54,
+        .lookInverted_ee4261
     ) {
     @include boxes.clickable;
 }
 
 :is(.theme-dark, .theme-light) {
-    .lookLink-13iF2K.colorPrimary-2-Lusz {
+    .lookLink__93965.colorPrimary__6ed40 {
         color: $black;
 
-        &:hover .contents-3NembX {
+        &:hover .contents_fb6220 {
             --button--underline-color: #{$black};
         }
     }
 }
 
-.appMount-2yBXZl .lookFilled-1H2Jvj {
-    &:is(.colorBrand-2M3O3N, .colorBrand-2M3O3N:disabled, .colorBrand-2M3O3N[aria-disabled="true"], .colorBrandNew-abZT3v) {
+.appMount_fae9dd .lookFilled__19298 {
+    &:is(.colorBrand_b2253e, .colorBrand_b2253e:disabled, .colorBrand_b2253e[aria-disabled="true"], .colorBrandNew_fd170a) {
         color: $black;
         background: $lightgrey;
 
@@ -34,7 +34,7 @@
         }
     }
 
-    &:is(.colorPrimary-2-Lusz, .colorTransparent-2SBJ8-) {
+    &:is(.colorPrimary__6ed40, .colorTransparent__4c280) {
         color: $black;
     }
 }
