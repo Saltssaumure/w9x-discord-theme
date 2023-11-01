@@ -22,16 +22,16 @@
 }
 
 // Screens
-.sourceScroller-3wC9he {
+.sourceScroller__373b8 {
     @include boxes.scroller;
 }
 
-.sourceContainer-1uqUbz {
+.sourceContainer_c74b9a {
     gap: 8px;
 }
 
 // Screen
-.tile-3POX2m {
+.tile__46960 {
     @include boxes.clickable;
     padding: 8px 0;
     flex: 0 1 calc(50% - 4px) !important;
@@ -47,25 +47,25 @@
 }
 
 // Stream quality
-.qualitySettingsContainer-2LjkfM {
+.qualitySettingsContainer__5cacd {
     @include boxes.inset;
 
-    .selectorButton-3fWZ0_ {
+    .selectorButton_c6ae93 {
         @include boxes.clickable;
 
-        &:not(.selectorButtonPremiumRequired-IZXhgV):hover {
+        &:not(.selectorButtonPremiumRequired_ce72d6):hover {
             background: $grey;
 
-            .selectorText-LxivBc {
+            .selectorText_b1d64c {
                 color: $black;
             }
         }
     }
 
-    .selectorButtonSelected-3cQUnj {
+    .selectorButtonSelected_fbe8fc {
         @include boxes.inset;
         background: $grey;
-        .selectorTextSelected-2zup8I {
+        .selectorTextSelected_d7d560 {
             color: $black;
         }
     }

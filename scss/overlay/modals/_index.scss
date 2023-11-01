@@ -18,7 +18,7 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.root_a28985:not(.carouselModal-1eUFoq) {
+.root_a28985:not(.carouselModal_c0d5b7) {
     @include boxes.box;
 
     // Header and footer
@@ -55,7 +55,7 @@
         }
     }
 
-    .improved-2SJXHz {
+    .improved_df526b {
         color: $darkblue;
 
         &::after {
@@ -63,7 +63,7 @@
         }
     }
 
-    .fixed-cTX7Hp {
+    .fixed__61d41 {
         color: $red;
 
         &::after {

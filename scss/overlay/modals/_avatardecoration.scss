@@ -1,8 +1,8 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.modalContent-20ynPO:has(.decorationGridItem-3J_11G) {
-    .list-2gEvIv {
+.modalContent__589e6:has(.decorationGridItem__80f7f) {
+    .list__5bcab {
         @include boxes.scroller;
         left: 0;
 
@@ -11,7 +11,7 @@
         }
     }
 
-    .decorationGridItem-3J_11G {
+    .decorationGridItem__80f7f {
         @include boxes.clickable;
 
         &.selected-IxbpGM {

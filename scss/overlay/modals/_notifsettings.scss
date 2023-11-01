@@ -3,22 +3,22 @@
 
 // Notification settings
 .root_a28985 {
-    .override-1sK4r0,
-    .overrideHighlight-3f-yyO,
-    .guildName-1kreI8,
-    .channelName-IPB6B3 {
+    .override_f2098b,
+    .overrideHighlight__6a2f1,
+    .guildName_b9dc9e,
+    .channelName_a1ccf5 {
         color: $black;
     }
 
-    .override-1sK4r0 {
+    .override_f2098b {
         padding: 8px;
 
-        .checkboxGroup-uXi80g {
+        .checkboxGroup__7fb1c {
             width: 300px;
             margin-right: -8px;
         }
 
-        .removeOverride-26fy8R {
+        .removeOverride_d1b5f8 {
             z-index: 2;
             @include boxes.clickable($position: absolute);
             background-color: $grey;
