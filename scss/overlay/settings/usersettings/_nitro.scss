@@ -1,20 +1,20 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.perkCardsContainerSpacingSettings-2mxjuX,
-.premiumTierCardsContainerSettings-3_Raf8,
-.perksTitle-1U7C5-,
-.titleText-rdztw2 {
+.perkCardsContainerSpacingSettings__54b8c,
+.premiumTierCardsContainerSettings_f346a8,
+.perksTitle__110ba,
+.titleText__55da3 {
     margin-bottom: 8px;
 }
 
-.container-1M_GA6,
+.container__1e26b,
 .card__48184 {
     @include boxes.inset;
     padding: 16px;
 }
 
-.settingsHero-2Me_mE {
+.settingsHero__55ff3 {
     margin-bottom: 0;
     width: 100%;
 }
@@ -37,7 +37,7 @@
     }
 }
 
-.table-398-e9 {
+.table__0e47c {
     @include boxes.box;
     tbody :is(th, td) {
         @include boxes.inset;
@@ -45,7 +45,7 @@
     th {
         padding: 4px;
     }
-    .row-32xD2c {
+    .row__5a3ac {
         height: auto;
     }
     .buttonsCell-gSFzSA {
@@ -59,7 +59,7 @@
     padding-bottom: 8px;
 }
 
-.bottomIllustration-GuKjww {
+.bottomIllustration__5d164 {
     position: fixed;
     bottom: 0;
 }

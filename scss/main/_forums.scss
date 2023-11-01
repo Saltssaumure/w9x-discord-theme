@@ -16,7 +16,7 @@
 }
 
 // Main container
-.container-3wLKDe {
+.container_b181b6 {
     @include boxes.inset;
     background: $bg;
 
@@ -24,7 +24,7 @@
     .tags_e6c42a {
         gap: 0;
 
-        & > :is(.pinIcon__39b6e, .tagPill-1kSbgP) {
+        & > :is(.pinIcon__39b6e, .tagPill_d9a5cc) {
             @include boxes.box;
             background: $grey;
 
@@ -35,12 +35,12 @@
     }
 
     // New post bubble
-    .newPostsButton-UaBhcU {
+    .newPostsButton__760c6 {
         z-index: 2;
     }
 
     // Not have left-right padding on everything in list mode
-    .list-3FIpnh .content__23cab {
+    .list__5ced9 .content__23cab {
         padding: 0;
     }
 
@@ -53,7 +53,7 @@
             left: 0 !important;
             width: auto !important;
 
-            .headerRow-1MKoR- {
+            .headerRow__16d8e {
                 width: auto !important;
             }
         }
@@ -73,28 +73,28 @@
     }
 
     // Everything but post cards
-    .headerRow-1MKoR- {
+    .headerRow__16d8e {
         padding: 0;
 
         // Filter by tags bar
-        .tagsContainer-2bBw1x {
+        .tagsContainer_e0ece5 {
             @include boxes.box;
             background: $grey;
             padding: 2px 12px;
 
             // Sort and view dropdown
-            .sortDropdown-hY93nR {
+            .sortDropdown_ec3016 {
                 margin-bottom: 0;
                 &[aria-expanded="true"] {
                     @include boxes.inset;
                 }
             }
 
-            .divider-2bkesd {
+            .divider__0a999 {
                 display: none;
             }
 
-            .tagListInner-35MqcW {
+            .tagListInner__6097c {
                 gap: 0;
             }
         }
@@ -110,7 +110,7 @@
             @include boxes.box;
 
             // Search button and guidelines button
-            :is(.prefixElement-1U4XhR, .guidelinesButton-3Vrz0u) {
+            :is(.prefixElement__829f9, .guidelinesButton_d7afe7) {
                 @include boxes.clickable;
                 display: flex;
                 justify-content: center;
@@ -127,7 +127,7 @@
             }
 
             // Post message
-            .contentContainer-2xwoXK {
+            .contentContainer__92993 {
                 padding-left: 32px;
 
                 div {
@@ -140,10 +140,10 @@
             }
 
             // Post attachments
-            .container-3Om6RL {
+            .container__4f0d0 {
                 align-self: flex-end;
 
-                .uploadInput-3fblkw {
+                .uploadInput_bbab2f {
                     @include boxes.clickable;
                     height: 76px;
                     width: 76px;
@@ -155,8 +155,8 @@
                 }
 
                 // Attachment is image type
-                .imageContainer-ZRSemj > div:not([aria-expanded="false"]),
-                .imageContainer-ZRSemj > div:not([aria-expanded="false"]) > div {
+                .mediaContainer__4d8d9 > div:not([aria-expanded="false"]),
+                .mediaContainer__4d8d9 > div:not([aria-expanded="false"]) > div {
                     max-height: 76px;
                     max-width: 76px;
 
@@ -166,13 +166,13 @@
                 }
 
                 // Number of attachments
-                .badge-39TqBS {
+                .badge_f7250d {
                     z-index: 1;
                     background: $darkblue;
                 }
 
                 // Attachments popout
-                .popoutContainer-26yHc8 {
+                .popoutContainer__97400 {
                     z-index: 1;
                     @include boxes.box($position: absolute);
                     padding: 0;
@@ -180,7 +180,7 @@
                     right: -8px;
 
                     // Scroller
-                    .popout-2vZMlk {
+                    .popout__6ba23 {
                         padding-bottom: 0;
 
                         &::-webkit-scrollbar-track,
@@ -198,26 +198,26 @@
             }
 
             // Create post button
-            .submitButton-3B-dZd {
+            .submitButton__6a7c5 {
                 height: 30px;
             }
 
             // Divider
-            .tagsDivider-3LhkLA {
+            .tagsDivider_a1443e {
                 display: none;
             }
 
             // Post tags
-            .tagsContainer-3rSFH5 {
+            .tagsContainer__11211 {
                 margin-left: 8px;
                 margin-top: 0px;
-                .tagListInner-1mCauI {
+                .tagListInner_b1b5c2 {
                     gap: 0;
                 }
             }
 
             // Post bar
-            .controlsContainer-2BcSvj {
+            .controlsContainer__45ade {
                 justify-content: flex-start;
                 gap: 0;
                 margin-top: 0;
@@ -230,12 +230,12 @@
                     width: 30px;
                 }
 
-                .controls-3EanmI {
+                .controls__2ddda {
                     flex-grow: initial;
                     gap: 0;
 
                     // Slowmode warning
-                    .wrappedControls-1xJezP {
+                    .wrappedControls__2ca40 {
                         order: 1;
                         padding-left: 4px;
                     }
@@ -246,18 +246,18 @@
 }
 
 // Post card
-li.card-2JNtco {
+li.card__691f2 {
     padding: 0;
     margin: 8px;
     @include boxes.clickable;
 }
 
-:is(.container-2qVG6q, .container_c24cbd) {
+:is(.container__99b06, .container_c24cbd) {
     .markup_a7e664 {
         color: var(--text-normal);
     }
 
-    &:not(.isOpen-2OXbFs, .isOpen_d88bb6) {
+    &:not(.isOpen__8593d, .isOpen_d88bb6) {
         &:hover,
         &:active {
             background-color: var(--background-primary);
@@ -265,19 +265,19 @@ li.card-2JNtco {
         }
     }
 
-    &:is(.isOpen-2OXbFs, .isOpen_d88bb6) {
+    &:is(.isOpen__8593d, .isOpen_d88bb6) {
         @include boxes.inset;
     }
 
     // Post content preview
-    .thumbnailContainer-2XSRmY,
-    .contentPreview-3fWiuC,
-    .bodyMedia-3UL0Kl {
+    .thumbnailContainer_f53f40,
+    .contentPreview_b317ee,
+    .bodyMedia__06a5b {
         @include boxes.inset;
     }
 
     // Text content
-    .contentPreview-3fWiuC {
+    .contentPreview_b317ee {
         background: $bg;
 
         .markup_a7e664 {

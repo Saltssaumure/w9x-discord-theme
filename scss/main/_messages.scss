@@ -285,12 +285,12 @@
 
 // Spoiler text
 .messageContent__21e69 {
-    .spoilerText-2G40u0.hidden_f44e41 {
+    .spoilerMarkdownContent__2b8f8.hidden_f44e41 {
         @include boxes.box;
         background: $darkgrey;
     }
 
-    .spoilerText-2G40u0 {
+    .spoilerMarkdownContent__2b8f8 {
         @include boxes.inset;
         background: $bg;
     }

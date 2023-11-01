@@ -2,23 +2,23 @@
 @use "../../top/boxes" as boxes;
 
 // VC emoji picker
-.container-3a5mk- {
+.container__77df0 {
     @include boxes.box;
 
     .categoryList_f8c48f {
         top: 52px;
     }
 
-    .slotsContainer-3Li39W {
+    .slotsContainer__9d357 {
         @include boxes.box;
         padding: 4px;
         width: auto;
 
-        .slotsWide-31Ye9I {
+        .slotsWide__07b92 {
             gap: 8px;
         }
 
-        .slot-JZjffO {
+        .slot_c61209 {
             @include boxes.clickable;
             padding: 4px;
         }

@@ -1,7 +1,7 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.searchBar-20o6Cf {
+.searchBar_b2ff4e {
     @include boxes.inset;
     background: $bg;
     color: $text;
@@ -16,19 +16,19 @@
     }
 }
 
-.scroller-3nFW5p {
+.scroller__8941d {
     @include boxes.inset;
     padding: 0;
 
-    .inviteRow-3vmB7i {
-        .inviteRowName-3H4s_c {
+    .inviteRow_a25947 {
+        .inviteRowName_bc8b23 {
             color: $black;
         }
 
         &:hover {
             background: $darkblue;
 
-            .inviteRowName-3H4s_c,
+            .inviteRowName_bc8b23,
             .contents_fb6220 {
                 color: $white;
             }
@@ -36,18 +36,18 @@
     }
 }
 
-.layerContainer_d5a653 .footer-1hTRRZ {
+.layerContainer_d5a653 .footer__13977 {
     background: $grey;
 
     .input_d266e7 {
         height: 32px;
     }
 
-    .copyButton-2k4drX {
+    .copyButton__9cc81 {
         margin-right: 0;
     }
 
-    .footerText-2QLGHU {
+    .footerText__614f3 {
         color: $black;
     }
 

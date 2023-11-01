@@ -34,7 +34,7 @@
 .appMount_fae9dd .pageWrapper_fef757 {
     background: $grey;
 
-    .scroller-3j5xK2 {
+    .scroller__1f4dd {
         padding: 16px;
     }
 
@@ -42,7 +42,7 @@
         background: unset;
         padding-right: 0;
 
-        .searchBoxInput-3h4etz {
+        .searchBoxInput__73c9c {
             color: $text;
         }
 
@@ -59,7 +59,7 @@
             height: 24px;
         }
 
-        .closeIcon-BMGxx0 {
+        .closeIcon__3dfb5 {
             color: $black;
             width: 20px;
             height: 20px;
@@ -75,13 +75,13 @@
         }
     }
 
-    .footer-26kPv_ {
+    .footer_c65acf {
         padding-bottom: 64px;
     }
 }
 
 // Search results
-.searchPage-1Rxeav {
+.searchPage__3f316 {
     .container__56ed5 {
         margin-left: 248px;
         padding: 60px 16px 0;
@@ -100,25 +100,25 @@
     }
 
     // Result categories
-    .categories-2LoSbA {
+    .categories_e49c23 {
         @include boxes.box($position: fixed);
         left: $window-left + 2px;
         top: $window-top + $title-height + 64px;
         bottom: $window-bottom + 28px;
         flex-direction: column;
 
-        .categoryPill-1zjNrr {
+        .categoryPill_c95cea {
             width: 240px;
             padding: calc((34px - 16px) / 2);
             margin: 0;
             color: $black;
 
-            &:is(.selected-bLcqYK, :hover, :active) {
+            &:is(.selected__24846, :hover, :active) {
                 background: $darkblue;
                 color: $white;
             }
 
-            .categoryLabel-2m4AT- {
+            .categoryLabel__44b10 {
                 font-size: 16px;
                 text-align: left;
                 color: inherit;
@@ -135,7 +135,7 @@
     }
 
     // Result servers
-    .guildList-QjZKeK {
+    .guildList__454fa {
         gap: 0;
 
         .card__33bd0 {
