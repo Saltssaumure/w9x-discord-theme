@@ -7,35 +7,37 @@
  * @version 1.3
  * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/w9x-discord-theme
+ * @website https://saltssaumure.github.io/w9x-discord-theme
  * @donate https://ko-fi.com/saltssaumure
+ *
+ * @var text  w9x-background-image  "Desktop background image: Any image link wrapped in `url()` or `none`"                           none
+ * @var color w9x-background-color  "Desktop background colour: Only visible where background image is transparent or set to `none`"  #008080
+ * @var text  w9x-start-text        "Start menu text" Windows95
+ * @var color w9x-titlebar-color    "Titlebar"        #000080
+ * @var color w9x-warning-color     "Warning"         #FF0000
+ * @var color w9x-positive-color    "Positive"        #008000
+ * @var color w9x-highlight-color   "Link"            #0000FF
+ * @var color w9x-box-color-1       "Box 1: Lightest" #FFFFFF
+ * @var color w9x-box-color-2       "Box 2: Lighter"  #DFDFDF
+ * @var color w9x-box-color-3       "Box 3: Midtone"  #C0C0C0
+ * @var color w9x-box-color-4       "Box 4: Darker"   #808080
+ * @var color w9x-box-color-5       "Box 5: Darkest"  #000000
+ *
+ * @var color w9x-day-bg-color    "Panel background: Light mode"  #FFFFFF
+ * @var color w9x-day-text-color  "Panel text: Light mode"        #000000
+ *
+ * @var color w9x-dark-bg-color   "Panel background: Dark mode"   #000000
+ * @var color w9x-dark-text-color "Panel text: Dark mode"         #FFFFFF
 */
 
 @import url("https://saltssaumure.github.io/w9x-discord-theme/w9x.min.css");
 
-/* See https://github.com/Saltssaumure/w9x-discord-theme#customisation for customisation settings. */
-:root {
-    --w9x-background-image: none;
-    --w9x-background-color: #008080;
-    --w9x-start-text:       "Windows95";
-
-    --w9x-titlebar-color:   #000080;
-    --w9x-warning-color:    #FF0000;
-    --w9x-positive-color:   #008000;
-    --w9x-highlight-color:  #0000FF;
-
-    --w9x-box-color-1:      #FFFFFF;
-    --w9x-box-color-2:      #DFDFDF;
-    --w9x-box-color-3:      #C0C0C0;
-    --w9x-box-color-4:      #808080;
-    --w9x-box-color-5:      #000000;
+.theme-dark {
+    --w9x-bg-color: var(--w9x-dark-bg-color);
+    --w9x-text-color: var(--w9x-dark-text-color);
 }
 
 .theme-light {
-    --w9x-bg-color:     #FFFFFF;
-    --w9x-text-color:   #000000;
-}
-
-.theme-dark {
-    --w9x-bg-color:     #000000;
-    --w9x-text-color:   #DFDFDF;
+    --w9x-bg-color: var(--w9x-day-bg-color);
+    --w9x-text-color: var(--w9x-day-text-color);
 }
