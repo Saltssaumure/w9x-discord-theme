@@ -11,6 +11,7 @@
     "dev:bd": "bd-scss dev",
     "dev:rp": "replugged build theme --watch",
     "dev:vc": "bd-scss dev:vc",
+    "dev:vt": "bd-scss dev:vt",
     "build:bd": "bd-scss build",
     "build:rp": "replugged bundle theme",
     "lint": "prettier ./scss --check",
@@ -18,8 +19,8 @@
     "release": "replugged release"
   },
   "devDependencies": {
-    "prettier": "^3.0.3",
-    "replugged": "^4.7.4",
-    "salt-bd-scss": "^1.1.0"
+    "prettier": "^3.1.0",
+    "replugged": "^4.7.6",
+    "salt-bd-scss": "^1.2.1"
   }
 }
