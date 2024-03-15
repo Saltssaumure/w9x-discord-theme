@@ -1,13 +1,13 @@
 {
   "id": "net.saltssaumure.NineX",
   "name": "NineX",
-  "description": "A Windows 95/98 style theme. See source README for customisation options.",
+  "description": "A Windows 95/98 style theme. See GitHub for customisation options.",
   "author": {
     "name": "Saltssaumure",
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "1.5.1",
+  "version": "1.5.2",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.NineX"
@@ -17,7 +17,7 @@
   "main": "scss/w9x.scss",
   "source": "https://github.com/Saltssaumure/w9x-discord-theme",
   "image": [
-    "https://cdn.discordapp.com/attachments/946226984005025835/1129612826114269265/ninex1.png",
-    "https://cdn.discordapp.com/attachments/946226984005025835/1129612825774534868/ninex2.png"
+    "https://i.imgur.com/EKFPRpO.png",
+    "https://i.imgur.com/qdhEUGk.png"
   ]
 }
