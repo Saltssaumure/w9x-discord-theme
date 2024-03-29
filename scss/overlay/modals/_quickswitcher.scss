@@ -2,24 +2,24 @@
 @use "../../top/boxes" as boxes;
 @use "../../top/msgPill" as msg;
 
-.root_a28985:has(.quickswitcher_a3d29a) {
+.root_a28985:has(.quickswitcher_b5bb0a) {
     height: 380px;
 }
 
-.quickswitcher_a3d29a {
+.quickswitcher_b5bb0a {
     min-height: 380px;
 
     // Search
-    .input__848cd {
+    .input__2a648 {
         @include boxes.inset;
         color: $text;
     }
 
     // Results
-    .scroller__52ae7 {
+    .scroller_d4b86c {
         @include boxes.scroller;
 
-        .content__23cab {
+        .content__690c5 {
             border-right: 1px solid $darkgrey;
         }
 
@@ -29,16 +29,16 @@
             &[aria-selected="true"] {
                 background: $darkblue;
 
-                .contentDefault_f2e62d,
-                .icon_f8a8b6,
+                .contentDefault_d3a863,
+                .icon__39f1d,
                 .misc__9152e,
-                .contentUnread__50b0f {
+                .contentUnread_cd86ef {
                     color: $white;
                 }
             }
 
             // Unread pill
-            .contentUnread__50b0f {
+            .contentUnread_cd86ef {
                 @include msg.unreadPill($size: 8px);
             }
         }

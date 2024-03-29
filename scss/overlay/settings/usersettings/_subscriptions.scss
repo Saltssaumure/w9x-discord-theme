@@ -1,8 +1,8 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.sectionAccountCredit__8ffc1,
-.subscriptionDetails_f73fb4 {
+.sectionAccountCredit_c94c5d,
+.subscriptionDetails_a1ad09 {
     padding-bottom: 16px;
     margin-bottom: 0;
     border-bottom: 0;
@@ -12,13 +12,13 @@
     @include boxes.inset;
     padding: 16px;
 
-    .noItemsIcon_b1e42b,
-    .noItemsIcon__38ca2 {
+    .noItemsIcon__299fb,
+    .noItemsIcon_ead6f9 {
         background: transparent;
     }
 
-    .cardText_c116a3,
-    .cardText__2fe30 {
+    .cardText__604bf,
+    .cardText__08ae7 {
         color: $black;
     }
 }

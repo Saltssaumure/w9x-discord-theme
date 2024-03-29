@@ -2,45 +2,45 @@
 @use "../../top/boxes" as boxes;
 
 // Threads
-.browser_fece63 {
+.browser_fa9cea {
     @include boxes.box;
 
-    .header__53b07 {
-        .divider_dec9ac,
-        .spacer_f0c2f6 {
+    .header__6d44a {
+        .divider__622af,
+        .spacer__62dcb {
             display: none;
         }
 
-        .searchBox_ff53b2 {
+        .searchBox__9423b {
             @include boxes.inset;
             background: $bg;
 
-            .input__74754 {
+            .input__48d49 {
                 color: $text;
             }
 
-            .iconLayout__6d744 {
+            .iconLayout__67261 {
                 @include boxes.clickable;
                 background: $grey;
             }
         }
 
-        .createButton_c8864c {
+        .createButton_f595af {
             height: 26px;
         }
 
-        .closeIcon__15ae7 {
+        .closeIcon_ab1a00 {
             @include boxes.clickable;
             height: 24px;
         }
 
-        .searchBox_ff53b2,
-        .createButton_c8864c {
+        .searchBox__9423b,
+        .createButton_f595af {
             margin-right: 0;
         }
     }
 
-    .container__6604b {
+    .container__9922f {
         @include boxes.clickable;
     }
 

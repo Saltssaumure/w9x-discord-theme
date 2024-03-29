@@ -2,11 +2,11 @@
 @use "../../../top/boxes" as boxes;
 
 // # Devices
-.session_f56359 {
+.session__201cb {
     @include boxes.box;
     padding: 8px;
 
-    .sessionMoreButton__055f9 {
+    .sessionMoreButton_f38a79 {
         svg {
             @include boxes.clickable;
         }

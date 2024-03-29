@@ -2,19 +2,19 @@
 @use "../../top/boxes" as boxes;
 
 // Pinned messages
-.messagesPopoutWrap_b3b384 {
+.messagesPopoutWrap__10dd1 {
     @include boxes.box;
 
-    .header_f5cc88 {
+    .header__21b33 {
         padding: 6px;
         box-shadow: none;
     }
 
-    .messageGroupWrapper_f8c6e9 {
+    .messageGroupWrapper__1fce2 {
         @include boxes.inset;
         background: $bg;
 
-        .jumpButton__0329d {
+        .jumpButton__309d6 {
             @include boxes.clickable;
         }
     }

@@ -2,29 +2,29 @@
 @use "../top/boxes" as boxes;
 
 :is(
-        .button__8ec71,
-        .welcomeCTAButtonOuter_a7da64,
-        .friendRequestsButton_f19806,
-        .button_ddf91e,
-        .lookFilled__19298,
-        .lookOutlined__46d54,
-        .lookInverted_ee4261
+        .button_f73214,
+        .welcomeCTAButtonOuter_fdd0ae,
+        .friendRequestsButton__77e10,
+        .button__292b6,
+        .lookFilled__950dd,
+        .lookOutlined__014b5,
+        .lookInverted_a299dc
     ) {
     @include boxes.clickable;
 }
 
 :is(.theme-dark, .theme-light) {
-    .lookLink__93965.colorPrimary__6ed40 {
+    .lookLink_a2da25.colorPrimary_ebe632 {
         color: $black;
 
-        &:hover .contents_fb6220 {
+        &:hover .contents__322f4 {
             --button--underline-color: #{$black};
         }
     }
 }
 
-.appMount_fae9dd .lookFilled__19298 {
-    &:is(.colorBrand_b2253e, .colorBrand_b2253e:disabled, .colorBrand_b2253e[aria-disabled="true"], .colorBrandNew_fd170a) {
+.appMount_c99875 .lookFilled__950dd {
+    &:is(.colorBrand__27d57, .colorBrand__27d57:disabled, .colorBrand__27d57[aria-disabled="true"], .colorBrandNew__8872c) {
         color: $black;
         background: $lightgrey;
 
@@ -34,7 +34,7 @@
         }
     }
 
-    &:is(.colorPrimary__6ed40, .colorTransparent__4c280) {
+    &:is(.colorPrimary_ebe632, .colorTransparent__3e3c7) {
         color: $black;
     }
 }

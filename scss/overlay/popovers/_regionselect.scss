@@ -3,18 +3,18 @@
 
 // Select region in DM VC
 
-.layerContainer_d5a653 .quickSelectPopout_c0cf80 {
+.layerContainer_a2fcaa .quickSelectPopout__56a98 {
     @include boxes.box($position: absolute);
     top: -8px;
     background: $grey;
     color: $black;
 
-    .quickSelectPopoutOption__39224:hover {
+    .quickSelectPopoutOption_b852b1:hover {
         background: $darkblue;
         color: $white;
     }
 
-    .regionSelectName__7c81f {
+    .regionSelectName_e97b48 {
         color: inherit;
         margin: 0;
     }

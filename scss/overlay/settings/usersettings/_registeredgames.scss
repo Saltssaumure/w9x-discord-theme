@@ -2,20 +2,20 @@
 @use "../../../top/boxes" as boxes;
 
 #game-activity-tab {
-    .gameName_aeeab5 {
+    .gameName_c1c8a6 {
         color: $black;
     }
 
-    .lastPlayed_accc56,
-    .overlayStatusText__61367 {
+    .lastPlayed__0b4ef,
+    .overlayStatusText__668e1 {
         color: $darkgrey;
     }
 
-    .activeGame__99516 {
+    .activeGame__6d821 {
         @include boxes.box;
     }
 
-    .nowPlayingAdd__7caf1 {
+    .nowPlayingAdd_ab1001 {
         color: $black;
     }
 
@@ -23,7 +23,7 @@
         @include boxes.box;
         padding: 8px;
 
-        .gameNameInput_e25dd8 {
+        .gameNameInput__3e1e4 {
             &:focus,
             &:hover {
                 background: $white;
@@ -34,7 +34,7 @@
         .overlayToggleIcon-1WRcQ9 {
             @include boxes.clickable;
 
-            .overlayToggleIconOn-21NN2N .fill__80e66 {
+            .overlayToggleIconOn-21NN2N .fill__90d85 {
                 fill: $darkgrey;
             }
 
@@ -43,12 +43,12 @@
             }
         }
 
-        .flowerStar_a9981e path {
+        .flowerStar_fa5ad8 path {
             fill: $darkblue;
         }
     }
 
-    .removeGame_aa12f1 {
+    .removeGame__4f4cb {
         @include boxes.clickable($position: absolute);
         right: -12px;
         background-color: $grey;
@@ -57,11 +57,11 @@
 }
 
 // Technically a popover
-.animatorBottom_b2d32e .addGamePopout_e4ca8f {
+.animatorBottom__90ece .addGamePopout__61649 {
     background: $grey;
     @include boxes.box;
 
-    .actions__0d917 {
+    .actions__1012d {
         margin-top: 8px;
     }
 }

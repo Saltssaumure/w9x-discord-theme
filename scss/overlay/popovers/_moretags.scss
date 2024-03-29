@@ -2,14 +2,14 @@
 @use "../../top/boxes" as boxes;
 
 // See more tags creating forum post with narrow screen
-.container_d27846 {
+.container_cff83e {
     @include boxes.box;
 
-    .searchWithScrollbar__791f8 {
+    .searchWithScrollbar__36b41 {
         @include boxes.inset;
         background: $bg;
 
-        .input__74754 {
+        .input__48d49 {
             color: $text;
         }
     }
@@ -23,7 +23,7 @@
             @include boxes.clickable;
             margin: 0;
 
-            &.selected__511cf {
+            &.selected__32a6a {
                 @include boxes.inset;
             }
         }

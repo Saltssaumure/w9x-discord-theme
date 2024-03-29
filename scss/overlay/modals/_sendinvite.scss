@@ -1,53 +1,53 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.searchBar_b2ff4e {
+.searchBar__285ec {
     @include boxes.inset;
     background: $bg;
     color: $text;
 
-    .input__74754 {
+    .input__48d49 {
         color: $text;
     }
 
-    .iconLayout__6d744 {
+    .iconLayout__67261 {
         @include boxes.clickable;
         background: $grey;
     }
 }
 
-.scroller__8941d {
+.scroller_bd2d35 {
     @include boxes.inset;
     padding: 0;
 
-    .inviteRow_a25947 {
-        .inviteRowName_bc8b23 {
+    .inviteRow_d6ad74 {
+        .inviteRowName__60057 {
             color: $black;
         }
 
         &:hover {
             background: $darkblue;
 
-            .inviteRowName_bc8b23,
-            .contents_fb6220 {
+            .inviteRowName__60057,
+            .contents__322f4 {
                 color: $white;
             }
         }
     }
 }
 
-.layerContainer_d5a653 .footer__13977 {
+.layerContainer_a2fcaa .footer_d84330 {
     background: $grey;
 
-    .input_d266e7 {
+    .input_f27786 {
         height: 32px;
     }
 
-    .copyButton__9cc81 {
+    .copyButton_a7bf69 {
         margin-right: 0;
     }
 
-    .footerText__614f3 {
+    .footerText_f55c0f {
         color: $black;
     }
 

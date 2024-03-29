@@ -4,10 +4,10 @@
 // Public servers and student hubs
 
 // Sidebar
-.sidebar_ded4b5 > .thin_b1c063 {
+.sidebar_e031be > .thin_b1c063 {
     margin-left: 28px;
 
-    .discoverHeader_fae7fd {
+    .discoverHeader__9d76e {
         @include boxes.box;
         font-size: 16px;
         line-height: 20px;
@@ -15,15 +15,15 @@
         margin: 0;
     }
 
-    .categoryItem_b1be5c {
+    .categoryItem__0608f {
         margin: 0;
         padding: 0;
         color: $black;
 
-        &:is(.selectedCategoryItem__0bf4c, :hover, :active) {
+        &:is(.selectedCategoryItem__3e361, :hover, :active) {
             color: $white;
 
-            .itemInner__9e755 {
+            .itemInner_eedb2b {
                 background: var(--background-modifier-selected);
             }
         }
@@ -31,18 +31,18 @@
 }
 
 // Main page
-.appMount_fae9dd .pageWrapper_fef757 {
+.appMount_c99875 .pageWrapper_c182d3 {
     background: $grey;
 
-    .scroller__1f4dd {
+    .scroller__26b89 {
         padding: 16px;
     }
 
-    .searchBox_a63854 {
+    .searchBox__56feb {
         background: unset;
         padding-right: 0;
 
-        .searchBoxInput__73c9c {
+        .searchBoxInput__56498 {
             color: $text;
         }
 
@@ -50,8 +50,8 @@
             display: none;
         }
 
-        .searchIcon_e60ea8,
-        .clear_a52805 {
+        .searchIcon_d1a3c1,
+        .clear__65069 {
             @include boxes.clickable;
             top: 1px;
             background: $grey;
@@ -59,7 +59,7 @@
             height: 24px;
         }
 
-        .closeIcon__3dfb5 {
+        .closeIcon_da3bc1 {
             color: $black;
             width: 20px;
             height: 20px;
@@ -75,20 +75,20 @@
         }
     }
 
-    .footer_c65acf {
+    .footer_b0c19c {
         padding-bottom: 64px;
     }
 }
 
 // Search results
-.searchPage__3f316 {
-    .container__56ed5 {
+.searchPage_beb628 {
+    .container_defa9a {
         margin-left: 248px;
         padding: 60px 16px 0;
     }
 
     // Result title
-    .searchHeader_d44e8b {
+    .searchHeader_c0a1d7 {
         position: fixed;
         left: $window-left + 2px;
         right: $window-right + 19px;
@@ -100,25 +100,25 @@
     }
 
     // Result categories
-    .categories_e49c23 {
+    .categories_bbef0d {
         @include boxes.box($position: fixed);
         left: $window-left + 2px;
         top: $window-top + $title-height + 64px;
         bottom: $window-bottom + 28px;
         flex-direction: column;
 
-        .categoryPill_c95cea {
+        .categoryPill_c6ae1b {
             width: 240px;
             padding: calc((34px - 16px) / 2);
             margin: 0;
             color: $black;
 
-            &:is(.selected__24846, :hover, :active) {
+            &:is(.selected_b5f19b, :hover, :active) {
                 background: $darkblue;
                 color: $white;
             }
 
-            .categoryLabel__44b10 {
+            .categoryLabel__236f3 {
                 font-size: 16px;
                 text-align: left;
                 color: inherit;
@@ -128,46 +128,46 @@
     }
 
     // Further search
-    .clearIcon__91449 {
+    .clearIcon__21453 {
         height: 20px;
         width: 20px;
         padding: 2px;
     }
 
     // Result servers
-    .guildList__454fa {
+    .guildList_d05b32 {
         gap: 0;
 
         .card__33bd0 {
             @include boxes.clickable;
 
-            .content_f124d7 {
+            .content_d876f9 {
                 height: 135px - 16px;
             }
 
-            .header__7b70d {
+            .header__52827 {
                 flex-direction: row;
                 gap: 8px;
             }
 
-            .content_f124d7 {
+            .content_d876f9 {
                 padding: 8px 8px 8px 0;
             }
         }
 
-        .separator_f527c9 {
+        .separator__16faf {
             display: none;
         }
     }
 
-    .pageControl__2dd90 {
+    .pageControl__5e095 {
         @include boxes.inset;
 
-        .roundButton__9e83c {
+        .roundButton_a01f15 {
             @include boxes.clickable;
             margin: 0;
 
-            &.activeButton__7a550 {
+            &.activeButton__70b70 {
                 @include boxes.inset;
                 background: unset;
                 color: $black;
@@ -177,17 +177,17 @@
 }
 
 // Student hubs / custom guild directory
-.pageContainer__1e84a {
+.pageContainer__853b6 {
     @include boxes.inset;
 
     .card__73022 {
         @include boxes.box;
     }
 }
-.scroller_f0f183:has(.itemInner_f3a769) {
+.scroller__1f498:has(.itemInner__2abad) {
     min-height: 200px;
 
-    .itemInner_f3a769 {
+    .itemInner__2abad {
         margin-left: 0;
     }
 }

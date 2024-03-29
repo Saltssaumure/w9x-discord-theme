@@ -10,29 +10,29 @@ body #app-mount .guilds__2b93a {
     left: calc(100vw - $panel-width);
     z-index: 0;
 
-    .wrapper_ed1dea > .listItem_fa7b36,
-    .scroller__3d071 > div > .listItem_fa7b36,
-    .scroller__3d071 > .listItem_fa7b36 {
+    .wrapper__832f2 > .listItem__48528,
+    .scroller_de945b > div > .listItem__48528,
+    .scroller_de945b > .listItem__48528 {
         left: -7px;
         position: relative;
     }
 
-    .scroller__3d071 > div > .listItem_fa7b36 > .pill__6b31b {
+    .scroller_de945b > div > .listItem__48528 > .pill__6b31b {
         bottom: -20px !important;
     }
 }
 
 // Opened folder icon
-#app-mount .expandedFolderBackground__1bec6:not(.collapsed__0a270) + .listItem_fa7b36 {
+#app-mount .expandedFolderBackground_b1385f:not(.collapsed__98ad5) + .listItem__48528 {
     @include boxes.inset;
-    .expandedFolderIconWrapper__458cf {
+    .expandedFolderIconWrapper__324c1 {
         display: none;
     }
 }
 
 #app-mount .guilds__2b93a {
     // Servers in opened folder
-    .wrapper_ed1dea ul[role="group"] {
+    .wrapper__832f2 ul[role="group"] {
         gap: 0px;
         align-items: center;
     }
@@ -45,11 +45,11 @@ body #app-mount .guilds__2b93a {
 
 // Titlebar on macOS
 html.platform-osx #app-mount {
-    .base__3e6af {
+    .base_c0676e {
         top: 0 !important;
     }
 
-    .typeMacOS__496b0 {
+    .typeMacOS_cacc59 {
         width: auto;
     }
 }

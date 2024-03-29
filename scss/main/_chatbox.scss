@@ -2,46 +2,46 @@
 @use "../top/boxes" as boxes;
 
 // Chat box
-.channelTextArea__2e60f {
+.channelTextArea_c2094b {
     @include boxes.inset;
 
     // Buttons
-    .buttonContainer__8b164,
-    .attachButton_b1db83,
-    .buttonContainer__9b459 {
+    .buttonContainer_ff1010,
+    .attachButton__56f98,
+    .buttonContainer__14dd9 {
         @include boxes.clickable;
         background: $grey;
     }
-    .webkit__8d35a .buttons_ce5b56 {
+    .webkit__8d35a .buttons__7ecff {
         margin-right: 0;
     }
 
-    .separator__8424b {
+    .separator__666aa {
         margin-left: unset;
 
         &::before {
             display: none;
         }
 
-        .innerButton_debeee {
+        .innerButton__9efb8 {
             margin: 6px;
         }
 
-        .button__8d734:focus-within .activeButtonChild__6e162,
-        .button__8d734:focus .activeButtonChild__6e162,
-        .button__8d734:hover .activeButtonChild__6e162,
-        .button__8d734 .activeButtonChild__6e162 {
+        .button_dd99ad:focus-within .activeButtonChild__58171,
+        .button_dd99ad:focus .activeButtonChild__58171,
+        .button_dd99ad:hover .activeButtonChild__58171,
+        .button_dd99ad .activeButtonChild__58171 {
             color: var(--text-brand);
         }
     }
 
     // Attachment area divider
-    .divider_b9338f {
+    .divider__855e3 {
         display: none;
     }
 
     // Attachments
-    .channelAttachmentArea__740bf {
+    .channelAttachmentArea__5e46a {
         padding: 4px;
         margin: 0;
         gap: 4px;
@@ -51,22 +51,22 @@
         }
 
         // Attachment preview
-        .uploadContainer__5a7da {
+        .uploadContainer__72a65 {
             @include boxes.box;
             flex-direction: column-reverse;
         }
 
         // Attachment controls
-        .actionBar__3cdab {
+        .actionBar_a15295 {
             transform: none;
             right: 4px;
             top: 4px;
 
-            .wrapper_c727b6 {
+            .wrapper__4e6b6 {
                 height: 17px;
             }
 
-            .button_d553e5 {
+            .button_d4bf9b {
                 @include boxes.clickable;
                 height: 16px;
                 width: 16px;
@@ -76,34 +76,34 @@
         }
 
         // Filename
-        .filenameContainer_c6cd59 {
+        .filenameContainer__3b490 {
             @include boxes.winBar($text: "");
             margin-top: 0;
 
-            .filename__7ce23 {
+            .filename__1769f {
                 margin-top: 0;
                 color: $grey;
             }
         }
 
         // Attachment image
-        .mediaContainer__4d8d9 {
+        .mediaContainer_e3d4b8 {
             margin: auto 0;
         }
 
-        .icon_c2f643.code_d3dfc7 {
+        .icon__33bb5.code_b9f306 {
             background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAx0lEQVRYR+1XWxaEIAiVnbkzdWe6MicK54xHezDxkYk/ESGP6yUPYNqVSQXLU1JGf82qlN777JwzIYTVUFpe/KPbKub3pQQHAJPzVriUjAVh8BijsdZWSTwvgd453dWllNbKLyFwN1hv/3gJIPl6q5Cz205E3t+9xX4OBI64Mx4C0p0wHgL/dIFyQBSBvSPgkvN9PyJFQBGYBwFupWf27MtI7wJF4IxU3O+XSIhOcT6k2Y0b49B+bypqJlXyUkZy0STIWTNwfABE/48wR04ubgAAAABJRU5ErkJggg==")
                 center no-repeat;
         }
     }
 
     // Typing area
-    .slateTextArea__0661c {
+    .slateTextArea_b19976 {
         padding-left: 10px;
     }
 
     // Autocomplete
-    .autocomplete_df266d {
+    .autocomplete__743a5 {
         @include boxes.box($position: absolute);
         bottom: calc(100% + 17px);
         left: -1px;
@@ -116,26 +116,26 @@
             border-bottom-color: $grey;
         }
 
-        .scroller_cc9b9a {
+        .scroller__3fc84 {
             padding-bottom: 1px;
         }
 
         // Entry
-        .autocompleteRow_a20cfa .base__76a71 {
+        .autocompleteRow__2a1b9 .base__87e58 {
             @include boxes.clickable;
         }
 
-        .autocompleteRow_a20cfa[aria-selected="true"] .base__76a71 {
+        .autocompleteRow__2a1b9[aria-selected="true"] .base__87e58 {
             @include boxes.inset;
         }
 
         // Divider
-        .divider__87f51 {
+        .divider__20bfc {
             display: none;
         }
 
         // Members matching title
-        .contentTitle_b7c496 strong {
+        .contentTitle_b6c2bb strong {
             color: $black;
         }
 
@@ -149,42 +149,42 @@
                 border-bottom: 0;
             }
 
-            .listItems__699d1 {
+            .listItems__49027 {
                 inset: 7px !important;
             }
 
-            .section_e983c1 {
+            .section__4da0b {
                 margin-bottom: 0;
             }
 
-            .selectable_ad5550,
-            .selectable__25a87 {
+            .selectable_b68b2e,
+            .selectable__8161d {
                 @include boxes.clickable;
             }
 
-            .builtInSeparator_e77ba4 {
+            .builtInSeparator__3f669 {
                 display: none;
             }
         }
 
         // Bot command group
-        .categoryHeader_f97a5f {
+        .categoryHeader__70c8e {
             background: $grey;
             z-index: 2;
             border-bottom: 1px solid $darkgrey;
         }
 
         // Command required args
-        .option__32fd1 {
+        .option__2b069 {
             @include boxes.thin;
             background: $grey;
         }
 
         // Command optional args
-        .optionals__8c34d {
+        .optionals__2aaef {
             @include boxes.thin;
             padding: 0 4px;
-            .optionalCount__5f6e1 {
+            .optionalCount__2e126 {
                 padding: 0;
             }
         }
@@ -192,9 +192,9 @@
 }
 
 // Under chat box
-.base__512ed {
+.base__06abc {
     // Slowmode
-    .cooldownWrapper_de448f {
+    .cooldownWrapper__193b2 {
         color: $black !important;
     }
 }

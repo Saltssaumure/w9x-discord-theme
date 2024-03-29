@@ -2,10 +2,10 @@
 @use "../../top/boxes" as boxes;
 
 // User profiles
-.userProfileOuter__46bb7 {
+.userProfileOuter__4ac83 {
     @include boxes.box;
 
-    &.userProfileOuterThemed__6eb84 {
+    &.userProfileOuterThemed__1fbd7 {
         &.theme-dark {
             --interactive-active: #{$white};
             --header-primary: #{$grey};
@@ -14,14 +14,14 @@
         }
     }
 
-    .userProfileInner__8065b {
+    .userProfileInner__61cc1 {
         // Avatar
-        .avatarWrapper_f77579 {
+        .avatarWrapper__0cd44 {
             @include boxes.clickable($position: absolute);
         }
 
         // Profile badges
-        .profileBadges__7a7cb {
+        .profileBadges__1f2ab {
             gap: 0;
             padding: 0;
             .anchor_c8ddc0 {
@@ -31,26 +31,26 @@
         }
 
         // Inner box
-        .userPopoutOverlayBackground_d8afa4 {
+        .userPopoutOverlayBackground_bf6444 {
             @include boxes.box;
 
             // Divider
-            .divider_ed0c1d {
+            .divider_e6f9ab {
                 background-color: transparent;
             }
 
             // About me
-            .scroller__83262 {
+            .scroller_f9a667 {
                 @include boxes.inset;
             }
 
             code,
-            .blockquoteDivider__96157 {
+            .blockquoteDivider__5cbad {
                 background: $darkgrey;
             }
 
             // Roles
-            .role__631a3 {
+            .role_d81130 {
                 @include boxes.box;
                 margin-right: 0;
             }
@@ -66,7 +66,7 @@
             }
 
             // Activity buttons
-            .vertical_d613c2 > :not(:first-child) {
+            .vertical_f3d051 > :not(:first-child) {
                 margin-top: 0;
             }
         }

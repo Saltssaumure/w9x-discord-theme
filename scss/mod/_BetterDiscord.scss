@@ -48,7 +48,7 @@
     }
 }
 
-.bd-addon-error-details .detailsIcon_a2b4b5 {
+.bd-addon-error-details .detailsIcon_b51ebf {
     color: var(--header-secondary);
 }
 
@@ -56,7 +56,7 @@
     display: none;
 }
 
-.bd-addon-error-stack .scrollbarGhostHairline_c9a45f {
+.bd-addon-error-stack .scrollbarGhostHairline__00100 {
     @include boxes.inset;
     background: $white;
     max-height: 200px;
@@ -233,7 +233,7 @@
 
 // Maybe not BD, but goes here for now.
 // Update modal text
-:is(.theme-dark, .theme-light) .markdown_e76780 {
+:is(.theme-dark, .theme-light) .markdown__8e519 {
     color: $black;
 }
 

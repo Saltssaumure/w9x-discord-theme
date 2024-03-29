@@ -2,7 +2,7 @@
 @use "../top/boxes" as boxes;
 
 // Channel header
-.forumOrHome__75784 {
+.forumOrHome__8b95a {
     --__header-bar-background: #{$grey};
 }
 
@@ -10,13 +10,13 @@
 .pill_f055c3 {
     @include boxes.clickable;
     background: $grey;
-    &.selected_dc72d1 {
+    &.selected__50db4 {
         @include boxes.inset;
     }
 }
 
 // Main container
-.container_b181b6 {
+.container_b92032 {
     @include boxes.inset;
     background: $bg;
 
@@ -24,7 +24,7 @@
     .tags_e6c42a {
         gap: 0;
 
-        & > :is(.pinIcon__39b6e, .tagPill_d9a5cc) {
+        & > :is(.pinIcon__054d8, .tagPill__0704e) {
             @include boxes.box;
             background: $grey;
 
@@ -35,17 +35,17 @@
     }
 
     // New post bubble
-    .newPostsButton__760c6 {
+    .newPostsButton__5c904 {
         z-index: 2;
     }
 
     // Not have left-right padding on everything in list mode
-    .list__5ced9 .content__23cab {
+    .list__5ced9 .content__690c5 {
         padding: 0;
     }
 
     // The same in gallery mode
-    .content__23cab {
+    .content__690c5 {
         // Everything but post cards
         & > div:first-child {
             position: relative !important;
@@ -53,7 +53,7 @@
             left: 0 !important;
             width: auto !important;
 
-            .headerRow__16d8e {
+            .headerRow__86f2e {
                 width: auto !important;
             }
         }
@@ -66,51 +66,51 @@
             width: auto !important;
 
             // Tag area in text posts
-            .textContentFooter__5a630 {
+            .textContentFooter_e03480 {
                 background: transparent;
             }
         }
     }
 
     // Everything but post cards
-    .headerRow__16d8e {
+    .headerRow__86f2e {
         padding: 0;
 
         // Filter by tags bar
-        .tagsContainer_e0ece5 {
+        .tagsContainer__58760 {
             @include boxes.box;
             background: $grey;
             padding: 2px 12px;
 
             // Sort and view dropdown
-            .sortDropdown_ec3016 {
+            .sortDropdown__40a16 {
                 margin-bottom: 0;
                 &[aria-expanded="true"] {
                     @include boxes.inset;
                 }
             }
 
-            .divider__0a999 {
+            .divider_d1051b {
                 display: none;
             }
 
-            .tagListInner__6097c {
+            .tagListInner__05bff {
                 gap: 0;
             }
         }
 
         // Matching post count bar
-        .matchingPostsRow__510be {
+        .matchingPostsRow__6cdb0 {
             @include boxes.box;
         }
 
         // Search/create posts bar
-        .mainCard__8a660 {
+        .mainCard__0ec2c {
             margin-top: 0;
             @include boxes.box;
 
             // Search button and guidelines button
-            :is(.prefixElement__829f9, .guidelinesButton_d7afe7) {
+            :is(.prefixElement_d6c5ac, .guidelinesButton_d7afe7) {
                 @include boxes.clickable;
                 display: flex;
                 justify-content: center;
@@ -127,40 +127,40 @@
             }
 
             // Post message
-            .contentContainer__92993 {
+            .contentContainer_d31802 {
                 padding-left: 32px;
 
                 div {
                     background: $bg;
 
-                    .channelTextArea__56a36 {
+                    .channelTextArea__648e5 {
                         width: auto;
                     }
                 }
             }
 
             // Post attachments
-            .container__4f0d0 {
+            .container__9dc79 {
                 align-self: flex-end;
 
-                .uploadInput_bbab2f {
+                .uploadInput_a6cb60 {
                     @include boxes.clickable;
                     height: 76px;
                     width: 76px;
                 }
 
                 // Attachment not image type
-                .icon_c2f643 {
+                .icon__33bb5 {
                     @include boxes.box;
                 }
 
                 // Attachment is image type
-                .mediaContainer__4d8d9 > div:not([aria-expanded="false"]),
-                .mediaContainer__4d8d9 > div:not([aria-expanded="false"]) > div {
+                .mediaContainer_e3d4b8 > div:not([aria-expanded="false"]),
+                .mediaContainer_e3d4b8 > div:not([aria-expanded="false"]) > div {
                     max-height: 76px;
                     max-width: 76px;
 
-                    .imageSmall__59845 {
+                    .imageSmall__16e1d {
                         height: 76px;
                     }
                 }
@@ -172,7 +172,7 @@
                 }
 
                 // Attachments popout
-                .popoutContainer__97400 {
+                .popoutContainer_dbffea {
                     z-index: 1;
                     @include boxes.box($position: absolute);
                     padding: 0;
@@ -190,7 +190,7 @@
                         }
 
                         // Attachment controls
-                        .actionBarContainer__7301a {
+                        .actionBarContainer_ffaba7 {
                             z-index: 2;
                         }
                     }
@@ -198,26 +198,26 @@
             }
 
             // Create post button
-            .submitButton__6a7c5 {
+            .submitButton__57214 {
                 height: 30px;
             }
 
             // Divider
-            .tagsDivider_a1443e {
+            .tagsDivider__0c01e {
                 display: none;
             }
 
             // Post tags
-            .tagsContainer__11211 {
+            .tagsContainer__20c4f {
                 margin-left: 8px;
                 margin-top: 0px;
-                .tagListInner_b1b5c2 {
+                .tagListInner__88561 {
                     gap: 0;
                 }
             }
 
             // Post bar
-            .controlsContainer__45ade {
+            .controlsContainer__58c3e {
                 justify-content: flex-start;
                 gap: 0;
                 margin-top: 0;
@@ -230,12 +230,12 @@
                     width: 30px;
                 }
 
-                .controls__2ddda {
+                .controls__610ef {
                     flex-grow: initial;
                     gap: 0;
 
                     // Slowmode warning
-                    .wrappedControls__2ca40 {
+                    .wrappedControls__65cbd {
                         order: 1;
                         padding-left: 4px;
                     }
@@ -252,7 +252,7 @@ li.card__691f2 {
     @include boxes.clickable;
 }
 
-:is(.container__99b06, .container_c24cbd) {
+:is(.container_de2a56, .container__7d004) {
     .markup_a7e664 {
         color: var(--text-normal);
     }
@@ -270,14 +270,14 @@ li.card__691f2 {
     }
 
     // Post content preview
-    .thumbnailContainer_f53f40,
-    .contentPreview_b317ee,
-    .bodyMedia__06a5b {
+    .thumbnailContainer__6c4d3,
+    .contentPreview__122fc,
+    .bodyMedia_fcdc88 {
         @include boxes.inset;
     }
 
     // Text content
-    .contentPreview_b317ee {
+    .contentPreview__122fc {
         background: $bg;
 
         .markup_a7e664 {
@@ -288,7 +288,7 @@ li.card__691f2 {
 
 // Opened post
 // Post alert options bar
-.container__8ee50 {
+.container__68e43 {
     position: absolute;
     z-index: 0;
     border-top: 0;
@@ -299,10 +299,10 @@ li.card__691f2 {
     background: transparent;
     box-shadow: none;
 
-    .buttons__1995d {
+    .buttons_ef8915 {
         gap: 0;
 
-        .buttonInner__2771e {
+        .buttonInner__865de {
             @include boxes.clickable;
             height: 20px;
 
@@ -314,6 +314,6 @@ li.card__691f2 {
 }
 
 // OP post and post replies divider
-.divider_ffec75 {
+.divider__4df9f {
     display: none;
 }

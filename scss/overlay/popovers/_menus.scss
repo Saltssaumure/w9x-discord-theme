@@ -2,7 +2,7 @@
 @use "../../top/boxes" as boxes;
 
 // Small menus
-.menu_dc52c6 {
+.menu__088f7 {
     background: $grey;
     box-shadow: none;
     @include boxes.box;
@@ -11,42 +11,42 @@
         display: none;
     }
 
-    .scroller__750f5 {
+    .scroller__8f066 {
         padding: 0;
     }
 
     // Menu options
-    .colorDefault__0b482.focused__27621,
-    .colorDefault__0b482:active:not(.hideInteraction__2790e) {
+    .colorDefault_e361cf.focused_dcafb9,
+    .colorDefault_e361cf:active:not(.hideInteraction__0b569) {
         background: $darkblue;
         color: $white;
     }
 
     // Blue options
-    .colorBrand__471df {
+    .colorBrand__9bb0f {
         color: $blue;
     }
 
-    .submenuPaddingContainer__12a9d {
+    .submenuPaddingContainer__5a97c {
         padding: 0;
         margin: 0 -4px;
         background: $grey;
     }
 
     // Group labels
-    .groupLabel_e66554 {
+    .groupLabel_bee392 {
         text-transform: none;
     }
 
     // Checkbox
-    .icon_f09dde:has(:is(.checkbox__45366, path[d^="M12 20C16.4183"]), path[d^="M18.625 3"]) {
+    .icon__0bfbf:has(:is(.checkbox__378d3, path[d^="M12 20C16.4183"]), path[d^="M18.625 3"]) {
         @include boxes.inset;
         background: $white;
         width: 12px;
         height: 12px;
 
         // Checkbox
-        .checkbox__45366,
+        .checkbox__378d3,
         path[d^="M18.625 3"] {
             display: none;
         }
@@ -65,14 +65,14 @@
         }
 
         // Inner circle
-        .radioSelection__5ed39 {
+        .radioSelection__41d1e {
             color: $black;
         }
     }
 
-    .colorDefault__0b482.focused__27621 .caret_ce50ce,
-    .colorDefault__0b482.focused__27621 .checkbox__45366,
-    .colorDefault__0b482.focused__27621 .radioSelection__5ed39 {
+    .colorDefault_e361cf.focused_dcafb9 .caret_ce50ce,
+    .colorDefault_e361cf.focused_dcafb9 .checkbox__378d3,
+    .colorDefault_e361cf.focused_dcafb9 .radioSelection__41d1e {
         color: $black;
     }
 
@@ -82,14 +82,14 @@
             height: 4px;
         }
 
-        .grabber_d2868c {
+        .grabber_e3daf3 {
             height: 16px;
             width: 10px;
         }
     }
 
     // Quick reacts
-    .button__3ecb4 {
+    .button_bfb8e1 {
         @include boxes.clickable;
         padding: 0;
         margin-top: 4px;

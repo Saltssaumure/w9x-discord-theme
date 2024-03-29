@@ -6,7 +6,7 @@
 }
 
 // Soundboard volume
-.settingsClickArea__307ff {
+.settingsClickArea__2839d {
     @include boxes.clickable;
     margin-left: 0;
     box-sizing: border-box;
@@ -18,17 +18,17 @@
 }
 
 // Category list
-.categoryList__173de {
+.categoryList__2f64f {
     @include boxes.box($position: absolute);
     top: 61px;
 
-    .listItems__699d1 {
+    .listItems__49027 {
         inset: 6px !important;
     }
 }
 
 // Category icon
-.category_f1b389 {
+.category__81549 {
     @include boxes.clickable;
     margin-bottom: 0;
     height: 36px;
@@ -36,12 +36,12 @@
 }
 
 // Sounds panel
-.wrapper__3d460 {
+.wrapper_c899da {
     background: $bg;
 }
 
 // Category header
-.sectionHeader_c664ae {
+.sectionHeader_d974fe {
     background: $grey;
     @include boxes.box;
     inset: -8px 0 0 -8px;
@@ -51,15 +51,15 @@
 }
 
 // Button arrangement
-.soundRow__3fb1b {
+.soundRow_a5ce1a {
     gap: 0;
 
-    &:not(:has(+ .sectionHeader_c664ae)) {
+    &:not(:has(+ .sectionHeader_d974fe)) {
         margin-bottom: 0;
     }
 }
 
 // Sound
-.soundButton__5ad7b {
+.soundButton__845c7 {
     @include boxes.clickable;
 }

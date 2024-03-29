@@ -1,24 +1,24 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.warning__9db16 {
+.warning__4da7a {
     @include boxes.box;
 }
 
-.marginTop60__2eb69 {
+.marginTop60__9b32d {
     margin-top: 16px;
 }
 
-.defaultKeybindGroup__1adfb {
+.defaultKeybindGroup_fe8d85 {
     margin: 16px 0 0;
 
-    .defaultKeybindGroupHeader_cee6f0,
-    .defaultKeybindGroupDescription__42f90 {
+    .defaultKeybindGroupHeader__3c306,
+    .defaultKeybindGroupDescription_e38653 {
         margin-bottom: 8px;
     }
 }
 
-.defaultKeybind__05c82 {
+.defaultKeybind__48ba0 {
     padding: 4px;
     height: 32px;
     @include boxes.inset;
@@ -28,13 +28,13 @@
     }
 }
 
-.appMount_fae9dd .combo__57290 {
+.appMount_c99875 .combo__57290 {
     text-transform: capitalize;
     font-weight: unset;
     font-size: 14px;
     line-height: 16px;
 
-    .key__06fe6 {
+    .key__6a8d9 {
         @include boxes.box;
         box-shadow: none;
         background: $darkgrey;

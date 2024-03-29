@@ -2,39 +2,39 @@
 @use "../../top/boxes" as boxes;
 
 // Edit / add phone number
-.phoneVerificationModal__68f4b {
-    .animationContainer_a3f705 {
+.phoneVerificationModal_bdbc3e {
+    .animationContainer__208d6 {
         z-index: 1;
     }
 
-    .phoneField__65729 {
+    .phoneField__47dd1 {
         @include boxes.inset;
 
-        .plusSign_e8d99e,
-        .countryCode__7befd {
+        .plusSign_ed3829,
+        .countryCode__4b71e {
             color: $black;
         }
 
-        .phoneFieldExpand_f973c3 {
+        .phoneFieldExpand_b79228 {
             stroke: $black;
         }
 
-        .inputField__3008c {
+        .inputField_c0d34f {
             color: $text;
         }
     }
 }
 
 // Edit email address
-.headerImage_d2d905 {
+.headerImage__8f629 {
     display: none;
 }
 
 // Edit username
-.multiInput_b845fd {
+.multiInput__69254 {
     height: 24px;
 
-    .inputPrefix_b67818 {
+    .inputPrefix_f5d363 {
         display: none;
     }
 
