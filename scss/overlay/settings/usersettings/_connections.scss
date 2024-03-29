@@ -2,33 +2,33 @@
 @use "../../../top/boxes" as boxes;
 
 // # Connections
-.connectContainer__8050b {
+.connectContainer_e331e3 {
     @include boxes.box;
     padding: 8px;
 
-    .connectionsContainer_ec9a62 {
+    .connectionsContainer__3fe05 {
         margin-top: 4px;
         gap: 0;
 
         .inner__51a43,
-        .accountAddInner_d34c25 {
+        .accountAddInner__50785 {
             @include boxes.clickable;
         }
     }
 }
 
-.connectionList__7b310 {
+.connectionList__5b340 {
     grid-gap: 0;
 
-    .connection_fff5f6 {
+    .connection__6dbd8 {
         @include boxes.box;
         padding: 0;
         margin-bottom: 0;
 
-        .connectionHeader__3c82d {
+        .connectionHeader__2b82f {
             padding: 8px;
 
-            .connectionDelete__988b5 {
+            .connectionDelete__300b7 {
                 margin: 0;
                 align-self: flex-start;
 
@@ -40,7 +40,7 @@
             }
         }
 
-        .upsellWrapper__033fb {
+        .upsellWrapper_c40434 {
             padding: 8px;
 
             .container-QlmnKJ {
@@ -49,16 +49,16 @@
             }
         }
 
-        .metadataContainer__7b316 {
+        .metadataContainer__1842c {
             padding: 0 8px;
             margin: 0;
         }
 
-        .connectionOptionsWrapper_abe849 {
+        .connectionOptionsWrapper__1b820 {
             padding: 8px;
 
-            .connectionOptions_d1a598 {
-                .connectionOptionSwitch_b4c979 {
+            .connectionOptions__06d4b {
+                .connectionOptionSwitch_e439d0 {
                     margin-bottom: 0px;
                     padding: 0;
                 }

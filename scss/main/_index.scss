@@ -27,12 +27,12 @@
 }
 
 // Transparency
-:is(.appMount_fae9dd, body, .app_de4237) {
+:is(.appMount_c99875, body, .app_de4237) {
     background: transparent;
 }
 
 // Put notice banners below main window
-.base__3e6af {
+.base_c0676e {
     flex-direction: column-reverse;
     height: calc(100% - var(--server-container));
 
@@ -51,18 +51,18 @@
 }
 
 // Settings
-.standardSidebarView__1129a,
+.standardSidebarView__12528,
 // Main DM and friend list view
-.container__5c7e7,
+.container_bd15da,
 // Explore servers view
-.pageWrapper_fef757,
+.pageWrapper_c182d3,
 // Student hub
-.scroller_e9501c,
+.scroller__32e73,
 // Buy Nitro page
-.applicationStore_fc7d76,
+.applicationStore__444b9,
 // Server subscriptions
-.container__42489,
+.container__2b28c,
 // Main chat
-.chat__52833:not(.container__10dc7 > .chat__52833) {
+.chat__52833:not(.container__03ec9 > .chat__52833) {
     @include boxes.mainWindow();
 }

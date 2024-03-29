@@ -1,9 +1,9 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.userProfileModalOuter__3fe6b {
+.userProfileModalOuter_a65559 {
     // Badges
-    .badgeList_c193e3 {
+    .badgeList__126b0 {
         gap: 0;
         .anchor_c8ddc0 {
             @include boxes.clickable;
@@ -11,7 +11,7 @@
     }
 
     // Tabs
-    .tabBarContainer__63f55 {
+    .tabBarContainer_b283be {
         margin: 16px 24px 0 0;
     }
 
@@ -20,7 +20,7 @@
         position: relative;
         top: 2px;
 
-        .tabBarItem_b56b35 {
+        .tabBarItem_ce14f3 {
             @include boxes.tab;
             height: auto;
             padding: 2px 8px;
@@ -28,7 +28,7 @@
             &.themed_b957e8 {
                 color: var(--text-normal);
 
-                &:is(.selected__5711d, :active) {
+                &:is(.selected_a523ff, :active) {
                     background: unset;
                     font-weight: bold;
                 }
@@ -37,27 +37,27 @@
     }
 
     // Info
-    .scrollerBase_dc3aa9 {
+    .scrollerBase_f742b2 {
         @include boxes.box;
 
         &::before {
             display: none;
         }
 
-        .userInfoSection__1daf8 + .userInfoSection__1daf8 {
+        .userInfoSection_e816c1 + .userInfoSection_e816c1 {
             border-top: unset;
         }
 
         // Connected accounts
-        .connectedAccounts_dc0a56 {
+        .connectedAccounts__7a8e6 {
             display: block;
             width: 100%;
 
-            .connectedAccountsColumn_fd2c41 {
+            .connectedAccountsColumn__57331 {
                 display: inline;
                 margin-left: 0;
 
-                .connectedAccountContainer__23f00 {
+                .connectedAccountContainer__5972d {
                     @include boxes.inset;
                     display: inline-block;
                     width: calc(460px / 3);
@@ -78,17 +78,17 @@
                     }
 
                     // Hide detailed info until hover
-                    &.connectedAccountContainerWithMetadata_cf88ce {
+                    &.connectedAccountContainerWithMetadata_c474f9 {
                         padding: 12px 8px;
 
-                        .connectedAccountName_f0a294 + .text-xs-normal_ccc5fb,
-                        .connectedAccountChildren__21b60 {
+                        .connectedAccountName__0a3ec + .text-xs-normal_ccc5fb,
+                        .connectedAccountChildren_abff48 {
                             display: none;
                         }
 
                         &:hover {
-                            .connectedAccountName_f0a294 + .text-xs-normal_ccc5fb,
-                            .connectedAccountChildren__21b60 {
+                            .connectedAccountName__0a3ec + .text-xs-normal_ccc5fb,
+                            .connectedAccountChildren_abff48 {
                                 display: block;
                                 z-index: 1;
                                 padding: 8px;
@@ -96,14 +96,14 @@
                             }
 
                             // Joined date
-                            .connectedAccountName_f0a294 + .text-xs-normal_ccc5fb {
+                            .connectedAccountName__0a3ec + .text-xs-normal_ccc5fb {
                                 position: absolute;
                                 pointer-events: none;
                                 inset: 1px 1px 1px 32px;
                             }
 
                             // Detailed info
-                            &:hover .connectedAccountChildren__21b60 {
+                            &:hover .connectedAccountChildren_abff48 {
                                 @include boxes.box($position: absolute);
                                 bottom: 50px;
                                 left: -33px;
@@ -115,7 +115,7 @@
         }
 
         // Mutual servers
-        .listRow__60937 {
+        .listRow__50619 {
             margin: 0;
 
             &:hover {

@@ -3,7 +3,7 @@
 
 // Top bar
 
-.titleBar__01af6 {
+.titleBar__710b0 {
     margin: unset;
     @include boxes.winBar($text: "Discord", $bgColor: $darkblue);
     position: absolute;
@@ -13,7 +13,7 @@
     z-index: 102;
 
     // Discord logo
-    .wordmarkWindows__05c46 {
+    .wordmarkWindows_ffbc5e {
         padding: 0;
         margin: 2px 0 0 2px;
 
@@ -31,7 +31,7 @@
     }
 
     // Buttons
-    .winButton__88672 {
+    .winButton_f17fb6 {
         @include boxes.clickable;
         background: $grey;
         height: 16px;
@@ -39,14 +39,14 @@
         width: 20px;
         color: $black;
 
-        &.winButtonClose__73489 {
+        &.winButtonClose__6396d {
             margin-left: 2px;
         }
     }
 }
 
 // On Linux
-.platform-linux .appMount_fae9dd {
+.platform-linux .appMount_c99875 {
     @include boxes.winBar($isPseudo: true, $bgColor: $darkblue, $text: "Discord");
 
     &::after {

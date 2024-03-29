@@ -2,10 +2,10 @@
 @use "../top/boxes" as boxes;
 
 // Titlebar
-.children__32014 {
+.children_cde9af {
     overflow: visible;
 
-    .topPill__0cdf1 {
+    .topPill__63ad4 {
         position: relative;
         top: 12px;
         left: 10px;
@@ -14,7 +14,7 @@
             @include boxes.tab;
             margin: 0;
 
-            &.selected__5711d {
+            &.selected_a523ff {
                 text-decoration: underline;
             }
         }
@@ -22,41 +22,41 @@
 }
 
 // Online / All / Pending / Blocked / Add Friend
-.peopleColumn__51df3 {
+.peopleColumn__0c784 {
     @include boxes.inset;
 
-    .searchBar_ff8800 {
+    .searchBar__310d8 {
         @include boxes.inset;
         background: $bg;
         color: $text;
         margin: 8px 8px 0;
 
-        .input__74754 {
+        .input__48d49 {
             color: $text;
         }
 
-        .iconContainer__3af05 {
+        .iconContainer__4d295 {
             @include boxes.clickable;
             background: $grey;
             padding: 2px;
         }
     }
 
-    .title_dc625c {
+    .title_c42cad {
         margin: 8px 12px 4px;
     }
 
-    .peopleList__2379e {
+    .peopleList_d2f527 {
         margin: 0 8px 8px;
         padding-bottom: 0;
         @include boxes.inset;
 
-        .peopleListItem_d14722 {
+        .peopleListItem_dab480 {
             margin: 0;
             padding: 8px;
             @include boxes.clickable;
 
-            .actionButton__23182 {
+            .actionButton__2b4bb {
                 @include boxes.clickable;
                 height: 24px;
                 width: 24px;
@@ -68,42 +68,42 @@
         }
     }
 
-    .header__6113c {
+    .header__6ddae {
         border-bottom: 0;
     }
 
-    .header__6113c,
-    .header_afb7fc {
+    .header__6ddae,
+    .header__7cf1d {
         padding: 8px;
     }
 
     // Other places to make friends
-    .grid__5ef55 {
+    .grid__8fc4b {
         padding: 0 8px;
         gap: 8px;
 
-        .container_a308ae {
+        .container__048f4 {
             @include boxes.clickable;
         }
     }
 
     // Add friend
-    .addFriendInputWrapper__4bf8e {
+    .addFriendInputWrapper__2b30b {
         padding: 0;
 
-        .addFriendInput__568d8 {
+        .addFriendInput__12af4 {
             margin-right: 0;
         }
     }
 }
 
 // Friend activity
-.nowPlayingColumn_f5023f {
-    .scroller__00e7e {
+.nowPlayingColumn_b025fe {
+    .scroller__7c25e {
         @include boxes.scroller;
         padding: 0 !important;
 
-        .header__123bf {
+        .header_c56a27 {
             position: sticky;
             top: 0;
             margin: 0 0 8px;
@@ -113,7 +113,7 @@
             z-index: 2;
         }
 
-        .itemCard__1f162 {
+        .itemCard_b64118 {
             @include boxes.clickable;
             margin: 0 8px;
             padding: 12px;
@@ -122,7 +122,7 @@
                 background: $grey;
             }
 
-            .body__83069 {
+            .body__616e6 {
                 @include boxes.inset;
             }
         }
@@ -134,27 +134,27 @@
     @include boxes.scroller;
     padding: 8px !important;
 
-    .content__23cab > div:first-child {
+    .content__690c5 > div:first-child {
         display: none;
     }
 
     // Title
-    .container_de798d {
+    .container__43554 {
         color: $black;
         text-transform: none;
         margin-bottom: 8px;
     }
 
-    .messageRequestItem__3b951 {
+    .messageRequestItem__9f70d {
         @include boxes.clickable;
 
-        .messageContent__21e69 {
+        .messageContent_abea64 {
             color: $black;
         }
     }
 }
 
 // If empty
-.content__1a4fe:has(.emptyStateContainer_ca7267) {
+.content__01e65:has(.emptyStateContainer_ba3ea0) {
     @include boxes.inset;
 }

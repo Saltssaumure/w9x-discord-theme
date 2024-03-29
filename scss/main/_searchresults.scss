@@ -2,17 +2,17 @@
 @use "../top/boxes" as boxes;
 
 // Search results
-.searchResultsWrap__9f374 {
+.searchResultsWrap__2e184 {
     @include boxes.inset;
     margin: 0 2px 2px;
 
-    .searchHeader__19d87 {
+    .searchHeader__4d70e {
         background: transparent;
         padding: 8px 28px 0 16px;
         height: 28px;
 
         // Tabs
-        .searchHeaderTabList__78b98 {
+        .searchHeaderTabList__75f6b {
             gap: 0;
 
             // Tab
@@ -22,7 +22,7 @@
         }
     }
 
-    .scroller_c8d5ad {
+    .scroller__5f036 {
         @include boxes.box($position: static);
         margin: 0 8px 8px;
 
@@ -31,13 +31,13 @@
         }
 
         // Result
-        .searchResult_dcd237 {
+        .searchResult__00093 {
             background: $bg;
             @include boxes.inset;
         }
 
         // Jump button
-        .button_f8244b {
+        .button_ef08e7 {
             @include boxes.clickable;
         }
 
@@ -46,7 +46,7 @@
         }
 
         // Navigation
-        .container_d91be8 {
+        .container__6a77d {
             position: absolute;
             top: 29px;
             left: 9px;
@@ -55,13 +55,13 @@
             z-index: 1;
             border-bottom: 1px solid $black;
 
-            .pageControlContainer_b111b0 {
+            .pageControlContainer__86479 {
                 margin-top: 0;
             }
 
-            .pageControl__2dd90 {
+            .pageControl__5e095 {
                 // Buttons
-                .pageButton_bcd673 {
+                .pageButton_bf9853 {
                     min-height: unset;
                     margin: 0;
 

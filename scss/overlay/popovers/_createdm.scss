@@ -3,12 +3,12 @@
 
 // Create (group) DM
 
-.header__6d5ea {
-    .subtitle__593cd {
+.header__5e5a6 {
+    .subtitle__6fbe4 {
         color: $black;
     }
 
-    .searchBarComponent__46512 {
+    .searchBarComponent__53adf {
         @include boxes.inset;
         background: $bg;
 
@@ -16,7 +16,7 @@
             overflow: hidden !important;
         }
 
-        .input_f4043f {
+        .input__745d4 {
             color: $text;
         }
 
@@ -26,10 +26,10 @@
     }
 }
 
-.scroller__5c5df {
+.scroller__991cb {
     @include boxes.scroller;
 
-    .friendWrapper__70b6f {
+    .friendWrapper_f9b51d {
         @include boxes.clickable;
         margin: 0;
 
@@ -37,12 +37,12 @@
             @include boxes.inset;
         }
 
-        .friendSelected_f0db37 {
+        .friendSelected__98d91 {
             background: unset;
         }
     }
 }
 
-.footer__274e8 {
+.footer__062a1 {
     padding: 8px;
 }

@@ -9,12 +9,12 @@
 }
 
 // Tabs
-.tabItem__0cb9d {
+.tabItem_fda22a {
     @include boxes.tab;
     margin-right: 0;
     color: $black;
 
-    &.tabItemSelected__3dfe7 {
+    &.tabItemSelected_f4cf64 {
         border-bottom: unset;
         color: $black;
         text-decoration: underline;
@@ -22,11 +22,11 @@
 }
 
 // Screens
-.sourceScroller__373b8 {
+.sourceScroller__1f4b8 {
     @include boxes.scroller;
 }
 
-.sourceContainer_c74b9a {
+.sourceContainer__734ae {
     gap: 8px;
 }
 
@@ -47,25 +47,25 @@
 }
 
 // Stream quality
-.qualitySettingsContainer__5cacd {
+.qualitySettingsContainer__8f353 {
     @include boxes.inset;
 
-    .selectorButton_c6ae93 {
+    .selectorButton_ea0609 {
         @include boxes.clickable;
 
-        &:not(.selectorButtonPremiumRequired_ce72d6):hover {
+        &:not(.selectorButtonPremiumRequired__9df5b):hover {
             background: $grey;
 
-            .selectorText_b1d64c {
+            .selectorText__8286b {
                 color: $black;
             }
         }
     }
 
-    .selectorButtonSelected_fbe8fc {
+    .selectorButtonSelected__707fb {
         @include boxes.inset;
         background: $grey;
-        .selectorTextSelected_d7d560 {
+        .selectorTextSelected__147ec {
             color: $black;
         }
     }

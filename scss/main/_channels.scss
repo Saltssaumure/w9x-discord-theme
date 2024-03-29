@@ -4,7 +4,7 @@
 @use "../top/msgPill" as msg;
 
 // Channels sidebar
-.sidebar_ded4b5 {
+.sidebar_e031be {
     @include channels.vars;
     @include boxes.box($position: absolute);
     bottom: 0;
@@ -29,102 +29,102 @@
     }
 
     // Server channels
-    .container__590e2,
+    .container__7e23c,
     // DMs
-    .privateChannels__93473 {
+    .privateChannels__9b518 {
         padding-left: 28px;
     }
 }
 
 // Header
-:not(.bannerVisible__191f6) > .header__104ca {
+:not(.bannerVisible_ef30fe) > .header__77c95 {
     @include boxes.clickable;
     box-shadow: none;
 }
 
-.clickable__2d589 .header__104ca:hover,
-.selected__0b1ad .header__104ca {
+.clickable__1383f .header__77c95:hover,
+.selected__987e6 .header__77c95 {
     background: unset;
 }
 
 // Find or start a conversation
-.searchBar_e4ea2a .searchBarComponent__22760 {
+.searchBar__621ec .searchBarComponent__8f95f {
     @include boxes.clickable;
     color: $black;
 }
 
 // Unread DM message
-.highlighted__7bba7 {
+.highlighted_e2e5df {
     @include msg.unreadPill($size: 8px);
     color: $black;
 
-    :is(.interactive__776ee:focus-within, .interactive__776ee:hover) & {
+    :is(.interactive__0786a:focus-within, .interactive__0786a:hover) & {
         color: $white;
     }
 }
 
 // Public server indicator
-.communityInfoPill_d3f445 {
+.communityInfoPill__1efab {
     @include boxes.box;
     z-index: 1;
 }
 
 // Boost goal
-.container__4f639 {
+.container_bc43c1 {
     margin: 2px;
 
-    .goalText__3bdd2 {
+    .goalText__38c12 {
         color: var(--channels-default) !important;
     }
 
-    .progressBarContainer__9b571 {
+    .progressBarContainer_e11b41 {
         @include boxes.inset;
     }
 
-    .divider__40683 {
+    .divider__0c76f {
         display: none;
     }
 }
 
-.sectionDivider__68d2a {
+.sectionDivider__9dbcb {
     display: none;
 }
 
 // Channel group
-.wrapper__9c483:is(.muted_de6e6e:hover, :hover) :is(.icon_ef4486, .name__590d6),
-.privateChannelsHeaderContainer_ddcec6:hover :is(.headerText__051c0, .privateChannelRecipientsInviteButtonIcon__1e8fc) {
+.wrapper__07e2f:is(.muted_de6e6e:hover, :hover) :is(.icon__3aa8e, .name__27f04),
+.privateChannelsHeaderContainer_b22dc9:hover :is(.headerText__88997, .privateChannelRecipientsInviteButtonIcon__459c2) {
     color: var(--channels-default);
 }
 
 // Add channel button
-.addButton__8b4f0 {
+.addButton__184db {
     width: 20px;
     height: 20px;
 
-    .addButtonIcon_b776b3:hover {
+    .addButtonIcon_d9a52c:hover {
         color: var(--channels-default);
     }
 }
 
 // Channel
-.container__8759a,
-.wrapper__7bcde {
+.container__3792d,
+.wrapper__612a5 {
     margin-left: 0;
 }
 
 // Channel actions
-.children_a486f8 {
+.children__563f2 {
     margin-top: 2px;
 }
-.iconItem__8e3b8 {
+.iconItem__56989 {
     margin-left: 0;
 
-    .actionIcon_d679b5 {
+    .actionIcon_b149a2 {
         @include boxes.clickable;
         background: var(--background-secondary);
     }
 
-    &:hover .actionIcon_d679b5 {
+    &:hover .actionIcon_b149a2 {
         color: var(--channels-default);
     }
 
@@ -134,13 +134,13 @@
 }
 
 // Show all VC button
-.voiceChannelsButton__46c37 {
+.voiceChannelsButton_fd0b98 {
     @include boxes.clickable;
     color: var(--channels-default);
 }
 
 // Unread bubble
-.unreadRelevant__44f9e {
+.unreadImportant_e8bb44 {
     background: var(--channels-default);
     z-index: 1;
     left: 0;
@@ -148,46 +148,46 @@
 
 // Channels: black on none bg
 :is(
-        .modeConnected__1c02e,
-        .modeUnread_f74c03:not(:hover),
-        .notInteractive_a7d9fb.modeConnected__1c02e,
-        .notInteractive_a7d9fb.modeSelected__487d6
+        .modeConnected__52a8f,
+        .modeUnreadImportant__35358:not(:hover),
+        .notInteractive_e31551.modeConnected__52a8f,
+        .notInteractive_e31551.modeSelected__473f1
     ) {
-    .name__8d1ec {
+    .name__4eb92 {
         color: var(--channels-default);
     }
 }
 
 // Muted channels: grey on none bg
-.modeMuted__0aeea .icon_eff5d4,
-.modeMuted__0aeea .name__8d1ec {
+.modeMuted_f0a72e .icon__67ab4,
+.modeMuted_f0a72e .name__4eb92 {
     color: $darkgrey;
 }
 
 // Hovered and selected channels: white on navy bg
-:is(.modeMuted__0aeea:hover, .wrapper__7bcde:hover, .modeConnected__1c02e:hover, .modeSelected__487d6, .modeSelected__487d6:hover) {
-    :is(.icon_eff5d4, .name__8d1ec) {
+:is(.modeMuted_f0a72e:hover, .wrapper__612a5:hover, .modeConnected__52a8f:hover, .modeSelected__473f1, .modeSelected__473f1:hover) {
+    :is(.icon__67ab4, .name__4eb92) {
         color: var(--interactive-hover);
     }
 
-    .unreadRelevant__44f9e {
+    .unreadImportant_e8bb44 {
         background: var(--interactive-hover);
     }
 }
 
 // Voice user
-.voiceUser__0470a:is(:hover, :active) {
-    :is(.username__73ce9, .icon__1d60c) {
+.voiceUser__629a5:is(:hover, :active) {
+    :is(.username_a42504, .icon__1e4c2) {
         color: var(--interactive-hover);
     }
 }
 
-.usernameSpeaking__78095 {
+.usernameSpeaking__22f2f {
     color: var(--channels-default);
 }
 
 // Drag voice user
-.containerUserOver__8b873::after {
+.containerUserOver__2f65b::after {
     background: $darkblue;
     opacity: 0.3;
     border-color: $darkblue;
@@ -196,8 +196,8 @@
 
 // Drag channel before
 // Drag channel after
-.containerDragBefore_fe91aa::before,
-.containerDragAfter__437c5::after {
+.containerDragBefore__257b9::before,
+.containerDragAfter_fec62e::after {
     background: $darkblue;
     left: 0;
 }

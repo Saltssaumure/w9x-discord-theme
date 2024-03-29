@@ -6,7 +6,7 @@
     @include boxes.inset;
     background: $bg;
 
-    .option_be8b2e {
+    .option_eb83e4 {
         padding: 4px 8px;
         color: $text;
 
@@ -14,21 +14,21 @@
             color: $text;
         }
 
-        .icon__6e628 {
+        .icon__34dc7 {
             opacity: 1;
         }
 
-        &[aria-selected="true"]:not(.option_be8b2e.multi__8d15f) {
+        &[aria-selected="true"]:not(.option_eb83e4.multi__8d15f) {
             background: $lightgrey;
         }
 
-        .content__87c97 {
+        .content_fc4b0a {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
-        .selectedIcon__4b0ba {
+        .selectedIcon_e9ecc2 {
             color: $darkblue;
         }
     }

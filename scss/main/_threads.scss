@@ -2,7 +2,7 @@
 @use "../top/boxes" as boxes;
 
 // Main chat with thread open
-.chat__52833:not(.container__10dc7 > .chat__52833):is(.threadSidebarOpen_fa231d, .threadSidebarOpen_fa231d) {
+.chat__52833:not(.container__03ec9 > .chat__52833):is(.threadSidebarOpen__62c31, .threadSidebarOpen__62c31) {
     border-right: 0;
 
     &::before {
@@ -10,20 +10,20 @@
     }
 
     // Message needs no indent as member list cannot be visible at once.
-    .chatContent__5dca8 .message__80c10 {
+    .chatContent_f087cb .message_ccca67 {
         margin-right: 0 !important;
     }
 
     // Neither does autocompleter
-    .autocomplete_df266d {
+    .autocomplete__743a5 {
         width: auto !important;
     }
 }
 
 // Threads not video chat
-.content__4bf10 > {
+.content__76dcf > {
     // Main chat / thread separator
-    .resizeHandle_f1a098 {
+    .resizeHandle_cc9d34 {
         @include boxes.box;
         background: $grey;
         position: relative;
@@ -40,7 +40,7 @@
     }
 
     // Thread panel
-    .container_def45c {
+    .container__694a1 {
         @include boxes.box;
         margin: $window-top 0 $window-bottom 0;
         right: $window-right;
@@ -53,18 +53,18 @@
     }
 
     // Floating thread panel for narrow screens
-    .chatLayerWrapper__29dd6 {
+    .chatLayerWrapper__1b344 {
         top: $title-height + $window-top;
         right: $window-right;
         bottom: $window-bottom + 2px;
         height: auto;
 
-        .chatTarget__0ea5e {
+        .chatTarget_f14a03 {
             display: none;
         }
     }
 }
 
-.layerContainer_d5a653:has(.chatLayerWrapper__29dd6) {
+.layerContainer_a2fcaa:has(.chatLayerWrapper__1b344) {
     z-index: 0;
 }

@@ -1,10 +1,10 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.ratingsSelector__97a76 {
+.ratingsSelector_b67a67 {
     width: auto;
 
-    .horizontal__992f6 > & {
+    .horizontal__4848b > & {
         margin-left: 0;
     }
 
@@ -13,6 +13,6 @@
     }
 }
 
-.horizontal__992f6:has(.ratingsSelector__97a76) + .content__764ce {
+.horizontal__4848b:has(.ratingsSelector_b67a67) + .content_b28aab {
     display: none;
 }

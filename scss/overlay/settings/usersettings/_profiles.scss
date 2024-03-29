@@ -13,77 +13,77 @@
 
         &:active,
         &:hover,
-        &.selected__5711d {
+        &.selected_a523ff {
             border-bottom-color: $darkblue;
         }
 
-        &.selected__5711d {
+        &.selected_a523ff {
             @include boxes.inset;
         }
     }
 }
 
 // Remove section dividers
-.customizationSection__16fec {
+.customizationSection__0f57e {
     border-bottom: 0;
     margin-bottom: 0;
 }
 
 // Banner colour picker
-.colorSwatch__5f5b9 {
+.colorSwatch__74812 {
     @include boxes.inset;
 }
 
 // Bio typing area
-.channelTextArea__56a36 {
+.channelTextArea__648e5 {
     @include boxes.inset;
 
-    .slateTextArea__0661c {
+    .slateTextArea_b19976 {
         // maybe risky to other textboxes, doublecheck
         padding: 4px !important;
     }
 }
 
 // Emoji picker button
-.webkit__8d35a .buttons_ce5b56 {
+.webkit__8d35a .buttons__7ecff {
     margin-right: 0;
 }
 
 // Characters left
-.characterCount_e55010 {
+.characterCount__7e076 {
     right: 24px;
     bottom: 0;
 }
 
 // Profile preview
-.userPopoutOuter_d739b2 {
+.userPopoutOuter__3884e {
     @include boxes.box;
 
-    .userPopoutOverlayBackground_d8afa4 {
+    .userPopoutOverlayBackground_bf6444 {
         @include boxes.inset;
     }
 
-    .profileBadges__7a7cb.containerWithContent__7e98f {
+    .profileBadges__1f2ab.containerWithContent_a67357 {
         @include boxes.box;
     }
 
-    .avatarUploaderInner_c81617 {
+    .avatarUploaderInner__71578 {
         @include boxes.box;
     }
 }
 
 // Nitro upsell lol
-.premiumFeatureBorder__9bbb3,
-.premiumBackground__4ce97 {
+.premiumFeatureBorder__6ac04,
+.premiumBackground__4f769 {
     background: none;
 }
 
 // Server nickname
-.inputWrapper__934f5 {
+.inputWrapper_ecb776 {
     @include boxes.inset;
     background: $bg;
 
-    .input_d266e7 {
+    .input_f27786 {
         padding: 0 4px;
         height: 24px;
         color: $text;
