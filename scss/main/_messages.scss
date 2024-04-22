@@ -273,7 +273,7 @@
 }
 
 // Channel/user mentions
-.wrapper_f5f4c9:is(.channelMention, .mention) {
+.wrapper__4ef2e:is(.channelMention, .mention) {
     @include boxes.clickable;
 }
 

@@ -2,10 +2,10 @@
 @use "../../top/boxes" as boxes;
 
 // User profiles
-.userProfileOuter__4ac83 {
+.userProfileOuter__35e59 {
     @include boxes.box;
 
-    &.userProfileOuterThemed__1fbd7 {
+    &.userProfileOuterThemed_a425f3 {
         &.theme-dark {
             --interactive-active: #{$white};
             --header-primary: #{$grey};
@@ -14,7 +14,7 @@
         }
     }
 
-    .userProfileInner__61cc1 {
+    .userProfileInner__8ff35 {
         // Avatar
         .avatarWrapper__0cd44 {
             @include boxes.clickable($position: absolute);
@@ -31,7 +31,7 @@
         }
 
         // Inner box
-        .userPopoutOverlayBackground_bf6444 {
+        .userPopoutOverlayBackground__3e7e6 {
             @include boxes.box;
 
             // Divider
