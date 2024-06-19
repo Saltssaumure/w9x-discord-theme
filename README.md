@@ -1,6 +1,6 @@
-[screenshot]:       https://user-images.githubusercontent.com/29710355/231909312-bf3786dc-317a-40c4-909b-b5dc58093b15.png
-[light]:            https://user-images.githubusercontent.com/29710355/231909647-72871e7f-8763-4174-9c71-5f1bb7d401bc.png
-[dark]:             https://user-images.githubusercontent.com/29710355/231909520-b24c4301-2d90-4c6c-9e5d-ca9ce20e3ba6.png
+[screenshot]:       https://saltssaumure.github.io/w9x-discord-theme/preview/preview.png
+[light]:            https://saltssaumure.github.io/w9x-discord-theme/preview/ninex1.png
+[dark]:             https://saltssaumure.github.io/w9x-discord-theme/preview/ninex2.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
 [discord]:          https://discord.gg/uy8nKQVatp
