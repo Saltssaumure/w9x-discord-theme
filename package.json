@@ -19,8 +19,8 @@
     "release": "replugged release"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "replugged": "^4.7.9",
+    "prettier": "^3.3.2",
+    "replugged": "^4.7.13",
     "salt-bd-scss": "^1.2.2"
   }
 }
