@@ -3,16 +3,17 @@
 [dark]:             https://saltssaumure.github.io/w9x-discord-theme/preview/ninex2.png
 
 [css-color]:        https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+[css-string]:       https://developer.mozilla.org/en-US/docs/Web/CSS/string
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [BetterDiscord]:    https://betterdiscord.app/
 [Replugged]:        https://replugged.dev/
-[Vencord]:          https://github.com/Vendicated/Vencord
+[Vencord]:          https://vencord.dev/
 
 [shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
 [ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
 
-[shield-bd-dl]:     https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/NineX.theme.css?color=purple&label=BetterDiscord%20GitHub%20downloads&style=flat-square
+[shield-css-dl]:    https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/NineX.theme.css?color=purple&label=BetterDiscord%20GitHub%20downloads&style=flat-square
 [shield-asar-dl]:   https://img.shields.io/github/downloads/Saltssaumure/w9x-discord-theme/net.saltssaumure.NineX.asar?color=purple&label=Replugged%20GitHub%20downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/saltssaumure/w9x-discord-theme?style=flat-square "Total size"
 
@@ -22,13 +23,13 @@
 [.theme.css]:       https://github.com/Saltssaumure/w9x-discord-theme/blob/main/NineX.theme.css
 
 [release-bd]:       https://betterdiscord.app/theme/?id=933 "BetterDiscord store page"
-[release-bd-gh]:    https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/NineX.theme.css "Latest release"
+[release-css-gh]:   https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/NineX.theme.css "Latest release"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.NineX "Replugged store page"
 [release-rp-gh]:    https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/net.saltssaumure.NineX.asar "Latest release"
 
 # NineX Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
-[![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
+[![BetterDiscord GitHub downloads][shield-css-dl]][release-css-gh]
 [![Replugged GitHub downloads][shield-asar-dl]][release-rp-gh]
 ![Total size][shield-repo-size]
 
@@ -41,14 +42,21 @@
 ## Installation
 
 ### [BetterDiscord][BetterDiscord]
+<details>
+    <summary>Click to expand</summary>
+
 1. Download `NineX.theme.css`:
     - [BetterDiscord store][release-bd]
-    - [GitHub][release-bd-gh]
+    - [GitHub][release-css-gh]
 2. Place the file in the themes folder:
     - `Settings` > `BetterDiscord` > `Themes` > `Open Themes Folder`
 3. Toggle on the theme card.
+</details>
 
 ### [Replugged][Replugged]
+<details>
+    <summary>Click to expand</summary>
+
 #### Automatic
 1. Click to install:
     - [Replugged store][release-rp]
@@ -58,18 +66,23 @@
 2. Place the file in the themes folder:
     - `Settings` > `Replugged` > `Themes` > `Open Themes Folder`
 3. Click `Load Missing Themes` and toggle on the theme card.
+</details>
 
 ### [Vencord][Vencord]
+<details>
+    <summary>Click to expand</summary>
+
 #### Local
 1. Download `NineX.theme.css`:
     - [BetterDiscord store][release-bd]
-    - [GitHub][release-bd-gh]
+    - [GitHub][release-css-gh]
 2. Place the file in the themes folder:
     - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
 3. Click `Load missing Themes` and toggle on the theme card.
 #### Online
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://saltssaumure.github.io/w9x-discord-theme/NineX.theme.css`
+</details>
 
 ## Customisation
 
@@ -77,7 +90,7 @@
 | ----------------------- | --------------------------------------- | ---------------------------------- | ----------------------------------------------------- |
 | Background image        | `--w9x-background-image`                | Any image link encased in `url()`. | `none`                                                |
 | Background colour       | `--w9x-background-color`                | Any [colour][css-color].           | `#008080`                                             |
-| Start menu text         | `--w9x-start-text`                      | Any quoted text.                   | `"Windows95"`                                         |
+| Start menu text         | `--w9x-start-text`                      | Any [text][css-string].            | `"Windows95"`                                         |
 | Titlebar colour         | `--w9x-titlebar-color`                  | Any [colour][css-color].           | `#000080`                                             |
 | Warning colour          | `--w9x-warning-color`                   | Any [colour][css-color].           | `#FF0000`                                             |
 | Positive colour         | `--w9x-positive-color`                  | Any [colour][css-color].           | `#008000`                                             |
@@ -87,17 +100,28 @@
 | Inner text colour       | `--w9x-text-color`                      | Any [colour][css-color].           | `#000000` (light) / `#DFDFDF` (dark)                  |
 
 ### BetterDiscord
+<details>
+    <summary>Click to expand</summary>
+
 1. Open `Settings` > `BetterDiscord` > `Themes`.
 2. Click the pencil icon on this theme.
 3. Edit the variable values and save changes.
+</details>
 
 ### Replugged
+<details>
+    <summary>Click to expand</summary>
+
 1. Enable `Automatically Apply Quick CSS` in `Settings` > `Replugged` > `General`.
 1. Open `Settings` > `Replugged` > `Quick CSS`.
 3. Copy and paste lines 15-41 of [`NineX.theme.css`][.theme.css].
 3. Edit the variable values and save.
+</details>
 
 ### Vencord
+<details>
+    <summary>Click to expand</summary>
+
 #### Local
 2. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
 3. Open `NineX.theme.css` with your favourite text editor.
@@ -106,6 +130,7 @@
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
 2. Copy and paste lines 15-41 of [`NineX.theme.css`][.theme.css].
 3. Edit the variable values.
+</details>
 
 ## License
 Copyright (c) 2023-2024 Saltssaumure
