@@ -7,13 +7,13 @@
 @use "../../top/channellist-css" as channels;
 
 // Toggles
-.control__6a084 {
+.control_ed1d57 {
     @include boxes.box;
 
-    .container__2ed72 {
+    .container_cebd1c {
         background: $darkgrey !important;
 
-        .slider__41d94 {
+        .slider_cebd1c {
             rect {
                 fill: $lightgrey;
             }
@@ -22,10 +22,10 @@
             }
         }
 
-        &.checked__36fdc {
+        &.checked_cebd1c {
             background: $green !important;
 
-            .slider__41d94 {
+            .slider_cebd1c {
                 svg path {
                     fill: $green;
                 }
@@ -35,25 +35,25 @@
 }
 
 // Notices
-.formNotice__0a16b {
+.formNotice_aae945 {
     @include boxes.box;
 }
 
 // Sliders
-.slider__22e99 {
+.slider_c7a159 {
     // Slider bar
-    .bar_e58961 {
+    .bar_c7a159 {
         @include boxes.inset;
         background: $grey;
         height: 8px;
 
-        .barFill__1f56b {
+        .barFill_c7a159 {
             background: transparent;
         }
     }
 
     // Slider handle
-    .grabber_e3daf3 {
+    .grabber_c7a159 {
         @include boxes.box;
         background: $grey;
         height: 20px;
@@ -66,12 +66,12 @@
     }
 
     // Slider marks
-    .mark_e7d3b1 {
-        &:not(.defaultValue__8e777) .markValue_c91c4e {
+    .mark_c7a159 {
+        &:not(.defaultValue_c7a159) .markValue_c7a159 {
             color: $black;
         }
 
-        .markDash__54545 {
+        .markDash_c7a159 {
             background: $black;
             height: 6px;
             width: 1px;
@@ -81,13 +81,13 @@
 }
 
 // Checkbox
-.checkboxWrapper_a2bcc8 {
-    .inputDefault_f6df22 {
+.checkboxWrapper_f6cde8 {
+    .inputDefault_f6cde8 {
         width: 20px !important;
         height: 20px !important;
     }
 
-    .checkbox_fcf2ad {
+    .checkbox_f6cde8 {
         width: 20px !important;
         height: 20px !important;
         border: 2px solid $black !important;
@@ -97,23 +97,23 @@
             d: path("M 3 3 V 21 H 21 V 3 Z");
         }
 
-        &.checked__16f88 path {
+        &.checked_f6cde8 path {
             fill: $black;
         }
     }
 }
 
 // Dropdown selectors
-.lookFilled__9c1ef.select_fe2671 {
+.lookFilled_f6639d.select_f6639d {
     @include boxes.inset;
     padding: 0;
 
-    .value__9a6c7 {
+    .value_f6639d {
         padding-left: 8px;
         color: $text;
     }
 
-    .icons__374b3 {
+    .icons_f6639d {
         background: $grey;
         @include boxes.box;
     }

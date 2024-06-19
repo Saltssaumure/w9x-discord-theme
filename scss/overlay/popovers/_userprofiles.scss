@@ -2,10 +2,10 @@
 @use "../../top/boxes" as boxes;
 
 // User profiles
-.userProfileOuter__35e59 {
+.userProfileOuter_c69a7b {
     @include boxes.box;
 
-    &.userProfileOuterThemed_a425f3 {
+    &.userProfileOuterThemed_c69a7b {
         &.theme-dark {
             --interactive-active: #{$white};
             --header-primary: #{$grey};
@@ -14,24 +14,24 @@
         }
     }
 
-    .userProfileInner__8ff35 {
+    .userProfileInner_c69a7b {
         // Avatar
-        .avatarWrapper__0cd44 {
+        .avatarWrapper_f89da9 {
             @include boxes.clickable($position: absolute);
         }
 
         // Profile badges
-        .profileBadges__1f2ab {
+        .profileBadges_f89da9 {
             gap: 0;
             padding: 0;
-            .anchor_c8ddc0 {
+            .anchor_af404b {
                 @include boxes.clickable;
                 padding: 2px;
             }
         }
 
         // Inner box
-        .userPopoutOverlayBackground__3e7e6 {
+        .userPopoutOverlayBackground_c69a7b {
             @include boxes.box;
 
             // Divider
@@ -40,23 +40,23 @@
             }
 
             // About me
-            .scroller_f9a667 {
+            .scroller_d2b491 {
                 @include boxes.inset;
             }
 
             code,
-            .blockquoteDivider__5cbad {
+            .blockquoteDivider_d6076c {
                 background: $darkgrey;
             }
 
             // Roles
-            .role_d81130 {
+            .role_f9575e {
                 @include boxes.box;
                 margin-right: 0;
             }
 
             // Note
-            .note_ba0c31 {
+            .note_c90ad7 {
                 @include boxes.inset;
                 background: $bg;
 
@@ -66,7 +66,7 @@
             }
 
             // Activity buttons
-            .vertical_f3d051 > :not(:first-child) {
+            .vertical_bf8eca > :not(:first-child) {
                 margin-top: 0;
             }
         }

@@ -3,7 +3,7 @@
 @use "../top/channellist-css" as channels;
 
 // Members list
-.container_f79ab4 {
+.container_cbd271 {
     @include channels.vars;
     @include boxes.box;
     @include boxes.winBar($isPseudo: true, $text: "Members");
@@ -17,15 +17,15 @@
 }
 
 // Members list scroller
-.members__573eb {
+.members_cbd271 {
     margin-top: $title-height;
 
     // Member
-    .member_aa4760 {
+    .member_a31c43 {
         margin-left: 4px;
 
         // Custom status or activity
-        &:is(:hover, .selected__7f4cb) .activityText__31c22 {
+        &:is(:hover, .selected_e9f61e) .activityText_a31c43 {
             color: var(--interactive-hover);
         }
     }

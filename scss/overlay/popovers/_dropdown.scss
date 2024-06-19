@@ -2,11 +2,11 @@
 @use "../../top/boxes" as boxes;
 
 // Dropdowns
-.popout_a6e77f {
+.popout_f6639d {
     @include boxes.inset;
     background: $bg;
 
-    .option_eb83e4 {
+    .option_f6639d {
         padding: 4px 8px;
         color: $text;
 
@@ -18,17 +18,17 @@
             opacity: 1;
         }
 
-        &[aria-selected="true"]:not(.option_eb83e4.multi__8d15f) {
+        &[aria-selected="true"]:not(.option_f6639d.multi_f6639d) {
             background: $lightgrey;
         }
 
-        .content_fc4b0a {
+        .content_f6639d {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
-        .selectedIcon_e9ecc2 {
+        .selectedIcon_f6639d {
             color: $darkblue;
         }
     }

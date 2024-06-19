@@ -1,24 +1,24 @@
 @use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
-.container__2b28c {
+.container_fca846 {
     background: $grey;
 
-    .scroller__12676 {
+    .scroller_fca846 {
         @include boxes.scroller;
         background: $bg;
     }
 }
 
-.ctaTitle__65abd,
-.ctaTitle__65abd strong {
+.ctaTitle_d575b2,
+.ctaTitle_d575b2 strong {
     color: $text;
 }
 
-.ctaSubtitle__5c2e0 {
+.ctaSubtitle_d575b2 {
     color: $text !important;
 }
 
-.roleMessagePreview__242dc {
+.roleMessagePreview_ecba8f {
     background: $bg;
 }

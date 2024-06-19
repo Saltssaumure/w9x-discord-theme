@@ -2,46 +2,46 @@
 @use "../../top/boxes" as boxes;
 
 // VC emoji picker
-.container_ad6d5c {
+.container_bdea70 {
     @include boxes.box;
 
-    .categoryList_eac4ac {
+    .categoryList_c6ee36 {
         top: 52px;
     }
 
-    .slotsContainer_fdf76f {
+    .slotsContainer_bdea70 {
         @include boxes.box;
         padding: 4px;
         width: auto;
 
-        .slotsWide__03094 {
+        .slotsWide_bdea70 {
             gap: 8px;
         }
 
-        .slot__741e2 {
+        .slot_bdea70 {
             @include boxes.clickable;
             padding: 4px;
         }
 
         // Do not popout with hover
-        .contents__322f4 > div {
+        .contents_dd4f85 > div {
             transform: none !important;
         }
     }
 }
 
 // VC activity picker
-.container__79284 {
+.container_b572de {
     @include boxes.box;
 
     // Activity
-    .activityItem_13_11__1464b {
+    .activityItem_13_11_ec77c5 {
         @include boxes.clickable;
         transform: none !important;
     }
 
     // No animation
-    .wumpusRocketOuterContainer_aa48ff {
+    .wumpusRocketOuterContainer_b572de {
         display: none;
     }
 }

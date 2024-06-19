@@ -1,40 +1,40 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.warning__4da7a {
+.warning_f20685 {
     @include boxes.box;
 }
 
-.marginTop60__9b32d {
+.marginTop60_f7730b {
     margin-top: 16px;
 }
 
-.defaultKeybindGroup_fe8d85 {
+.defaultKeybindGroup_f916fc {
     margin: 16px 0 0;
 
-    .defaultKeybindGroupHeader__3c306,
-    .defaultKeybindGroupDescription_e38653 {
+    .defaultKeybindGroupHeader_f916fc,
+    .defaultKeybindGroupDescription_f916fc {
         margin-bottom: 8px;
     }
 }
 
-.defaultKeybind__48ba0 {
+.defaultKeybind_f916fc {
     padding: 4px;
     height: 32px;
     @include boxes.inset;
 
-    &:has(.combo__57290:nth-child(2)) {
+    &:has(.combo_c90023:nth-child(2)) {
         height: 64px;
     }
 }
 
-.appMount_c99875 .combo__57290 {
+.appMount_ea7e65 .combo_c90023 {
     text-transform: capitalize;
     font-weight: unset;
     font-size: 14px;
     line-height: 16px;
 
-    .key__6a8d9 {
+    .key_c90023 {
         @include boxes.box;
         box-shadow: none;
         background: $darkgrey;

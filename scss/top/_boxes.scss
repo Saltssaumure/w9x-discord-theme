@@ -69,11 +69,11 @@
         border-bottom: 0;
     }
 
-    &:is(.selected_a523ff, :active, :hover) {
+    &:is(.selected_a0, :active, :hover) {
         border-bottom-color: transparent;
     }
 
-    &:is(.selected_a523ff, :active) {
+    &:is(.selected_a0, :active) {
         background: $grey;
         z-index: 1;
     }

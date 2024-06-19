@@ -3,7 +3,7 @@
 
 // Select region in DM VC
 
-.layerContainer_a2fcaa .quickSelectPopout__56a98 {
+.layerContainer_cd0de5 .quickSelectPopout__56a98 {
     @include boxes.box($position: absolute);
     top: -8px;
     background: $grey;
@@ -14,12 +14,12 @@
         color: $white;
     }
 
-    .regionSelectName_e97b48 {
+    .regionSelectName_ccb5ca {
         color: inherit;
         margin: 0;
     }
 
-    .check_a4721d {
+    .check_ccb5ca {
         background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3' d='M1.99609375 5.7835338l3.70287382 3.7028738L14.1853752 1'/%3E%3C/svg%3E");
     }
 }

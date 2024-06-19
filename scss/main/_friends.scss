@@ -2,19 +2,19 @@
 @use "../top/boxes" as boxes;
 
 // Titlebar
-.children_cde9af {
+.children_e44302 {
     overflow: visible;
 
-    .topPill__63ad4 {
+    .topPill_a0 {
         position: relative;
         top: 12px;
         left: 10px;
 
-        .item__48dda {
+        .item_a0 {
             @include boxes.tab;
             margin: 0;
 
-            &.selected_a523ff {
+            &.selected_a0 {
                 text-decoration: underline;
             }
         }
@@ -22,10 +22,10 @@
 }
 
 // Online / All / Pending / Blocked / Add Friend
-.peopleColumn__0c784 {
+.peopleColumn_c2739c {
     @include boxes.inset;
 
-    .searchBar__310d8 {
+    .searchBar_e0840f {
         @include boxes.inset;
         background: $bg;
         color: $text;
@@ -42,21 +42,21 @@
         }
     }
 
-    .title_c42cad {
+    .title_a1cafe {
         margin: 8px 12px 4px;
     }
 
-    .peopleList_d2f527 {
+    .peopleList_e0840f {
         margin: 0 8px 8px;
         padding-bottom: 0;
         @include boxes.inset;
 
-        .peopleListItem_dab480 {
+        .peopleListItem_d51464 {
             margin: 0;
             padding: 8px;
             @include boxes.clickable;
 
-            .actionButton__2b4bb {
+            .actionButton_e01b91 {
                 @include boxes.clickable;
                 height: 24px;
                 width: 24px;
@@ -68,42 +68,42 @@
         }
     }
 
-    .header__6ddae {
+    .header_c96274 {
         border-bottom: 0;
     }
 
-    .header__6ddae,
-    .header__7cf1d {
+    .header_c96274,
+    .header_aef5fd {
         padding: 8px;
     }
 
     // Other places to make friends
-    .grid__8fc4b {
+    .grid_aef5fd {
         padding: 0 8px;
         gap: 8px;
 
-        .container__048f4 {
+        .container_aef5fd {
             @include boxes.clickable;
         }
     }
 
     // Add friend
-    .addFriendInputWrapper__2b30b {
+    .addFriendInputWrapper_de812f {
         padding: 0;
 
-        .addFriendInput__12af4 {
+        .addFriendInput_de812f {
             margin-right: 0;
         }
     }
 }
 
 // Friend activity
-.nowPlayingColumn_b025fe {
-    .scroller__7c25e {
+.nowPlayingColumn_c2739c {
+    .scroller_bf550a {
         @include boxes.scroller;
         padding: 0 !important;
 
-        .header_c56a27 {
+        .header_bf550a {
             position: sticky;
             top: 0;
             margin: 0 0 8px;
@@ -113,7 +113,7 @@
             z-index: 2;
         }
 
-        .itemCard_b64118 {
+        .itemCard_f02fcf {
             @include boxes.clickable;
             margin: 0 8px;
             padding: 12px;
@@ -122,7 +122,7 @@
                 background: $grey;
             }
 
-            .body__616e6 {
+            .body_cd82a7 {
                 @include boxes.inset;
             }
         }
@@ -130,31 +130,31 @@
 }
 
 // Message requests
-.list__325e7 {
+.list_f3abf4 {
     @include boxes.scroller;
     padding: 8px !important;
 
-    .content__690c5 > div:first-child {
+    .content_eed6a8 > div:first-child {
         display: none;
     }
 
     // Title
-    .container__43554 {
+    .container_cc72c1 {
         color: $black;
         text-transform: none;
         margin-bottom: 8px;
     }
 
-    .messageRequestItem__9f70d {
+    .messageRequestItem_a5de62 {
         @include boxes.clickable;
 
-        .messageContent_abea64 {
+        .messageContent_ec86aa {
             color: $black;
         }
     }
 }
 
 // If empty
-.content__01e65:has(.emptyStateContainer_ba3ea0) {
+.content_a7d72e:has(.emptyStateContainer_c353e6) {
     @include boxes.inset;
 }

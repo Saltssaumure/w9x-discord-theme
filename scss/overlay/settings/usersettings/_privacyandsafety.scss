@@ -2,7 +2,7 @@
 @use "../../../top/boxes" as boxes;
 
 // # Privacy and safety
-.item_b7fb7e {
+.item_eb92a8 {
     @include boxes.clickable;
     margin: 0;
 
@@ -10,11 +10,11 @@
         @include boxes.inset;
     }
 
-    .radioBar__70669 {
+    .radioBar_eb92a8 {
         padding: 4px !important;
     }
 }
 
-.marginBottom40_f4d1a4 {
+.marginBottom40_f7730b {
     margin-bottom: 20px;
 }
