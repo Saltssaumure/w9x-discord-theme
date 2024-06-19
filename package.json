@@ -4,7 +4,7 @@
   "description": "A Windows 95/98 style Discord theme.",
   "repository": "github:Saltssaumure/w9x-discord-theme",
   "author": "Saltssaumure <themes@saltssaumure.net>",
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "private": true,
   "type": "module",
   "scripts": {

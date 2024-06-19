@@ -21,18 +21,6 @@
 [license]:          https://github.com/Saltssaumure/w9x-discord-theme/blob/main/LICENSE
 [.theme.css]:       https://github.com/Saltssaumure/w9x-discord-theme/blob/main/NineX.theme.css
 
-[hsl]:              https://github.com/DiscordStyles/HorizontalServerList
-[hsl-author]:       https://github.com/Gibbu
-[hsl-license]:      https://github.com/DiscordStyles/HorizontalServerList/blob/master/LICENSE.md
-
-[squared]:          https://github.com/MiniDiscordThemes/Squared
-[squared-author]:   https://github.com/Saltssaumure
-[squared-license]:  https://github.com/MiniDiscordThemes/Squared/blob/main/LICENSE
-
-[winicons]:         https://archive.org/details/windows-95-all-icons
-[winicons-author]:  https://www.deviantart.com/vovan29
-[winicons-license]: https://creativecommons.org/licenses/by-nd/4.0/
-
 [release-bd]:       https://betterdiscord.app/theme/?id=933 "BetterDiscord store page"
 [release-bd-gh]:    https://github.com/Saltssaumure/w9x-discord-theme/releases/latest/download/NineX.theme.css "Latest release"
 [release-rp]:       https://replugged.dev/store/net.saltssaumure.NineX "Replugged store page"
@@ -120,13 +108,33 @@
 3. Edit the variable values.
 
 ## License
-[GNU General Public License v3.0][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+Copyright (c) 2023-2024 Saltssaumure
 
-### Includes
-- [HorizontalServerList][hsl] by [Gibbu][hsl-author] - [MIT License][hsl-license]
-- [Squared][squared] by [Saltssaumure][squared-author] - [MIT License][squared-license]
-- [Windows 95 All Icons][winicons] by [Vovan29][winicons-author] - [CC BY-ND 4.0][winicons-license]
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
+
+## Credits
+### Themes
+[hsl]:      https://github.com/DiscordStyles/HorizontalServerList
+[squared]:  https://github.com/MiniDiscordThemes/Squared
+
+- [HorizontalServerList][hsl] by [DiscordStyles](https://github.com/DiscordStyles) ([Gibbu](https://github.com/Gibbu)) - MIT license
+- [Squared][squared] by [MiniDiscordThemes](https://github.com/MiniDiscordThemes) ([Saltssaumure](https://github.com/Saltssaumure)) - MIT license
+
+### Fonts
+[w95fa]:    https://www.dafont.com/w95fa.font
+[unifont]:  https://savannah.gnu.org/projects/unifont
+[fixedsys]: https://github.com/kika/fixedsys
+
+- [W95FA][w95fa] by FontsArena - OFL
+- [Unifont][unifont] by GNU - GPL-2.0-or-later-with-font-exception
+- [Fixedsys Excelsior][fixedsys] by [bathos](https://github.com/Bathos) and [kika](https://github.com/kika) - Public domain / CC0
+
+### Assets
+[winicons]: https://archive.org/details/windows-95-all-icons
+
+- [Windows 95 All Icons][winicons] by [Vovan29](https://www.deviantart.com/vovan29) - CC BY-ND 4.0
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
