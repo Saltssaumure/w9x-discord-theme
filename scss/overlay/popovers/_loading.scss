@@ -2,10 +2,10 @@
 @use "../../top/boxes" as boxes;
 
 // User profile (and other?) loading
-.loadingPopout__5e2fa {
+.loadingPopout_a8c724 {
     @include boxes.box;
-    .path2__7fbdb,
-    .path__67bca {
+    .path2_b6db20,
+    .path_b6db20 {
         stroke: $blue;
     }
 }

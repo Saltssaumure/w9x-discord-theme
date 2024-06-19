@@ -2,14 +2,14 @@
 @use "../top/boxes" as boxes;
 
 // Scrollbars always visible
-.fade_ba0fa0::-webkit-scrollbar-thumb,
-.fade_ba0fa0::-webkit-scrollbar-track {
+.fade_eed6a8::-webkit-scrollbar-thumb,
+.fade_eed6a8::-webkit-scrollbar-track {
     visibility: visible;
 }
 
 // Main scrollbars
-.scrollerBase_f742b2 {
-    &:not(.none__7a473)::-webkit-scrollbar {
+.scrollerBase_eed6a8 {
+    &:not(.none_eed6a8)::-webkit-scrollbar {
         width: 18px;
     }
 
@@ -41,7 +41,7 @@
 }
 
 // Spooky scary scrollbars
-.scrollbarGhostHairline__00100 {
+.scrollbarGhostHairline_c858ce {
     &::-webkit-scrollbar {
         width: 18px;
         height: 18px;
@@ -57,7 +57,7 @@
     }
 }
 
-.codeView_e4dd18::-webkit-scrollbar-track {
+.codeView_ad9cbd::-webkit-scrollbar-track {
     margin: 0;
 }
 

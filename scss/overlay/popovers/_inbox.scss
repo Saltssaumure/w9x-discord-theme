@@ -2,26 +2,26 @@
 @use "../../top/boxes" as boxes;
 
 // Inbox
-.recentMentionsPopout__40c54 {
+.recentMentionsPopout_ddb5b4 {
     @include boxes.box;
     max-height: calc(100vh - $window-top - 120px) !important;
 
     // Header
-    .header__58a85.expanded_a63a5f {
+    .header_f0cd33.expanded_f0cd33 {
         padding: 6px;
         padding-bottom: 0;
 
-        .inboxIcon__300b0,
+        .inboxIcon_f0cd33,
         .base__5ed84 {
             color: $black;
             background: transparent !important;
         }
 
-        .topPill__63ad4 {
+        .topPill_a0 {
             position: relative;
             top: 17px;
 
-            .tab_a8a066 {
+            .tab_f0cd33 {
                 @include boxes.tab;
                 margin-right: 0;
 
@@ -33,7 +33,7 @@
     }
 
     // Messages
-    :is(.scroller_e3927b, .messagesPopout__28784, .container_cdf5a8) {
+    :is(.scroller_f1c3d9, .messagesPopout_ac90a2, .container_fe1358) {
         .tertiary_ad6d80 {
             @include boxes.clickable;
 
@@ -42,16 +42,16 @@
             }
         }
 
-        .markReadButton__00424 {
+        .markReadButton_d09ffd {
             margin-left: 0;
         }
 
-        :is(.messageContainer_cb3d47, .messages__1aaa1) {
+        :is(.messageContainer_ddb5b4, .messages_c06487) {
             @include boxes.inset;
             background: $bg;
 
             // Jump button
-            :is(.jumpButton_aab0bc, .jumpButton__6c38c) {
+            :is(.jumpButton_aab0bc, .jumpButton_ac3dc2) {
                 @include boxes.clickable($position: absolute);
             }
         }

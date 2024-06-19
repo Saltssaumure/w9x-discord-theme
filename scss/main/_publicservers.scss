@@ -4,10 +4,10 @@
 // Public servers and student hubs
 
 // Sidebar
-.sidebar_e031be > .thin_b1c063 {
+.sidebar_a4d4d9 > .thin_eed6a8 {
     margin-left: 28px;
 
-    .discoverHeader__9d76e {
+    .discoverHeader_b992d4 {
         @include boxes.box;
         font-size: 16px;
         line-height: 20px;
@@ -15,15 +15,15 @@
         margin: 0;
     }
 
-    .categoryItem__0608f {
+    .categoryItem_c72b37 {
         margin: 0;
         padding: 0;
         color: $black;
 
-        &:is(.selectedCategoryItem__3e361, :hover, :active) {
+        &:is(.selectedCategoryItem_c72b37, :hover, :active) {
             color: $white;
 
-            .itemInner_eedb2b {
+            .itemInner_c72b37 {
                 background: var(--background-modifier-selected);
             }
         }
@@ -31,10 +31,10 @@
 }
 
 // Main page
-.appMount_c99875 .pageWrapper_c182d3 {
+.appMount_ea7e65 .pageWrapper_a3a4ce {
     background: $grey;
 
-    .scroller__26b89 {
+    .scroller_a3a4ce {
         padding: 16px;
     }
 
@@ -59,7 +59,7 @@
             height: 24px;
         }
 
-        .closeIcon_da3bc1 {
+        .closeIcon_f69601 {
             color: $black;
             width: 20px;
             height: 20px;
@@ -67,7 +67,7 @@
         }
     }
 
-    .card__86773 {
+    .card_eb1ca6 {
         @include boxes.clickable;
 
         &:is(:focus, :hover) {
@@ -75,20 +75,20 @@
         }
     }
 
-    .footer_b0c19c {
+    .footer_a3a4ce {
         padding-bottom: 64px;
     }
 }
 
 // Search results
-.searchPage_beb628 {
-    .container_defa9a {
+.searchPage_a3a4ce {
+    .container_e37a20 {
         margin-left: 248px;
         padding: 60px 16px 0;
     }
 
     // Result title
-    .searchHeader_c0a1d7 {
+    .searchHeader_e37a20 {
         position: fixed;
         left: $window-left + 2px;
         right: $window-right + 19px;
@@ -100,25 +100,25 @@
     }
 
     // Result categories
-    .categories_bbef0d {
+    .categories_f69601 {
         @include boxes.box($position: fixed);
         left: $window-left + 2px;
         top: $window-top + $title-height + 64px;
         bottom: $window-bottom + 28px;
         flex-direction: column;
 
-        .categoryPill_c6ae1b {
+        .categoryPill_f69601 {
             width: 240px;
             padding: calc((34px - 16px) / 2);
             margin: 0;
             color: $black;
 
-            &:is(.selected_b5f19b, :hover, :active) {
+            &:is(.selected_f69601, :hover, :active) {
                 background: $darkblue;
                 color: $white;
             }
 
-            .categoryLabel__236f3 {
+            .categoryLabel_f69601 {
                 font-size: 16px;
                 text-align: left;
                 color: inherit;
@@ -135,39 +135,39 @@
     }
 
     // Result servers
-    .guildList_d05b32 {
+    .guildList_a3a4ce {
         gap: 0;
 
-        .card__33bd0 {
+        .card_e825f6 {
             @include boxes.clickable;
 
-            .content_d876f9 {
+            .content_e825f6 {
                 height: 135px - 16px;
             }
 
-            .header__52827 {
+            .header_e825f6 {
                 flex-direction: row;
                 gap: 8px;
             }
 
-            .content_d876f9 {
+            .content_e825f6 {
                 padding: 8px 8px 8px 0;
             }
         }
 
-        .separator__16faf {
+        .separator_e825f6 {
             display: none;
         }
     }
 
-    .pageControl__5e095 {
+    .pageControl_b48941 {
         @include boxes.inset;
 
-        .roundButton_a01f15 {
+        .roundButton_b48941 {
             @include boxes.clickable;
             margin: 0;
 
-            &.activeButton__70b70 {
+            &.activeButton_b48941 {
                 @include boxes.inset;
                 background: unset;
                 color: $black;
@@ -177,14 +177,14 @@
 }
 
 // Student hubs / custom guild directory
-.pageContainer__853b6 {
+.pageContainer_a9a262 {
     @include boxes.inset;
 
-    .card__73022 {
+    .card_f18d6c {
         @include boxes.box;
     }
 }
-.scroller__1f498:has(.itemInner__2abad) {
+.scroller_c43953:has(.itemInner__2abad) {
     min-height: 200px;
 
     .itemInner__2abad {

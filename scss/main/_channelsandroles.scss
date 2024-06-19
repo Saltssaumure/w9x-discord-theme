@@ -2,36 +2,36 @@
 @use "../top/boxes" as boxes;
 
 // Tabs
-.tabBar_d4764b {
+.tabBar_f1fd9c {
     margin: 0 16px;
     border-bottom: 0;
 
-    .tabBarItem__60c37 {
+    .tabBarItem_f1fd9c {
         padding-bottom: 8px;
     }
 }
 
 // Customise
-.appMount_c99875 .scrollerContainer_dda72c {
+.appMount_ea7e65 .scrollerContainer_c6b11b {
     background: $bg;
     @include boxes.inset;
 }
 
-.pageBody__12fb4 h2 {
+.pageBody_c6b11b h2 {
     color: $text !important;
 }
 
-.prompt__1b100 {
+.prompt_c6b11b {
     background: $bg;
     border-color: unset !important;
     padding: 0;
 }
 
-.promptOptions__9b66e {
+.promptOptions_c6b11b {
     gap: 0;
 }
 
-.optionButtonWrapper_c86844 {
+.optionButtonWrapper_bd5e1f {
     background: $grey;
     @include boxes.clickable;
 
@@ -43,40 +43,40 @@
         border-color: $black $white $white $black;
     }
 
-    &.pressed_e85da9 {
+    &.pressed_bd5e1f {
         transform: none;
     }
 
-    &.selected__31118 {
+    &.selected_bd5e1f {
         @include boxes.inset;
 
-        .checkIcon__3c055 {
+        .checkIcon_bd5e1f {
             top: 4px;
             right: 4px;
         }
     }
 }
 
-.helpText__80c19 {
+.helpText_c6b11b {
     .text-xs-medium__220aa {
         color: $text !important;
     }
 }
 
 // Browse channels
-.pageBody_c0e5dd {
+.pageBody_c2efea {
     padding-left: 0;
 }
 
-.browser__428d5 {
+.browser_c2efea {
     background: $bg;
     @include boxes.scroller;
 }
 
-.selectAll_fe1469 .checkboxWrapper_a2bcc8 .checkbox_fcf2ad {
+.selectAll_f04d06 .checkboxWrapper_f6cde8 .checkbox_f6cde8 {
     border-color: var(--text-muted) !important;
 
-    &.checked__16f88 path {
+    &.checked_f6cde8 path {
         fill: var(--text-muted);
     }
 }

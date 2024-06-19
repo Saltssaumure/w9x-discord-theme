@@ -1,24 +1,24 @@
 @use "../top/vars" as *;
 @use "../top/boxes" as boxes;
 
-.homeContainer_c36871 {
+.homeContainer_e85cee {
     @include boxes.scroller;
     padding: 32px 16px;
     background: $bg;
 }
 
 // Server name
-.headerName_b10e0f {
+.headerName_d32e26 {
     color: $text;
 }
 
 // Main section headers
-.mainContent_d74b41 h2 {
+.mainContent_e85cee h2 {
     color: $text !important;
 }
 
 // Main section item
-.row__4f559 {
+.row_b53f4f {
     @include boxes.clickable;
     &:hover {
         background: $grey;
@@ -26,6 +26,6 @@
 }
 
 // Sidebar card
-.sidebarCardWrapper__98124 {
+.sidebarCardWrapper_e85cee {
     @include boxes.box;
 }

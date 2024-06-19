@@ -2,71 +2,71 @@
 @use "../top/boxes" as boxes;
 
 // Chat box
-.channelTextArea_c2094b {
+.channelTextArea_a7d72e {
     @include boxes.inset;
 
     // Buttons
-    .buttonContainer_ff1010,
-    .attachButton__56f98,
-    .buttonContainer__14dd9 {
+    .buttonContainer_d0696b,
+    .attachButton_f298d4,
+    .buttonContainer_a06035 {
         @include boxes.clickable;
         background: $grey;
     }
-    .webkit__8d35a .buttons__7ecff {
+    .webkit__8d35a .buttons_d0696b {
         margin-right: 0;
     }
 
-    .separator__666aa {
+    .separator_a06035 {
         margin-left: unset;
 
         &::before {
             display: none;
         }
 
-        .innerButton__9efb8 {
+        .innerButton_a06035 {
             margin: 6px;
         }
 
-        .button_dd99ad:focus-within .activeButtonChild__58171,
-        .button_dd99ad:focus .activeButtonChild__58171,
-        .button_dd99ad:hover .activeButtonChild__58171,
-        .button_dd99ad .activeButtonChild__58171 {
+        .button_a06035:focus-within .activeButtonChild_a06035,
+        .button_a06035:focus .activeButtonChild_a06035,
+        .button_a06035:hover .activeButtonChild_a06035,
+        .button_a06035 .activeButtonChild_a06035 {
             color: var(--text-brand);
         }
     }
 
     // Attachment area divider
-    .divider__855e3 {
+    .divider_fc5f50 {
         display: none;
     }
 
     // Attachments
-    .channelAttachmentArea__5e46a {
+    .channelAttachmentArea_e8c527 {
         padding: 4px;
         margin: 0;
         gap: 4px;
 
-        .upload_c98ecb {
+        .upload_df1eaf {
             padding: 0;
         }
 
         // Attachment preview
-        .uploadContainer__72a65 {
+        .uploadContainer_df1eaf {
             @include boxes.box;
             flex-direction: column-reverse;
         }
 
         // Attachment controls
-        .actionBar_a15295 {
+        .actionBar_df1eaf {
             transform: none;
             right: 4px;
             top: 4px;
 
-            .wrapper__4e6b6 {
+            .wrapper_ef319f {
                 height: 17px;
             }
 
-            .button_d4bf9b {
+            .button_ef319f {
                 @include boxes.clickable;
                 height: 16px;
                 width: 16px;
@@ -76,34 +76,34 @@
         }
 
         // Filename
-        .filenameContainer__3b490 {
+        .filenameContainer_f847a3 {
             @include boxes.winBar($text: "");
             margin-top: 0;
 
-            .filename__1769f {
+            .filename_f847a3 {
                 margin-top: 0;
                 color: $grey;
             }
         }
 
         // Attachment image
-        .mediaContainer_e3d4b8 {
+        .mediaContainer_f847a3 {
             margin: auto 0;
         }
 
-        .icon__33bb5.code_b9f306 {
+        .icon_f847a3.code_f847a3 {
             background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAx0lEQVRYR+1XWxaEIAiVnbkzdWe6MicK54xHezDxkYk/ESGP6yUPYNqVSQXLU1JGf82qlN777JwzIYTVUFpe/KPbKub3pQQHAJPzVriUjAVh8BijsdZWSTwvgd453dWllNbKLyFwN1hv/3gJIPl6q5Cz205E3t+9xX4OBI64Mx4C0p0wHgL/dIFyQBSBvSPgkvN9PyJFQBGYBwFupWf27MtI7wJF4IxU3O+XSIhOcT6k2Y0b49B+bypqJlXyUkZy0STIWTNwfABE/48wR04ubgAAAABJRU5ErkJggg==")
                 center no-repeat;
         }
     }
 
     // Typing area
-    .slateTextArea_b19976 {
+    .slateTextArea_e52116 {
         padding-left: 10px;
     }
 
     // Autocomplete
-    .autocomplete__743a5 {
+    .autocomplete_f23da8 {
         @include boxes.box($position: absolute);
         bottom: calc(100% + 17px);
         left: -1px;
@@ -116,31 +116,31 @@
             border-bottom-color: $grey;
         }
 
-        .scroller__3fc84 {
+        .scroller_bea0d0 {
             padding-bottom: 1px;
         }
 
         // Entry
-        .autocompleteRow__2a1b9 .base__87e58 {
+        .autocompleteRow_f23da8 .base_f23da8 {
             @include boxes.clickable;
         }
 
-        .autocompleteRow__2a1b9[aria-selected="true"] .base__87e58 {
+        .autocompleteRow_f23da8[aria-selected="true"] .base_f23da8 {
             @include boxes.inset;
         }
 
         // Divider
-        .divider__20bfc {
+        .divider_f23da8 {
             display: none;
         }
 
         // Members matching title
-        .contentTitle_b6c2bb strong {
+        .contentTitle_f23da8 strong {
             color: $black;
         }
 
         // Bot list
-        .rail_ad1aea {
+        .rail_fe2299 {
             @include boxes.box;
             margin-bottom: 0;
             width: 48px;
@@ -149,42 +149,42 @@
                 border-bottom: 0;
             }
 
-            .listItems__49027 {
+            .listItems_dcade6 {
                 inset: 7px !important;
             }
 
-            .section__4da0b {
+            .section_efd8e6 {
                 margin-bottom: 0;
             }
 
-            .selectable_b68b2e,
-            .selectable__8161d {
+            .selectable_a69fe5,
+            .selectable_c9d951 {
                 @include boxes.clickable;
             }
 
-            .builtInSeparator__3f669 {
+            .builtInSeparator_efd8e6 {
                 display: none;
             }
         }
 
         // Bot command group
-        .categoryHeader__70c8e {
+        .categoryHeader_fe2299 {
             background: $grey;
             z-index: 2;
             border-bottom: 1px solid $darkgrey;
         }
 
         // Command required args
-        .option__2b069 {
+        .option_bea3ee {
             @include boxes.thin;
             background: $grey;
         }
 
         // Command optional args
-        .optionals__2aaef {
+        .optionals_e18e73 {
             @include boxes.thin;
             padding: 0 4px;
-            .optionalCount__2e126 {
+            .optionalCount_e18e73 {
                 padding: 0;
             }
         }
@@ -192,9 +192,9 @@
 }
 
 // Under chat box
-.base__06abc {
+.base_d7ebeb {
     // Slowmode
-    .cooldownWrapper__193b2 {
+    .cooldownWrapper_d7ebeb {
         color: $black !important;
     }
 }

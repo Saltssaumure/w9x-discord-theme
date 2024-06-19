@@ -2,23 +2,23 @@
 @use "../../top/boxes" as boxes;
 
 // Notification settings
-.root_a28985 {
-    .override_ca20c5,
-    .overrideHighlight_d1476f,
-    .guildName__63225,
-    .channelName__4e10b {
+.root_f9a4c9 {
+    .override_cacc4c,
+    .overrideHighlight_cacc4c,
+    .guildName_cacc4c,
+    .channelName_cacc4c {
         color: $black;
     }
 
-    .override_ca20c5 {
+    .override_cacc4c {
         padding: 8px;
 
-        .checkboxGroup__95956 {
+        .checkboxGroup_cacc4c {
             width: 300px;
             margin-right: -8px;
         }
 
-        .removeOverride_ff89d2 {
+        .removeOverride_cacc4c {
             z-index: 2;
             @include boxes.clickable($position: absolute);
             background-color: $grey;

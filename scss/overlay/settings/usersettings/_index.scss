@@ -23,57 +23,57 @@
 @use "../../../top/channellist-css" as channels;
 
 // User settings menu
-.standardSidebarView__12528 {
+.standardSidebarView_c25c6d {
     padding-top: $title-height;
     margin-bottom: $window-bottom + 46px;
 
     // Unsaved changes
-    .container__353bc {
+    .container_b6cd66 {
         @include boxes.box;
         background: $grey !important;
 
-        .message__702f7,
-        .contents__322f4 span {
+        .message_b6cd66,
+        .contents_dd4f85 span {
             color: $black !important;
         }
     }
 
-    .sidebarRegion__36437 {
+    .sidebarRegion_c25c6d {
         @include channels.vars;
         flex-grow: 0;
 
-        .sidebar__02e8d {
+        .sidebar_c25c6d {
             padding: 0;
         }
 
-        .separator_d14fb1 {
+        .separator_a0 {
             display: none;
         }
 
-        .header__71a82 {
+        .header_a0 {
             margin-top: 12px;
         }
     }
 
-    .contentRegionShownSidebar__9d1b9 {
+    .contentRegionShownSidebar_c25c6d {
         justify-content: center;
 
-        .contentColumnDefault__78de3,
-        .contentColumnWide__146ec {
+        .contentColumnDefault_c25c6d,
+        .contentColumnWide_c25c6d {
             padding: 10px;
             @include boxes.box;
         }
 
         // Close settings button
-        .toolsContainer__4e6ad {
+        .toolsContainer_c25c6d {
             padding-top: 20px;
             margin-right: 0;
             position: absolute;
             left: -300px;
             z-index: 1;
 
-            .container__3529f {
-                .closeButton__8177f {
+            .container_df5532 {
+                .closeButton_df5532 {
                     @include boxes.clickable;
                     background: $grey;
                     margin-bottom: 8px;
@@ -88,7 +88,7 @@
                     color: $white;
                 }
 
-                .keybind_a619c1 {
+                .keybind_df5532 {
                     display: none;
                 }
             }

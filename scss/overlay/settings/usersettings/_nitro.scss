@@ -1,15 +1,15 @@
 @use "../../../top/vars" as *;
 @use "../../../top/boxes" as boxes;
 
-.perkCardsContainerSpacingSettings_a5f6ca,
-.premiumTierCardsContainerSettings_d53fe4,
-.perksTitle_a74cc3,
-.titleText_cd7dcc {
+.perkCardsContainerSpacingSettings_a8b566,
+.premiumTierCardsContainerSettings_a8b566,
+.perksTitle_d611db,
+.titleText_b1bbf4 {
     margin-bottom: 8px;
 }
 
-.container_c871c1,
-.card__48184 {
+.container_f26610,
+.card_c87d73 {
     @include boxes.inset;
     padding: 16px;
 }
@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-.premiumCards_ed071e {
+.premiumCards_c87d73 {
     gap: 0;
 }
 
@@ -37,7 +37,7 @@
     }
 }
 
-.table_bd9a74 {
+.table_b1bbf4 {
     @include boxes.box;
     tbody :is(th, td) {
         @include boxes.inset;
@@ -45,7 +45,7 @@
     th {
         padding: 4px;
     }
-    .row__9b568 {
+    .row_b1bbf4 {
         height: auto;
     }
     .buttonsCell-gSFzSA {
@@ -59,7 +59,7 @@
     padding-bottom: 8px;
 }
 
-.bottomIllustration_badefb {
+.bottomIllustration_a8b566 {
     position: fixed;
     bottom: 0;
 }

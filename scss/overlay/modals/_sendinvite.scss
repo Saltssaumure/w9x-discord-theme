@@ -1,7 +1,7 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.searchBar__285ec {
+.searchBar_cedfaf {
     @include boxes.inset;
     background: $bg;
     color: $text;
@@ -16,38 +16,38 @@
     }
 }
 
-.scroller_bd2d35 {
+.scroller_cedfaf {
     @include boxes.inset;
     padding: 0;
 
-    .inviteRow_d6ad74 {
-        .inviteRowName__60057 {
+    .inviteRow_cedfaf {
+        .inviteRowName_cedfaf {
             color: $black;
         }
 
         &:hover {
             background: $darkblue;
 
-            .inviteRowName__60057,
-            .contents__322f4 {
+            .inviteRowName_cedfaf,
+            .contents_dd4f85 {
                 color: $white;
             }
         }
     }
 }
 
-.layerContainer_a2fcaa .footer_d84330 {
+.layerContainer_cd0de5 .footer_cedfaf {
     background: $grey;
 
-    .input_f27786 {
+    .input_f8bc55 {
         height: 32px;
     }
 
-    .copyButton_a7bf69 {
+    .copyButton_cedfaf {
         margin-right: 0;
     }
 
-    .footerText_f55c0f {
+    .footerText_cedfaf {
         color: $black;
     }
 

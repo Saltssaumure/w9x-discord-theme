@@ -2,12 +2,12 @@
 @use "../../../top/boxes" as boxes;
 
 // # Authorised apps
-.authedApp__71a52 {
+.authedApp_f0135d {
     @include boxes.box;
     border-color: $white $black $black $white !important;
     padding: 8px;
 
-    .marginTop20__7e0ad {
+    .marginTop20_f7730b {
         @include boxes.inset;
         padding: 4px;
     }

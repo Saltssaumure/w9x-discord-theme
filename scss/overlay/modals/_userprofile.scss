@@ -1,34 +1,34 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.userProfileModalOuter__90b4a {
+.userProfileModalOuter_c69a7b {
     // Badges
-    .badgeList__126b0 {
+    .badgeList_ec3b75 {
         gap: 0;
-        .anchor_c8ddc0 {
+        .anchor_af404b {
             @include boxes.clickable;
         }
     }
 
     // Tabs
-    .tabBarContainer_b283be {
+    .tabBarContainer_b9fccc {
         margin: 16px 24px 0 0;
     }
 
-    .tabBar__35f81 {
+    .tabBar_b9fccc {
         gap: 0;
         position: relative;
         top: 2px;
 
-        .tabBarItem_ce14f3 {
+        .tabBarItem_b9fccc {
             @include boxes.tab;
             height: auto;
             padding: 2px 8px;
 
-            &.themed_b957e8 {
+            &.themed_a0 {
                 color: var(--text-normal);
 
-                &:is(.selected_a523ff, :active) {
+                &:is(.selected_a0, :active) {
                     background: unset;
                     font-weight: bold;
                 }
@@ -37,38 +37,38 @@
     }
 
     // Info
-    .scrollerBase_f742b2 {
+    .scrollerBase_eed6a8 {
         @include boxes.box;
 
         &::before {
             display: none;
         }
 
-        .userInfoSection_e816c1 + .userInfoSection_e816c1 {
+        .userInfoSection_a24910 + .userInfoSection_a24910 {
             border-top: unset;
         }
 
         // Connected accounts
-        .connectedAccounts__7a8e6 {
+        .connectedAccounts_f3eb60 {
             display: block;
             width: 100%;
 
-            .connectedAccountsColumn__57331 {
+            .connectedAccountsColumn_f3eb60 {
                 display: inline;
                 margin-left: 0;
 
-                .connectedAccountContainer__5972d {
+                .connectedAccountContainer_f3eb60 {
                     @include boxes.inset;
                     display: inline-block;
                     width: calc(460px / 3);
                     margin: 6px 6px 0 0;
 
                     // Open account in browser
-                    &:has(.anchor_c8ddc0) {
+                    &:has(.anchor_af404b) {
                         @include boxes.clickable;
                     }
 
-                    .anchor_c8ddc0 {
+                    .anchor_af404b {
                         position: absolute;
                         inset: 0;
 
@@ -78,17 +78,17 @@
                     }
 
                     // Hide detailed info until hover
-                    &.connectedAccountContainerWithMetadata_c474f9 {
+                    &.connectedAccountContainerWithMetadata_f3eb60 {
                         padding: 12px 8px;
 
-                        .connectedAccountName__0a3ec + .text-xs-normal_ccc5fb,
-                        .connectedAccountChildren_abff48 {
+                        .connectedAccountName_f3eb60 + .text-xs-normal_ccc5fb,
+                        .connectedAccountChildren_f3eb60 {
                             display: none;
                         }
 
                         &:hover {
-                            .connectedAccountName__0a3ec + .text-xs-normal_ccc5fb,
-                            .connectedAccountChildren_abff48 {
+                            .connectedAccountName_f3eb60 + .text-xs-normal_ccc5fb,
+                            .connectedAccountChildren_f3eb60 {
                                 display: block;
                                 z-index: 1;
                                 padding: 8px;
@@ -96,14 +96,14 @@
                             }
 
                             // Joined date
-                            .connectedAccountName__0a3ec + .text-xs-normal_ccc5fb {
+                            .connectedAccountName_f3eb60 + .text-xs-normal_ccc5fb {
                                 position: absolute;
                                 pointer-events: none;
                                 inset: 1px 1px 1px 32px;
                             }
 
                             // Detailed info
-                            &:hover .connectedAccountChildren_abff48 {
+                            &:hover .connectedAccountChildren_f3eb60 {
                                 @include boxes.box($position: absolute);
                                 bottom: 50px;
                                 left: -33px;
@@ -115,7 +115,7 @@
         }
 
         // Mutual servers
-        .listRow__50619 {
+        .listRow_e4be58 {
             margin: 0;
 
             &:hover {

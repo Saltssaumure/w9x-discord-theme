@@ -11,7 +11,7 @@
 }
 
 // Taskbar
-.wrapper__216eb .scroller_de945b {
+.wrapper_fea3ef .scroller_fea3ef {
     @include boxes.box;
     background: var(--background-secondary);
     border-color: $white $white $black $black;
@@ -27,32 +27,32 @@
 }
 
 // Folder/server icon
-.listItem__48528:not(:has(.guildSeparator__75928)) {
+.listItem_c96c45:not(:has(.guildSeparator_d0c57e)) {
     @include boxes.clickable;
 }
 
 // Closed folder icon
 @include fi.folderIcon;
-.expandedFolderBackground_b1385f.collapsed__98ad5 + .listItem__48528 {
-    .guildIcon_b6bfa7 {
+.expandedFolderBackground_bc7085.collapsed_bc7085 + .listItem_c96c45 {
+    .guildIcon_bc7085 {
         display: none;
     }
 }
 
 // Opened folder background strip
-.expandedFolderBackground_b1385f:not(.collapsed__98ad5) {
+.expandedFolderBackground_bc7085:not(.collapsed_bc7085) {
     background: transparent;
 }
 
-.folder__17546 {
-    .icon__94164,
+.folder_bc7085 {
+    .icon_f11207,
     svg {
         display: none;
     }
 }
 
 // Control panel
-.panels__58331 {
+.panels_a4d4d9 {
     @include boxes.box;
     position: fixed;
     bottom: 0;
@@ -67,17 +67,17 @@
 }
 
 // Flip order
-.container_debb33 {
+.container_b2ca13 {
     height: calc(var(--server-container) - 2px);
     flex-direction: row-reverse;
     gap: 6px;
 }
 
 // Controls
-.button_ae40a4 {
+.button_f67531 {
     @include boxes.clickable;
 
-    &.enabled__214db:hover,
+    &.enabled_f67531:hover,
     &:active {
         background: inherit;
         color: inherit;
@@ -85,12 +85,12 @@
 }
 
 // User
-.avatarWrapper__500a6 {
+.avatarWrapper_b2ca13 {
     @include boxes.inset;
     margin-right: 0;
 }
-.withTagAsButton_e22174:hover,
-.withTagless__058f8:hover {
+.withTagAsButton_b2ca13:hover,
+.withTagless_b2ca13:hover {
     background: inherit;
     color: inherit;
 }

@@ -22,17 +22,17 @@
 @use "../top/shortcutIcon" as sc;
 
 // Overall background
-.bg__12180 {
+.bg_d4b6c5 {
     background: var(--w9x-background-color) var(--w9x-background-image) center/cover;
 }
 
 // Transparency
-:is(.appMount_c99875, body, .app_de4237) {
+:is(.appMount_ea7e65, body, .app_a01fb1) {
     background: transparent;
 }
 
 // Put notice banners below main window
-.base_c0676e {
+.base_a4d4d9 {
     flex-direction: column-reverse;
     height: calc(100% - var(--server-container));
 
@@ -40,29 +40,29 @@
         z-index: 102;
     }
 
-    :is(.bd-notice, .notice__99c03, .notice__5fd4c) {
+    :is(.bd-notice, .notice_dd5a33, .notice__5fd4c) {
         @include boxes.box;
         margin-bottom: -4px;
 
-        .back_e83edd {
+        .back_dd5a33 {
             position: absolute;
         }
     }
 }
 
 // Settings
-.standardSidebarView__12528,
+.standardSidebarView_c25c6d,
 // Main DM and friend list view
-.container_bd15da,
+.container_c2739c,
 // Explore servers view
-.pageWrapper_c182d3,
+.pageWrapper_a3a4ce,
 // Student hub
-.scroller__32e73,
+.scroller_a39aa3,
 // Buy Nitro page
-.applicationStore__444b9,
+.applicationStore_cecc86,
 // Server subscriptions
-.container__2b28c,
+.container_fca846,
 // Main chat
-.chat__52833:not(.container__03ec9 > .chat__52833) {
+.chat_a7d72e:not(.container_f1fd9c > .chat_a7d72e) {
     @include boxes.mainWindow();
 }

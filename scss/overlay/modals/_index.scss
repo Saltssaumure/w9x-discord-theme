@@ -18,28 +18,28 @@
 @use "../../top/vars" as *;
 @use "../../top/boxes" as boxes;
 
-.root_a28985:not(.carouselModal__7e22f) {
+.root_f9a4c9:not(.carouselModal_d2b9a1) {
     @include boxes.box;
 
     // Header and footer
     .modalHeader-3X0A4K,
-    .footer_e0b400 {
+    .footer_f9a4c9 {
         @include boxes.box;
     }
 }
 
-.artContainer__748ff {
+.artContainer_ffaecb {
     display: none;
 }
 
-.content_b28aab {
+.content_f9a4c9 {
     @include boxes.scroller;
     padding-top: 18px;
     margin-bottom: 0;
 }
 
 // Changelog
-.layerContainer_a2fcaa {
+.layerContainer_cd0de5 {
     .content_dc3a33 {
         :is(ol, p, ul li) {
             color: $black;
@@ -55,7 +55,7 @@
         }
     }
 
-    .improved_e02592 {
+    .improved_f017d0 {
         color: $darkblue;
 
         &::after {
@@ -63,7 +63,7 @@
         }
     }
 
-    .fixed__61d41 {
+    .fixed_f017d0 {
         color: $red;
 
         &::after {

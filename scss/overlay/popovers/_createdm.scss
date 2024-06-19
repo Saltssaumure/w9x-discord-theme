@@ -3,33 +3,33 @@
 
 // Create (group) DM
 
-.header__5e5a6 {
-    .subtitle__6fbe4 {
+.header_f9a4c9 {
+    .subtitle_e6af9c {
         color: $black;
     }
 
-    .searchBarComponent__53adf {
+    .searchBarComponent_e6af9c {
         @include boxes.inset;
         background: $bg;
 
-        .inner__178b2 {
+        .inner_effbe2 {
             overflow: hidden !important;
         }
 
-        .input__745d4 {
+        .input_effbe2 {
             color: $text;
         }
 
-        .tag__69d9d {
+        .tag_effbe2 {
             @include boxes.clickable;
         }
     }
 }
 
-.scroller__991cb {
+.scroller_e6af9c {
     @include boxes.scroller;
 
-    .friendWrapper_f9b51d {
+    .friendWrapper_ebf869 {
         @include boxes.clickable;
         margin: 0;
 
@@ -37,12 +37,12 @@
             @include boxes.inset;
         }
 
-        .friendSelected__98d91 {
+        .friendSelected_ebf869 {
             background: unset;
         }
     }
 }
 
-.footer__062a1 {
+.footer_e6af9c {
     padding: 8px;
 }

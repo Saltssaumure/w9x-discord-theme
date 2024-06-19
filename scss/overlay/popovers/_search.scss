@@ -3,14 +3,14 @@
 @use "../../top/channellist-css" as channels;
 
 // Search popover
-.container__84c26 {
+.container_eedf95 {
     @include boxes.box;
     @include channels.vars;
 
     // Search option categories
-    .resultsGroup_b221b0 {
+    .resultsGroup_b0286e {
         // Section title
-        .header__00739 {
+        .header_b0286e {
             color: var(--header-primary);
         }
 
@@ -20,7 +20,7 @@
         }
 
         // Right corner icon
-        :is(.searchClearHistory__7fe75, .searchLearnMore__17e18) {
+        :is(.searchClearHistory_b0286e, .searchLearnMore_b0286e) {
             @include boxes.clickable($position: absolute);
 
             &:hover {
@@ -35,18 +35,18 @@
     }
 
     // Search options
-    .option__91497 {
+    .option_b0286e {
         margin: 0;
 
         // Hovered stuff
         &:hover
             :is(
-                .nonText_fbd88d,
-                .displayedNick_ee206c,
-                .displayUsername__41697,
+                .nonText_b0286e,
+                .displayedNick_b0286e,
+                .displayUsername_b0286e,
                 strong,
-                .searchResultChannelCategory__3c246,
-                .searchResultChannelIcon__80f46
+                .searchResultChannelCategory_b0286e,
+                .searchResultChannelIcon_b0286e
             ) {
             color: var(--interactive-hover);
         }
@@ -59,7 +59,7 @@
         }
 
         // Search history term
-        .nonText_fbd88d {
+        .nonText_b0286e {
             color: var(--text-muted);
         }
 
@@ -163,22 +163,22 @@
     }
 
     // Date picker hint
-    .datePickerHint_d023b6 {
+    .datePickerHint_b0286e {
         @include boxes.box;
         margin: 0;
         padding: 8px 20px;
 
-        .hintValue__0c960 {
+        .hintValue_b0286e {
             @include boxes.clickable;
         }
     }
 
     // Search query
-    .queryContainer_c1cb2f {
+    .queryContainer_eedf95 {
         @include boxes.clickable;
         background: $grey;
 
-        .queryText__92bb8 {
+        .queryText_eedf95 {
             text-transform: none;
             color: $darkgrey;
 

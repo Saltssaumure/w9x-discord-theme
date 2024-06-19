@@ -7,17 +7,17 @@
     "discordID": "134142022092062720",
     "github": "Saltssaumure"
   },
-  "version": "1.6.1",
+  "version": "1.7.0",
   "updater": {
     "type": "store",
     "id": "net.saltssaumure.NineX"
   },
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "type": "replugged-theme",
   "main": "scss/w9x.scss",
   "source": "https://github.com/Saltssaumure/w9x-discord-theme",
   "image": [
-    "https://i.imgur.com/EKFPRpO.png",
-    "https://i.imgur.com/qdhEUGk.png"
+    "https://saltssaumure.github.io/w9x-discord-theme/preview/ninex1.png",
+    "https://saltssaumure.github.io/w9x-discord-theme/preview/ninex2.png"
   ]
 }

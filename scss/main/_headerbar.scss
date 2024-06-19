@@ -3,34 +3,34 @@
 
 // Header bars
 :is(
-        .container_bd15da .container__26baa,
-        .container__2b28c .container__26baa,
-        .pageWrapper_c182d3 .scroller__26b89,
-        .scroller__32e73 .viewWrapper_d3b8a1,
-        .applicationStore__444b9 .homeWrapper_d63773,
-        .container__694a1:not(.floating__8f631) .container__26baa:not(.wrapper__6bf2d .container__26baa),
-        .chat__52833 .container__26baa:not(.wrapper__6bf2d .container__26baa)
+        .container_c2739c .container_e44302,
+        .container_fca846 .container_e44302,
+        .pageWrapper_a3a4ce .scroller_a3a4ce,
+        .scroller_a39aa3 .viewWrapper_a39aa3,
+        .applicationStore_cecc86 .homeWrapper_d175a8,
+        .container_d1c246:not(.floating_d1c246) .container_e44302:not(.wrapper_d880dc .container_e44302),
+        .chat_a7d72e .container_e44302:not(.wrapper_d880dc .container_e44302)
     ) {
     margin-top: $title-height;
     z-index: 0;
 
-    .divider_bdb894 {
+    .divider_e44302 {
         display: none;
     }
 }
 
 // End of description shadow
-.appMount_c99875 :is(.innerHeader_ccbd77, .headerBarInner__42db6)::after {
+.appMount_ea7e65 :is(.innerHeader_f1fd9c, .headerBarInner_e85cee)::after {
     background: linear-gradient(180deg, transparent, $grey);
 }
 
 // Tools
-.toolbar__62fb5 {
-    .search__07df0 {
+.toolbar_e44302 {
+    .search_ff5f90 {
         @include boxes.inset;
         margin: 0;
 
-        .searchBar__5a20a {
+        .searchBar_a46bef {
             height: 30px;
             align-items: center;
             background: $bg;
@@ -41,18 +41,18 @@
             }
 
             // Search button
-            .icon__53a5c {
+            .icon_a46bef {
                 @include boxes.clickable;
                 background: $grey;
 
-                .icon__5c8c7 {
+                .icon_effbe2 {
                     color: $black;
                 }
             }
 
             // Filters
-            .searchFilter_dbda51,
-            .searchAnswer__2ccaf {
+            .searchFilter_b0fa94,
+            .searchAnswer_b0fa94 {
                 @include boxes.box;
                 background: $grey;
                 color: $black;
@@ -61,10 +61,10 @@
     }
 
     // Buttons
-    .videoControls_af6621
+    .videoControls_dd069c
         &
-        .iconWrapper_de6cd1.clickable_ce0925:is(.anchor_c8ddc0 .iconWrapper_de6cd1:only-of-type, :has([d^="M14 8.00598"])),
-    .iconWrapper_de6cd1.clickable_ce0925:not(.anchor_c8ddc0 .iconWrapper_de6cd1:only-of-type, :has([d^="M14 8.00598"])) {
+        .iconWrapper_e44302.clickable_e44302:is(.anchor_af404b .iconWrapper_e44302:only-of-type, :has([d^="M14 8.00598"])),
+    .iconWrapper_e44302.clickable_e44302:not(.anchor_af404b .iconWrapper_e44302:only-of-type, :has([d^="M14 8.00598"])) {
         @include boxes.clickable;
         margin: 0;
         height: 32px;
@@ -80,6 +80,6 @@
 }
 
 // Under header bar
-.content__01e65::before {
+.content_a7d72e::before {
     display: none;
 }

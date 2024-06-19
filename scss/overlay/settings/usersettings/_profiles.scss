@@ -3,87 +3,87 @@
 
 // # Profiles
 // Tabs
-.tabBar__22a9a {
+.tabBar_bff66b {
     margin-top: 0;
 
-    .brand_ce3ecf.item__48dda {
+    .brand_a0.item_a0 {
         @include boxes.clickable;
         padding: 4px;
         margin: 0;
 
         &:active,
         &:hover,
-        &.selected_a523ff {
+        &.selected_a0 {
             border-bottom-color: $darkblue;
         }
 
-        &.selected_a523ff {
+        &.selected_a0 {
             @include boxes.inset;
         }
     }
 }
 
 // Remove section dividers
-.customizationSection__0f57e {
+.customizationSection_b3a5c2 {
     border-bottom: 0;
     margin-bottom: 0;
 }
 
 // Banner colour picker
-.colorSwatch__74812 {
+.colorSwatch_c66781 {
     @include boxes.inset;
 }
 
 // Bio typing area
-.channelTextArea__648e5 {
+.channelTextArea_d0696b {
     @include boxes.inset;
 
-    .slateTextArea_b19976 {
+    .slateTextArea_e52116 {
         // maybe risky to other textboxes, doublecheck
         padding: 4px !important;
     }
 }
 
 // Emoji picker button
-.webkit__8d35a .buttons__7ecff {
+.webkit__8d35a .buttons_d0696b {
     margin-right: 0;
 }
 
 // Characters left
-.characterCount__7e076 {
+.characterCount_b82429 {
     right: 24px;
     bottom: 0;
 }
 
 // Profile preview
-.userPopoutOuter_d67f56 {
+.userPopoutOuter_c69a7b {
     @include boxes.box;
 
-    .userPopoutOverlayBackground__3e7e6 {
+    .userPopoutOverlayBackground_c69a7b {
         @include boxes.inset;
     }
 
-    .profileBadges__1f2ab.containerWithContent_a67357 {
+    .profileBadges_f89da9.containerWithContent_b64375 {
         @include boxes.box;
     }
 
-    .avatarUploaderInner__71578 {
+    .avatarUploaderInner_ab876d {
         @include boxes.box;
     }
 }
 
 // Nitro upsell lol
-.premiumFeatureBorder__6ac04,
-.premiumBackground__4f769 {
+.premiumFeatureBorder_c6d722,
+.premiumBackground_c6d722 {
     background: none;
 }
 
 // Server nickname
-.inputWrapper_ecb776 {
+.inputWrapper_f8bc55 {
     @include boxes.inset;
     background: $bg;
 
-    .input_f27786 {
+    .input_f8bc55 {
         padding: 0 4px;
         height: 24px;
         color: $text;

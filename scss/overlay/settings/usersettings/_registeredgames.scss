@@ -2,28 +2,28 @@
 @use "../../../top/boxes" as boxes;
 
 #game-activity-tab {
-    .gameName_c1c8a6 {
+    .gameName_fd966d {
         color: $black;
     }
 
-    .lastPlayed__0b4ef,
+    .lastPlayed_fd966d,
     .overlayStatusText__668e1 {
         color: $darkgrey;
     }
 
-    .activeGame__6d821 {
+    .activeGame_fd966d {
         @include boxes.box;
     }
 
-    .nowPlayingAdd_ab1001 {
+    .nowPlayingAdd_fd966d {
         color: $black;
     }
 
-    .card_dc88cd {
+    .card_ffe375 {
         @include boxes.box;
         padding: 8px;
 
-        .gameNameInput__3e1e4 {
+        .gameNameInput_fd966d {
             &:focus,
             &:hover {
                 background: $white;
@@ -34,7 +34,7 @@
         .overlayToggleIcon-1WRcQ9 {
             @include boxes.clickable;
 
-            .overlayToggleIconOn-21NN2N .fill__90d85 {
+            .overlayToggleIconOn-21NN2N .fill_fd966d {
                 fill: $darkgrey;
             }
 
@@ -43,12 +43,12 @@
             }
         }
 
-        .flowerStar_fa5ad8 path {
+        .flowerStar_ff7d90 path {
             fill: $darkblue;
         }
     }
 
-    .removeGame__4f4cb {
+    .removeGame_fd966d {
         @include boxes.clickable($position: absolute);
         right: -12px;
         background-color: $grey;
@@ -57,11 +57,11 @@
 }
 
 // Technically a popover
-.animatorBottom__90ece .addGamePopout__61649 {
+.animatorBottom_f88ae3 .addGamePopout_fd966d {
     background: $grey;
     @include boxes.box;
 
-    .actions__1012d {
+    .actions_fd966d {
         margin-top: 8px;
     }
 }

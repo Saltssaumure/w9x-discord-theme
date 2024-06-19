@@ -2,33 +2,33 @@
 @use "../../../top/boxes" as boxes;
 
 // # Connections
-.connectContainer_e331e3 {
+.connectContainer_e2a436 {
     @include boxes.box;
     padding: 8px;
 
-    .connectionsContainer__3fe05 {
+    .connectionsContainer_e2a436 {
         margin-top: 4px;
         gap: 0;
 
-        .inner__51a43,
-        .accountAddInner__50785 {
+        .inner_c36ce4,
+        .accountAddInner_e2a436 {
             @include boxes.clickable;
         }
     }
 }
 
-.connectionList__5b340 {
+.connectionList_e2a436 {
     grid-gap: 0;
 
-    .connection__6dbd8 {
+    .connection_e2a436 {
         @include boxes.box;
         padding: 0;
         margin-bottom: 0;
 
-        .connectionHeader__2b82f {
+        .connectionHeader_e2a436 {
             padding: 8px;
 
-            .connectionDelete__300b7 {
+            .connectionDelete_e2a436 {
                 margin: 0;
                 align-self: flex-start;
 
@@ -40,7 +40,7 @@
             }
         }
 
-        .upsellWrapper_c40434 {
+        .upsellWrapper_e2a436 {
             padding: 8px;
 
             .container-QlmnKJ {
@@ -49,16 +49,16 @@
             }
         }
 
-        .metadataContainer__1842c {
+        .metadataContainer_e2a436 {
             padding: 0 8px;
             margin: 0;
         }
 
-        .connectionOptionsWrapper__1b820 {
+        .connectionOptionsWrapper_e2a436 {
             padding: 8px;
 
-            .connectionOptions__06d4b {
-                .connectionOptionSwitch_e439d0 {
+            .connectionOptions_e2a436 {
+                .connectionOptionSwitch_e2a436 {
                     margin-bottom: 0px;
                     padding: 0;
                 }
