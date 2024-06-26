@@ -12,7 +12,7 @@
         @include boxes.clickable;
         background: $grey;
     }
-    .webkit__8d35a .buttons_d0696b {
+    @at-root .has-webkit-scrollbar .buttons_d0696b {
         margin-right: 0;
     }
 

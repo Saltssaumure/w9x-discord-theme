@@ -20,8 +20,12 @@
     @include boxes.inset;
     background: $bg;
 
+    --bg-mod-faint: none;
+    --bg-mod-strong: none;
+    --bg-mod-subtle: none;
+
     // Post tags
-    .tags_f451cd {
+    @at-root .tags_f451cd {
         gap: 0;
 
         & > :is(.pinIcon_f451cd, .tagPill_a57509) {
@@ -35,46 +39,43 @@
     }
 
     // New post bubble
-    .newPostsButton_a6d69a {
+    @at-root .newPostsButton_a6d69a {
         z-index: 2;
     }
 
-    // Not have left-right padding on everything in list mode
-    .list_a6d69a .content_eed6a8 {
-        padding: 0;
-    }
-
-    // The same in gallery mode
+    // Wrapper around everything
     .content_eed6a8 {
-        // Everything but post cards
-        & > div:first-child {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        // Wrapper around post editor and tag filter bar (gallery mode)
+        & > div:first-child:not([role="grid"]) {
             position: relative !important;
             top: 0 !important;
             left: 0 !important;
-            width: auto !important;
+            width: 100% !important;
 
             .headerRow_a6d69a {
-                width: auto !important;
+                left: 0 !important;
+                width: inherit !important;
             }
         }
 
-        // Post card container
-        & > div:last-child {
-            position: relative !important;
-            top: 16px !important;
-            left: 0 !important;
-            width: auto !important;
+        // Wrapper around post cards
+        & > [role="grid"] {
+            left: -16px !important;
+        }
 
-            // Tag area in text posts
-            .textContentFooter_a57509 {
-                background: transparent;
-            }
+        // Tag area in text posts
+        .textContentFooter_a57509 {
+            background: transparent;
         }
     }
 
     // Everything but post cards
     .headerRow_a6d69a {
         padding: 0;
+        background: $grey;
 
         // Filter by tags bar
         .tagsContainer_a6d69a {
@@ -250,6 +251,7 @@ li.card_a6d69a {
     padding: 0;
     margin: 8px;
     @include boxes.clickable;
+    background: $grey;
 }
 
 :is(.container_d331f1, .container_a57509) {
@@ -257,11 +259,20 @@ li.card_a6d69a {
         color: var(--text-normal);
     }
 
+    &:is(:hover, :active) {
+        box-shadow: none;
+        transform: none;
+    }
+
     &:not(.isOpen_d331f1, .isOpen_a57509) {
-        &:hover,
+        &:is(:hover, :active) {
+            background: $grey;
+        }
+        &:hover {
+            border-color: $white $black $black $white;
+        }
         &:active {
-            background-color: var(--background-primary);
-            transform: none;
+            border-color: $black $white $white $black;
         }
     }
 
@@ -287,27 +298,26 @@ li.card_a6d69a {
 }
 
 // Opened post
-// Post alert options bar
-.container_b385c8 {
-    position: absolute;
-    z-index: 0;
-    border-top: 0;
-    margin-top: 0;
-    inset: 28px 0 auto;
-    padding: 0;
-    padding-right: 4px;
-    background: transparent;
-    box-shadow: none;
+.scrollerInner_e2e187 {
+    overflow: unset;
 
-    .buttons_b385c8 {
-        gap: 0;
+    // Post alert options bar
+    .container_b385c8 {
+        @include boxes.box;
+        position: sticky;
+        top: 0;
 
-        .buttonInner_b385c8 {
-            @include boxes.clickable;
-            height: 20px;
+        .buttons_b385c8 {
+            gap: 0;
 
-            &:has(path[d^="M8.99991 16.17"]) {
-                @include boxes.inset;
+            @at-root .addReactButton_b385c8,
+                .buttonInner_b385c8 {
+                @include boxes.clickable;
+                height: 20px;
+
+                &:has(path[d^="M8.99991 16.17"]) {
+                    @include boxes.inset;
+                }
             }
         }
     }

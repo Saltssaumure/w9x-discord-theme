@@ -1,8 +1,12 @@
 @use "../top/vars" as *;
 
 .tooltip_b6c360 {
-    border: 1px solid black;
+    border: 1px solid $black;
     .tooltipPointer_b6c360 {
         display: none;
     }
+}
+
+.reactionTooltip_fba897 {
+    border: 1px solid $black;
 }

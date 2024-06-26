@@ -4,13 +4,20 @@
 // User profiles
 .userProfileOuter_c69a7b {
     @include boxes.box;
+    --bg-surface-overlay: #{$grey};
 
     &.userProfileOuterThemed_c69a7b {
         &.theme-dark {
             --interactive-active: #{$white};
+            --interactive-hover: #{$white};
+            --interactive-normal: #{$lightgrey};
             --header-primary: #{$grey};
             --header-secondary: #{$grey};
             --text-normal: #{$lightgrey};
+
+            .color_f1cdcc.banner_f1cdcc {
+                color: #{$white};
+            }
         }
     }
 
@@ -20,7 +27,7 @@
             @include boxes.clickable($position: absolute);
         }
 
-        // Profile badges
+        // Profile badges (old profile)
         .profileBadges_f89da9 {
             gap: 0;
             padding: 0;
@@ -30,45 +37,54 @@
             }
         }
 
+        // Profile badges (new profile)
+        .container_e5a42d {
+            @include boxes.box;
+        }
+
+        .color_f1cdcc.banner_f1cdcc {
+            background: none;
+        }
+
         // Inner box
         .userPopoutOverlayBackground_c69a7b {
             @include boxes.box;
+        }
 
-            // Divider
-            .divider_e6f9ab {
-                background-color: transparent;
+        // Divider
+        .divider_e6f9ab {
+            background-color: transparent;
+        }
+
+        // About me
+        .scroller_d2b491 {
+            @include boxes.inset;
+        }
+
+        code,
+        .blockquoteDivider_d6076c {
+            background: $darkgrey;
+        }
+
+        // Roles
+        :is(.role_f9575e, .showMoreButton_c83b44) {
+            @include boxes.box;
+            margin-right: 0;
+        }
+
+        // Note
+        .note_c90ad7 {
+            @include boxes.inset;
+            background: $bg;
+
+            textarea {
+                color: $text;
             }
+        }
 
-            // About me
-            .scroller_d2b491 {
-                @include boxes.inset;
-            }
-
-            code,
-            .blockquoteDivider_d6076c {
-                background: $darkgrey;
-            }
-
-            // Roles
-            .role_f9575e {
-                @include boxes.box;
-                margin-right: 0;
-            }
-
-            // Note
-            .note_c90ad7 {
-                @include boxes.inset;
-                background: $bg;
-
-                textarea {
-                    color: $text;
-                }
-            }
-
-            // Activity buttons
-            .vertical_bf8eca > :not(:first-child) {
-                margin-top: 0;
-            }
+        // Activity buttons
+        .vertical_bf8eca > :not(:first-child) {
+            margin-top: 0;
         }
     }
 }
