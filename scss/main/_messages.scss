@@ -306,3 +306,29 @@
 .editor_a552a6 {
     caret-color: $text;
 }
+
+// Polls
+.container_a1531c {
+    @include boxes.box;
+    background: $grey;
+
+    --control-brand-foreground: #{$black};
+
+    // Option
+    .answer_cf2c85 {
+        @include boxes.box;
+
+        &.enabled_b97e9a {
+            @include boxes.clickable;
+        }
+
+        &:is(.votedStyles_b5cb3c, [aria-checked="true"]) {
+            @include boxes.inset;
+        }
+
+        // Inner
+        .answerInner_cf2c85.currentlyVoting_cf2c85.selected_cf2c85 {
+            outline: none;
+        }
+    }
+}
