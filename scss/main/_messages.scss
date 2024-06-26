@@ -223,41 +223,40 @@
 }
 
 // Reactions
-.reaction_f61c73 {
+.reaction_ec6b19 {
     margin-right: 0;
     border: 0;
 }
 
-.reactionInner_f61c73 {
+.reactionInner_ec6b19 {
     @include boxes.box;
 }
 
 // Self reactions
-.reaction_f61c73.reactionMe_f61c73 {
+.reaction_ec6b19.reactionMe_ec6b19 {
     background: $grey;
 }
 
 // Clicked reactions
-.reactionMe_f61c73 .reactionInner_f61c73,
-.reactionInner_f61c73:active {
+.reactionMe_ec6b19 .reactionInner_ec6b19,
+.reactionInner_ec6b19:active {
     @include boxes.inset;
 
-    .reactionCount_f61c73 {
+    .reactionCount_ec6b19 {
         color: $black;
     }
 }
 
 // Hovered reactions
-.reaction_f61c73:hover {
-    .reactionCount_f61c73 {
+.reaction_ec6b19:hover {
+    .reactionCount_ec6b19 {
         color: $black;
     }
 }
 
 // Add more reactions button
-.reactionBtn_f61c73:hover,
-.reactionBtn_f61c73:active {
-    .icon_f61c73 {
+.reactionBtn_ec6b19:is(:hover, :active) {
+    .icon_ec6b19 {
         color: $text;
     }
 }
