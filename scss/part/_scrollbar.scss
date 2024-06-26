@@ -2,14 +2,23 @@
 @use "../top/boxes" as boxes;
 
 // Scrollbars always visible
-.fade_eed6a8::-webkit-scrollbar-thumb,
-.fade_eed6a8::-webkit-scrollbar-track {
-    visibility: visible;
+:is(.fade_eed6a8, .fade_c49869) {
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-track {
+        visibility: visible;
+    }
 }
 
 // Main scrollbars
-.scrollerBase_eed6a8 {
-    &:not(.none_eed6a8)::-webkit-scrollbar {
+.scrollerBase_eed6a8,
+.scrollerBase_c49869,
+// Chatbox scrollbar
+.scrollableContainer_d0696b,
+// Textbox scrollbar
+.webkit__8d35a,
+// Spooky scary scrollbars
+.scrollbarGhostHairline_c858ce {
+    &:not(.none_eed6a8, .none_c49869)::-webkit-scrollbar {
         width: 18px;
     }
 
@@ -24,39 +33,7 @@
     }
 }
 
-// Textbox scrollbar
-.webkit__8d35a {
-    &::-webkit-scrollbar {
-        width: 18px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        @include boxes.thin;
-        background: $grey;
-    }
-
-    &::-webkit-scrollbar-track {
-        background: $lightgrey;
-    }
-}
-
-// Spooky scary scrollbars
-.scrollbarGhostHairline_c858ce {
-    &::-webkit-scrollbar {
-        width: 18px;
-        height: 18px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        @include boxes.thin;
-        background: $grey;
-    }
-
-    &::-webkit-scrollbar-track {
-        background: $lightgrey;
-    }
-}
-
+// Code view scrollbar
 .codeView_ad9cbd::-webkit-scrollbar-track {
     margin: 0;
 }
@@ -72,21 +49,25 @@
 
     &:start:decrement:vertical {
         background: $grey
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 4 H 8 L 4 0 Z' fill='%23000000'/%3E%3C/svg%3E");
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 4 H 8 L 4 0 Z' fill='%23000000'/%3E%3C/svg%3E")
+            no-repeat;
     }
 
     &:end:increment:vertical {
         background: $grey
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 0 H 8 L 4 4 Z' fill='%23000000'/%3E%3C/svg%3E");
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-2 -4 12 12'%3E%3Cpath d='M 0 0 H 8 L 4 4 Z' fill='%23000000'/%3E%3C/svg%3E")
+            no-repeat;
     }
 
     &:start:decrement:horizontal {
         background: $grey
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -2 12 12'%3E%3Cpath d='M 0 4 Z L 4 0 V 8 Z' fill='%23000000'/%3E%3C/svg%3E");
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -2 12 12'%3E%3Cpath d='M 0 4 Z L 4 0 V 8 Z' fill='%23000000'/%3E%3C/svg%3E")
+            no-repeat;
     }
 
     &:end:increment:horizontal {
         background: $grey
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -2 12 12'%3E%3Cpath d='M 4 4 Z L 0 0 V 8 Z' fill='%23000000'/%3E%3C/svg%3E");
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -2 12 12'%3E%3Cpath d='M 4 4 Z L 0 0 V 8 Z' fill='%23000000'/%3E%3C/svg%3E")
+            no-repeat;
     }
 }
